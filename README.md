@@ -139,11 +139,11 @@ Para o desenvolvimento de aplicações em Java é comum o uso de ferramentas IDE
 Você pode usar qualquer tipo de ambiente, se preferir um editor de texto como um bloco de notas ou um VSCode você precisa usar a extensão `.java`.
 
 # ☕ Ambiente de programação
+<a href="https://netbeans.apache.org/download/index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="77" align="right"></a>
+
 Existem várias ferramentas para o desenvolvimento de sistemas utilizando a linguagem Java, mas os desenvolvedores têm preferência pelos IDEs **Netbeans** e **Eclipse**. Ambos são gratuitos e podem ser adquiridos pela internet através de download.
 
 É importante que você já tenha instalado o JDK antes de instalar o seu IDE escolhido (Netbeans ou Eclipse). Assista o vídeo: 
-
-<a href="https://netbeans.apache.org/download/index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="77" align="right"></a>
 
 Existem dois arquivos diferentes: o primeiro, com o source, contém os códigos fonte no Netbeans e não é o ideal para trabalharmos o desenvolvimento. A versão adequada para nós é a versão bin, que contém todos os códigos já compilados e prontos para a execução e desenvolvimento de projetos e aplicações Java.
 
