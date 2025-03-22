@@ -181,29 +181,21 @@ O PrimeFaces é uma opção popular para o desenvolvimento de aplicativos web Ja
 
 Principais Características da Linguagem Kotlin:
 
-1. **Interoperabilidade com Java**:
-   - Kotlin é totalmente compatível com Java, o que significa que você pode chamar código Java a partir de Kotlin e vice-versa. Isso facilita a integração com projetos existentes em Java.
+1. **Interoperabilidade com Java**: Kotlin é totalmente compatível com Java, o que significa que você pode chamar código Java a partir de Kotlin e vice-versa. Isso facilita a integração com projetos existentes em Java.
 
-2. **Sintaxe Concisa**:
-   - Kotlin foi projetada para ser mais expressiva e concisa do que Java. Muitas construções comuns podem ser escritas de forma mais curta e clara em Kotlin.
+2. **Sintaxe Concisa**: Kotlin foi projetada para ser mais expressiva e concisa do que Java. Muitas construções comuns podem ser escritas de forma mais curta e clara em Kotlin.
 
-3. **Segurança Nula**:
-   - Um dos principais problemas em Java é o null pointer exception (NPE). Kotlin aborda isso de forma nativa com seu sistema de tipos que diferencia entre tipos que podem ser nulos e tipos que não podem ser nulos.
+3. **Segurança Nula**: Um dos principais problemas em Java é o null pointer exception (NPE). Kotlin aborda isso de forma nativa com seu sistema de tipos que diferencia entre tipos que podem ser nulos e tipos que não podem ser nulos.
 
-4. **Funções de Extensão**:
-   - Permitem que você adicione novas funcionalidades a classes existentes sem ter que herdá-las ou usar padrões de design como Decorator.
+4. **Funções de Extensão**: Permitem que você adicione novas funcionalidades a classes existentes sem ter que herdá-las ou usar padrões de design como Decorator.
 
-5. **Suporte para Programação Funcional**:
-   - Kotlin suporta muitos paradigmas de programação funcional, incluindo lambdas, funções de alta ordem, e imutabilidade.
+5. **Suporte para Programação Funcional**: Kotlin suporta muitos paradigmas de programação funcional, incluindo lambdas, funções de alta ordem, e imutabilidade.
 
-6. **Coroutines para Programação Assíncrona**:
-   - Coroutines facilitam a escrita de código assíncrono, permitindo a execução de operações de longo prazo, como chamadas de rede ou operações de E/S, de maneira não bloqueante.
+6. **Coroutines para Programação Assíncrona**: Coroutines facilitam a escrita de código assíncrono, permitindo a execução de operações de longo prazo, como chamadas de rede ou operações de E/S, de maneira não bloqueante.
 
-7. **Null Safety**:
-   - O sistema de tipos do Kotlin tem null safety integrada, reduzindo a probabilidade de erros de referência nula.
+7. **Null Safety**: O sistema de tipos do Kotlin tem null safety integrada, reduzindo a probabilidade de erros de referência nula.
 
-8. **Estrutura Moderna de Linguagem**:
-   - Kotlin possui várias características modernas de linguagem, como propriedades, delegados, data classes, sealed classes, entre outros, que ajudam a escrever código mais limpo e expressivo.
+8. **Estrutura Moderna de Linguagem**: Kotlin possui várias características modernas de linguagem, como propriedades, delegados, data classes, sealed classes, entre outros, que ajudam a escrever código mais limpo e expressivo.
 
 Exemplo de Código em Kotlin
 
