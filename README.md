@@ -104,7 +104,7 @@ A sigla JSE pode referir-se a diferentes tecnologias dependendo do contexto, mas
 
 Portanto, a sigla JSE pode se referir tanto ao Java Standard Edition, relacionado à linguagem de programação Java, quanto a um motor JavaScript, relacionado ao JavaScript. O significado exato depende do contexto em que a sigla é utilizada.
 
-## Ambiente de desenvolvimento
+## [Java] Ambiente de desenvolvimento
 Existem os ambientes JDK e JRE para construir e executar uma aplicação Java.
 
 Java Development Kit (JDK) é uma coleção de programas para, dentre outras tarefas, compilar e executar aplicações Java. Este é o kit necessário para o desenvolvedor, pois contém todo o suporte para a criação de aplicações em Java.
@@ -115,12 +115,12 @@ Exemplo:
 - Java;
 - Outros.
 
-## Java Runtime Environment (JRE)
+## [Java] Java Runtime Environment (JRE)
 <img src="https://user-images.githubusercontent.com/61624336/171005805-d123b7c1-89e6-492c-9d03-3dcafb40142e.png" align="right" height="77">
 
 Kit com todos os programas necessários para executar aplicações Java. Faz parte do JDK, mas pode ser instalado separadamente para execução em máquinas clientes, uma vez que o JDK é voltado para os desenvolvedores. O JRE pode ser instalado separadamente e dá suporte somente a execução de aplicações ou jogos como o Minecraft, por isso é a versão mais indicada para instalação nas máquinas clientes que apenas executarão aplicações, não sendo responsáveis pelo seu desenvolvimento.
 
-## Fases de um programa em linguagem Java
+## [Java] Fases de um programa em linguagem Java
 ![img01](https://user-images.githubusercontent.com/61624336/112771689-6c3a6500-9003-11eb-8436-1bda07a25ea3.jpg)
 
 O código de um programa Java é compilado apenas uma vez, gerando um código intermediário, o **bytecode**, que pode ser executado quantas vezes forem necessárias em qualquer ambiente que possua uma máquina virtual Java (JVM) disponível.
@@ -138,7 +138,7 @@ Para o desenvolvimento de aplicações em Java é comum o uso de ferramentas IDE
 
 Você pode usar qualquer tipo de ambiente, se preferir um editor de texto como um bloco de notas ou um VSCode você precisa usar a extensão `.java`.
 
-# ☕ Ambiente de programação
+# ☕ [Java] Ambiente de programação
 <a href="https://netbeans.apache.org/download/index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="77" align="right"></a>
 
 Existem várias ferramentas para o desenvolvimento de sistemas utilizando a linguagem Java, mas os desenvolvedores têm preferência pelos IDEs **Netbeans** e **Eclipse**. Ambos são gratuitos e podem ser adquiridos pela internet através de download.
@@ -155,7 +155,7 @@ A linguagem Java possui uma base de construção semelhante à linguagem C e, po
 
 <blockquote>Cuidado com as diferenças de versões no sistema operacional: se instalar o Java para 64 bits, você deverá usar um IDE (Netbeans ou Eclipse) de 64 bits. O mesmo para a versão de 32 bits: tanto o Java quanto o IDE deverão ser para 32 bits.</blockquote>
 
-# 🤖 Primefaces
+# 🤖 [Java] Primefaces
 <img src="https://user-images.githubusercontent.com/61624336/192927385-5a585bf9-2cac-4344-89b4-f0d194cac6b5.svg" height="77" align="right">
 
 O **PrimeFaces** é uma biblioteca de componentes de interface de usuário (UI) de código aberto que é usada no desenvolvimento de aplicativos web Java Enterprise Edition (Java EE). Ela fornece uma ampla variedade de componentes de interface de usuário ricos e predefinidos que podem ser facilmente incorporados em aplicativos web Java, permitindo aos desenvolvedores criar interfaces de usuário atraentes e funcionais de maneira eficiente.
@@ -174,7 +174,7 @@ Alguns dos principais recursos e componentes fornecidos pelo PrimeFaces incluem:
 
 O PrimeFaces é uma opção popular para o desenvolvimento de aplicativos web Java que desejam fornecer interfaces de usuário ricas e interativas. Ele é amplamente usado em várias indústrias e fornece uma base sólida para a criação de aplicativos web empresariais.
 
-# 🥛 Kotlin
+# 🥛 [Java] Kotlin
 <img src="https://cdn.worldvectorlogo.com/logos/kotlin-2.svg" height="77" align="right">
 
 **Kotlin** é uma linguagem de programação moderna, concisa e segura que foi projetada para interoperar plenamente com o Java. Desenvolvida pela JetBrains, Kotlin se tornou uma escolha popular para o desenvolvimento de aplicativos Android, servidores, web e desktop. Kotlin é uma linguagem versátil e poderosa que tem ganhado popularidade rapidamente devido à sua concisão, segurança e interoperabilidade com Java. É amplamente adotada para desenvolvimento Android, mas também é adequada para back-end, web e desenvolvimento multiplataforma.
@@ -246,7 +246,7 @@ Ecossistema Kotlin:
 4. **Kotlin Multiplatform**:
    - Permite compartilhar código comum entre diferentes plataformas (JVM, JavaScript, iOS, etc.), facilitando o desenvolvimento de aplicativos multiplataforma.
 
-# 🍃 Spring
+# 🍃 [Java] Spring
 <img src="https://www.svgrepo.com/show/354380/spring-icon.svg" align="right" height="77">
 
 O **Spring** é um framework open source desenvolvido para a plataforma Java baseado nos padrões de projetos inversão de controle e injeção de dependência. Sua estrutura é composta por módulos afins de reduzir a complexidade no desenvolvimento aplicações simples ou corporativa. 
