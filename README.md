@@ -1021,10 +1021,8 @@ Entretanto, para o sistema de cadastramento do DETRAN, por exemplo, o número do
 
 Por isso, devemos analisar cada objeto separadamente e quais são as características importantes para o sistema em que o objeto será utilizado. Como outro exemplo, podemos notar que a matrícula, nome e CR de um aluno são importantes para o sistema acadêmico, mas o time para o qual o aluno torce ou sua religião não são. Por isso, os descritores time e religião não são importantes para o objeto Aluno em um sistema acadêmico.
 
-## 🏫 Classes 🏫
 As **classes** Java são responsáveis pelo **conjunto de códigos para a criação de objetos e aplicações**. Uma classe Java deve descrever as *características e ações* que o objeto possui ao ser representado em um sistema computacional, levando em consideração as caracteristicas (atributos) e as ações (métodos) juntamente ou não com seus argumentos (parâmetros).
 
-## 🧑 Atributos 🧑
 **Atributo** é conceitualmente um descritor do objeto e deve representar uma **característica**,  dele. O **conjunto de atributos** do objeto deve representar todas as *características importantes* do objeto para o sistema.
 
 Exemplo:
@@ -1034,8 +1032,6 @@ Exemplo:
 String nome; // atributo para armazenamento do nome
 
 double cr; // atributo para armazenamento do cr</pre>
-
-## 🧑‍🏫 Métodos 🧑‍🏫
 
 **Método** é uma **ação**, um conjunto de instruções a serem executadas por um objeto para realizar uma determinada tarefa.
 
@@ -1063,14 +1059,13 @@ System.out.println("O salário com aumento é: " + aumento);
 
 }</pre>
 
-## ⚽ Objetos ⚽
 A classe modela o **objeto** de acordo com as necessidades do sistema para a sua descrição e suas ações. A partir de uma mesma classe, vários objetos diferentes, mas com características semelhantes, podem ser criados em um mesmo sistema ou em diferentes sistemas.
 
 Se consideramos a classe Aluno, podemos criar a partir desta classe dezenas, centenas ou mesmo milhares de objetos Alunos com características semelhantes, tais como matrícula, nome e CR, mas com propriedades (valores próprios nos atributos de cada objeto) diferentes.
 
 Os *objetos* **só existem durante a execução do sistema**, pois estes só existirão como referência na memória do computador neste momento. Dizemos também que os objetos só existem “em tempo de execução”, uma vez que o sistema ao ser encerrado terá toda a sua memória apagada. Consequentemente, todas as suas variáveis e objetos não existirão mais.
 
-### Exemplo: Aluno.java (objeto)
+Exemplo: `Aluno.java` (objeto)
 
 ![print](https://user-images.githubusercontent.com/61624336/119859616-edbb5000-beeb-11eb-833d-c0b2e0cb77ba.png)
 
