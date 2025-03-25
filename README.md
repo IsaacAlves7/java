@@ -1006,7 +1006,7 @@ public class Carro Hibrido { ... }
 public interface Basico { ... }
 
 public interface MetodosBasicos { ... }</pre>
-<hr>
+
 
 # ☕ [Java] Classes e objetos
 Vamos aprender o paradigma de programação orientada a objetos (Poo).
@@ -1572,7 +1572,7 @@ double calculo(double, double)
 
 double calculo(double, double, double)</pre>
 
-<hr>
+
 
 # ☕ [Java] Herança
 A programação orientada a objetos tem como um dos principais pilares o "reaproveitamento de código". <b>Reaproveitar o código</b> significa menos esforço em seu desenvolvimento e mais facilidade na manutenção do sistema. Ao evitarmos a redundância de código, fica mais fácil gerar alterações, uma vez que não precisaremos modificá-lo em vários locais diferentes.
@@ -1855,7 +1855,7 @@ Ao reaproveitar o método imprimir da Superclasse, temos dois ganhos muito impor
 
 A **herança** é um conceito importantíssimo da programação orientada a Objetos, permitindo que reaproveitemos membros Superclasse, que serão herdados pelas Subclasses, evitando redundância de códigos, além de facilitar a manutenção das nossas classes, uma vez que qualquer necessidade de mudança implicará na alteração de apenas uma classe.
 
-<hr>
+
 
 # ☕ [Java] Agregação e particionamento
 A programação orientada a objetos nos ajuda a resolver de forma mais simples problemas com alta complexidade. A **agregação de classes** é um conceito voltado a facilitar a solução de problemas muito complexos. Podemos *dividir* uma classe em classes menores, particionando esta classe em diversas outras classes mais simples, para posteriormente as reunirmos em conjunto, formando uma classe maior e mais complexa.
@@ -2096,7 +2096,7 @@ Caso seja necessária alguma alteração específica, basta alterar a classe afe
 
 Temos então um melhor controle sobre a aplicação e maior facilidade de manutenção de todo o sistema.
 
-<hr>
+
 
 # ☕ [Java] Encapsulamento
 
@@ -2301,8 +2301,6 @@ Isso ocorre porque as aplicações não estão encontrando as respectivas classe
 
 Outro ponto importante é que os atributos das classes **Exemplo** e **Tributos** estavam com a visibilidade padrão e, para continuar a funcionar, é necessário alterar a visibilidade dos atributos para pública (public), uma vez que essas classes agora estão em diferentes pacotes.
 
-<hr>
-
 # ☕ [Java] Classes abstratas e interfaces 
 
 As **classes abstratas** são usadas como moldes para a criação de outras classes e podem encapsular atributos e comportamentos comuns. Já **interface** é um recurso muito utilizado em Java. Uma classe pode implementar várias interfaces.
@@ -2434,8 +2432,6 @@ A linguagem Java foi concebida com o intuito de permitir o desenvolvimento de pr
 <img src="https://github.com/IsaacAlves7/java/assets/61624336/3d5fd598-88cb-4253-b50f-01388952d6f1" align="right" height="177">
 
 Hierarquia de exceções: 
-
-<hr>
 
 <div align="left"><a href="https://github.com/IsaacAlves7/java-programming"><img src="https://cdn.icon-icons.com/icons2/2530/PNG/512/java_button_icon_151928.png" height="47"></a></div>
 
