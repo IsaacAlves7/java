@@ -1388,8 +1388,6 @@ Na primeira operação de soma, os operandos são inteiros, então a operação 
 
 Assim, a operação de divisão será real e não inteira porque existe um operando real.
 
-### Comentário
-
 Em Java, **todas as operações aritméticas serão realizadas em função dos tipos dos operandos**, e a operação será inteira apenas se ambos os operandos foram inteiros. Caso contrário (um operando inteiro e outro real ou dois operandos reais), a operação será real.
 
 O operador <code>+</code> é um dos mais usados, sendo um bom exemplo de **sobrecarga de operadores**, pois pode ser utilizado de várias e diferentes formas em função do contexto:
@@ -1408,9 +1406,7 @@ A *sobrecarga de operadores* está sendo usada de diferentes formas em uma mesma
 
 Toda expressão é avaliada sintaticamente, assim como cada contexto será avaliado individualmente no momento da execução.
 
-## ☕ Polimorfismo de sobrecarga de métodos 🥨🧑‍🏫
-
-A **sobrecarga de métodos** permite que possamos ter mais de um método com o mesmo identificador em uma mesma classe. Isso só é possível em razão da avaliação do contexto no momento da execução. Vamos levar em consideração que eu desejo realizar o cálculo da área de um quadrado e de um retângulo em uma mesma classe.
+O **Polimorfismo de sobrecarga de métodos** permite que possamos ter mais de um método com o mesmo identificador em uma mesma classe. Isso só é possível em razão da avaliação do contexto no momento da execução. Vamos levar em consideração que eu desejo realizar o cálculo da área de um quadrado e de um retângulo em uma mesma classe.
 
 Para realizar o cálculo da área do quadrado, eu preciso apenas do valor da base do quadrado. Assim, o método área ficaria da seguinte forma:
 
@@ -1420,7 +1416,7 @@ Já para realizar o cálculo da área do retângulo, eu preciso do valor da base
 
 ![code](https://user-images.githubusercontent.com/61624336/120410630-bd2f4800-c329-11eb-8232-7ef0f6245d9f.png)
 
-## ☕ Assinaturas ✒️
+# ☕ [Java] Assinaturas
 Esses **dois métodos podem conviver na mesma classe**, uma vez que eles possuem **diferentes assinaturas**. A **assinatura de um método** é determinada pelo *tipo de parâmetros* e pela *ordem em que estes foram declarados*. Desta forma, a assinatura do primeiro método é:
 
 ```java
