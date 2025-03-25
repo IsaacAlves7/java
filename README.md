@@ -2074,13 +2074,11 @@ Encapsulamento é o processo de separação dos membros de uma classe através d
 
 Os atributos não devem ser manipulados diretamente, podendo ser alterados ou consultados somente através dos *métodos de acesso (Setters e Getters)* do objeto. Ao restringir o acesso direto aos atributos de uma classe, evitamos que eles sejam manipulados diretamente pela aplicação ou outras classes, não permitindo que possam receber um valor qualquer, principalmente, valores inválidos para o seu contexto. Dessa forma, aumentamos a segurança e a confiança sobre os valores atribuídos.
 
-Por exemplo:
-
-### Na classe Exemplo temos o seguinte atributo:
+Por exemplo: Na classe `Exemplo` temos o seguinte atributo
 
 ![code](https://user-images.githubusercontent.com/61624336/121235688-7ed6e300-c86b-11eb-8f82-9c7bb4e9e2a4.png)
 
-### Na aplicação:
+Na aplicação:
 
 ![code](https://user-images.githubusercontent.com/61624336/121256567-1431a180-c883-11eb-945e-9a899f87f10b.png)
 
@@ -2096,17 +2094,15 @@ Saída:<pre>Idade = -20</pre>
 
 Realizar o acesso diretamente aos métodos chamados por <code>calculaImposto()</code> pode exigir muito conhecimento por parte do desenvolvedor que irá usar a classe, mas nem sempre este desenvolvedor terá os conhecimentos técnicos necessários. Provavelmente, houve o apoio de um especialista em processos fiscais para que o desenvolvedor original da classe pudesse desenvolver os métodos previstos. Para evitar o uso indevido de métodos que possam ser usados de forma equivocada ou com restrição de segurança, alteramos a visibilidade desses métodos.
 
-Por exemplo:
-
-### A classe Tributos
+Por exemplo: A classe `Tributos`
 
 ![code](https://user-images.githubusercontent.com/61624336/121261589-4b0ab600-c889-11eb-9916-3abce6cf74a7.png)
 
-### Na aplicação:
+Na aplicação:
 
 ![code](https://user-images.githubusercontent.com/61624336/121263973-d20d5d80-c88c-11eb-9fdc-1612a54a7995.png)
 
-### Saída
+Saída:
 <pre>
 Digite o preco:
 
