@@ -1314,25 +1314,18 @@ Para resolver este problema e evitarmos a redundância de códigos, vamos inclui
 ### AppAluno.java
 ![code2](https://user-images.githubusercontent.com/61624336/120251170-0febff80-c257-11eb-8ab6-a7a026cca2f5.png)
 
-### Nota
-Você pode perceber agora que existe um método para a entrada de dados na classe Carro, e que ele está sendo usado por cada carro para realizar a entrada de dados pelo teclado, evitando que os códigos das entradas de dados fiquem redundantes.
+> [!Note]
+> Você pode perceber agora que existe um método para a entrada de dados na classe Carro, e que ele está sendo usado por cada carro para realizar a entrada de dados pelo teclado, evitando que os códigos das entradas de dados fiquem redundantes.
+> Além disso, a aplicação ficou muito mais simples. Caso você tenha vários objetos carros, você não terá redundância, portanto sua aplicação ficará mais simples.
+> Faça um teste executando a nova aplicação e analise o resultado. Inclua mais dois objetos carros e teste novamente: você verá que a aplicação terá uma pequena mudança, mas a classe Carro ficará inalterada.
+> A partir deste momento, todas as classes deverão sempre conter o <code>método entradaDados()</code>.
 
-Além disso, a aplicação ficou muito mais simples. Caso você tenha vários objetos carros, você não terá redundância, portanto sua aplicação ficará mais simples.
-
-Faça um teste executando a nova aplicação e analise o resultado. Inclua mais dois objetos carros e teste novamente: você verá que a aplicação terá uma pequena mudança, mas a classe Carro ficará inalterada.
-
-A partir deste momento, todas as classes deverão sempre conter o <code>método entradaDados()</code>.
-
-<hr>
-
-# ☕ [Java] Métodos construtores e polimorfismo de sobrecarga
+## [Java] Métodos construtores
 A programação orientada a objetos permite que possamos controlar a criação de um objeto através dos chamados **métodos construtores**. Tal característica permite que um método especial, o **método construtor**, seja executado no momento em que ocorre a criação do objeto (objeto é instanciado) e um conjunto de ações (instruções) podem ser programadas para serem realizadas neste momento.
 
 Entre essas ações, pode-se destacar o recebimento de dados iniciais para serem atribuídos e/ou preparar o objeto para que este esteja apto a atender às necessidades para qual foi criado.
 
 Um *método construtor* pode ainda ser usado para determinar o tamanho de um vetor que será usado pelo objeto, assim como *pré-configurar estruturas de dados de suporte* ao objeto que está sendo criado.
-
-## ☕ Métodos construtores 🧱
 
 São métodos especiais executados apenas uma vez por cada *objeto* criado, pois somente são executados no momento da **instanciação / criação do objeto**, sendo responsáveis por realizar as ações necessárias para a sua criação (controlar a criação do objeto).
 
@@ -1346,15 +1339,13 @@ Características dos métodos construtores:
 
 4. São executados exclusivamente durante o processo de criação / instanciação do objeto, não podendo ser usados pelo objeto após a sua criação.
 
-### Pessoa.java
+`Pessoa.java`
 
 ![code](https://user-images.githubusercontent.com/61624336/120386438-fef6c900-c2fe-11eb-81f3-359dcbaf7019.png)
 
-### AppPessoa.java
+`AppPessoa.java`
 
 ![code1](https://user-images.githubusercontent.com/61624336/120386442-00c08c80-c2ff-11eb-82ff-84f4cbf3431e.png)
-
-### Notas
 
 1. Na classe Pessoa, o método construtor:
 
@@ -1380,11 +1371,10 @@ public Carro ( ) { }</pre>
 
 Quando não temos um construtor em uma classe, um construtor VAZIO é criado no processo de compilação.
 
-## ☕ Polimorfismo de sobrecarga 🥨
-
+## Polimorfismo de sobrecarga
 **Polimorfismo** quer dizer muitas formas. O **polimorfismo de sobrecarga** permite o emprego de operadores e identificadores de várias formas, sendo então necessária uma contextualização para que seja realizada a operação adequada. Este contexto está ligado ao emprego do operador, método etc., de acordo com uma situação.
 
-### ☕ Polimorfismo de sobrecarga de operadores 🥨 +
+Polimorfismo de sobrecarga de operadores
 
 ![code](https://user-images.githubusercontent.com/61624336/120408734-fcf43080-c325-11eb-890b-a76dc584a7db.png)
 
