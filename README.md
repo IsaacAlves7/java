@@ -717,12 +717,10 @@ Ordem de precedência:
   <li><code>|</code></li>
 </ol>
 
-# ☕ Comandos de controle de fluxo ✔️❌🔁
-Servem para determinar se as condições são verdadeiras ou controlar uma determinada ordem lógica de eventos para o código.
+# ☕ [Java] Estruturas de programação
+Comandos de controle de fluxo Servem para determinar se as condições são verdadeiras ou controlar uma determinada ordem lógica de eventos para o código.
 
-## ☕ Estruturas Condicionais ✔️❌ 
-
-<h4 align="center">Primeira estrutura</h4>
+## [Java] Estrutura condicional
 
 <pre>Se (if):
 
@@ -749,8 +747,6 @@ else {
 // instruções;
 
 }</pre>
-
-<h4 align="center">Terceira estrutura</h4>
 
 <pre>if ... else if ... else,
 
@@ -780,8 +776,6 @@ instruções;
 
 <blockquote>A cláusula if deve ocorrer apenas uma vez; As cláusulas else if podem ocorrer: nenhuma, uma ou várias vezes; A cláusula else só pode ocorrer uma única vez.</blockquote>
 
-<h4 align="center">Quarta estrutura</h4>
-
 <code>switch … case</code>
 
 Estruturas de decisão caracterizadas pela possibilidade de uma variável possuir vários valores diferentes em uma determinada situação.  
@@ -790,8 +784,9 @@ Uma única estrutura <code>switch</code> pode analisar vários diferentes valore
 
 A cláusula <code>case</code> pode ocorrer de uma a várias vezes, e a cláusula <code>default</code> é opcional.
 
-## ☕ Estruturas de Repetição 🔁
-### for
+## [Java] Estruturas de Repetição
+
+for
 **Estrutura de repetição** (Laços de repetição ou Loop) controlada por uma ou mais variáveis contadoras e caracterizada pela existência de três parâmetros, sendo todos eles opcionais:
 
 **1** - Inicialização da(s) variável(is) de controle
@@ -808,7 +803,7 @@ A cláusula <code>case</code> pode ocorrer de uma a várias vezes, e a cláusula
 
 Exemplo:
 
-### 1) Repetição controlada por uma variável:
+1) Repetição controlada por uma variável:
 
 <pre>for (int c=1; c<=limite; i++) {
 
@@ -816,7 +811,7 @@ instruções;
 
 }</pre>
 
-### 2) Repetição controlada por duas variáveis:
+2) Repetição controlada por duas variáveis:
 
 <pre>for (a=1, b=2; a*b&lt;limite; a++, b+=2) {
 
@@ -824,7 +819,7 @@ instruções;
 
 }</pre>
 
-### 3) Repetição sem fim
+3) Repetição sem fim
 
 <pre>for ( ; ; ) {
 
@@ -832,7 +827,7 @@ instruções;
 
 }</pre>
 
-### while
+while
 Esta estrutura realiza a repetição de um conjunto de instruções enquanto a condição determinada for verdadeira; caso a condição seja falsa no primeiro teste, nenhuma instrução será executada.
 
 <pre>// realiza o teste da condição no início da estrutura
@@ -843,7 +838,7 @@ instruções;
 
 }</pre>
 
-### do...while
+do...while
 Esta estrutura de repetição é semelhante à anterior, mas com o diferencial de que as condições devem ser verificadas apenas no final da estrutura, obrigando que as instruções sejam sempre executadas pelo menos uma vez.
 
 <pre>// Teste de condição no final
@@ -856,8 +851,9 @@ instruções;
 
 } while (condição);</pre>
 
-## ☕ Entrada e Saída de dados 📥📤
-### 📥 Entrada de dados 📥
+# ☕ [Java] Entrada e Saída de dados
+
+📥 Entrada de dados 📥
 Em Java temos muitas formas de entrada de dados, inclusive de forma gráfica. Inicialmente trabalharemos com a *classe* <code>Scanner</code>, responsável pela entrada de dados em formato texto, com perguntas diretas ao usuário e a inclusão da resposta em variáveis do programa. 
 
 Para realizarmos esta tarefa, **é necessário que seja criado um objeto da classe Scanner**. 
