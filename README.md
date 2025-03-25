@@ -187,9 +187,7 @@ Crie um programa em java e execute os seguintes comandos para abri-lo como saíd
 javac app.java
 java app
 ```
-<hr>
 
-# ☕ [Java] Características da linguagem Java
 A linguagem **Java** tem boa parte de suas características herdadas da linguagem **C**. Muitos dos seus operadores, formação de identificadores, comandos de controle de fluxo e várias outras características são compartilhados entre estas duas linguagens.
 
 Todas as instruções da linguagem Java devem terminar por um símbolo de ponto e vírgula “<code>;</code>”. Você não usará o ponto e vírgula quando a instrução for uma codificação que irá continuar com um bloco de comandos.
