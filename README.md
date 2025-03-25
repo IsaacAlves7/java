@@ -115,12 +115,10 @@ Exemplo:
 - Java;
 - Outros.
 
-## [Java] Java Runtime Environment (JRE)
 <img src="https://user-images.githubusercontent.com/61624336/171005805-d123b7c1-89e6-492c-9d03-3dcafb40142e.png" align="right" height="77">
 
 Kit com todos os programas necessários para executar aplicações Java. Faz parte do JDK, mas pode ser instalado separadamente para execução em máquinas clientes, uma vez que o JDK é voltado para os desenvolvedores. O JRE pode ser instalado separadamente e dá suporte somente a execução de aplicações ou jogos como o Minecraft, por isso é a versão mais indicada para instalação nas máquinas clientes que apenas executarão aplicações, não sendo responsáveis pelo seu desenvolvimento.
 
-## [Java] Fases de um programa em linguagem Java
 ![img01](https://user-images.githubusercontent.com/61624336/112771689-6c3a6500-9003-11eb-8436-1bda07a25ea3.jpg)
 
 O código de um programa Java é compilado apenas uma vez, gerando um código intermediário, o **bytecode**, que pode ser executado quantas vezes forem necessárias em qualquer ambiente que possua uma máquina virtual Java (JVM) disponível.
