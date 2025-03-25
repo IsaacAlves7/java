@@ -1842,12 +1842,10 @@ Ao reaproveitar o método imprimir da Superclasse, temos dois ganhos muito impor
 
 A **herança** é um conceito importantíssimo da programação orientada a Objetos, permitindo que reaproveitemos membros Superclasse, que serão herdados pelas Subclasses, evitando redundância de códigos, além de facilitar a manutenção das nossas classes, uma vez que qualquer necessidade de mudança implicará na alteração de apenas uma classe.
 
-
-
-# ☕ [Java] Agregação e particionamento
+# ☕ [Java] Agregação
 A programação orientada a objetos nos ajuda a resolver de forma mais simples problemas com alta complexidade. A **agregação de classes** é um conceito voltado a facilitar a solução de problemas muito complexos. Podemos *dividir* uma classe em classes menores, particionando esta classe em diversas outras classes mais simples, para posteriormente as reunirmos em conjunto, formando uma classe maior e mais complexa.
 
-## Particionamento
+## [Java] Particionamento
 É a decomposição de classes extensas em classes menores, que podem ser mais bem reaproveitadas em outras classes, além de permitir melhor controle e manutenção.
 
 O particionamento de classes nos permite criar objetos menores e mais simples, que poderão ser reunidos em conjunto, capazes de criar novas classes, maiores e mais complexas.
@@ -2001,41 +1999,36 @@ Assim, vamos criar as classes separadamente, dividindo a classe Desktop conforme
 
 ![code](https://user-images.githubusercontent.com/61624336/121097161-eccace00-c7c9-11eb-81e3-fe7e5d272768.png)
 
-### ⚠️ Atenção ⚠️
-
-1. A decomposição da classe Desktop foi feita em quatro classes mais simples;
-2. Os nomes dos atributos puderam ser mantidos na forma original, sem que um interfira no outro;
-3. Cada classe mais simples se torna mais fácil de codificar;
-4. As classes criadas serão mais fáceis para se realizar qualquer tipo de manutenção.
+> [!Warning]
+> 1. A decomposição da classe Desktop foi feita em quatro classes mais simples;
+> 2. Os nomes dos atributos puderam ser mantidos na forma original, sem que um interfira no outro;
+> 3. Cada classe mais simples se torna mais fácil de codificar;
+> 4. As classes criadas serão mais fáceis para se realizar qualquer tipo de manutenção.
 
 Outro ponto muito importante é que todas essas classes criadas através do particionamento poderão ser reaproveitadas para as classes Notebook e Servidor. Dessa forma, a nossa biblioteca de classes poderá criar novos objetos quando reunida em conjunto.
 
-## Agregação
+# ☕ [Java] Agregação
 A reunião de uma ou mais classes para formar novas classes é chamada de agregação. Uma nova classe pode ser formada por um conjunto de diferentes objetos. Seguindo nosso exemplo, poderíamos reaproveitar as classes PlacaMae, HD, PlacaVideo, e Memória para criar novas classes, como Desktop, Notebook e Servidor, como nos exemplos a seguir:
 
 ![code](https://user-images.githubusercontent.com/61624336/121120415-e05b6b00-c7f3-11eb-8fd2-cf4ebeef81da.png)
 
-### ⚠️ Atenção ⚠️
+> [!Warning]
+> 1. Foram incluídos novos atributos para entendermos que a agregação pode incluir não apenas classes, mas também novos atributos;
+> 
+> 2. Como toda classe é também um tipo, podemos declarar atributos como do tipo Classe;
+> 
+> 3. Cada atributo criado a partir de uma classe (não sendo de tipos básicos) é uma agregação à classe principal, sendo assim, temos as quatro agregações (PlacaMae, HD, PlacaVideo e Memoria) para cada classe principal;
+> 
+> 4. As classes Desktop, Notebook e Servidor foram criadas a partir de fragmentos menores, mas todos os atributos originais da classe Desktop estão presentes.
+> 
 
-1. Foram incluídos novos atributos para entendermos que a agregação pode incluir não apenas classes, mas também novos atributos;
-
-2. Como toda classe é também um tipo, podemos declarar atributos como do tipo Classe;
-
-3. Cada atributo criado a partir de uma classe (não sendo de tipos básicos) é uma agregação à classe principal, sendo assim, temos as quatro agregações (PlacaMae, HD, PlacaVideo e Memoria) para cada classe principal;
-
-4. As classes Desktop, Notebook e Servidor foram criadas a partir de fragmentos menores, mas todos os atributos originais da classe Desktop estão presentes.
-
-Uma oportunidade se apresenta com o uso da agregação, que não é possível resolver facilmente com a herança.
-
-### ⚠️ Atenção ⚠️
-
-Não confunda herança com agregação, pois são conceitos diferentes.
+Uma oportunidade se apresenta com o uso da agregação, que não é possível resolver facilmente com a herança. Não confunda herança com agregação, pois são conceitos diferentes.
 
 Imagine agora a situação dos slots de memória: na herança, só poderíamos herdar uma memória, mas, com a agregação, podemos criar quantas memórias quisermos, como no exemplo a seguir. Para a classe Memoria foram criados apenas os métodos de Acesso (Setters e Getters) para facilitar o entendimento:
 
 ![code](https://user-images.githubusercontent.com/61624336/121124283-0afcf200-c7fb-11eb-9315-0c8f4f23d186.png)
 
-### ⚠️ Atenção ⚠️
+
 
 1. O Desktop possui quatro slots de memória;
 
