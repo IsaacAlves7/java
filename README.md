@@ -967,10 +967,9 @@ Pode-se usar ainda:
 
 Byte.parseByte() / Short.parseShort()</pre>
 
-## ♨️ A boa prática em programação Java (BP) ♨️
-A boa prática em programação Java leva em conta um conjunto de regras que facilitam o desenvolvimento de aplicações e melhoram bastante o trabalho em conjunto realizado por equipes. Ao seguir estas regras, projetos podem ser desenvolvidos em paralelo por diferentes programadores, sem que seja necessário que cada componente precise esperar que outros terminem suas tarefas. Estas regras foram utilizadas na construção da linguagem permitindo que não seja necessário decorar as sintaxes de instruções Java. Não são obrigatórias, mas permitem a codificação melhor de nossas aplicações.
+# ♨️ [Java] A Boa prática em programação Java 
+A boa prática em programação Java leva em conta um conjunto de regras que facilitam o desenvolvimento de aplicações e melhoram bastante o trabalho em conjunto realizado por equipes. Ao seguir estas regras, projetos podem ser desenvolvidos em paralelo por diferentes programadores, sem que seja necessário que cada componente precise esperar que outros terminem suas tarefas. Estas regras foram utilizadas na construção da linguagem permitindo que não seja necessário decorar as sintaxes de instruções Java. Não são obrigatórias, mas permitem a codificação melhor de nossas aplicações. Vamos ver algumas dessas regras na prática:
 
-### Regras:
 1) Variáveis auxiliares, atributos, métodos e objetos devem ser identificados iniciando por letras minúsculas. Quando houver mais de uma palavra, deve-se começar cada nova palavra com uma letra maiúscula. 
 
 Exemplos:
