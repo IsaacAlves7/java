@@ -316,12 +316,12 @@ Palavras reservadas da linguagem Java (não podem ser usadas como identificadore
 
 <blockquote><b>OBS:</b> Todas as palavras reservadas começam por letras minúsculas e são palavras do idioma inglês.</blockquote>
 
-## Comentários em Java
+## [Java] Comentários em Java
 O uso de comentários em Java é semelhante ao usado na linguagem C, mas apenas dois destes tipos são iguais nas duas linguagens, sendo o terceiro tipo somente disponibilizado na linguagem Java.
 
 Vejamos:
 
-### <code>//</code> comentário de uma linha  
+<code>//</code> comentário de uma linha  
 
 Quando usamos duas barras em uma linha de código, todo o seu conteúdo, após as duas barras, é desconsiderado pelo compilador, o que quer dizer que podemos escrever qualquer conteúdo que o mesmo não será compilado. É muito usado para deixar informações e avisos do programador no código.
 
@@ -329,36 +329,35 @@ Quando usamos duas barras em uma linha de código, todo o seu conteúdo, após a
 // TODO Auto-generated method stub</pre>
 ```
 
-### <code>/**/</code> comentário de duas ou mais linhas (bloco)
+<code>/**/</code> comentário de duas ou mais linhas (bloco)
 
 Ao usarmos o comentário de bloco, podemos comentar não apenas um trecho de uma linha, mas todo um conjunto de linhas. É utilizado quando temos longos trechos de textos com avisos e informações, ou para a depuração do código. Para a depuração do código, podemos comentar um conjunto de linhas para realizar um conjunto de testes. Neste caso, podemos comentar um conjunto de instruções ou porque estas instruções estão com problemas e queremos verificar as demais. Ou, ao contrário, onde temos um conjunto de instruções já testadas e corretas e queremos apenas testar as demais. Seja como for, o uso do comentário de bloco é muito usual e comum entre os programadores.
 
-### <code>/***/</code> comentário de documentação
+<code>/***/</code> comentário de documentação
 
 O comentário de documentação se difere do comentário de bloco por possuir um asterisco a mais no início, mas ambos encerram da mesma forma. Existe uma ferramenta na linguagem Java responsável por extrair de um projeto (com várias classes) todos os comentários de documentação e montar um documento com todo este conteúdo.  
 
 Neste caso, usamos este tipo de comentário apenas para descrever avisos e informações das classes, de forma a realizar a documentação do sistema ainda durante sua fase de criação. Isto permite que o desenvolvedor descreva todo a documentação no próprio projeto, facilitando a descrição e a manutenção do sistema. Assim, ao terminar um projeto ou realizar algum tipo de modificação, basta gerar novamente a documentação do sistema que tudo estará atualizado.
 
-## Tipos de dados 
+# ☕ [Java] Tipos de dados 
 A linguagem Java possui nove tipos de dados básicos, sendo oito deles primitivos e um tipo especial.
 
-## Primitivos (armazenam apenas valores)
+Primitivos (armazenam apenas valores)
 
-### Tipo lógico (boolean)
+Tipo lógico (boolean)
 O tipo lógico só permite dois estados, verdadeiro (<code>true</code>) ou falso (<code>false</code>); em Java ainda é permitido o uso de <code>on</code> e <code>off</code>, ou <code>yes</code> e <code>no</code>. 
 
 Exemplo:
 
 <pre>boolean status = true;</pre>
 
-### Tipo caractere (char)
+Tipo caractere (char)
 O tipo char permite que seja armazenado na memória apenas um caractere e se difere do texto (String) por ser definido entre ‘e’. Quando usamos aspas simples ou dupla determinamos apenas um caractere.
 
 Exemplo:
 
 <pre>char letra = ‘A’;</pre>
 
-### Armazenamento de caracteres de controle
 Também é possível armazenar caracteres de controle:
 
 <table>
@@ -394,7 +393,7 @@ Também é possível armazenar caracteres de controle:
 
 <blockquote><b>OBS:</b> A barra invertida na frente indica que é um caractere especial.</blockquote>
 
-### Tipos inteiros (byte, short, int e long)
+Tipos inteiros (byte, short, int e long)
 São quatro diferentes tipos de inteiros, que se diferenciam pela quantidade de bits que cada um ocupa em memória para armazenar um valor. Isto faz com que, quanto menor a quantidade de bits, maior seja a limitação do valor a ser armazenado. Entretanto, em ocasiões onde a memória é pouca, devemos trabalhar muito bem com estas diferenças para reduzir o espaço de memória necessário. O uso mais comum é do <code>int</code>, mas, para números muito grandes ou muito pequenos, devemos usar o <code>long</code>. Já para economizar memória podemos usar <code>byte</code> ou <code>short</code>, de acordo com o valor que será armazenado.
 
 <table>
@@ -423,7 +422,7 @@ São quatro diferentes tipos de inteiros, que se diferenciam pela quantidade de 
     <td>-2⁶³ . . . . 2⁶³ - 1</td>
 </table>    
 
-### Tipos reais (float e double)
+Tipos reais (float e double)
 São dois diferentes tipos de valores reais, sendo um de precisão simples (<code>float</code>), que ocupa menos espaço de memória, e o de dupla precisão, que ocupa mais memória. Quanto maior o número de bits para armazenar um valor real, maior será a precisão deste número dentro do sistema. O uso do <code>float</code> é comum quando necessitamos economizar espaço de memória. Em Java, todo tipo de dado numérico é convertido para <code>double</code> automaticamente por coerção (força a conversão de tipo). Por isso, é mais indicado, quando não houver falta de espaço de memória, a utilização de <code>double</code> para armazenamento de valores reais.
 
 <table>
@@ -444,8 +443,9 @@ São dois diferentes tipos de valores reais, sendo um de precisão simples (<cod
   </tr>
 </table>    
 
-## Tipo especial
-### Tipo texto (String)
+Tipo especial
+
+Tipo texto (String)
 O tipo texto (<code>String</code>) não é um tipo primitivo, mas um tipo especial. Na verdade, o tipo String é uma classe e por isso começa com letra maiúscula, ao contrário dos tipos primitivos, que sempre começam por minúsculas. Este tipo de dado armazena um conjunto de caracteres, formando palavras ou frases de tamanhos variados. Como classe, veremos mais tarde que elementos do tipo String possuem métodos que podem realizar ações específicas sobre o seu conteúdo. 
 
 Exemplo:
@@ -455,11 +455,9 @@ Exemplo:
 ## ☕ Constantes e variáveis 📥
 Variáveis e constantes em Java devem **obrigatoriamente possuir um tipo**. Isso ocorre porque **Java é uma linguagem de programação fortemente tipada**.
 
-### Linguagens de programação fortemente tipadas
-Obrigam que todas as variáveis e constantes sejam definidas por um tipo de dado.
+Linguagens de programação fortemente tipadas Obrigam que todas as variáveis e constantes sejam definidas por um tipo de dado.
 
-### Linguagens de programação fracamente tipadas
-Permitem que variáveis sejam usadas a qualquer momento, sem a necessidade de terem um tipo predefinido. Isso quer dizer que o tipo de dado pode variar em diferentes partes do programa.
+Linguagens de programação fracamente tipadas permitem que variáveis sejam usadas a qualquer momento, sem a necessidade de terem um tipo predefinido. Isso quer dizer que o tipo de dado pode variar em diferentes partes do programa.
 
 **Variáveis** são declaradas por meio de *um tipo* e *um identificador*, sem que sejam necessárias outras informações. A boa prática em programação Java determina que todas as variáveis comecem por letras minúsculas e, somente se tiver mais de uma palavra, o inicial da segunda palavra em diante deverá começar por letras maiúsculas. 
 
