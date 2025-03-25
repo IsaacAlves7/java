@@ -1892,8 +1892,7 @@ A **herança** é um conceito importantíssimo da programação orientada a Obje
 
 <hr>
 
-<h1 align="center">Cap 06: ☕ Agregação e particionamento 🤰</h1>
-
+# ☕ [Java] Agregação e particionamento
 A programação orientada a objetos nos ajuda a resolver de forma mais simples problemas com alta complexidade. A **agregação de classes** é um conceito voltado a facilitar a solução de problemas muito complexos. Podemos *dividir* uma classe em classes menores, particionando esta classe em diversas outras classes mais simples, para posteriormente as reunirmos em conjunto, formando uma classe maior e mais complexa.
 
 ## Particionamento
