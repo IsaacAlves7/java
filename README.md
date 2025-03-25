@@ -155,7 +155,7 @@ A linguagem Java possui uma base de construção semelhante à linguagem C e, po
 
 > Cuidado com as diferenças de versões no sistema operacional: se instalar o Java para 64 bits, você deverá usar um IDE (Netbeans ou Eclipse) de 64 bits. O mesmo para a versão de 32 bits: tanto o Java quanto o IDE deverão ser para 32 bits.
 
-## Criando o primeiro projeto com o NetBeans
+## [Java] `Hello, World!`
 ![img02](https://user-images.githubusercontent.com/61624336/112783447-ba606000-9025-11eb-99c1-9849bac132dd.jpg)
 ![img03](https://user-images.githubusercontent.com/61624336/112783450-bc2a2380-9025-11eb-9ad8-b3425b12416e.jpg)
 ![img04](https://user-images.githubusercontent.com/61624336/112783457-bd5b5080-9025-11eb-9ed8-7834c9429c27.jpg)
@@ -182,20 +182,18 @@ A aplicação executará na parte inferior do Netbeans:
 
 ![img11](https://user-images.githubusercontent.com/61624336/112784856-03fe7a00-9029-11eb-93f7-7da23c1e5735.jpg)
 
-## Acessando o Java pelo terminal
-Crie um programa em java e execute os seguintes comandos para abri-lo.
+Crie um programa em java e execute os seguintes comandos para abri-lo como saída pelo terminal.
 
 ![image](https://user-images.githubusercontent.com/61624336/113492455-d47ac200-94ad-11eb-99a2-946ea9250590.png)
 ![VirtualBox_Hadoop_ubuntu_SN_07_02_2017_03_37_06](https://user-images.githubusercontent.com/61624336/113488537-2d8a2c00-9495-11eb-9c21-876304e8d4cf.png)
 
-```
+```sh
 javac app.java
 java app
 ```
 <hr>
 
-<h1>🔍 Características da linguagem Java</h1>
-
+# ☕ [Java] Características da linguagem Java
 A linguagem **Java** tem boa parte de suas características herdadas da linguagem **C**. Muitos dos seus operadores, formação de identificadores, comandos de controle de fluxo e várias outras características são compartilhados entre estas duas linguagens.
 
 Todas as instruções da linguagem Java devem terminar por um símbolo de ponto e vírgula “<code>;</code>”. Você não usará o ponto e vírgula quando a instrução for uma codificação que irá continuar com um bloco de comandos.
