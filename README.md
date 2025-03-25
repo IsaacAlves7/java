@@ -2292,7 +2292,7 @@ Exemplo 1 - Aplicação com o compartilhamento de um valor: <code>private static
 
 ![code](https://user-images.githubusercontent.com/61624336/121293518-22eb7900-c8c2-11eb-9b57-dd1021a736f8.png)
 
-### Execução:
+Execução:
 
 <pre>
 Qual é o Valor do dólar ?
