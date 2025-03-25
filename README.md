@@ -2444,7 +2444,7 @@ Contador =5
 >
 > 3. Após a criação do 5º objeto, o objeto t5, o atributo do objeto t1, assim como os demais, compartilhavam o mesmo local de memória para buscar o valor do atributo; por isso, todos os objetos encerraram a aplicação retornando o valor 5 para o atributo contador compartilhado (`static`).
 
-# ☕ Tratamento de exceções em java
+# ☕ [Java] Tratamento de exceções
 O **tratamento de exceções** é um importante recurso que permite criar programas tolerantes a falhas. Trata-se de um mecanismo que permite resolver ou ao menos lidar com exceções, muitas vezes evitando que a execução do software seja interrompida, e ela está presente na maioria das linguagens de programação. A linguagem Java se baseou mna linguagem C++ para o tratamento de exceções.
 
 Uma **exceção** é uma condição causada por um erro em tempo de execução que interrompe o fluxo normal de software. Não se trata de um desvio normal para um fluxo alternativo, mas sim previsto ao tempo de execução, ou seja, a exceção leva ao estado desejado. E, esse erro pode ter muitas causas como receber valor `0` ou uso indevido de um array. 
