@@ -1007,22 +1007,14 @@ public interface Basico { ... }
 
 public interface MetodosBasicos { ... }</pre>
 
-
 # ☕ [Java] Classes e objetos
-Vamos aprender o paradigma de programação orientada a objetos (Poo).
-
-**Link para apoio:** https://github.com/IsaacAlves7/programming-logic
-
-## ⚽ Programação orientada a objetos ⚽
 A **programação orientada a objetos (POO)** tem como principal conceito representar, em um sistema computacional, um **objeto da vida real**.
 
 Esta representação deve descrever o objeto quanto às suas características e ações que poderá realizar dentro do sistema.
 
 Não devemos nos preocupar com todas as características presentes no objeto, mas com aquelas que serão necessárias ao sistema (requisitos).
 
-Exemplo: 
-
-<blockquote>Por exemplo, a placa de um automóvel é importante para um sistema de estacionamento, assim como a hora de chegada e saída.
+Exemplo: A placa de um automóvel é importante para um sistema de estacionamento, assim como a hora de chegada e saída.
 
 Em alguns casos, o fabricante, modelo e a cor do automóvel poderão ser importantes, mas dificilmente iremos cadastrar o número do chassi do mesmo. Como o número do chassi não é facilmente visto e seu cadastramento dependeria da documentação do automóvel ou de uma análise para a identificação, que seria difícil, uma vez que é um identificador com muitas letras e números, acabaria por gerar filas e insatisfação dos clientes.
 
@@ -1120,13 +1112,10 @@ Se você precisar realizar qualquer melhoria em uma classe da sua biblioteca, vo
 
 Com base no reaproveitamento de código da programação orientada a objetos, podemos realizar alterações de melhoria, atualização ou qualquer manutenção em uma classe. Isso fará com que todas as aplicações sejam atualizadas quando forem recompiladas.
 
-## ☕ Métodos Setters e Getters 🔛
-
+## ☕ [Java] Métodos Getters e Setters
 Por questões de **segurança e falta de controle**, **não é comum realizar acessos diretos aos atributos de um objeto**, por isso são criados métodos específicos para receber o valor e realizar a **atribuição (Setters)**, ou para a **recuperação (Getters)** de um valor armazenado nos atributos de um objeto. Este processo pode evitar que valores incorretos sejam atribuídos sem qualquer chance de análise.
 
-### ☕ Métodos Setters ➡️
-
-São métodos especiais que recebem o valor do atributo e, por serem métodos, podem analisar se são válidos, sendo responsáveis pela atribuição. Quando o atributo é protegido (privado), é necessário um método para realizar a atribuição.
+**Métodos Setters** são métodos especiais que recebem o valor do atributo e, por serem métodos, podem analisar se são válidos, sendo responsáveis pela atribuição. Quando o atributo é protegido (privado), é necessário um método para realizar a atribuição.
 
 Características dos métodos Setters:
 
@@ -1146,7 +1135,7 @@ a.cr = -5.0;</pre>
 
 O uso de um método Setter neste caso evitará que seja atribuído um valor inválido para o CR, no caso -5.0;
 
-### Exemplo: Setters
+Exemplo: Setters
 
 ![print](https://user-images.githubusercontent.com/61624336/119926413-c39a7a00-bf4d-11eb-9797-aa6ef37af735.png)
 
@@ -1158,9 +1147,7 @@ O uso de um método Setter neste caso evitará que seja atribuído um valor inv�
 
 **Apenas atribuições com valores válidos poderão ser realizadas neste caso.**
 
-## ☕ Métodos Getters ⬅️
-
-São métodos especiais que **retornam o valor armazenado no atributo, evitando acesso direto a ele pela aplicação**. Assim como visto no método Setter, a proteção do atributo (private) fará com que a aplicação não tenha acesso direto a ele, fazendo com que seja necessário um método público para recuperar o valor atribuído ao mesmo.
+O **Métodos Getters** são métodos especiais que **retornam o valor armazenado no atributo, evitando acesso direto a ele pela aplicação**. Assim como visto no método Setter, a proteção do atributo (private) fará com que a aplicação não tenha acesso direto a ele, fazendo com que seja necessário um método público para recuperar o valor atribuído ao mesmo.
 
 Características dos métodos Getters:
 
@@ -1172,7 +1159,7 @@ Características dos métodos Getters:
 
 - Não possui parâmetro: esses métodos nunca receberão parâmetros, uma vez que não farão atribuições ou ações com parâmetros, realizando apenas o retorno do valor armazenado no atributo.
 
-### Exemplo:
+Exemplo:
 
 ![print](https://user-images.githubusercontent.com/61624336/119929490-02333300-bf54-11eb-93ac-6fba6362af6e.png)
 
@@ -1311,7 +1298,7 @@ Para resolver este problema e evitarmos a redundância de códigos, vamos inclui
 ![code2](https://user-images.githubusercontent.com/61624336/120251170-0febff80-c257-11eb-8ab6-a7a026cca2f5.png)
 
 > [!Note]
-> Você pode perceber agora que existe um método para a entrada de dados na classe Carro, e que ele está sendo usado por cada carro para realizar a entrada de dados pelo teclado, evitando que os códigos das entradas de dados fiquem redundantes.
+> Você pode perceber agora que existe um método para a entrada de dados na classe `Carro`, e que ele está sendo usado por cada carro para realizar a entrada de dados pelo teclado, evitando que os códigos das entradas de dados fiquem redundantes.
 > Além disso, a aplicação ficou muito mais simples. Caso você tenha vários objetos carros, você não terá redundância, portanto sua aplicação ficará mais simples.
 > Faça um teste executando a nova aplicação e analise o resultado. Inclua mais dois objetos carros e teste novamente: você verá que a aplicação terá uma pequena mudança, mas a classe Carro ficará inalterada.
 > A partir deste momento, todas as classes deverão sempre conter o <code>método entradaDados()</code>.
