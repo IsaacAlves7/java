@@ -1221,11 +1221,11 @@ Classe `Carro`:
 
 </table><br \>
 
-#### Carro.java
+`Carro.java`
 
 ![Carro](https://user-images.githubusercontent.com/61624336/120238115-a22ddc80-c232-11eb-8a1e-02ac44164306.png)
 
-#### AppCarro.java
+`AppCarro.java`
 
 ![AppCarro](https://user-images.githubusercontent.com/61624336/120238324-ab1eae00-c232-11eb-9504-872fe4511b68.png)
 
@@ -1272,12 +1272,12 @@ Classe `Carro`:
   </tr>
 </table>
 
-## Nova solução do exercício prático, com a inclusão do método entradaDados na classe Carro:
+Nova solução do exercício prático, com a inclusão do método `entradaDados` na classe `Carro`:
 
-### Aluno.java
+`Aluno.java`
 ![code](https://user-images.githubusercontent.com/61624336/120251160-05316a80-c257-11eb-8ad1-8f93cc44a765.png)
 
-### AppAluno.java
+`AppAluno.java`
 ![code2](https://user-images.githubusercontent.com/61624336/120251170-0febff80-c257-11eb-8ab6-a7a026cca2f5.png)
 
 > [!Note]
