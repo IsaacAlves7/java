@@ -1547,8 +1547,6 @@ double calculo(double, double)
 
 double calculo(double, double, double)</pre>
 
-
-
 # ☕ [Java] Herança
 A programação orientada a objetos tem como um dos principais pilares o "reaproveitamento de código". <b>Reaproveitar o código</b> significa menos esforço em seu desenvolvimento e mais facilidade na manutenção do sistema. Ao evitarmos a redundância de código, fica mais fácil gerar alterações, uma vez que não precisaremos modificá-lo em vários locais diferentes.
 
@@ -1556,10 +1554,9 @@ A **herança** é um conceito muito importante que *possibilita identificar duas
 
 Já as **classes originais** permanecerão apenas com os membros não comuns, sendo denominadas **Subclasses** ou **classes “filhas”**. Ao aplicar este conceito, podemos trabalhar com uma hierarquia entre as classes, em que as de **maior hierarquia** *aglutinam os membros comuns* e as de **menor hierarquia** possuem *apenas membros distintos entre elas*.
 
-## ☕ Tipos de herança 🍇
 Em algumas linguagens de programação no conceito de POO se trabalha muito com os dois tipos de herança. Entretanto, a linguagem Java não trabalha com Heranças múltiplas, somente com herança simples.
 
-### 🍇 Herança Simples ✔️
+## [Java] Herança Simples
 Em Java, temos **apenas** a implementação da *herança simples*. A **herança simples** se caracteriza por **cada classe herdar sempre de apenas uma outra classe por vez**. Devemos observar que, mesmo que tenhamos uma sequência de classes herdando, em que uma herda da outra, ainda assim, temos a herança simples, que pode ser observada nos exemplos das figuras a seguir:
 
 ![img02](https://user-images.githubusercontent.com/61624336/120694581-c979e900-c480-11eb-8366-93a82d90a124.jpg)
@@ -1570,10 +1567,10 @@ Em Java, temos **apenas** a implementação da *herança simples*. A **herança 
 
 ![img05](https://user-images.githubusercontent.com/61624336/120694981-32616100-c481-11eb-81ec-ad1f071fa66f.jpg)
 
-### Nota:
-Em todos os casos, temos sempre a *herança simples*, pois cada classe sempre herda **apenas** da sua *classe superior*, mesmo se incluirmos novos níveis.
+> [!Note]
+> Em todos os casos, temos sempre a *herança simples*, pois cada classe sempre herda **apenas** da sua *classe superior*, mesmo se incluirmos novos níveis.
 
-## 🍇 Herança Múltipla ❌
+## [Java] Herança Múltipla
 A **herança múltipla** se caracteriza quando uma mesma classe herda de duas ou mais classes ao mesmo tempo. Java não permite a implementação da herança múltipla; mesmo este sendo um conceito da programação orientada a objetos, algumas linguagens de programação não implementam este conceito. A linguagem C permite a implementação de herança múltipla, mas Java e C#, por exemplo, não permitem esta implementação.
 
 A herança múltipla pode ser observada nos exemplos das figuras a seguir:
@@ -1582,7 +1579,6 @@ A herança múltipla pode ser observada nos exemplos das figuras a seguir:
 
 ![img07](https://user-images.githubusercontent.com/61624336/120708698-482b5200-c492-11eb-97e7-d2ea8ed6125e.jpg)
 
-## Herança em Java
 Vejamos um exemplo:
 
 Sejam as três classes a seguir referentes a uma empresa:
