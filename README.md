@@ -1539,7 +1539,6 @@ Vamos imaginar que uma classe chamada **Login** fosse usada por vários de seus 
 
 ![code](https://user-images.githubusercontent.com/61624336/120426078-cb8b5d00-c345-11eb-8d72-01414960c525.png)
 
-
 ### AppLogin.java
 
 ![code](https://user-images.githubusercontent.com/61624336/120427380-30e04d80-c348-11eb-8bc3-e7a533fd602b.png)
@@ -1604,8 +1603,6 @@ double calculo(double, double, double)</pre>
 
 # ☕ [Java] Herança
 A programação orientada a objetos tem como um dos principais pilares o "reaproveitamento de código". <b>Reaproveitar o código</b> significa menos esforço em seu desenvolvimento e mais facilidade na manutenção do sistema. Ao evitarmos a redundância de código, fica mais fácil gerar alterações, uma vez que não precisaremos modificá-lo em vários locais diferentes.
-
-### ⚠️ Atenção ⚠️
 
 A **herança** é um conceito muito importante que *possibilita identificar duas ou mais classes que possuam semelhanças*. Estas podem ser definidas através de *uma hierarquia*, em que os membros comuns às **duas ou mais classes passam para uma nova classe**, conhecida como **Superclasse** ou **classe “mãe”**.
 
@@ -1806,9 +1803,8 @@ Resposta: Será necessário alterar apenas a classe PessoaEmpresa, já que as cl
 - Se for necessário incluir a data da primeira compra do cliente?
 Resposta: Será necessário alterar apenas a classe Cliente.
 
-### ⚠️ Atenção ⚠️
-
-Após analisarmos as duas soluções, chegamos à conclusão de que, ao utilizar a *herança*, não só evitamos a **redundância de códigos (repetição)** como *facilitamos a manutenção*, uma vez que, para realizar qualquer atualização, deveremos sempre alterar **apenas** *uma das classes*.
+> [!Warning]
+> Após analisarmos as duas soluções, chegamos à conclusão de que, ao utilizar a *herança*, não só evitamos a **redundância de códigos (repetição)** como *facilitamos a manutenção*, uma vez que, para realizar qualquer atualização, deveremos sempre alterar **apenas** *uma das classes*.
 
 No final, a **classe Gerente** é composta por todos os membros de **Pessoa**, **PessoaEmpresa** e **Gerente**, uma vez que Gerente estende PessoaEmpresa, que por sua vez estende a classe Pessoa:
 
@@ -2549,17 +2545,13 @@ fun main() {
 
 Ecossistema Kotlin:
 
-1. **Desenvolvimento Android**:
-   - Kotlin é a linguagem preferida para o desenvolvimento de aplicativos Android. A Google anunciou suporte total para Kotlin como uma linguagem de primeira classe para o desenvolvimento Android em 2017.
+1. **Desenvolvimento Android**: Kotlin é a linguagem preferida para o desenvolvimento de aplicativos Android. A Google anunciou suporte total para Kotlin como uma linguagem de primeira classe para o desenvolvimento Android em 2017.
 
-2. **Kotlin/JS**:
-   - Permite escrever código Kotlin que pode ser compilado para JavaScript, possibilitando o desenvolvimento front-end.
+2. **Kotlin/JS**: Permite escrever código Kotlin que pode ser compilado para JavaScript, possibilitando o desenvolvimento front-end.
 
-3. **Kotlin/Native**:
-   - Permite a compilação de código Kotlin para binários que podem rodar sem uma Máquina Virtual Java (JVM), permitindo o desenvolvimento para plataformas onde a JVM não está disponível, como iOS.
+3. **Kotlin/Native**: Permite a compilação de código Kotlin para binários que podem rodar sem uma Máquina Virtual Java (JVM), permitindo o desenvolvimento para plataformas onde a JVM não está disponível, como iOS.
 
-4. **Kotlin Multiplatform**:
-   - Permite compartilhar código comum entre diferentes plataformas (JVM, JavaScript, iOS, etc.), facilitando o desenvolvimento de aplicativos multiplataforma.
+4. **Kotlin Multiplatform**: Permite compartilhar código comum entre diferentes plataformas (JVM, JavaScript, iOS, etc.), facilitando o desenvolvimento de aplicativos multiplataforma.
 
 # 🍃 [Java] Spring
 <img src="https://www.svgrepo.com/show/354380/spring-icon.svg" align="right" height="77">
