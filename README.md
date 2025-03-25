@@ -1462,8 +1462,8 @@ No primeiro contexto, é chamado para executar o método área com um único par
 
 No segundo contexto, é chamado para executar o método área com um dos parâmetros e, neste caso, a avaliação em tempo de execução irá determinar que deve ser usado o cálculo da área do retângulo. Ou seja, aquele que recebe dois valores inteiros como parâmetro, e a resposta será: <code>30</code>.
 
-### ⚠️ Atenção ⚠️
-Com o uso da sobrecarga de métodos você poderá criar quantos métodos com o mesmo identificador (nome) quiser em uma mesma classe, desde que eles **não possuam a mesma assinatura de método**.
+> [!Warning]
+> Com o uso da sobrecarga de métodos você poderá criar quantos métodos com o mesmo identificador (nome) quiser em uma mesma classe, desde que eles **não possuam a mesma assinatura de método**.
 
 ## Métodos
 Se quisesse incluir um método para calcular a **área de uma circunferência**, você não poderia incluir **nesta classe**, pois ele teria a mesma assinatura do método do cálculo da área do quadrado:
