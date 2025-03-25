@@ -1605,8 +1605,7 @@ double calculo(double, double, double)</pre>
 
 <hr>
 
-<h1 align="center">Cap 05: ☕ Herança 🍇</h1>
-
+# ☕ [Java] Herança
 A programação orientada a objetos tem como um dos principais pilares o "reaproveitamento de código". <b>Reaproveitar o código</b> significa menos esforço em seu desenvolvimento e mais facilidade na manutenção do sistema. Ao evitarmos a redundância de código, fica mais fácil gerar alterações, uma vez que não precisaremos modificá-lo em vários locais diferentes.
 
 ### ⚠️ Atenção ⚠️
