@@ -449,7 +449,7 @@ Exemplo:
 
 <pre>String nome = “João da Silva”;</pre>
 
-## ☕ Constantes e variáveis 📥
+# ☕ [Java] Constantes e variáveis
 Variáveis e constantes em Java devem **obrigatoriamente possuir um tipo**. Isso ocorre porque **Java é uma linguagem de programação fortemente tipada**.
 
 Linguagens de programação fortemente tipadas Obrigam que todas as variáveis e constantes sejam definidas por um tipo de dado.
