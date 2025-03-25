@@ -1074,8 +1074,7 @@ Os *objetos* **só existem durante a execução do sistema**, pois estes só exi
 
 ![print](https://user-images.githubusercontent.com/61624336/119859616-edbb5000-beeb-11eb-833d-c0b2e0cb77ba.png)
 
-## ☕ Aplicações Java 🔢
-
+# ☕ Aplicações Java
 **Aplicações em Java** são classes especiais que possuem um método <code>main()</code>. O método *main* **é responsável por criar os objetos e realizar a combinação de diferentes classes para atender às necessidades de um sistema**.
 
 Em cada sistema, temos **apenas uma aplicação**, que será **responsável pela lógica de criação e uso das classes**. A comunicação entre os objetos ocorre por meio de **trocas de mensagens**, que são **expressas com o uso de métodos**. Uma aplicação, então, cria objetos a partir de uma ou mais classes e usa os métodos dos objetos para realizar as ações que atenderão às necessidades dos usuários.
@@ -1099,19 +1098,16 @@ Em cada sistema, temos **apenas uma aplicação**, que será **responsável pela
 
 <pre>nome_da_classe nome_do_objeto = <b>new</b> método_construtor();</pre>
 
-## 📚 Biblioteca de classes e reaproveitamento de código ☕
-
-A classe **Aluno** passou a ser **uma biblioteca**, e esta classe pode ser reutilizada em diversas outras aplicações. Esse conceito é um dos mais importantes na programação orientada a objetos, pois reduz o trabalho. Qualquer classe criada poderá ser reaproveitada inúmeras vezes por diversas aplicações, poupando esforço de desenvolvimento e facilitando a manutenção.
+## [Java] Biblioteca de classes e reaproveitamento de código
+A classe `Aluno` passou a ser `uma biblioteca`, e esta classe pode ser reutilizada em diversas outras aplicações. Esse conceito é um dos mais importantes na programação orientada a objetos, pois reduz o trabalho. Qualquer classe criada poderá ser reaproveitada inúmeras vezes por diversas aplicações, poupando esforço de desenvolvimento e facilitando a manutenção.
 
 Cada classe criada se torna uma parte da sua biblioteca de classes e, conforme você vai criando novas classes, a sua biblioteca tende a aumentar. Dessa forma, quando você for criar novas aplicações, terá à sua disposição uma séria de classes já prontas e disponíveis para reaproveitar, sem precisar de novas.
 
 Se você precisar realizar qualquer melhoria em uma classe da sua biblioteca, você poderá realizar sem problemas, pois qualquer inclusão não afetará o uso desta classe nas aplicações antigas, mantendo a compatibilidade entre todas as aplicações.
 
-## 🛠️ Facilidade de manutenção ☕
-
 Com base no reaproveitamento de código da programação orientada a objetos, podemos realizar alterações de melhoria, atualização ou qualquer manutenção em uma classe. Isso fará com que todas as aplicações sejam atualizadas quando forem recompiladas.
 
-## ☕ [Java] Métodos Getters e Setters
+# ☕ [Java] Métodos Getters e Setters
 Por questões de **segurança e falta de controle**, **não é comum realizar acessos diretos aos atributos de um objeto**, por isso são criados métodos específicos para receber o valor e realizar a **atribuição (Setters)**, ou para a **recuperação (Getters)** de um valor armazenado nos atributos de um objeto. Este processo pode evitar que valores incorretos sejam atribuídos sem qualquer chance de análise.
 
 **Métodos Setters** são métodos especiais que recebem o valor do atributo e, por serem métodos, podem analisar se são válidos, sendo responsáveis pela atribuição. Quando o atributo é protegido (privado), é necessário um método para realizar a atribuição.
@@ -1174,19 +1170,17 @@ Note que não existe parâmetro, o método apenas deve retornar o valor armazena
 
 ![code](https://user-images.githubusercontent.com/61624336/120039595-9399b800-bfdb-11eb-956a-bd8c7be22f31.png)
 
-### Notas:
+> [!Note]
+> 
+> 1. Os valores dos atributos dos alunos 1 e 2 serão atribuídos normalmente, mas os valores do aluno3 não, porque a matrícula e o nome estão vazios e o CR não é válido;
+> 
+> 2. Os valores foram atribuídos utilizando os métodos Setters, que verificaram se os valores eram válidos para só então realizar as atribuições;
+> 
+> 3. Os métodos Getters foram usados na própria classe Aluno para buscar os valores armazenados nos atributos do objeto no método imprimir.
 
-1. Os valores dos atributos dos alunos 1 e 2 serão atribuídos normalmente, mas os valores do aluno3 não, porque a matrícula e o nome estão vazios e o CR não é válido;
+Exemplo: A classe `Carro` possui os atributos e métodos a seguir, crie a **classe Carro** e a **aplicação AppCarro**, realize a entrada de dados na aplicação através do teclado, e ao final imprima os dados dos respectivos carros (através do método <code>imprimir()</code>).
 
-2. Os valores foram atribuídos utilizando os métodos Setters, que verificaram se os valores eram válidos para só então realizar as atribuições;
-
-3. Os métodos Getters foram usados na própria classe Aluno para buscar os valores armazenados nos atributos do objeto no método imprimir.
-
-## Exemplo prático
-
-A classe **Carro** possui os atributos e métodos a seguir, crie a **classe Carro** e a **aplicação AppCarro**, realize a entrada de dados na aplicação através do teclado, e ao final imprima os dados dos respectivos carros (através do método <code>imprimir()</code>).
-
-### 🚘 Classe Carro 🚗:
+Classe `Carro`:
 
 <table>
 
@@ -1232,8 +1226,6 @@ A classe **Carro** possui os atributos e métodos a seguir, crie a **classe Carr
 
 </table><br \>
 
-### 🚘 Solução do exercício prático ☕
-
 #### Carro.java
 
 ![Carro](https://user-images.githubusercontent.com/61624336/120238115-a22ddc80-c232-11eb-8a1e-02ac44164306.png)
@@ -1242,11 +1234,8 @@ A classe **Carro** possui os atributos e métodos a seguir, crie a **classe Carr
 
 ![AppCarro](https://user-images.githubusercontent.com/61624336/120238324-ab1eae00-c232-11eb-9504-872fe4511b68.png)
 
-### Notas:
-
-Você pode ver que temos algumas repetições de código para realizar a entrada de dados de cada objeto. Se aumentarmos o número de objetos, aumentaremos consideravelmente o tamanho do código.
-
-Para resolver este problema e evitarmos a redundância de códigos, vamos incluir um novo método na classe Carro, um método para a entrada de dados. Desta forma, evitamos a redundância dos códigos de entrada de dados.
+> [!Note]
+> Você pode ver que temos algumas repetições de código para realizar a entrada de dados de cada objeto. Se aumentarmos o número de objetos, aumentaremos consideravelmente o tamanho do código. Para resolver este problema e evitarmos a redundância de códigos, vamos incluir um novo método na classe Carro, um método para a entrada de dados. Desta forma, evitamos a redundância dos códigos de entrada de dados.
 
 ## Classe Carro
 
@@ -1481,7 +1470,7 @@ A execução da aplicação não foi afetada pelas mudanças na classe porque fo
 
 ![code](https://user-images.githubusercontent.com/61624336/120423047-038fa180-c340-11eb-8894-6b52a1f12313.png)
 
-### Notas:
+> [!Note]
 
 1. O primeiro método construtor criado foi o vazio, para garantir a compatibilidade com a aplicação antiga;
 2. Foram incluídos mais quatro métodos construtores seguindo o conceito da sobrecarga de métodos;
@@ -1512,7 +1501,7 @@ A sua classe não iria funcionar com este novo contexto. Neste caso, a programa�
 ### Aplicação: AppLogin com um objeto usando o novo construtor.
 ![code1](https://user-images.githubusercontent.com/61624336/120578549-60e92880-c3fc-11eb-89fe-8998386427fc.png)
 
-### Notas:
+> [!Note]
 
 01. A classe Login agora possui dois diferentes construtores e dois diferentes métodos verificaLogin, **ambos sobrecarregados**. A versão anterior foi preservada porque ainda é usada pelos sistemas dos antigos clientes. Entretanto, com a inclusão dos novos métodos, a classe foi atualizada e também passou a atender ao cliente novo;
 
@@ -2340,7 +2329,7 @@ Valor do dólar :4.15
 Coversão de Real para dólar : US$ 240,96
 </pre>
 
-### Notas:
+> [!Note]
 
 1. Primeiramente foi utilizado valor de R$ 3,82 para a cotação do dólar, com a leitura através do teclado para o objeto cot_1, e foi calculada a conversão do valor de R$ 1000,00, resultando em: US$ 261,78;
 
