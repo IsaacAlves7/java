@@ -2361,16 +2361,148 @@ A definição de exceção em software apresentada por Java não é específica 
 
 A linguagem Java foi concebida com o intuito de permitir o desenvolvimento de programas seguros. Assim, não é de se surpreender que disponibilize um recurso especificamente projetado para permitir o tratamento de exceções de software. Esse será o objeto de nosso estudo, que buscará lançar as bases para que o futuro profissional de programação seja capaz de explorar os recursos da linguagem Java e produzir softwares de qualidade.
 
-<img src="https://github.com/IsaacAlves7/java/assets/61624336/3d5fd598-88cb-4253-b50f-01388952d6f1" align="right" height="277">
-
 Hierarquia de exceções: No Java, todas as exceções são representadas por classes que fazem parte da hierarquia de `Throwable`. A estrutura principal dessa hierarquia é:
 
-```sh
-java.lang.Throwable  
- ├── java.lang.Error  
- └── java.lang.Exception  
-      ├── java.lang.RuntimeException
+<img src="https://github.com/IsaacAlves7/java/assets/61624336/3d5fd598-88cb-4253-b50f-01388952d6f1" align="right" height="277">
+
 ```
+java.lang.Throwable  
+ ├── java.lang.Error  (Exceções da JVM, não tratáveis)  
+ └── java.lang.Exception  (Exceções tratáveis)  
+      ├── Checked Exceptions (Obrigam tratamento)  
+      ├── java.lang.RuntimeException  (Unchecked Exceptions)  
+```
+
+A classe `Throwable` (Raiz da Hierarquia) é a **superclasse de todas as exceções e erros**. Ela define métodos comuns, como `getMessage()` e `printStackTrace()`.  
+
+Subtipos diretos de `Throwable`:  
+
+✅ `Error` → Indica problemas sérios que o programa **não deve capturar**.  
+✅ `Exception` → Indica problemas que podem ser **capturados e tratados**.  
+
+Error (Erros de Sistema) Os **erros** representam falhas graves da JVM ou do sistema, como falta de memória ou problemas na inicialização da classe.  
+
+Exemplos de `Error`:
+- `StackOverflowError` → Quando há recursão infinita.  
+- `OutOfMemoryError` → Quando a JVM fica sem memória.  
+- `NoClassDefFoundError` → Quando uma classe necessária não pode ser carregada.  
+
+> [!Caution]
+> Evite capturar `Error`, pois são problemas do sistema, não da aplicação!
+
+Exception (Exceções Verificadas e Não Verificadas) a classe `Exception` representa exceções que **podem ser tratadas** pelo programa.  
+
+Ela se divide em duas categorias:
+1️. `Checked Exceptions` (Verificadas)
+2️. `Unchecked Exceptions` (Não Verificadas)  
+
+`Checked Exceptions` (Exceções Verificadas) são **checadas pelo compilador** e obrigam o uso de `try-catch` ou `throws`.  
+
+Exemplos de `Checked Exceptions`:
+- `IOException` → Problemas de entrada/saída.  
+- `SQLException` → Erros em bancos de dados.  
+- `FileNotFoundException` → Arquivo não encontrado.  
+
+Exemplo de tratamento obrigatório:
+
+```java
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Teste {
+    public static void main(String[] args) {
+        try {
+            FileReader file = new FileReader("arquivo.txt");
+        } catch (IOException e) {
+            System.out.println("Erro ao abrir arquivo: " + e.getMessage());
+        }
+    }
+}
+```
+
+Se não tratar, o código nem compila!
+
+`Unchecked Exceptions` (Exceções Não Verificadas) também chamadas de **Runtime Exceptions**, não são forçadas pelo compilador e podem ser evitadas com boas práticas.  
+
+Exemplos de `Unchecked Exceptions`:
+- `NullPointerException` → Quando uma variável `null` é usada.  
+- `ArrayIndexOutOfBoundsException` → Acesso a índice inválido em arrays.  
+- `ArithmeticException` → Erro matemático, como divisão por zero.
+
+Exemplo sem tratamento obrigatório:
+
+```java
+public class Teste {
+    public static void main(String[] args) {
+        String texto = null;
+        System.out.println(texto.length()); // NullPointerException
+    }
+}
+```
+
+> [!Warning]
+> O código compila, mas falha em tempo de execução!
+
+Criando Exceções Personalizadas: Podemos criar nossas próprias exceções estendendo `Exception` (checked) ou `RuntimeException` (unchecked).
+
+Exemplo de `Checked Exception` personalizada:
+
+```java
+class MinhaExcecao extends Exception {
+    public MinhaExcecao(String mensagem) {
+        super(mensagem);
+    }
+}
+
+public class Teste {
+    static void validar(int idade) throws MinhaExcecao {
+        if (idade < 18) {
+            throw new MinhaExcecao("Idade mínima é 18!");
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            validar(16);
+        } catch (MinhaExcecao e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
+    }
+}
+```
+
+Obrigatório tratar (`throws` ou `try-catch`).  
+
+Exemplo de `Unchecked Exception` personalizada:
+
+```java
+class ErroDeNegocioException extends RuntimeException {
+    public ErroDeNegocioException(String mensagem) {
+        super(mensagem);
+    }
+}
+
+public class Teste {
+    static void processar(int valor) {
+        if (valor < 0) {
+            throw new ErroDeNegocioException("Valor negativo não permitido!");
+        }
+    }
+
+    public static void main(String[] args) {
+        processar(-5); // Lança a exceção sem obrigar try-catch
+    }
+}
+```
+
+Não precisa de tratamento obrigatório.
+
+| Tipo | Tratamento Obrigatório? | Exemplo |
+|------|-----------------|---------|
+| `Error` | 🚫 Não | `OutOfMemoryError` |
+| `Checked Exception` | ✅ Sim | `IOException`, `SQLException` |
+| `Unchecked Exception` | 🚫 Não | `NullPointerException`, `ArithmeticException` |
 
 # 🤖 [Java] Primefaces
 <img src="https://user-images.githubusercontent.com/61624336/192927385-5a585bf9-2cac-4344-89b4-f0d194cac6b5.svg" height="77" align="right">
