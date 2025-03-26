@@ -1746,7 +1746,7 @@ Já a classe Cliente é composta por todos os membros de Pessoa e Cliente, uma v
 <pre>Pessoa +
 Cliente</pre>
 
-## 🍇 Herança de métodos construtores 🧱
+## [Java] Herança de métodos construtores
 Vamos analisar os métodos construtores da classe `Cliente`:
 
 ![code](https://user-images.githubusercontent.com/61624336/120968564-68336d80-c73f-11eb-8327-c36c4c87a0cd.png)
@@ -1773,7 +1773,7 @@ Por final o método:
 
 Todo método construtor de uma SubClasse deve referenciar um construtor da SuperClasse, isso quer dizer que para o construtor vazio: <code>public Cliente() { }</code>, será obrigatório que exista um construtor vazio na SuperClasse: <code>public Pessoa() { }</code>.
 
-## Sobrescrita de métodos
+## [Java] Sobrescrita de métodos
 Métodos de uma *SuperClasse* podem ser **sobrescritos** em suas *subclasses*, implicando que um método descrito na *Superclasse* poderá ser substituído na *Subclasse*. Para isso, é importante observar que estes métodos devem possuir as mesmas assinaturas. Caso contrário, será usado o conceito de *Sobrecarga* e não de *Sobrescrita*.
 
 Vamos analisar o método imprimir da Superclasse Pessoa:
