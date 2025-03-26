@@ -476,8 +476,9 @@ final double VALORDOLAR = 3.96;
 final NOMEEMPRESA = “Super Empreendimentos”;
 </pre>
 
-##  Operadores e expressões +
-### Operadores aritméticos X + -
+# ☕ [java] Operadores e expressões
+
+Operadores aritméticos
 
 <table>
   <tr>
@@ -510,7 +511,7 @@ final NOMEEMPRESA = “Super Empreendimentos”;
   </tr>
 </table>
 
-<blockquote><b>OBS:</b> Java sempre realizará a operação inteira quando os operandos forem inteiros, e a operação real ocorrerá caso um ou mais operando seja real.</blockquote>
+> <b>OBS:</b> Java sempre realizará a operação inteira quando os operandos forem inteiros, e a operação real ocorrerá caso um ou mais operando seja real.
 
 Exemplos:
 
@@ -544,7 +545,6 @@ a = (double) b / c; // o valor de b será convertido para double antes da opera�
 // forma a operação será real, armazenado 3.5 em a.
 ```
 
-## Operadores aritméticos 
 <pre> +=   -=   *=   /=   %= </pre>
 
 Exemplo:
@@ -563,7 +563,6 @@ alturaParede += 0.15; // a variável alturaParede terá o valor
 
 Desta forma, não precisamos colocar o nome da variável duas vezes.
 
-### ☕ Operadores de Incremento e decremento
 Em Java temos os operadores de incremento <code>++</code> e de decremento <code>--</code>, que sempre adicionam uma unidade (<code>++</code>) ou subtraem uma unidade (<code>--</code>). Eles podem ser ainda divididos em **pré-incremento** e **pós-incremento**, e **pré-decremento** e **pós-decremento**. 
 
 O **pré-incremento** determina que primeiro seja realizada a operação de incremento e depois é realizada a operação de atribuição. 
@@ -609,7 +608,7 @@ b = a--; // primeiro b receberá o valor de a, que é 20 (antes do incremento),
 // depois a será decrementado e, assim, o valor de a será 19 e o de b será 20.
 </pre>
 
-## Operadores de Relacionais (usados para definir condições)
+Operadores de Relacionais são usados para definir condições.
 
 <table>
   <tr>
@@ -650,7 +649,7 @@ Exemplos:
 
 3) for (int c =0; c<50; c++) { ... }</pre>
 
-## Operadores de em Expressões Lógicas
+Operadores de em Expressões Lógicas
 
 <table>
    <tr>
@@ -689,7 +688,7 @@ Pela ordem de precedência: if( (!a == 15) || (c > d && b >= 10))
 
 Primeiro será executada a negação (!); depois o e lógico (&&) e por último o ou lógico (||).
 
-## Operadores de bits
+Operadores de bits
 
 <table>
   <tr>
