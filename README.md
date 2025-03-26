@@ -2457,7 +2457,7 @@ Olhando um pouco a história, há muito, mas muito tempo atrás, o Java EE era r
 
 O Spring Framework é um framework para aplicações Java que fornece infraestrutura para desenvolvimento de aplicativos Java corporativos. Ele é modular e abrange diversas funcionalidades, como:
 
-<img src="https://github.com/IsaacAlves7/java/assets/61624336/95e714b2-1761-4b70-aef5-fe5af7f0ab57" align="right" height="177">
+<img src="https://github.com/IsaacAlves7/java/assets/61624336/95e714b2-1761-4b70-aef5-fe5af7f0ab57" align="right" height="277">
 
 - Inversão de Controle (IoC) e Injeção de Dependência (DI).
 
