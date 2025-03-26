@@ -2005,33 +2005,33 @@ Agora que vimos como aplicar os conceitos de agregação e particionamento, pode
 
 ## Aplicação dos conceitos de herança, particionamento e agregação
 
-### Classes Particionadas
+# ☕ [Java] Classes Particionadas
 
 ![pg14](https://user-images.githubusercontent.com/61624336/121124491-68913e80-c7fb-11eb-859a-1bd49cafeede.png)
 
 Devemos identificar os atributos comuns às classes, sendo que os atributos Marca, Modelo e Preço são comuns a todas as classes. Já os atributos Tipo e Capacidade são comuns apenas às classes HD e Memoria, sendo necessária uma classe intermediária. O atributo TipoProcessador pertence apenas à classe PlacaMae e o atributo Padrão pertence apenas à classe PlacaVideo. As classes HD e Memoria não terão atributos específicos, ficarão apenas nas superclasses.
 
-### Classes Particionadas redefinidas após a aplicação da Herança
+Classes Particionadas redefinidas após a aplicação da Herança
 
 ![pg14-b](https://user-images.githubusercontent.com/61624336/121125855-9f685400-c7fd-11eb-841d-b6c0f1610e5f.png)
 
-### Classe Particionada Identificação:
+Classe Particionada `Identificação`:
 
 ![code](https://user-images.githubusercontent.com/61624336/121126576-c410fb80-c7fe-11eb-8b2f-21cab5a159eb.png)
 
-### Classe Particionada Armazenamento:
+Classe Particionada `Armazenamento`:
 
 ![code](https://user-images.githubusercontent.com/61624336/121126687-f3c00380-c7fe-11eb-8052-5795ca008935.png)
 
-### Classe Particionada PlacaMae:
+Classe Particionada `PlacaMae`:
 
 ![code](https://user-images.githubusercontent.com/61624336/121126928-587b5e00-c7ff-11eb-8724-de889f63f23f.png)
 
-### Classe Particionada PlacaVideo:
+Classe Particionada `PlacaVideo`:
 
 ![code](https://user-images.githubusercontent.com/61624336/121127084-a001ea00-c7ff-11eb-8c67-d88584cb9de1.png)
 
-### Classe Particionada Memoria:
+Classe Particionada `Memoria`:
 
 ![code](https://user-images.githubusercontent.com/61624336/121127917-e86dd780-c800-11eb-962c-4d280e202af4.png)
 
@@ -2041,10 +2041,7 @@ Caso seja necessária alguma alteração específica, basta alterar a classe afe
 
 Temos então um melhor controle sobre a aplicação e maior facilidade de manutenção de todo o sistema.
 
-
-
 # ☕ [Java] Encapsulamento
-
 O **encapsulamento** permite uma classe encapsular atributos e métodos, ocultando os detalhes de implementação dos objetos. Trabalharemos também os tipos de visibilidade de membros de uma classe: <code>public</code>, <code>protected</code>, <code>private</code> e <code>package</code>. Desenvolveremos uma aplicação utilizando o conceito de encapsulamento em conjunto com os conceitos de herança e agregação.
 
 No desenvolvimento de aplicações, temos situações nas quais a segurança é muito importante. Em muitas situações os membros de uma classe (atributos e métodos) precisam ter o seu acesso restringido para que não sejam burlados por meio das aplicações. Esse processo de limitação de acesso aos membros de uma classe é chamado de **Programação Orientada a Objetos de Encapsulamento**.
