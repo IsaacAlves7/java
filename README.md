@@ -472,7 +472,7 @@ final double VALORDOLAR = 3.96;
 final NOMEEMPRESA = “Super Empreendimentos”;
 </pre>
 
-# ☕ [java] Operadores e expressões
+# ☕ [Java] Operadores e expressões
 
 Operadores aritméticos
 
