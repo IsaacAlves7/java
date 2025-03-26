@@ -2393,6 +2393,7 @@ Exemplos de `Error`:
 Exception (Exceções Verificadas e Não Verificadas) a classe `Exception` representa exceções que **podem ser tratadas** pelo programa.  
 
 Ela se divide em duas categorias:
+
 1️. `Checked Exceptions` (Verificadas)
 2️. `Unchecked Exceptions` (Não Verificadas)  
 
