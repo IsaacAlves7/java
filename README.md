@@ -1473,11 +1473,11 @@ Com o **polimorfismo de sobrecarga** podemos criar **diferentes implementações
 
 Vamos imaginar que uma classe chamada **Login** fosse usada por vários de seus sistemas:
 
-### Login.java
+`Login.java`
 
 ![code](https://user-images.githubusercontent.com/61624336/120426078-cb8b5d00-c345-11eb-8d72-01414960c525.png)
 
-### AppLogin.java
+`AppLogin.java`
 
 ![code](https://user-images.githubusercontent.com/61624336/120427380-30e04d80-c348-11eb-8bc3-e7a533fd602b.png)
 
@@ -1492,20 +1492,18 @@ A sua classe não iria funcionar com este novo contexto. Neste caso, a programa�
 ![code1](https://user-images.githubusercontent.com/61624336/120578549-60e92880-c3fc-11eb-89fe-8998386427fc.png)
 
 > [!Note]
-
-01. A classe Login agora possui dois diferentes construtores e dois diferentes métodos verificaLogin, **ambos sobrecarregados**. A versão anterior foi preservada porque ainda é usada pelos sistemas dos antigos clientes. Entretanto, com a inclusão dos novos métodos, a classe foi atualizada e também passou a atender ao cliente novo;
-
-02. Foi incluído ainda o método verificarToken, que só é usado pelo cliente novo. Sua inclusão na classe não atrapalha em nada os sistemas dos clientes antigos;
-
-03. A aplicação agora pode instanciar (criar) objetos das duas formas, com e sem o token, sem que uma atrapalhe a outra.
+>
+> 01. A classe Login agora possui dois diferentes construtores e dois diferentes métodos verificaLogin, **ambos sobrecarregados**. A versão anterior foi preservada porque ainda é usada pelos sistemas dos antigos clientes. Entretanto, com a inclusão dos novos métodos, a classe foi atualizada e também passou a atender ao cliente novo;
+>
+> 02. Foi incluído ainda o método verificarToken, que só é usado pelo cliente novo. Sua inclusão na classe não atrapalha em nada os sistemas dos clientes antigos;
+>
+> 03. A aplicação agora pode instanciar (criar) objetos das duas formas, com e sem o token, sem que uma atrapalhe a outra.
 
 As classes na programação orientada a objetos evoluem conforme precisamos de mais atributos e métodos.
 
 Entretanto, se mantivermos os métodos necessários para os sistemas mais antigos, essa evolução não afetará os outros sistemas e teremos uma melhoria na classe, facilitando a sua evolução e sua manutenção, uma vez que, ao realizar qualquer melhoria em uma classe, basta recompilar as aplicações que estas se tornarão atualizadas.
 
-### Exercício
-
-Analisando os métodos abaixo (para uma mesma classe), podemos afirmar que foi aplicado o conceito de polimorfismo de sobrecarga?
+Exercício: Analisando os métodos abaixo (para uma mesma classe), podemos afirmar que foi aplicado o conceito de polimorfismo de sobrecarga?
 
 <pre>double calculo(double p, double a) {
 
@@ -1525,9 +1523,7 @@ return p-a+t;
 
 }</pre>
 
-### Resolução
-
-Não, apesar dos métodos possuírem o mesmo nome, eles não possuem a mesma assinatura.
+Resolução: Não, apesar dos métodos possuírem o mesmo nome, eles não possuem a mesma assinatura.
 
 Assinaturas:
 
