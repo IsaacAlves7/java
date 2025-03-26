@@ -2337,6 +2337,8 @@ Contador =5
 > 3. Após a criação do 5º objeto, o objeto t5, o atributo do objeto t1, assim como os demais, compartilhavam o mesmo local de memória para buscar o valor do atributo; por isso, todos os objetos encerraram a aplicação retornando o valor 5 para o atributo contador compartilhado (`static`).
 
 # ☕ [Java] Tratamento de exceções
+<img src="https://github.com/IsaacAlves7/java/assets/61624336/3d5fd598-88cb-4253-b50f-01388952d6f1" align="right" height="277">
+
 O **tratamento de exceções** é um importante recurso que permite criar programas tolerantes a falhas. Trata-se de um mecanismo que permite resolver ou ao menos lidar com exceções, muitas vezes evitando que a execução do software seja interrompida, e ela está presente na maioria das linguagens de programação. A linguagem Java se baseou mna linguagem C++ para o tratamento de exceções.
 
 Uma **exceção** é uma condição causada por um erro em tempo de execução que interrompe o fluxo normal de software. Não se trata de um desvio normal para um fluxo alternativo, mas sim previsto ao tempo de execução, ou seja, a exceção leva ao estado desejado. E, esse erro pode ter muitas causas como receber valor `0` ou uso indevido de um array. 
@@ -2362,8 +2364,6 @@ A definição de exceção em software apresentada por Java não é específica 
 A linguagem Java foi concebida com o intuito de permitir o desenvolvimento de programas seguros. Assim, não é de se surpreender que disponibilize um recurso especificamente projetado para permitir o tratamento de exceções de software. Esse será o objeto de nosso estudo, que buscará lançar as bases para que o futuro profissional de programação seja capaz de explorar os recursos da linguagem Java e produzir softwares de qualidade.
 
 Hierarquia de exceções: No Java, todas as exceções são representadas por classes que fazem parte da hierarquia de `Throwable`. A estrutura principal dessa hierarquia é:
-
-<img src="https://github.com/IsaacAlves7/java/assets/61624336/3d5fd598-88cb-4253-b50f-01388952d6f1" align="right" height="277">
 
 ```
 java.lang.Throwable  
