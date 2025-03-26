@@ -2168,7 +2168,7 @@ Na linguagem Java, temos quatro diferentes tipos de encapsulamento:
 
 A relação apresentada está em ordem de nível de restrição, indo do *menos restrito* (<code>public</code>) até o mais *restrito* (<code>private</code>).
 
-### Visibilidade:
+Visibilidade:
 
 - **Public**: Uma classe definida como public pode ser acessada por qualquer classe ou aplicação, sem restrições. Seus membros são igualmente acessíveis (visíveis) por qualquer outra classe ou aplicação. Determina o nível menos restritivo de acesso e visibilidade aos membros (atributos e métodos) de uma classe;
 
@@ -2178,7 +2178,7 @@ A relação apresentada está em ordem de nível de restrição, indo do *menos 
 
 - **Default** (padrão, omissão): Quando não é usado um modificador de encapsulamento, a visibilidade é dita padrão e os membros têm visibilidade, ou seja, só podem ser acessados por classes e aplicações que estejam no mesmo pacote.
 
-### Exemplos de visibilidade de membros
+Exemplos de visibilidade de membros:
 
 - **Membros públicos**: é a forma normal para métodos de acesso *(Setters e Getters)*.
 
