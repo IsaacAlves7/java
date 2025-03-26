@@ -2453,7 +2453,7 @@ Ecossistema Kotlin:
 
 O **Spring** é um framework open source desenvolvido para a plataforma Java baseado nos padrões de projetos inversão de controle e injeção de dependência. Sua estrutura é composta por módulos afins de reduzir a complexidade no desenvolvimento aplicações simples ou corporativa. O Spring Framework fornece infraestrutura abrangente para desenvolver aplicações Java robustas e escaláveis. Ele facilita a inversão de controle (IoC) e a injeção de dependências (DI), além de oferecer suporte para desenvolvimento de aplicativos web, segurança, transações, persistência de dados, entre outros. Spring é conhecido por sua modularidade e capacidade de integrar facilmente com outros frameworks e tecnologias.
 
-Olhando um pouco a história, há muito, mas muito tempo atrás, o Java EE era realmente muito complicado e nem era necessário entrar numa discussão, usar o Spring era um caminho mais simples e mais fácil de evoluir. Aí chegou a versão 5 do Java EE e a discussão voltou a ficar um pouco mais quente.
+Olhando um pouco a história, há muito, mas muito tempo atrás, o Java EE (atualmente chamado de Jakarta EE) era realmente muito complicado e nem era necessário entrar numa discussão, era visto como um framework pesado e burocrático, com muita configuração manual e complexidade desnecessária, então usar o Spring era um caminho mais simples e mais fácil de evoluir. Aí chegou a versão 5 do Java EE e a discussão voltou a ficar um pouco mais quente.
 
 O Spring Framework é um framework para aplicações Java que fornece infraestrutura para desenvolvimento de aplicativos Java corporativos. Ele é modular e abrange diversas funcionalidades, como:
 
