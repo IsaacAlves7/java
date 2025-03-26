@@ -1060,8 +1060,8 @@ Exemplo: `Aluno.java` (objeto)
 
 ![print](https://user-images.githubusercontent.com/61624336/119859616-edbb5000-beeb-11eb-833d-c0b2e0cb77ba.png)
 
-# ☕ Aplicações Java
-**Aplicações em Java** são classes especiais que possuem um método <code>main()</code>. O método *main* **é responsável por criar os objetos e realizar a combinação de diferentes classes para atender às necessidades de um sistema**.
+# ☕ [Java] Aplicações Java
+**Aplicações em Java** são classes especiais que possuem um método <code>main()</code>. O método `main` é responsável por criar os objetos e realizar a combinação de diferentes classes para atender às necessidades de um sistema.
 
 Em cada sistema, temos **apenas uma aplicação**, que será **responsável pela lógica de criação e uso das classes**. A comunicação entre os objetos ocorre por meio de **trocas de mensagens**, que são **expressas com o uso de métodos**. Uma aplicação, então, cria objetos a partir de uma ou mais classes e usa os métodos dos objetos para realizar as ações que atenderão às necessidades dos usuários.
 
