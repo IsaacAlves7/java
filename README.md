@@ -1863,11 +1863,16 @@ CapacidadeMemoria : inteiro</td>
 
 É a decomposição de classes extensas em classes menores, que podem ser mais bem reaproveitadas em outras classes, além de permitir melhor controle e manutenção.
 
-O particionamento de classes nos permite criar objetos menores e mais simples, que poderão ser reunidos em conjunto, capazes de criar novas classes, maiores e mais complexas.
+O **particionamento de classes** nos permite criar objetos menores e mais simples, que poderão ser reunidos em conjunto, capazes de criar novas classes, maiores e mais complexas. O particionamento de classes em Java pode ter diferentes significados dependendo do contexto. Geralmente, ele se refere a técnicas de organização, modularização e otimização de código, incluindo:
 
-Vamos imaginar um computador do tipo Desktop, que é um objeto bem complexo, com diferentes partes. Muitas dessas partes são usadas por outros objetos também, tal como Notebooks e Servidores.
+1. Divisão de classes em pacotes (Organização modular)
+2. Uso de classes aninhadas e internas
+3. Particionamento em sistemas distribuídos (Microservices, RMI, etc.)
+4. Divisão em múltiplos arquivos e JARs (Modularização e encapsulamento)
 
-Um HD (HardDisk), por exemplo, pode ser usado por cada um deles, assim como a placa de vídeo, a placa-mãe, o vídeo, a memória, além de outros dispositivos. Se formos criar uma classe para representar um Desktop, teremos uma classe com muitos atributos, o que a tornaria grande e complexa, com muitas linhas de código e de difícil manutenção. Isso porque, se fosse necessário realizar alguma mudança, teríamos que trabalhar em uma classe altamente complexa. Outro ponto importante seria a criação das classes Notebook e Servidor, que seriam igualmente complexas, sem contar que, para realizar uma alteração em um único componente que fosse, teríamos que fazê-la em todas as três classes (Desktop, Notebook e Servidor).
+Vamos imaginar um computador do tipo `Desktop`, que é um objeto bem complexo, com diferentes partes. Muitas dessas partes são usadas por outros objetos também, tal como `Notebooks` e `Servidores`.
+
+Um `HD` (HardDisk), por exemplo, pode ser usado por cada um deles, assim como a placa de vídeo, a placa-mãe, o vídeo, a memória, além de outros dispositivos. Se formos criar uma classe para representar um Desktop, teremos uma classe com muitos atributos, o que a tornaria grande e complexa, com muitas linhas de código e de difícil manutenção. Isso porque, se fosse necessário realizar alguma mudança, teríamos que trabalhar em uma classe altamente complexa. Outro ponto importante seria a criação das classes Notebook e Servidor, que seriam igualmente complexas, sem contar que, para realizar uma alteração em um único componente que fosse, teríamos que fazê-la em todas as três classes (Desktop, Notebook e Servidor).
 
 Inicialmente, nossa classe desktop ficaria com os seguintes atributos:
 
