@@ -2360,9 +2360,16 @@ A definição de exceção em software apresentada por Java não é específica 
 
 A linguagem Java foi concebida com o intuito de permitir o desenvolvimento de programas seguros. Assim, não é de se surpreender que disponibilize um recurso especificamente projetado para permitir o tratamento de exceções de software. Esse será o objeto de nosso estudo, que buscará lançar as bases para que o futuro profissional de programação seja capaz de explorar os recursos da linguagem Java e produzir softwares de qualidade.
 
-<img src="https://github.com/IsaacAlves7/java/assets/61624336/3d5fd598-88cb-4253-b50f-01388952d6f1" align="right" height="177">
+<img src="https://github.com/IsaacAlves7/java/assets/61624336/3d5fd598-88cb-4253-b50f-01388952d6f1" align="right" height="277">
 
-Hierarquia de exceções: 
+Hierarquia de exceções: No Java, todas as exceções são representadas por classes que fazem parte da hierarquia de `Throwable`. A estrutura principal dessa hierarquia é:
+
+```sh
+java.lang.Throwable  
+ ├── java.lang.Error  
+ └── java.lang.Exception  
+      ├── java.lang.RuntimeException
+```
 
 <div align="left"><a href="https://github.com/IsaacAlves7/java-programming"><img src="https://cdn.icon-icons.com/icons2/2530/PNG/512/java_button_icon_151928.png" height="47"></a></div>
 
