@@ -2129,11 +2129,7 @@ Valor a pagar [método correto 00]= 281.0
 
 A falta de conhecimento sobre o uso de uma classe pode gerar erros porque, mesmo realizando testes, as faixas com problemas podem não ser identificadas. Para isso, devemos ocultar parte da implementação da classe.
 
-## 💊 Princípio do encapsulamento 💊
-
 Atributos não devem ser visíveis por nenhum objeto que não seja instância da própria classe ou de uma classe descendente (herança).
-
-### Tipos de encapsulamento
 
 Na linguagem Java, temos quatro diferentes tipos de encapsulamento:
 
