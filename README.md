@@ -1485,10 +1485,11 @@ Imagine a situação: você tem um *novo cliente*, e seus funcionários fazem o 
 
 A sua classe não iria funcionar com este novo contexto. Neste caso, a programação orientada a objetos nos ajuda muito, pois faremos uma atualização na classe Login e ela será capaz, não só de atender a esta nova demanda, mas de continuar a atender os antigos clientes.
 
-### Classe Atualizada: Login
+Classe Atualizada: `Login`
 ![code](https://user-images.githubusercontent.com/61624336/120578541-5dee3800-c3fc-11eb-98a9-cc027d250441.png)
 
-### Aplicação: AppLogin com um objeto usando o novo construtor.
+Aplicação: AppLogin com um objeto usando o novo construtor
+
 ![code1](https://user-images.githubusercontent.com/61624336/120578549-60e92880-c3fc-11eb-89fe-8998386427fc.png)
 
 > [!Note]
