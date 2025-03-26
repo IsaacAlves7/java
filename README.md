@@ -2445,13 +2445,25 @@ Ecossistema Kotlin:
 # 🍃 [Java] Spring
 <img src="https://www.svgrepo.com/show/354380/spring-icon.svg" align="right" height="77">
 
-O **Spring** é um framework open source desenvolvido para a plataforma Java baseado nos padrões de projetos inversão de controle e injeção de dependência. Sua estrutura é composta por módulos afins de reduzir a complexidade no desenvolvimento aplicações simples ou corporativa. 
+O **Spring** é um framework open source desenvolvido para a plataforma Java baseado nos padrões de projetos inversão de controle e injeção de dependência. Sua estrutura é composta por módulos afins de reduzir a complexidade no desenvolvimento aplicações simples ou corporativa. O Spring Framework fornece infraestrutura abrangente para desenvolver aplicações Java robustas e escaláveis. Ele facilita a inversão de controle (IoC) e a injeção de dependências (DI), além de oferecer suporte para desenvolvimento de aplicativos web, segurança, transações, persistência de dados, entre outros. Spring é conhecido por sua modularidade e capacidade de integrar facilmente com outros frameworks e tecnologias.
+
+Olhando um pouco a história, há muito, mas muito tempo atrás, o Java EE era realmente muito complicado e nem era necessário entrar numa discussão, usar o Spring era um caminho mais simples e mais fácil de evoluir. Aí chegou a versão 5 do Java EE e a discussão voltou a ficar um pouco mais quente.
+
+O Spring Framework é um framework para aplicações Java que fornece infraestrutura para desenvolvimento de aplicativos Java corporativos. Ele é modular e abrange diversas funcionalidades, como:
 
 <img src="https://github.com/IsaacAlves7/java/assets/61624336/95e714b2-1761-4b70-aef5-fe5af7f0ab57" align="right" height="177">
 
-O Spring Framework fornece infraestrutura abrangente para desenvolver aplicações Java robustas e escaláveis. Ele facilita a inversão de controle (IoC) e a injeção de dependências (DI), além de oferecer suporte para desenvolvimento de aplicativos web, segurança, transações, persistência de dados, entre outros. Spring é conhecido por sua modularidade e capacidade de integrar facilmente com outros frameworks e tecnologias.
+- Inversão de Controle (IoC) e Injeção de Dependência (DI).
 
-> Olhando um pouco a história, há muito, mas muito tempo atrás, o Java EE era realmente muito complicado e nem era necessário entrar numa discussão, usar o Spring era um caminho mais simples e mais fácil de evoluir. Aí chegou a versão 5 do Java EE e a discussão voltou a ficar um pouco mais quente.
+- Programação orientada a aspectos (AOP).
+
+- Acesso a banco de dados via JDBC, JPA/Hibernate.
+
+- Criação de APIs REST com Spring MVC e Spring Boot.
+
+- Gerenciamento de transações.
+
+- Integração com serviços na nuvem e muito mais.
 
 <img src="https://github.com/IsaacAlves7/java/assets/61624336/7f1f4cdf-9e29-44c9-b78a-f12f5603b36c" align="right" height="177">
 
