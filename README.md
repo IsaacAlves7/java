@@ -1403,7 +1403,7 @@ No segundo contexto, é chamado para executar o método área com um dos parâme
 > [!Warning]
 > Com o uso da sobrecarga de métodos você poderá criar quantos métodos com o mesmo identificador (nome) quiser em uma mesma classe, desde que eles **não possuam a mesma assinatura de método**.
 
-## Métodos
+## [Java] Métodos
 Se quisesse incluir um método para calcular a **área de uma circunferência**, você não poderia incluir **nesta classe**, pois ele teria a mesma assinatura do método do cálculo da área do quadrado:
 
 ![code](https://user-images.githubusercontent.com/61624336/120411706-9eca4c00-c32b-11eb-9041-9fee2bdce201.png)
@@ -1423,11 +1423,11 @@ area( 4 )</pre>
 
 Como ambos possuem o mesmo contexto, os métodos com a mesma assinatura não podem compartilhar a mesma classe.
 
-### Exemplos de polimorfismo de sobrecarga válidos para uma mesma classe:
+Exemplos de polimorfismo de sobrecarga válidos para uma mesma classe:
 
 ![code](https://user-images.githubusercontent.com/61624336/120412490-07fe8f00-c32d-11eb-9121-6c8bfce3ea88.png)
 
-### As assinaturas são respectivamente:
+As assinaturas são respectivamente:
 
 ![code](https://user-images.githubusercontent.com/61624336/120412911-c3272800-c32d-11eb-9da7-9f4f1921a5c1.png)
 
@@ -1447,16 +1447,16 @@ Outra forma de uso de *mais de um construtor* é para manter a **compatibilidade
 
 Se analisarmos a <code>classe Carro</code>, vista como exemplo anteriormente, podemos notar que ela **não possui nenhum método construtor**. Podemos então criar alguns métodos construtores para esta classe e preservar a aplicação antiga, criando e analisando uma classe nova (evoluída) e as duas aplicações, a antiga e a nova:
 
-### Classe: Carro (atualizada com cinco métodos construtores).
+Classe: `Carro` (atualizada com cinco métodos construtores)
 
 ![code](https://user-images.githubusercontent.com/61624336/120420000-de983000-c339-11eb-9488-b90efb896231.png)
 
-### Aplicação antiga AppCarro.
+Aplicação antiga `AppCarro`
 ![code](https://user-images.githubusercontent.com/61624336/120421372-8878bc00-c33c-11eb-8505-9a0825f440e3.png)
 
 A execução da aplicação não foi afetada pelas mudanças na classe porque foi criado o construtor vazio <code>public Carro ( ) { }</code> que garantiu a compatibilidade:
 
-### Aplicação usando diferentes construtores para criar os objetos: AppCarro.
+Aplicação usando diferentes construtores para criar os objetos: `AppCarro`
 
 ![code](https://user-images.githubusercontent.com/61624336/120423047-038fa180-c340-11eb-8894-6b52a1f12313.png)
 
