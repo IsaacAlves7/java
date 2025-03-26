@@ -2636,6 +2636,10 @@ A **Inversão de Controle** (Inversion of Control ou IoC) é um princípio de de
 
 <table>
   <tr>
+    <td>Sem IoC</td>
+    <td>Com IoC</td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/IsaacAlves7/java/assets/61624336/7f1f4cdf-9e29-44c9-b78a-f12f5603b36c"></td>
     <td><img src="https://github.com/IsaacAlves7/java/assets/61624336/210a65fc-4385-46dc-a22c-2726d9e0db4a"></td>
   </tr>
