@@ -2003,8 +2003,6 @@ Imagine agora a situação dos slots de memória: na herança, só poderíamos h
 
 Agora que vimos como aplicar os conceitos de agregação e particionamento, podemos aplicar também o conceito de herança e melhorar nossas classes. Vamos aplicar o conceito de herança às nossas classes particionadas para termos uma aplicação mais concisa e mais fácil para realizar manutenções.
 
-## Aplicação dos conceitos de herança, particionamento e agregação
-
 # ☕ [Java] Classes Particionadas
 
 ![pg14](https://user-images.githubusercontent.com/61624336/121124491-68913e80-c7fb-11eb-859a-1bd49cafeede.png)
