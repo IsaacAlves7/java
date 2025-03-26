@@ -849,11 +849,9 @@ instruções;
 } while (condição);</pre>
 
 # ☕ [Java] Entrada e Saída de dados
+Em Java temos muitas formas de **entrada de dados** (input), inclusive de forma gráfica. Inicialmente trabalharemos com a *classe* <code>Scanner</code>, responsável pela entrada de dados em formato texto, com perguntas diretas ao usuário e a inclusão da resposta em variáveis do programa. 
 
-📥 Entrada de dados 📥
-Em Java temos muitas formas de entrada de dados, inclusive de forma gráfica. Inicialmente trabalharemos com a *classe* <code>Scanner</code>, responsável pela entrada de dados em formato texto, com perguntas diretas ao usuário e a inclusão da resposta em variáveis do programa. 
-
-Para realizarmos esta tarefa, **é necessário que seja criado um objeto da classe Scanner**. 
+Para realizarmos esta tarefa, é necessário que seja criado um objeto da classe `Scanner`. 
 
 Para isso, devemos **importar** a *classe* <code>Scanner</code> antes do início da programação da classe:
 
@@ -875,13 +873,13 @@ Existem vários métodos associados a classe **Scanner** para a entrada de dados
 
 Exemplo:
 
-### 1) Para entrada de texto (String):
+1) Para entrada de texto (String):
 
 <pre>String nome;
 
 Nome = entrada.nextLine(); // não precisa de conversão, apenas da entrada.</pre>
 
-### 2) Para entrada de valor real:
+2) Para entrada de valor real:
 
 <pre>double nota1;
 
@@ -889,7 +887,7 @@ nota1=Double.<b>parseDouble</b>(entrada.nextLine());
 
 // a entrada de dados em texto precisa de conversão para double.</pre>
 
-### 3) Para entrada de valor inteiro:
+3) Para entrada de valor inteiro:
 
 <pre>int idade;
 
@@ -905,14 +903,13 @@ idade = Integer.<b>parseInt</b>(entrada.nextLine());
 
 Estes métodos, quando usados em conjunto, podem fazer com que a aplicação pule alguma entrada de dados, sendo necessário que seja realizada uma “limpeza de buffer”. Este tipo de problema pode ser contornado ao usar sempre o método “nextLine()” e a conversão de tipos.
 
-## 📤 Saída de dados 📤
-A saída de dados em modo texto pode ser realizada pela *classe* <code>System</code>, e o método <code>out.print</code> (não pula linha), <code>out.println</code> (pula linha) ou outros métodos:
+A **saída de dados** (output) em modo texto pode ser realizada pela *classe* <code>System</code>, e o método <code>out.print</code> (não pula linha), <code>out.println</code> (pula linha) ou outros métodos:
 
-### 1) Apenas uma mensagem:
+1) Apenas uma mensagem:
 
 <pre>System.out.println("Entre com a Nota A1.........: ");</pre>
 
-### 2) Mensagem e conteúdo de variáveis:
+2) Mensagem e conteúdo de variáveis:
 
 <pre>System.out.println(" Nome: " + nome + " Idade: " + idade + " Nota 1: " + nota1);</pre>
 
@@ -946,13 +943,12 @@ sc.close();
 
 }</pre>
 
-## Conversão de tipos
+## [Java] Conversão de tipos
 A conversão de tipos em Java pode ser feita por cast ou com o uso de conversão por classes. Ambos já foram vistos em exemplos anteriores:
 
-### 1) Por cast:
-Usado para converter valores de um tipo para outro; com cast basta indicar o tipo que você quer que a variável, ou valor, seja convertida, colocando o tipo desejado entre parênteses:
+1) Por cast: Usado para converter valores de um tipo para outro; com cast basta indicar o tipo que você quer que a variável, ou valor, seja convertida, colocando o tipo desejado entre parênteses:
 
-### 2) Por uso de classes para conversão de textos em valores
+2) Por uso de classes para conversão de textos em valores:
 
 <pre>double nota1 = Double.parseDouble(“7.8”);
 
