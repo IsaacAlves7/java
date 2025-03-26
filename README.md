@@ -1986,12 +1986,11 @@ A reunião de uma ou mais classes para formar novas classes é chamada de agrega
 > [!Warning]
 > 1. Foram incluídos novos atributos para entendermos que a agregação pode incluir não apenas classes, mas também novos atributos;
 > 
-> 2. Como toda classe é também um tipo, podemos declarar atributos como do tipo Classe;
+> 2. Como toda classe é também um tipo, podemos declarar atributos como do tipo `Classe`;
 > 
-> 3. Cada atributo criado a partir de uma classe (não sendo de tipos básicos) é uma agregação à classe principal, sendo assim, temos as quatro agregações (PlacaMae, HD, PlacaVideo e Memoria) para cada classe principal;
+> 3. Cada atributo criado a partir de uma classe (não sendo de tipos básicos) é uma agregação à classe principal, sendo assim, temos as quatro agregações (`PlacaMae`, `HD`, `PlacaVideo` e `Memoria`) para cada classe principal;
 > 
-> 4. As classes Desktop, Notebook e Servidor foram criadas a partir de fragmentos menores, mas todos os atributos originais da classe Desktop estão presentes.
-> 
+> 4. As classes `Desktop`, `Notebook` e `Servidor` foram criadas a partir de fragmentos menores, mas todos os atributos originais da classe `Desktop` estão presentes.
 
 Uma oportunidade se apresenta com o uso da agregação, que não é possível resolver facilmente com a herança. Não confunda herança com agregação, pois são conceitos diferentes.
 
