@@ -2652,17 +2652,24 @@ A **Inversão de Controle** (Inversion of Control ou IoC) é um princípio de de
 > [!Note]
 > **Não confunda!** Os Design patterns (Padrões de design) são soluções reutilizáveis para problemas comuns de design de software, enquanto design de software é o processo de definir a arquitetura, componentes e interfaces de um sistema para atender a requisitos específicos. No contexto de IoC, o design de software aplica o princípio de Inversão de Controle para criar arquiteturas desacopladas, e padrões como Dependency Injection e Service Locator implementam esse princípio para gerenciar dependências de forma eficiente.
 
-<img src="https://github.com/IsaacAlves7/java/assets/61624336/e8fdf254-56ac-4331-a550-e6a1a554fffc" align="right" height="277">
-
 A **Injeção de dependência** (Dependency Injection ou DI) é um padrão de desenvolvimento com a finalidade de manter baixo o nível de acoplamento entre módulos de um sistema. 
+
+<table>
+  <tr>
+    <td align="center"><b>DI</b></td>
+    <td align="center"><b>DI</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/IsaacAlves7/java/assets/61624336/e8fdf254-56ac-4331-a550-e6a1a554fffc"></td>
+    <td><img src="https://github.com/IsaacAlves7/java/assets/61624336/1772dfba-23de-4207-b3bf-9907811451b1"></td>
+  </tr>
+</table>
 
 - **Beans** é o objeto que é instanciado (criado), montado e gerenciado por um container através do princípio da inversão de controle.
 
 - **Scopes** é o controle da existência de nossos objetos Components da aplicação.
 
 - **Singleton**: O container do Spring IoC define apenas uma instância do objeto.
-
-<img src="https://github.com/IsaacAlves7/java/assets/61624336/1772dfba-23de-4207-b3bf-9907811451b1" align="right" height="177">
 
 - **Prototype**: Será criado um novo objeto a cada solicitação ao container.
 
