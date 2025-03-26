@@ -98,17 +98,17 @@ A sigla JSE pode referir-se a diferentes tecnologias dependendo do contexto, mas
 Portanto, a sigla JSE pode se referir tanto ao Java Standard Edition, relacionado à linguagem de programação Java, quanto a um motor JavaScript, relacionado ao JavaScript. O significado exato depende do contexto em que a sigla é utilizada.
 
 ## [Java] Ambiente de desenvolvimento
-Existem os ambientes JDK e JRE para construir e executar uma aplicação Java.
+<img src="https://user-images.githubusercontent.com/61624336/171005805-d123b7c1-89e6-492c-9d03-3dcafb40142e.png" align="right" height="77">
 
-Java Development Kit (JDK) é uma coleção de programas para, dentre outras tarefas, compilar e executar aplicações Java. Este é o kit necessário para o desenvolvedor, pois contém todo o suporte para a criação de aplicações em Java.
+Existem os ambientes JDK e JRE para construir e executar uma aplicação Java. 
+
+O **Java Development Kit (JDK)** é uma coleção de programas para, dentre outras tarefas, compilar e executar aplicações Java. Este é o kit necessário para o desenvolvedor, pois contém todo o suporte para a criação de aplicações em Java.
 
 Exemplo:
 - Javac (compilador Java);
 - Javadoc (utilitário para documentação);
 - Java;
 - Outros.
-
-<img src="https://user-images.githubusercontent.com/61624336/171005805-d123b7c1-89e6-492c-9d03-3dcafb40142e.png" align="right" height="77">
 
 Kit com todos os programas necessários para executar aplicações Java. Faz parte do JDK, mas pode ser instalado separadamente para execução em máquinas clientes, uma vez que o JDK é voltado para os desenvolvedores. O JRE pode ser instalado separadamente e dá suporte somente a execução de aplicações ou jogos como o Minecraft, por isso é a versão mais indicada para instalação nas máquinas clientes que apenas executarão aplicações, não sendo responsáveis pelo seu desenvolvimento.
 
