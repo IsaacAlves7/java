@@ -10,7 +10,7 @@
 <div align="left"><a href="https://github.com/IsaacAlves7/java-programming"><img src="https://cdn.icon-icons.com/icons2/2530/PNG/512/java_button_icon_151928.png" height="47"></a></div>
 
 # ☕ The History of Java language
-<img src="https://cdn.worldvectorlogo.com/logos/java-100-pure.svg" height="77" align="right">
+<img src="https://cdn.worldvectorlogo.com/logos/java.svg" height="77" align="right">
 
 **Java** é o ambiente computacional, ou plataforma, criada pela empresa estadunidense Sun Microsystems, e vendida para a Oracle depois de alguns anos. A plataforma permite desenvolver programas utilizando a linguagem de programação Java.
 
@@ -19,8 +19,6 @@ A tecnologia <a href="https://user-images.githubusercontent.com/61624336/1558578
 As grandes empresas desenvolviam suas aplicações voltadas para seu ambiente de hardware e software (sistema operacional - SO), e estas aplicações não eram capazes de serem executadas em diferentes plataformas, principalmente de outros fabricantes. Se analisarmos a linguagem C, criada junto com o sistema operacional UNIX, temos uma biblioteca muito vasta de funções, mas poucas são consideradas padrão para atender a diferentes sistemas; e, mesmo assim, uma aplicação compilada em um sistema operacional (ambiente) não pode ser executada em outro.
 
 A linguagem Java rompeu este paradigma e passou a permitir que uma aplicação desenvolvida em um ambiente - hardware + software (SO) - possa ser executada em outro sem necessidade de qualquer outro procedimento. A Sun Microsystems, ao tomar conhecimento desta ideia, deu total apoio ao seu desenvolvimento e criou um grupo com 13 membros, liderado por James Gosling, que passaram a trabalhar exclusivamente neste projeto. A equipe foi batizada de “Green Team” e o grupo passou a trabalhar em um conjunto de escritórios fora das dependências físicas da Sun, e sem qualquer tipo de comunicação com a matriz, durante 18 meses para a concretização desta ideia.
-
-<img src="https://cdn.worldvectorlogo.com/logos/java.svg" height="77" align="right">
 
 Com a tecnologia Java, as aplicações passaram a ser portáveis de um sistema para o outro, sem nenhuma necessidade de alteração. Por isso, afirmamos que a portabilidade é uma das mais importantes características da linguagem Java.
 
