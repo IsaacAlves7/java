@@ -2632,27 +2632,29 @@ Principais componentes do ambiente de execução do Spring:
 
 O Spring é ideal para aplicações modulares, microserviços e arquiteturas robustas, como Hexagonal Architecture (Ports & Adapters) e Domain-Driven Design (DDD). O motivo é que ele oferece um ecossistema completo, que facilita a implementação de princípios arquiteturais modernos, incluindo modularização, injeção de dependências e comunicação entre serviços.
 
-<img src="https://github.com/IsaacAlves7/java/assets/61624336/7f1f4cdf-9e29-44c9-b78a-f12f5603b36c" align="right" height="277">
+A **Inversão de Controle** (Inversion of Control ou IoC) é um princípio de design de software e trata-se do redirecionamento do fluxo de execução de um código retirando parcialmente o controle sobre ele e delegando-o para um container. O principal propósito é minimizar o acoplamento do código.
 
-Inversão de Controle (Inversion of Control ou IoC) é um princípio de design de software e trata-se do redirecionamento do fluxo de execução de um código retirando parcialmente o controle sobre ele e delegando-o para um container. O principal propósito é minimizar o acoplamento do código.
+<table>
+  <tr>
+    <td><img src="https://github.com/IsaacAlves7/java/assets/61624336/7f1f4cdf-9e29-44c9-b78a-f12f5603b36c"></td>
+    <td><img src="https://github.com/IsaacAlves7/java/assets/61624336/210a65fc-4385-46dc-a22c-2726d9e0db4a"></td>
+  </tr>
+</table>
 
 - **Sem IoC**: Em nosso desenvolvimento éramos responsáveis pela instanciação e gestão dos objetos da aplicação.
 
-- **Com IoC**: Agora um container cuida de todo este trabalho de criação e controle dos objetos da aplicação denominados de **Component**.
+- **Com IoC**: Agora um container cuida de todo este trabalho de criação e controle dos objetos da aplicação denominados de `Component`.
 
 > [!Note]
-> **Não confunda!** Os Design patterns (Padrões de design) são soluções reutilizáveis para problemas comuns de design de software, enquanto **design de software** é o processo de definir a arquitetura, componentes e interfaces de um sistema para atender a requisitos específicos. No contexto de IoC, o design de software aplica o princípio de Inversão de Controle para criar arquiteturas desacopladas, e padrões como Dependency Injection e Service Locator implementam esse princípio para gerenciar dependências de forma eficiente.
+> **Não confunda!** Os Design patterns (Padrões de design) são soluções reutilizáveis para problemas comuns de design de software, enquanto design de software é o processo de definir a arquitetura, componentes e interfaces de um sistema para atender a requisitos específicos. No contexto de IoC, o design de software aplica o princípio de Inversão de Controle para criar arquiteturas desacopladas, e padrões como Dependency Injection e Service Locator implementam esse princípio para gerenciar dependências de forma eficiente.
 
-<img src="https://github.com/IsaacAlves7/java/assets/61624336/210a65fc-4385-46dc-a22c-2726d9e0db4a" align="right" height="177">
+<img src="https://github.com/IsaacAlves7/java/assets/61624336/e8fdf254-56ac-4331-a550-e6a1a554fffc" align="right" height="277">
 
+A **Injeção de dependência** (Dependency Injection ou DI) é um padrão de desenvolvimento com a finalidade de manter baixo o nível de acoplamento entre módulos de um sistema. 
 
-<img src="https://github.com/IsaacAlves7/java/assets/61624336/e8fdf254-56ac-4331-a550-e6a1a554fffc" align="right" height="177">
+- **Beans** é o objeto que é instanciado (criado), montado e gerenciado por um container através do princípio da inversão de controle.
 
-Injeção de dependência é um padrão de desenvolvimento com a finalidade de manter baixo o nível de acoplamento entre módulos de um sistema. 
-
-**Beans** é o objeto que é instanciado (criado), montado e gerenciado por um container através do princípio da inversão de controle.
-
-**Scopes** é o controle da existência de nossos objetos Components da aplicação.
+- **Scopes** é o controle da existência de nossos objetos Components da aplicação.
 
 - **Singleton**: O container do Spring IoC define apenas uma instância do objeto.
 
