@@ -2545,9 +2545,7 @@ Principais Características da Linguagem Kotlin:
 
 8. **Estrutura Moderna de Linguagem**: Kotlin possui várias características modernas de linguagem, como propriedades, delegados, data classes, sealed classes, entre outros, que ajudam a escrever código mais limpo e expressivo.
 
-Exemplo de Código em Kotlin
-
-Aqui está um exemplo simples que demonstra algumas das características mencionadas:
+Exemplo de Código em Kotlin:
 
 ```kotlin
 // Declaração de uma função de extensão para a classe String
