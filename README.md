@@ -2680,8 +2680,16 @@ O **Autowired** é uma anotação (indicação) onde deverá ocorrer uma injeç�
 
 <img src="https://github.com/IsaacAlves7/java/assets/61624336/971ca997-e796-461f-bcc2-5c4877c04fea" height="77" align="right">
 
-Enquanto que o Spring Framework é baseado no padrão de injeção de dependências, o **Springboot** foca na configuração automática. O Spring Boot é um framework Java de código aberto usado para programar aplicativos autônomos baseados em Spring de nível de produção com o mínimo de esforço. O Spring Boot é uma extensão de convenção sobre configuração para a plataforma Spring Java destinada a ajudar a minimizar as preocupações de configuração ao criar aplicações baseadas no Spring. A maior parte do aplicativo pode ser pré-configurada usando a "visão opinativa" da equipe Spring da melhor configuração e uso da plataforma Spring e bibliotecas de terceiros.
+Enquanto que o Spring Framework é baseado no padrão de injeção de dependências, o **Spring Boot** foca na configuração automática. O Spring Boot é um framework Java de código aberto usado para programar aplicativos autônomos baseados em Spring de nível de produção com o mínimo de esforço. O Spring Boot é uma extensão de convenção sobre configuração para a plataforma Spring Java destinada a ajudar a minimizar as preocupações de configuração ao criar aplicações baseadas no Spring. A maior parte do aplicativo pode ser pré-configurada usando a "visão opinativa" da equipe Spring da melhor configuração e uso da plataforma Spring e bibliotecas de terceiros.
 
-<img src="https://github.com/IsaacAlves7/java/assets/61624336/2a5b8942-1fc7-4c42-82e3-ba9d68d7d10f" align="right" height="177">
+<img src="https://github.com/IsaacAlves7/java/assets/61624336/2a5b8942-1fc7-4c42-82e3-ba9d68d7d10f" align="right" height="277">
 
 Dado que a maior parte das configurações necessárias para o início de um projeto são sempre as mesmas, por que não iniciar um projeto com todas estas configurações já definidas?
+
+Essa é exatamente a proposta do Spring Boot! Ele adota a filosofia de convenção sobre configuração para eliminar a necessidade de definir manualmente todas as configurações que, na maioria dos casos, seguem um padrão repetitivo. Em vez de perder tempo ajustando arquivos XML, definindo beans manualmente e configurando o servidor de aplicação, o Spring Boot simplifica tudo com **configuração automática** (**Spring Boot AutoConfiguration**), **starters** e **embutindo um servidor Tomcat ou Jetty** por padrão.
+
+Com o **Spring Boot Starters**, basta adicionar a dependência certa no `pom.xml` (Maven) ou `build.gradle` (Gradle), e o framework já configura automaticamente tudo o que é necessário. Por exemplo, ao adicionar `spring-boot-starter-web`, o Spring Boot configura um ambiente pronto para APIs REST, incluindo um servidor embutido (Tomcat), suporte ao Spring MVC e conversão de JSON. Se adicionarmos `spring-boot-starter-data-jpa`, ele configura o Hibernate e a conexão com o banco de dados.
+
+Outro grande benefício da inicialização automática do Spring Boot é o **Spring Boot Actuator**, que fornece endpoints para monitoramento e métricas da aplicação sem precisar de configurações complexas. Além disso, o **Spring Boot DevTools** ajuda na produtividade, permitindo recarregamento automático da aplicação durante o desenvolvimento.
+
+Com isso, ao invés de gastar tempo com configurações repetitivas e infraestrutura, os desenvolvedores podem focar diretamente no desenvolvimento das **regras de negócio**. É isso que faz o Spring Boot ser tão eficiente para criar microserviços, APIs REST e aplicações escaláveis rapidamente.
