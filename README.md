@@ -2657,7 +2657,7 @@ A **Injeção de dependência** (Dependency Injection ou DI) é um padrão de de
 <table>
   <tr>
     <td align="center"><b>DI</b></td>
-    <td align="center"><b>DI</b></td>
+    <td align="center"><b>DI com Singleton, Prototype e Spring Bean Scopes</b></td>
   </tr>
   <tr>
     <td><img src="https://github.com/IsaacAlves7/java/assets/61624336/e8fdf254-56ac-4331-a550-e6a1a554fffc"></td>
