@@ -1664,16 +1664,15 @@ Desta forma, não teremos redundância de códigos, escreveremos menos linhas e 
 
 Vamos analisar agora as diferenças entre as versões das nossas classes com e **sem a aplicação da herança**:
 
-## Classe Gerente sem o uso do conceito de herança:
+Classe `Gerente` sem o uso do conceito de herança:
 
 ![code](https://user-images.githubusercontent.com/61624336/120906829-12719f00-c633-11eb-875f-7ca163c6e07c.png)
 
-## Classe Funcionário sem o uso do conceito de herança:
+Classe `Funcionário` sem o uso do conceito de herança:
 
 ![code1](https://user-images.githubusercontent.com/61624336/120907573-1b656f00-c639-11eb-9eb6-5383db64336f.png)
 
-## Classe Cliente sem o uso do conceito de herança:
-
+Classe `Cliente` sem o uso do conceito de herança:
 
 Vamos a algumas perguntas:
 
@@ -1688,9 +1687,7 @@ Resposta: Será necessário alterar apenas a classe Cliente.
 
 Vamos guardar estas perguntas e repeti-las após a aplicação da herança.
 
-## Aplicando os conceitos de herança:
-
-Primeiro de tudo, vamos arquitetar o conceito de superclasses e subclasses:
+Aplicando os conceitos de herança: Primeiro de tudo, vamos arquitetar o conceito de superclasses e subclasses:
 
 - **SuperClasse**: Pessoa;
 - **SubClasse de Pessoa**: PessoaEmpresa, Cliente; 
@@ -1698,23 +1695,23 @@ Primeiro de tudo, vamos arquitetar o conceito de superclasses e subclasses:
 
 Logo, iremos aplicar esse conceito:
 
-### Classe Pessoa com o uso do conceito de herança (SuperClasse):
+Classe `Pessoa` com o uso do conceito de herança (SuperClasse):
 
 ![code](https://user-images.githubusercontent.com/61624336/120913193-89c32500-c66b-11eb-94b9-669f12caa596.png)
 
-### Classe PessoaEmpresa com o uso do conceito de herança (SubClasse de Pessoa):
+Classe `PessoaEmpresa` com o uso do conceito de herança (SubClasse de `Pessoa`):
 
 ![code](https://user-images.githubusercontent.com/61624336/120913772-fe985e00-c66f-11eb-8a5f-29f525201230.png)
 
-### Classe Gerente com o uso do conceito de herança (SubClasse de PessoaEmpresa):
+Classe `Gerente` com o uso do conceito de herança (SubClasse de `PessoaEmpresa`):
 
 ![code](https://user-images.githubusercontent.com/61624336/120914141-694a9900-c672-11eb-8825-1d677e8c40fc.png)
 
-### Classe Funcionário com o uso do conceito de herança (SubClasse de PessoaEmpresa):
+Classe `Funcionário` com o uso do conceito de herança (SubClasse de `PessoaEmpresa`):
 
 ![code](https://user-images.githubusercontent.com/61624336/120934666-a1cf8e80-c6d5-11eb-96c0-b28ec46734d9.png)
 
-### Classe Cliente com o uso do conceito de herança (SubClasse de Pessoa):
+Classe `Cliente` com o uso do conceito de herança (SubClasse de `Pessoa`):
 
 ![code](https://user-images.githubusercontent.com/61624336/120969534-a1b8a880-c740-11eb-8ae1-4ff30254b352.png)
 
@@ -1750,8 +1747,7 @@ Já a classe Cliente é composta por todos os membros de Pessoa e Cliente, uma v
 Cliente</pre>
 
 ## 🍇 Herança de métodos construtores 🧱
-
-Vamos analisar os métodos construtores da classe Cliente:
+Vamos analisar os métodos construtores da classe `Cliente`:
 
 ![code](https://user-images.githubusercontent.com/61624336/120968564-68336d80-c73f-11eb-8327-c36c4c87a0cd.png)
 
