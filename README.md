@@ -2471,6 +2471,29 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 - Integração com serviços na nuvem e muito mais.
 
+O Spring Framework Runtime Environment (ambiente de execução do Spring) não é um termo técnico oficial dentro do ecossistema Spring, ele varia conforme o tipo de aplicação. Se for uma aplicação Spring Boot, o runtime pode ser apenas um JAR executável com um servidor embutido. Se for uma aplicação corporativa, pode envolver servidores de aplicação externos, bancos de dados, serviços na nuvem, entre outros. Mas no fim das contas, tudo sempre roda dentro da JVM, gerenciado pelo **Spring Container**.
+
+O ambiente de execução do Spring pode ser entendido como o conjunto de componentes e infraestrutura necessários para que uma aplicação Spring rode corretamente.
+
+Principais componentes do ambiente de execução do Spring:
+
+1. **JVM (Java Virtual Machine)** O Spring é um framework Java, então a aplicação Spring **roda dentro da JVM**. Você precisa de um JDK/JRE compatível para executar sua aplicação.
+
+2. **Container de Inversão de Controle (IoC Container)** O **Spring Container** gerencia a criação e o ciclo de vida dos beans (objetos controlados pelo Spring). Ele pode ser o `ApplicationContext` ou `BeanFactory`, dependendo do tipo de aplicação.
+
+3. **Servidor de Aplicação/Servlet Container** Se você estiver rodando uma aplicação web com **Spring Boot**, ela pode rodar em servidores como **Tomcat, Jetty ou Undertow** (embutidos ou externos). Em aplicações corporativas maiores, pode ser implantada em servidores como **WildFly, WebLogic, WebSphere**.
+
+4. **Spring Boot Runtime (para aplicações Spring Boot)** No caso do **Spring Boot**, o ambiente de execução inclui bibliotecas de autoconfiguração e um servidor embutido, permitindo executar a aplicação como um **JAR executável** (`java -jar app.jar`).
+
+5. **Banco de Dados e Integrações** Muitas aplicações Spring interagem com bancos de dados via **Spring Data JPA**, **JDBC**, **MongoDB**, **Redis**, etc. O ambiente de execução pode incluir conexões com serviços externos, como APIs REST, mensageria (RabbitMQ, Kafka), caches distribuídos, entre outros.
+
+6. **Spring Runtime e Nuvem** Se sua aplicação roda em **ambientes de nuvem**, como AWS, Azure, GCP ou Kubernetes, o runtime pode incluir:
+
+- **Spring Cloud** (para microservices e integração com serviços na nuvem).
+- **Docker/Kubernetes** para implantação escalável.
+- **Configuração distribuída** via Spring Config Server.
+- **Service Discovery** com Eureka, Consul ou Zookeeper.
+
 <img src="https://github.com/IsaacAlves7/java/assets/61624336/7f1f4cdf-9e29-44c9-b78a-f12f5603b36c" align="right" height="177">
 
 Inversão de Controle (Inversion of Control ou IoC) é um princípio de design de software e trata-se do redirecionamento do fluxo de execução de um código retirando parcialmente o controle sobre ele e delegando-o para um container. O principal propósito é minimizar o acoplamento do código.
