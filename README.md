@@ -1433,7 +1433,7 @@ Todos os métodos acima, apesar de possuírem a mesma quantidade de parâmetros,
 
 Os valores armazenados em g, h, i e j serão respectivamente: 1, 2, 3 e 4.
 
-## ☕ A sobrecarga de métodos construtores 🥨🧱
+## [Java] A sobrecarga de métodos construtores
 
 **Métodos construtores** são métodos e **também podem ser sobrecarregados**.
 
@@ -1463,8 +1463,7 @@ Aplicação usando diferentes construtores para criar os objetos: `AppCarro`
 3. Na nova aplicação, foram criados cinco diferentes objetos, cada um usando um construtor diferente;
 4. Ambas as aplicações funcionaram apesar da alteração;
 
-## ☕ Polimorfismo de sobrecarga e a evolução das classes 🥨
-
+## [Java] Polimorfismo de sobrecarga e a evolução das classes
 Com o **polimorfismo de sobrecarga** podemos criar **diferentes implementações para métodos com o mesmo identificador (nome) em uma mesma classe**.
 
 Vamos imaginar que uma classe chamada **Login** fosse usada por vários de seus sistemas:
