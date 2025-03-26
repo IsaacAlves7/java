@@ -1,12 +1,13 @@
 <a href="https://github.com/IsaacAlves7/java-programming"><img src="https://training.infnet.edu.br/wp-content/uploads/sites/18/2019/02/desenvolvedor-java.jpg"/></a>
 
 # It's a repository of Java language ☕
-
 > ☕ **Preparação**: Para este conteúdo, o aluno deverá dispor de um computador com acesso à internet, um web browser com suporte a HTML 5 (Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, Opera etc.), um editor de texto ou IDE (VSCode etc.) e o software JDK, com a versão mais recente, instalado na sua máquina local.
 
 <a href="https://github.com/IsaacAlves7/java-programming"><div align="center"><img src="https://github.com/IsaacAlves7/java/assets/61624336/4879f8a9-f7e2-4025-9f35-5b5997b49f7f" height="177"/></div></a>
 
 <img src="https://user-images.githubusercontent.com/61624336/183478203-20b992ae-b018-448a-bd56-e2fae9c5f7ae.svg" align="right" height="77">
+
+<div align="left"><a href="https://github.com/IsaacAlves7/java-programming"><img src="https://cdn.icon-icons.com/icons2/2530/PNG/512/java_button_icon_151928.png" height="47"></a></div>
 
 # ☕ The History of Java language
 <img src="https://cdn.worldvectorlogo.com/logos/java-100-pure.svg" height="77" align="right">
@@ -2370,8 +2371,6 @@ java.lang.Throwable
  └── java.lang.Exception  
       ├── java.lang.RuntimeException
 ```
-
-<div align="left"><a href="https://github.com/IsaacAlves7/java-programming"><img src="https://cdn.icon-icons.com/icons2/2530/PNG/512/java_button_icon_151928.png" height="47"></a></div>
 
 # 🤖 [Java] Primefaces
 <img src="https://user-images.githubusercontent.com/61624336/192927385-5a585bf9-2cac-4344-89b4-f0d194cac6b5.svg" height="77" align="right">
