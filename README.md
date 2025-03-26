@@ -1152,11 +1152,11 @@ Note que não existe parâmetro, o método apenas deve retornar o valor armazena
 
 **No futuro, os atributos das nossas classes serão protegidos contra acesso direto (privado)**, impedindo que a aplicação possa acessar diretamente um atributo. Dessa forma, é necessário que usemos os métodos *Setters* e *Getters* para atribuir e recuperar os valores do atributo.
 
-### Exemplo: Aluno.java (versão com métodos Setters e Getters.)
+Exemplo: `Aluno.java` (versão com métodos Setters e Getters.)
 
 ![code](https://user-images.githubusercontent.com/61624336/120033833-86c49680-bfd2-11eb-83a8-2a1379ce07ac.png)
 
-### Exemplo: AppAluno.java (nova versão)
+Exemplo: `AppAluno.java` (nova versão)
 
 ![code](https://user-images.githubusercontent.com/61624336/120039595-9399b800-bfdb-11eb-956a-bd8c7be22f31.png)
 
