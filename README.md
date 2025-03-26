@@ -150,12 +150,18 @@ A linguagem Java possui uma base de construção semelhante à linguagem C e, po
 > Cuidado com as diferenças de versões no sistema operacional: se instalar o Java para 64 bits, você deverá usar um IDE (Netbeans ou Eclipse) de 64 bits. O mesmo para a versão de 32 bits: tanto o Java quanto o IDE deverão ser para 32 bits.
 
 ## [Java] `Hello, World!`
-![img03](https://user-images.githubusercontent.com/61624336/112783450-bc2a2380-9025-11eb-9ad8-b3425b12416e.jpg)
-![img04](https://user-images.githubusercontent.com/61624336/112783457-bd5b5080-9025-11eb-9ed8-7834c9429c27.jpg)
-![img05](https://user-images.githubusercontent.com/61624336/112783460-be8c7d80-9025-11eb-9d0e-38d8ce22f537.jpg)
-![img06](https://user-images.githubusercontent.com/61624336/112783560-f7c4ed80-9025-11eb-9aa5-db63dc209059.jpg)
+<table>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/61624336/112783450-bc2a2380-9025-11eb-9ad8-b3425b12416e.jpg"></td>
+    <td><img src="https://user-images.githubusercontent.com/61624336/112783457-bd5b5080-9025-11eb-9ed8-7834c9429c27.jpg"></td>
+  </tr>
+   <tr>
+     <td><img src="https://user-images.githubusercontent.com/61624336/112783460-be8c7d80-9025-11eb-9d0e-38d8ce22f537.jpg"></td>
+    <td><img src="https://user-images.githubusercontent.com/61624336/112783560-f7c4ed80-9025-11eb-9aa5-db63dc209059.jpg"></td>
+  </tr>
+</table>
 
-O projeto **Exemplo** foi criado e automaticamente teremos uma **classe inicial** para execução da aplicação.
+O projeto `Exemplo` foi criado e automaticamente teremos uma **classe inicial** para execução da aplicação.
 
 ![img07](https://user-images.githubusercontent.com/61624336/112783806-89ccf600-9026-11eb-9a35-7d2d9b04774e.jpg)
 
