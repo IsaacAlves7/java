@@ -1814,17 +1814,8 @@ A **herança** é um conceito importantíssimo da programação orientada a Obje
 A programação orientada a objetos nos ajuda a resolver de forma mais simples problemas com alta complexidade. A **agregação de classes** é um conceito voltado a facilitar a solução de problemas muito complexos. Podemos *dividir* uma classe em classes menores, particionando esta classe em diversas outras classes mais simples, para posteriormente as reunirmos em conjunto, formando uma classe maior e mais complexa.
 
 ## [Java] Particionamento
-É a decomposição de classes extensas em classes menores, que podem ser mais bem reaproveitadas em outras classes, além de permitir melhor controle e manutenção.
 
-O particionamento de classes nos permite criar objetos menores e mais simples, que poderão ser reunidos em conjunto, capazes de criar novas classes, maiores e mais complexas.
-
-Vamos imaginar um computador do tipo Desktop, que é um objeto bem complexo, com diferentes partes. Muitas dessas partes são usadas por outros objetos também, tal como Notebooks e Servidores.
-
-Um HD (HardDisk), por exemplo, pode ser usado por cada um deles, assim como a placa de vídeo, a placa-mãe, o vídeo, a memória, além de outros dispositivos. Se formos criar uma classe para representar um Desktop, teremos uma classe com muitos atributos, o que a tornaria grande e complexa, com muitas linhas de código e de difícil manutenção. Isso porque, se fosse necessário realizar alguma mudança, teríamos que trabalhar em uma classe altamente complexa. Outro ponto importante seria a criação das classes Notebook e Servidor, que seriam igualmente complexas, sem contar que, para realizar uma alteração em um único componente que fosse, teríamos que fazê-la em todas as três classes (Desktop, Notebook e Servidor).
-
-Inicialmente, nossa classe desktop ficaria com os seguintes atributos:
-
-<table>
+<table align="right">
   <tr>
     <td><b>Classe</b></td>
     <td><b>Atributos</b></td>
@@ -1869,6 +1860,16 @@ TipoMemoria : texto
 CapacidadeMemoria : inteiro</td>
   </tr>
 </table>
+
+É a decomposição de classes extensas em classes menores, que podem ser mais bem reaproveitadas em outras classes, além de permitir melhor controle e manutenção.
+
+O particionamento de classes nos permite criar objetos menores e mais simples, que poderão ser reunidos em conjunto, capazes de criar novas classes, maiores e mais complexas.
+
+Vamos imaginar um computador do tipo Desktop, que é um objeto bem complexo, com diferentes partes. Muitas dessas partes são usadas por outros objetos também, tal como Notebooks e Servidores.
+
+Um HD (HardDisk), por exemplo, pode ser usado por cada um deles, assim como a placa de vídeo, a placa-mãe, o vídeo, a memória, além de outros dispositivos. Se formos criar uma classe para representar um Desktop, teremos uma classe com muitos atributos, o que a tornaria grande e complexa, com muitas linhas de código e de difícil manutenção. Isso porque, se fosse necessário realizar alguma mudança, teríamos que trabalhar em uma classe altamente complexa. Outro ponto importante seria a criação das classes Notebook e Servidor, que seriam igualmente complexas, sem contar que, para realizar uma alteração em um único componente que fosse, teríamos que fazê-la em todas as três classes (Desktop, Notebook e Servidor).
+
+Inicialmente, nossa classe desktop ficaria com os seguintes atributos:
 
 Podemos analisar como ficará a classe `Desktop`. Declaração dos atributos da classe `Desktop`:
 ![code](https://user-images.githubusercontent.com/61624336/121084669-5392bc00-c7b7-11eb-94b5-c9aea538887e.png)
