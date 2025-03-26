@@ -6,10 +6,6 @@
 
 <a href="https://github.com/IsaacAlves7/java-programming"><div align="center"><img src="https://github.com/IsaacAlves7/java/assets/61624336/4879f8a9-f7e2-4025-9f35-5b5997b49f7f" height="177"/></div></a>
 
-- https://glysns.gitbook.io/java
-- https://glysns.gitbook.io/java-basico/
-- https://glysns.gitbook.io/spring-framework/
-
 <img src="https://user-images.githubusercontent.com/61624336/183478203-20b992ae-b018-448a-bd56-e2fae9c5f7ae.svg" align="right" height="77">
 
 # ☕ The History of Java language
