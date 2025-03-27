@@ -2627,6 +2627,8 @@ Ecossistema Kotlin:
 4. **Kotlin Multiplatform**: Permite compartilhar código comum entre diferentes plataformas (JVM, JavaScript, iOS, etc.), facilitando o desenvolvimento de aplicativos multiplataforma.
 
 # 🍃 [Java] Spring
+[![Spring](https://img.shields.io/badge/-Spring-ffffff?style=flat&logo=Spring&logoColor=6DB33F)](#) [![Spring Boot](https://img.shields.io/badge/-Spring_Boot-ffffff?style=flat&logo=Spring-Boot&logoColor=6DB33F)](#) [![Spring Security](https://img.shields.io/badge/-Spring_Security-ffffff?style=flat&logo=Spring-Security&logoColor=6DB33F)](#)
+
 <img src="https://www.svgrepo.com/show/354380/spring-icon.svg" align="right" height="77">
 
 O **Spring** é um framework open source desenvolvido para a plataforma Java baseado nos padrões de projetos inversão de controle (IoC) e injeção de dependência (DI). Sua estrutura é composta por módulos afins de reduzir a complexidade no desenvolvimento aplicações simples ou corporativa. O Spring Framework fornece infraestrutura abrangente para desenvolver aplicações Java robustas e escaláveis. Ele facilita a inversão de controle (IoC) e a injeção de dependências (DI), além de oferecer suporte para desenvolvimento de aplicativos web, segurança, transações, persistência de dados, entre outros. Spring é conhecido por sua modularidade e capacidade de integrar facilmente com outros frameworks e tecnologias.
