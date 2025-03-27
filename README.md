@@ -335,8 +335,7 @@ Observe que os exemplos 2 e 3 possuem a mesma grafia, mas, como existe mudança 
 	  <td><code>throw</code></td>
 	  <td><code>throws</code></td>
 	  <td><code>tdrow</code></td>
-	  <td><code>transient</code></td>
-	  <td><code>true</code></td>
+	  <td><code>transient</code> - <code>true</code></td>
       <tr>
 	  <td><code>try</code></td>
 	  <td><code>typeof</code></td>
