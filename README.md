@@ -214,7 +214,7 @@ O ambiente está pronto para digitarmos o código da aplicação: preencha o có
 
 ![img09](https://user-images.githubusercontent.com/61624336/112783960-dca6ad80-9026-11eb-8f34-d32ee5ec1380.jpg)
 
-Após o código estar pronto e sem erros, podemos executar a aplicação clicando sobre o “arquivo da classe” com o botão direito, e em seguida clicar sobre a opção **Run file**.
+Após o código estar pronto e sem erros, podemos executar a aplicação clicando sobre o “arquivo da classe” com o botão direito, e em seguida clicar sobre a opção `Run file`.
 
 ![img10](https://user-images.githubusercontent.com/61624336/112784797-e7624200-9028-11eb-8739-7c214e90e4f0.jpg)
 
