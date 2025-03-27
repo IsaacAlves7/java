@@ -224,7 +224,18 @@ A aplicação executará na parte inferior do Netbeans:
 
 Crie um programa em java e execute os seguintes comandos para abri-lo como saída pelo terminal.
 
-![image](https://user-images.githubusercontent.com/61624336/113492455-d47ac200-94ad-11eb-99a2-946ea9250590.png)
+[![.JAVA](https://img.shields.io/badge/-HelloWorld.java-000000?style=social&logo=OpenJdk&logoColor=chocolate)](#)
+
+```java
+public class HelloWorld {
+    public static void main(String[] args)
+    {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+Configurando a saída do programa pela interface de linha de comando (CLI) do terminal.
 
 ```sh
 javac app.java
