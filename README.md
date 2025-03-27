@@ -71,11 +71,11 @@ A plataforma Java é definida apenas em software e possui dois componentes:
 
 API Java:
 
-<img src="https://user-images.githubusercontent.com/61624336/113073382-5e214b80-919f-11eb-8141-93ea67a402dc.png" height="177" align="right">
+<img src="https://user-images.githubusercontent.com/61624336/113073382-5e214b80-919f-11eb-8141-93ea67a402dc.png" height="277" align="right">
 
 "Diferentemente das linguagens convencionais, que são compiladas para código nativo, a linguagem Java é compilada para "bytecode" (gerando o <code>.class</code> ou <code>.jar</code>), que é executado por uma máquina virtual Java (JVM - Java Virtual Machine)."
 
-<img src="https://user-images.githubusercontent.com/61624336/112760358-0b903580-8fcd-11eb-9e08-46f78186e835.png" height="77" align="right">
+<img src="https://user-images.githubusercontent.com/61624336/112760358-0b903580-8fcd-11eb-9e08-46f78186e835.png" height="77" align="left">
 
 O modelo inicial era interpretado. Já o atual trocou a etapa do interpretador por uma 2ª compilação (compilador JIT, isto é, just-in-time).
 
