@@ -58,18 +58,16 @@ Principais características e vantagens da tecnologia Java:
 - Mais rápida que linguagens de script, porém mais lenta que as linguagens compiladas puras;
 - Hoje, os problemas de desempenho são resolvidos com compilação just-in-time.
 
-Sistema de implementação do Java:
-
 <img src="https://luizgustavoss.files.wordpress.com/2009/02/api_jse.png" height="277" align="right">
 
-A **plataforma Java** é uma **plataforma de software** desenvolvida pela Sun Microsystems (agora parte da Oracle), projetada para fornecer um ambiente para o desenvolvimento e execução de aplicações independentes de sistema operacional e hardware. Isso é possível graças ao conceito de *Write Once, Run Anywhere (WORA)*, onde um programa Java pode ser escrito uma vez e executado em qualquer dispositivo que tenha a **Java Virtual Machine (JVM)** instalada. De forma geral, entendemos que plataforma (ambiente de execução) é composta por hardware + software básico (sistema operacional). A plataforma Java é puramente baseada em software, e sua estrutura modular (JVM, API, JRE e JDK) permite que aplicações Java sejam portáveis, seguras e eficientes. Essa arquitetura fez do Java uma das linguagens mais utilizadas no mundo, especialmente em sistemas empresariais, aplicações web e desenvolvimento para dispositivos embarcados.
+A **plataforma Java** é uma plataforma de software desenvolvida pela Sun Microsystems (agora parte da Oracle), projetada para fornecer um ambiente para o desenvolvimento e execução de aplicações independentes de sistema operacional e hardware, mais especificamente ela é o sistema de implementação do Java. Isso é possível graças ao conceito de *Write Once, Run Anywhere (WORA)*, onde um programa Java pode ser escrito uma vez e executado em qualquer dispositivo que tenha a **Java Virtual Machine (JVM)** instalada. De forma geral, entendemos que plataforma (ambiente de execução) é composta por hardware + software básico (sistema operacional). A plataforma Java é puramente baseada em software, e sua estrutura modular (JVM, API, JRE e JDK) permite que aplicações Java sejam portáveis, seguras e eficientes. Essa arquitetura fez do Java uma das linguagens mais utilizadas no mundo, especialmente em sistemas empresariais, aplicações web e desenvolvimento para dispositivos embarcados.
 
 A plataforma Java é definida apenas em software e possui dois componentes:
 
 - Máquina Virtual Java (JVM - Java Virtual Machine);
 - Conjunto de bibliotecas que disponibilizam classes comuns.
-  
-Detalhando mais sobre a estrutura da Plataforma Java, ela é composta por **quatro camadas principais**, cada uma com um papel fundamental:
+
+Detalhando mais sobre a estrutura da Plataforma Java, ela é composta por quatro camadas principais, cada uma com um papel fundamental:
 
 Máquina Virtual Java (JVM - Java Virtual Machine):
 
@@ -101,6 +99,8 @@ Se um usuário final quiser rodar um programa Java, basta ter o **JRE** instalad
 
 Kit de Desenvolvimento Java (JDK - Java Development Kit):
 
+<img src="https://user-images.githubusercontent.com/61624336/113073382-5e214b80-919f-11eb-8141-93ea67a402dc.png" height="277" align="right">
+
 O **JDK** é um **superconjunto do JRE** e inclui ferramentas para **desenvolver** aplicações Java. Ele contém:
 - **Compilador (javac)** → Transforma código-fonte Java em **bytecode**.
 - **Depuradores e ferramentas de monitoramento** (`jdb`, `jconsole`, `jvisualvm`).
@@ -117,11 +117,9 @@ Exemplo de Fluxo de Execução na Plataforma Java:
 
 API Java:
 
-<img src="https://user-images.githubusercontent.com/61624336/113073382-5e214b80-919f-11eb-8141-93ea67a402dc.png" height="277" align="right">
+<img src="https://user-images.githubusercontent.com/61624336/112760358-0b903580-8fcd-11eb-9e08-46f78186e835.png" height="77" align="left">
 
 "Diferentemente das linguagens convencionais, que são compiladas para código nativo, a linguagem Java é compilada para "bytecode" (gerando o <code>.class</code> ou <code>.jar</code>), que é executado por uma máquina virtual Java (JVM - Java Virtual Machine)."
-
-<img src="https://user-images.githubusercontent.com/61624336/112760358-0b903580-8fcd-11eb-9e08-46f78186e835.png" height="77" align="left">
 
 O modelo inicial era interpretado. Já o atual trocou a etapa do interpretador por uma 2ª compilação (compilador JIT, isto é, just-in-time).
 
