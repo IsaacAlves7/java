@@ -252,63 +252,121 @@ Em todas as linguagens de programação, devemos identificar variáveis, program
 **Java** é uma linguagem de programação sensível à caixa (alta ou baixa ou **case sensitive**). Desta forma, a linguagem faz distinção entre letras maiúsculas e minúsculas. Mas isso não quer dizer que podemos utilizar qualquer nome como um identificador, pois existem algumas palavras reservadas que não podem ser utilizadas para tal. 
 
 Exemplos de identificadores válidos em Java:
-- identificador
-- nomeCompleto
-- NomeCompleto
-- nota1
-- _sys_path
-- $user
+
+- `identificador`
+- `nomeCompleto`
+- `NomeCompleto`
+- `nota1`
+- `_sys_path`
+- `$user`
 
 Observe que os exemplos 2 e 3 possuem a mesma grafia, mas, como existe mudança entre caixa alta e baixa, para a linguagem Java são dois diferentes identificadores. 
 
-Palavras reservadas da linguagem Java (não podem ser usadas como identificadores); dentre elas podemos destacar:
+<table class="custom-table">
+<tbody>
+   <tr>
+   <td colspan="4">Palavras reservadas da linguagem Java (não podem ser usadas como identificadores), dentre elas podemos destacar:</td>
+      </tr>
+      <tr>
+	  <td><code>abstract</code></td>
+	  <td><code>arguments</code></td>
+	  <td><code>await</code></td>
+	  <td><code>boolean</code></td>
+	  </tr>
+      <tr>
+	  <td><code>break</code></td>
+	  <td><code>byte</code></td>
+	  <td><code>case</code></td>
+	  <td><code>catch</code></td>
+      </tr>
+      <tr>
+	  <td><code>char</code></td>
+	  <td><code>class</code></td>
+	  <td><code>const</code></td>
+	  <td><code>continue</code></td>
+	  </tr>
+      <tr>
+	  <td><code>debugger</code></td>
+	  <td><code>default</code></td>
+	  <td><code>delete</code></td>
+	  <td><code>do</code></td>
+	  </tr>
+      <tr>
+	  <td><code>double</code></td>
+	  <td><code>else</code></td>
+	  <td><code>enum</code></td>
+	  <td><code>eval</code></td>
+	  </tr>
+      <tr>
+	  <td><code>export</code></td>
+	  <td><code>extends</code></td>
+	  <td><code>false</code></td>
+	  <td><code>final</code></td>
+	  </tr>
+      <tr>
+	  <td><code>finally</code></td>
+	  <td><code>float</code></td>
+	  <td><code>for</code></td>
+	  <td><code>function</code></td>
+	  </tr>
+      <tr>
+	  <td><code>goto</code></td>
+	  <td><code>implements</code></td>
+	  <td><code>if</code></td>
+	  <td><code>import</code></td>
+	  </tr>
+      <tr>
+	  <td><code>in</code></td>
+	  <td><code>instanceof</code></td>
+	  <td><code>int</code></td>
+	  <td><code>interface</code></td>
+	  </tr>
+      <tr>
+	  <td><code>let</code></td>
+	  <td><code>long</code></td>
+	  <td><code>native</code></td>
+	  <td><code>new</code></td>
+	  </tr>
+      <tr>
+	  <td><code>null</code></td>
+	  <td><code>package</code></td>
+	  <td><code>private</code></td>
+	  <td><code>protected</code></td>
+	  </tr>
+      <tr>
+	  <td><code>public</code></td>
+	  <td><code>return</code></td>
+	  <td><code>short</code></td>
+	  <td><code>static</code></td>
+	  </tr>
+      <tr>
+	  <td><code>super</code></td>
+	  <td><code>switch</code></td>
+	  <td><code>synchronized</code></td>
+	  <td><code>this</code></td>
+	  </tr>
+      <tr>
+	  <td><code>throw</code></td>
+	  <td><code>throws</code></td>
+	  <td><code>tdrow</code></td>
+	  <td><code>transient</code></td>
+	  <td><code>true</code></td>
+	  </tr>
+      <tr>
+	  <td><code>try</code></td>
+	  <td><code>typeof</code></td>
+	  <td><code>var</code></td>
+	  <td><code>void</code></td>
+	  </tr>
+      <tr>
+	  <td><code>volatile</code></td>
+	  <td><code>while</code></td>
+	  <td><code>with</code></td>
+	  <td><code>yield</code></td>
+      </tr>
+</tbody></table>
 
-- abstract
-- boolean
-- break
-- byte
-- case
-- catch
-- char
-- class
-- continue
-- do
-- double
-- else
-- extends
-- false
-- final
-- finally
-- float
-- for
-- implements
-- import
-- instanceof
-- int
-- interface
-- long
-- native
-- new
-- null
-- private
-- protected
-- public
-- return
-- short
-- static
-- super
-- switch
-- synchronized
-- tdrow
-- throws
-- transient
-- true
-- try
-- void
-- volatile
-- while
-
-<blockquote><b>OBS:</b> Todas as palavras reservadas começam por letras minúsculas e são palavras do idioma inglês.</blockquote>
+> <b>OBS:</b> Todas as palavras reservadas começam por letras minúsculas e são palavras do idioma inglês.
 
 ## [Java] Comentários em Java
 O uso de comentários em Java é semelhante ao usado na linguagem C, mas apenas dois destes tipos são iguais nas duas linguagens, sendo o terceiro tipo somente disponibilizado na linguagem Java.
