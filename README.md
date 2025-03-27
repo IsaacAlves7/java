@@ -235,7 +235,7 @@ public class HelloWorld {
 }
 ```
 
-Configurando a saída do programa pela interface de linha de comando (CLI) do terminal.
+Configurando a saída do programa pela interface de linha de comando (CLI) do terminal:
 
 ```sh
 javac app.java
