@@ -222,7 +222,7 @@ A aplicação executará na parte inferior do Netbeans:
 
 ![img11](https://user-images.githubusercontent.com/61624336/112784856-03fe7a00-9029-11eb-93f7-7da23c1e5735.jpg)
 
-Crie um programa em java e execute os seguintes comandos para abri-lo como saída pelo terminal.
+Crie um programa em java e execute os seguintes comandos para abri-lo como saída pelo terminal:
 
 [![.JAVA](https://img.shields.io/badge/-HelloWorld.java-000000?style=social&logo=OpenJdk&logoColor=chocolate)](#)
 
