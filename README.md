@@ -2807,3 +2807,5 @@ Com o **Spring Boot Starters**, basta adicionar a dependência certa no `pom.xml
 Outro grande benefício da inicialização automática do Spring Boot é o **Spring Boot Actuator**, que fornece endpoints para monitoramento e métricas da aplicação sem precisar de configurações complexas. Além disso, o **Spring Boot DevTools** ajuda na produtividade, permitindo recarregamento automático da aplicação durante o desenvolvimento.
 
 Com isso, ao invés de gastar tempo com configurações repetitivas e infraestrutura, os desenvolvedores podem focar diretamente no desenvolvimento das **regras de negócio**. É isso que faz o Spring Boot ser tão eficiente para criar microserviços, APIs REST e aplicações escaláveis rapidamente.
+
+## [Java] Spring Boot com Kotlin
