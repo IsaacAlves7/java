@@ -2353,14 +2353,12 @@ Dessa forma, podemos substituir o nome do objeto pela sua referência, e também
 
 Nota: O <code>this</code> separa os membros da classe das demais variáveis auxiliares e parâmetros da classe.
 
-## [Java] O modificador: `static`
-Este modificador pode ser aplicado sobre atributos e métodos e transforma o atributo ou método para a forma “compartilhada”.
-
-O modificador static aplicado a um atributo. Este modificador ao ser aplicado em um atributo de uma classe modifica este atributo de objeto (ou de instância) para um atributo de classe1.
+## [Java] O modificador `static`
+Este modificador pode ser aplicado sobre atributos e métodos e transforma o atributo ou método para a forma “compartilhada”. O modificador `static` aplicado a um atributo. Este modificador ao ser aplicado em um atributo de uma classe modifica este atributo de objeto (ou de instância) para um atributo de classe1.
 
 Exemplo 1 - Aplicação com o compartilhamento de um valor: <code>private static double valorDolar</code>
 
-Classe Cotacao (pacote: biblioteca):
+Classe `Cotacao` (pacote: `biblioteca`):
 
 ![code](https://user-images.githubusercontent.com/61624336/121292097-c5eec380-c8bf-11eb-8075-fdb4d0abc996.png)
 
@@ -2405,7 +2403,7 @@ A referência <code>this</code> não pode ser usada com *atributos estáticos (s
 
 Exemplo 2 - Aplicação com um contador de objetos criados: <code>private static int contador</code>
 
-Classe Teste (pacote: biblioteca):
+Classe `Teste` (pacote: `biblioteca`):
 
 ![code](https://user-images.githubusercontent.com/61624336/121296690-701e1980-c8c7-11eb-8295-bfc760c66398.png)
 
