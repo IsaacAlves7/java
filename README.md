@@ -1122,11 +1122,13 @@ As **classes** Java são responsáveis pelo **conjunto de códigos para a criaç
 
 Exemplo:
 
-<pre>String matricula; // atributo para armazenamento da matrícula
+```java
+String matricula; // atributo para armazenamento da matrícula
 
 String nome; // atributo para armazenamento do nome
 
-double cr; // atributo para armazenamento do cr</pre>
+double cr; // atributo para armazenamento do cr
+```
 
 **Método** é uma **ação**, um conjunto de instruções a serem executadas por um objeto para realizar uma determinada tarefa.
 
@@ -1134,10 +1136,10 @@ O **conjunto de métodos** de um objeto deve descrever **todas as ações (taref
 
 Exemplo:
 
-<pre>public int soma(int n1, int n2){
+```java
+public int soma(int n1, int n2){
 
 int soma;
-
 soma = n1 + n2;
 
 return soma;
@@ -1147,12 +1149,11 @@ return soma;
 public void imprimeAumento(double salario, int percentual){
 
 double aumento;
-
 aumento = salario + salario * percentual / 100.0;
-
 System.out.println("O salário com aumento é: " + aumento);
 
-}</pre>
+}
+```
 
 A classe modela o **objeto** de acordo com as necessidades do sistema para a sua descrição e suas ações. A partir de uma mesma classe, vários objetos diferentes, mas com características semelhantes, podem ser criados em um mesmo sistema ou em diferentes sistemas.
 
