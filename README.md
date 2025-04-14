@@ -2812,7 +2812,7 @@ Outro grande benefício da inicialização automática do Spring Boot é o **Spr
 Com isso, ao invés de gastar tempo com configurações repetitivas e infraestrutura, os desenvolvedores podem focar diretamente no desenvolvimento das **regras de negócio**. É isso que faz o Spring Boot ser tão eficiente para criar microserviços, APIs REST e aplicações escaláveis rapidamente.
 
 ## [Java] Spring Boot com Kotlin
-<img src="https://github.com/user-attachments/assets/cc52c0e8-aef2-4212-a926-5491088885e8" align="right" height="177">
+<img src="https://github.com/user-attachments/assets/cc52c0e8-aef2-4212-a926-5491088885e8" align="right" height="77">
 
 **Spring Boot com Kotlin** é uma combinação moderna e poderosa para o desenvolvimento de aplicações backend. O **Spring Boot** é um framework da plataforma Spring (Java) que simplifica a criação de aplicações web e APIs, enquanto o **Kotlin** é uma linguagem moderna, concisa e segura, desenvolvida pela JetBrains, que roda na JVM (Java Virtual Machine). Usar Spring Boot com Kotlin significa unir a robustez do ecossistema Spring com a expressividade, segurança e produtividade do Kotlin.
 
