@@ -1999,7 +1999,7 @@ Observe que muitos dos atributos são comuns a todas as classes e seria necessá
 
 O problema ainda poderia ser maior, se tivéssemos mais slots de memória, com modeloMemoria0, modeloMemoria1, modeloMemoria2, modeloMemoria3, para quatro slots, por exemplo. Essas dificuldades aumentam bastante o tamanho da classe e a sua complexidade; além disso, neste exemplo, começaríamos com 18 atributos, sem levar em consideração a questão dos diferentes slots de memória.
 
-Entretanto, se pensarmos segundo a ótica do particionamento, podemos dividir a classe Desktop, grande e complexa, em classes menores e mais simples. Como sugestão, poderíamos criar as classes que foram apresentadas como exemplo no parágrafo anterior em:
+Entretanto, se pensarmos segundo a ótica do particionamento, podemos dividir a classe `Desktop`, grande e complexa, em classes menores e mais simples. Como sugestão, poderíamos criar as classes que foram apresentadas como exemplo no parágrafo anterior em:
 
 - Placa-mãe (`PlacaMae`);
 - Disco Rígido (`HD`);
@@ -2020,14 +2020,13 @@ Vamos determinar poucos atributos para cada uma delas, apenas para entendermos m
   <tr>
    <td>PlacaMae</td>
    <td>
-   
-       Marca : texto
+       <code>Marca : texto</code>
        
-       Modelo : texto
+       <code>Modelo : texto</code>
        
-       Preco : real
+       <code>Preco : real</code>
        
-       TipoProcessador : texto
+       <code>TipoProcessador : texto</code>
        
    </td>
   </tr>
