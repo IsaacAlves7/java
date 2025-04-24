@@ -2726,7 +2726,7 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 - Inversão de Controle (IoC) e Injeção de Dependência (DI).
 
-- Data Transfer Object (DTO) é um padrão de software voltado para a transferência de dados entre as camadas de uma aplicação. Ele consiste basicamente no entendimento de como as informações trafegam dentro de um sistema.
+- Data Transfer Object (DTO) é um padrão de software voltado para a transferência de dados entre as camadas de uma aplicação. Ele consiste basicamente no entendimento de como as informações trafegam dentro de um sistema. Ele simplesmente consiste em transportar dados de uma camada para outra.
 
 - Java Bean é uma classe Java que segue um conjunto de convenções específicas, usadas para encapsular dados e facilitar a reutilização e o gerenciamento de componentes em aplicações Java. Ele é amplamente utilizado em frameworks e bibliotecas Java, especialmente em ambientes que lidam com interfaces gráficas (Swing, JavaFX) ou frameworks web (como Spring e JavaServer Faces). Java bean consiste somente em getters e setters.
 
