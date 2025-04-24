@@ -1989,8 +1989,6 @@ Um `HD` (HardDisk), por exemplo, pode ser usado por cada um deles, assim como a 
 
 Inicialmente, nossa classe `Desktop` ficaria com os seguintes atributos:
 
-Podemos analisar como ficará a classe `Desktop`. Declaração dos atributos da classe `Desktop`:
-
 ```java
 public class Desktop {
   public String marcaPlacaMae, modeloPlacaMae;
@@ -2095,17 +2093,17 @@ Vamos determinar poucos atributos para cada uma delas, apenas para entendermos m
   
 </table>
 
-Assim, vamos criar as classes separadamente, dividindo a classe Desktop conforme proposto:
+Assim, vamos criar as classes separadamente, dividindo a classe `Desktop` conforme proposto:
 
 ![code](https://user-images.githubusercontent.com/61624336/121097161-eccace00-c7c9-11eb-81e3-fe7e5d272768.png)
 
 > [!Warning]
-> 1. A decomposição da classe Desktop foi feita em quatro classes mais simples;
+> 1. A decomposição da classe `Desktop` foi feita em quatro classes mais simples;
 > 2. Os nomes dos atributos puderam ser mantidos na forma original, sem que um interfira no outro;
 > 3. Cada classe mais simples se torna mais fácil de codificar;
 > 4. As classes criadas serão mais fáceis para se realizar qualquer tipo de manutenção.
 
-Outro ponto muito importante é que todas essas classes criadas através do particionamento poderão ser reaproveitadas para as classes Notebook e Servidor. Dessa forma, a nossa biblioteca de classes poderá criar novos objetos quando reunida em conjunto.
+Outro ponto muito importante é que todas essas classes criadas através do particionamento poderão ser reaproveitadas para as classes `Notebook` e `Servidor`. Dessa forma, a nossa biblioteca de classes poderá criar novos objetos quando reunida em conjunto.
 
 # ☕ [Java] Agregação
 A programação orientada a objetos nos ajuda a resolver de forma mais simples problemas com alta complexidade. A **agregação de classes** é um conceito voltado a facilitar a solução de problemas muito complexos. Podemos *dividir* uma classe em classes menores, particionando esta classe em diversas outras classes mais simples, para posteriormente as reunirmos em conjunto, formando uma classe maior e mais complexa.
