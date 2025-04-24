@@ -543,12 +543,13 @@ São dois diferentes tipos de valores reais, sendo um de precisão simples (<cod
 
 Tipo especial
 
-Tipo texto (String)
-O tipo texto (<code>String</code>) não é um tipo primitivo, mas um tipo especial. Na verdade, o tipo String é uma classe e por isso começa com letra maiúscula, ao contrário dos tipos primitivos, que sempre começam por minúsculas. Este tipo de dado armazena um conjunto de caracteres, formando palavras ou frases de tamanhos variados. Como classe, veremos mais tarde que elementos do tipo String possuem métodos que podem realizar ações específicas sobre o seu conteúdo. 
+**Tipo texto** (<code>String</code>) não é um tipo primitivo, mas um tipo especial. Na verdade, o tipo String é uma classe e por isso começa com letra maiúscula, ao contrário dos tipos primitivos, que sempre começam por minúsculas. Este tipo de dado armazena um conjunto de caracteres, formando palavras ou frases de tamanhos variados. Como classe, veremos mais tarde que elementos do tipo String possuem métodos que podem realizar ações específicas sobre o seu conteúdo. 
 
 Exemplo:
 
-<pre>String nome = “João da Silva”;</pre>
+```java
+String nome = “João da Silva”;</pre>
+```
 
 # ☕ [Java] Constantes e variáveis
 Variáveis e constantes em Java devem **obrigatoriamente possuir um tipo**. Isso ocorre porque **Java é uma linguagem de programação fortemente tipada**.
@@ -561,21 +562,21 @@ Linguagens de programação fracamente tipadas permitem que variáveis sejam usa
 
 Exemplos:
 
-<pre>
+```java
 int c;
 double nota1 = 0; // indica que a variável será inicializada com 0 (zero)
 String nomeCompleto;
-</pre>
+```
 
 A definição de constantes precisam do modificador final, que indica que, uma vez que ocorreu uma atribuição a variável, seu conteúdo não poderá ser mudado. Em Java, constantes podem ser criadas em nomes em minúsculas ou maiúsculas, mas a boa prática de programação determina que sua identificação deve ser toda em maiúsculas. 
 
 Exemplos:
 
-<pre>
+```java
 final int IDADEMINIMA = 15;
 final double VALORDOLAR = 3.96;
 final NOMEEMPRESA = “Super Empreendimentos”;
-</pre>
+```
 
 # ☕ [Java] Operadores e expressões
 
