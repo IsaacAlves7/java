@@ -1910,11 +1910,19 @@ Todo método construtor de uma SubClasse deve referenciar um construtor da Super
 ## [Java] Sobrescrita de métodos
 Métodos de uma *SuperClasse* podem ser **sobrescritos** em suas *subclasses*, implicando que um método descrito na *Superclasse* poderá ser substituído na *Subclasse*. Para isso, é importante observar que estes métodos devem possuir as mesmas assinaturas. Caso contrário, será usado o conceito de *Sobrecarga* e não de *Sobrescrita*.
 
-Vamos analisar o método imprimir da Superclasse Pessoa:
+Vamos analisar o método imprimir da Superclasse `Pessoa`:
+
+```java
+
+```
 
 ![code](https://user-images.githubusercontent.com/61624336/120993136-a3db3100-c759-11eb-8bc8-ecf17c716340.png)
 
-Ele não é suficiente para atender às necessidades da classe Cliente, então poderíamos tê-lo substituído por:
+Ele não é suficiente para atender às necessidades da classe `Cliente`, então poderíamos tê-lo substituído por:
+
+```java
+
+```
 
 ![code](https://user-images.githubusercontent.com/61624336/120993557-046a6e00-c75a-11eb-95c0-525e4b89a82b.png)
 
@@ -1922,7 +1930,7 @@ Esta substituição permitiria que o método imprimir fosse substituído na **Su
 
 Note que as assinaturas dos métodos, tanto na **Superclasse Pessoa** como na **Subclasse Cliente**, são idênticas: <code>imprimir( );</code> desta forma, houve uma *Sobrescrita (Override)* e não uma *Sobrecarga (Overhead)*.
 
-Como uma primeira forma de atender a demanda da classe Cliente, o método imprimir nesta nova versão seria suficiente, mas podemos melhorar nossa solução, observe que parte do código já existe no método imprimir da Superclasse Pessoa, ocorrendo uma redundância de código nas instruções destacadas na cor vermelha:
+Como uma primeira forma de atender a demanda da classe `Cliente`, o método imprimir nesta nova versão seria suficiente, mas podemos melhorar nossa solução, observe que parte do código já existe no método imprimir da Superclasse `Pessoa`, ocorrendo uma redundância de código nas instruções destacadas na cor vermelha:
 
 ![code](https://user-images.githubusercontent.com/61624336/120996631-dfc3c580-c75c-11eb-9902-eb957eb65e9c.png)
 
@@ -1934,7 +1942,7 @@ Ao reaproveitar o método imprimir da Superclasse, temos dois ganhos muito impor
 
 1. Não haverá redundância de códigos, as instruções do método imprimir da Superclasse serão reaproveitadas na Subclasse;
 
-2. Caso haja a necessidade de incluir um novo atributo no método imprimir, só precisaremos realizar a alteração em apenas uma classe, pois, se for um atributo específico da classe Cliente, só precisaremos incluir a instrução no método da classe Cliente. Caso contrário, se o atributo for comum às demais classes, a instrução deverá ser incluída apenas na Superclasse Pessoa.
+2. Caso haja a necessidade de incluir um novo atributo no método imprimir, só precisaremos realizar a alteração em apenas uma classe, pois, se for um atributo específico da classe `Cliente`, só precisaremos incluir a instrução no método da classe `Cliente`. Caso contrário, se o atributo for comum às demais classes, a instrução deverá ser incluída apenas na Superclasse `Pessoa`.
 
 A **herança** é um conceito importantíssimo da programação orientada a Objetos, permitindo que reaproveitemos membros Superclasse, que serão herdados pelas Subclasses, evitando redundância de códigos, além de facilitar a manutenção das nossas classes, uma vez que qualquer necessidade de mudança implicará na alteração de apenas uma classe.
 
@@ -1997,7 +2005,7 @@ O **particionamento de classes** nos permite criar objetos menores e mais simple
 
 Vamos imaginar um computador do tipo `Desktop`, que é um objeto bem complexo, com diferentes partes. Muitas dessas partes são usadas por outros objetos também, tal como `Notebooks` e `Servidores`.
 
-Um `HD` (HardDisk), por exemplo, pode ser usado por cada um deles, assim como a placa de vídeo, a placa-mãe, o vídeo, a memória, além de outros dispositivos. Se formos criar uma classe para representar um Desktop, teremos uma classe com muitos atributos, o que a tornaria grande e complexa, com muitas linhas de código e de difícil manutenção. Isso porque, se fosse necessário realizar alguma mudança, teríamos que trabalhar em uma classe altamente complexa. Outro ponto importante seria a criação das classes Notebook e Servidor, que seriam igualmente complexas, sem contar que, para realizar uma alteração em um único componente que fosse, teríamos que fazê-la em todas as três classes (`Desktop`, `Notebook` e `Servidor`).
+Um `HD` (HardDisk), por exemplo, pode ser usado por cada um deles, assim como a placa de vídeo, a placa-mãe, o vídeo, a memória, além de outros dispositivos. Se formos criar uma classe para representar um `Desktop`, teremos uma classe com muitos atributos, o que a tornaria grande e complexa, com muitas linhas de código e de difícil manutenção. Isso porque, se fosse necessário realizar alguma mudança, teríamos que trabalhar em uma classe altamente complexa. Outro ponto importante seria a criação das classes `Notebook` e `Servidor`, que seriam igualmente complexas, sem contar que, para realizar uma alteração em um único componente que fosse, teríamos que fazê-la em todas as três classes (`Desktop`, `Notebook` e `Servidor`).
 
 Inicialmente, nossa classe `Desktop` ficaria com os seguintes atributos:
 
