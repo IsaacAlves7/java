@@ -906,53 +906,62 @@ for
 
 **3** - Passo da(s) variável(is) de controle a cada iteração
 
-<pre>for((1)inicialização; (2)condição de controle; (3)passo) {
+```java
+for((1)inicialização; (2)condição de controle; (3)passo) {
 
 // instruções
 
-}</pre>
+}
+```
 
 Exemplo:
 
 1) Repetição controlada por uma variável:
 
-<pre>for (int c=1; c<=limite; i++) {
+```java
+for (int c=1; c<=limite; i++) {
 
 instruções;
 
-}</pre>
+}
+```
 
 2) Repetição controlada por duas variáveis:
 
-<pre>for (a=1, b=2; a*b&lt;limite; a++, b+=2) {
+```java
+for (a=1, b=2; a*b&lt;limite; a++, b+=2) {
 
 instruções;
 
-}</pre>
+}
+```
 
 3) Repetição sem fim
 
-<pre>for ( ; ; ) {
+```java
+for ( ; ; ) {
 
 instruções;
 
-}</pre>
+}
+```
 
-while
-Esta estrutura realiza a repetição de um conjunto de instruções enquanto a condição determinada for verdadeira; caso a condição seja falsa no primeiro teste, nenhuma instrução será executada.
+`while`, esta estrutura realiza a repetição de um conjunto de instruções enquanto a condição determinada for verdadeira; caso a condição seja falsa no primeiro teste, nenhuma instrução será executada.
 
-<pre>// realiza o teste da condição no início da estrutura
+```java
+// realiza o teste da condição no início da estrutura
 
 while (condição) {
 
 instruções;
 
-}</pre>
+}
+```
 
-do...while
-Esta estrutura de repetição é semelhante à anterior, mas com o diferencial de que as condições devem ser verificadas apenas no final da estrutura, obrigando que as instruções sejam sempre executadas pelo menos uma vez.
+`do...while` esta estrutura de repetição é semelhante à anterior, mas com o diferencial de que as condições devem ser verificadas apenas no final da estrutura, obrigando que as instruções sejam sempre executadas pelo menos uma vez.
 
-<pre>// Teste de condição no final
+```java
+// Teste de condição no final
 
 do
 
@@ -960,7 +969,8 @@ do
 
 instruções;
 
-} while (condição);</pre>
+} while (condição);
+```
 
 # ☕ [Java] Entrada e Saída de dados
 Em Java temos muitas formas de **entrada de dados** (input), inclusive de forma gráfica. Inicialmente trabalharemos com a *classe* <code>Scanner</code>, responsável pela entrada de dados em formato texto, com perguntas diretas ao usuário e a inclusão da resposta em variáveis do programa. 
