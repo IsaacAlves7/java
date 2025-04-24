@@ -1053,7 +1053,8 @@ A conversão de tipos em Java pode ser feita por cast ou com o uso de conversão
 
 2) Por uso de classes para conversão de textos em valores:
 
-<pre>double nota1 = Double.parseDouble(“7.8”);
+```java
+double nota1 = Double.parseDouble(“7.8”);
 
 int idade = Integer.parseInt(“34”);
 
@@ -1063,7 +1064,8 @@ long valor2 = Long.parseLong(“3456789”);
 
 Pode-se usar ainda:
 
-Byte.parseByte() / Short.parseShort()</pre>
+Byte.parseByte() / Short.parseShort()
+```
 
 # ♨️ [Java] A boa prática em programação Java 
 A boa prática em programação Java leva em conta um conjunto de regras que facilitam o desenvolvimento de aplicações e melhoram bastante o trabalho em conjunto realizado por equipes. Ao seguir estas regras, projetos podem ser desenvolvidos em paralelo por diferentes programadores, sem que seja necessário que cada componente precise esperar que outros terminem suas tarefas. Estas regras foram utilizadas na construção da linguagem permitindo que não seja necessário decorar as sintaxes de instruções Java. Não são obrigatórias, mas permitem a codificação melhor de nossas aplicações. Vamos ver algumas dessas regras na prática:
