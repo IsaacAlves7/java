@@ -1459,11 +1459,15 @@ double z = x + y;
 
 A mudança de contexto faz com que as operações a serem realizadas sejam diferentes, pois toda linguagem de programação possui diferentes formas de realizar as operações de soma inteira e real. Desta forma, a expressão aritmética a seguir utiliza as duas operações conjuntamente:
 
-<pre>double z = ( 2 + 5) / (3.5 + 1.5);</pre>
+```java
+double z = ( 2 + 5) / (3.5 + 1.5);
+```
 
 Na primeira operação de soma, os operandos são inteiros, então a operação a ser realizada será de uma soma inteira, para somente depois ser realizada a operação de soma real. Desta forma, teremos em um instante a seguinte situação:
 
-<pre>double z = ( 7) / (5.0);</pre>
+```java
+double z = ( 7) / (5.0);
+```
 
 Assim, a operação de divisão será real e não inteira porque existe um operando real.
 
@@ -1479,7 +1483,9 @@ O operador <code>+</code> é um dos mais usados, sendo um bom exemplo de **sobre
 
 Agora imagine a seguinte instrução:
 
-<pre>System.out.println("Valor =" + (( 3 + 4) + (1.3 + 2.7) + (++x)));</pre>
+```java
+System.out.println("Valor =" + (( 3 + 4) + (1.3 + 2.7) + (++x)));
+```
 
 A *sobrecarga de operadores* está sendo usada de diferentes formas em uma mesma instrução. Cada contexto será avaliado para que seja executada a operação adequada em cada caso.
 
