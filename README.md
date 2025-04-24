@@ -2055,6 +2055,8 @@ Observe que muitos dos atributos são comuns a todas as classes e seria necessá
 
 O problema ainda poderia ser maior, se tivéssemos mais slots de memória, com modeloMemoria0, modeloMemoria1, modeloMemoria2, modeloMemoria3, para quatro slots, por exemplo. Essas dificuldades aumentam bastante o tamanho da classe e a sua complexidade; além disso, neste exemplo, começaríamos com 18 atributos, sem levar em consideração a questão dos diferentes slots de memória.
 
+<img src="https://user-images.githubusercontent.com/61624336/121088036-8b9bfe00-c7bb-11eb-914a-0d04903807bd.png" align="right" height="177">
+
 Entretanto, se pensarmos segundo a ótica do particionamento, podemos dividir a classe `Desktop`, grande e complexa, em classes menores e mais simples. Como sugestão, poderíamos criar as classes que foram apresentadas como exemplo no parágrafo anterior em:
 
 - Placa-mãe (`PlacaMae`);
@@ -2063,8 +2065,6 @@ Entretanto, se pensarmos segundo a ótica do particionamento, podemos dividir a 
 - Memória (`Memoria`).
 
 A classe `Desktop` seria então decomposta (particionada) da seguinte forma:
-
-![pg5](https://user-images.githubusercontent.com/61624336/121088036-8b9bfe00-c7bb-11eb-914a-0d04903807bd.png)
 
 Vamos determinar poucos atributos para cada uma delas, apenas para entendermos melhor o conceito.
 
