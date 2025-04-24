@@ -956,7 +956,9 @@ Para realizarmos esta tarefa, é necessário que seja criado um objeto da classe
 
 Para isso, devemos **importar** a *classe* <code>Scanner</code> antes do início da programação da classe:
 
-<pre>import java.util.Scanner;</pre>
+```java
+import java.util.Scanner;
+```
 
 Depois é necessário criar o **objeto** para realizar as entradas de dados:
 
