@@ -2833,7 +2833,7 @@ Com isso, ao invés de gastar tempo com configurações repetitivas e infraestru
 ## [Java] Spring Boot com Kotlin
 <img src="https://github.com/user-attachments/assets/cc52c0e8-aef2-4212-a926-5491088885e8" align="right" height="77">
 
-**Spring Boot com Kotlin** é uma combinação moderna e poderosa para o desenvolvimento de aplicações backend. O **Spring Boot** é um framework da plataforma Spring (Java) que simplifica a criação de aplicações web e APIs, enquanto o **Kotlin** é uma linguagem moderna, concisa e segura, desenvolvida pela JetBrains, que roda na JVM (Java Virtual Machine). Usar Spring Boot com Kotlin significa unir a robustez do ecossistema Spring com a expressividade, segurança e produtividade do Kotlin.
+O **Spring Boot com Kotlin** é uma combinação moderna e poderosa para o desenvolvimento de aplicações backend. O Spring Boot é um framework da plataforma Spring (Java) que simplifica a criação de aplicações web e APIs, enquanto o Kotlin é uma linguagem moderna, concisa e segura, desenvolvida pela JetBrains, que roda na JVM (Java Virtual Machine). Usar Spring Boot com Kotlin significa unir a robustez do ecossistema Spring com a expressividade, segurança e produtividade do Kotlin.
 
 Essa junção oferece várias vantagens. O Kotlin reduz a verbosidade típica do Java, permitindo que você escreva menos código para fazer mais. Isso é especialmente útil em aplicações Spring, onde a configuração e o boilerplate podem ser extensos. Além disso, o Kotlin traz recursos como null safety (segurança contra nulos em tempo de compilação), data classes (para representar dados de forma enxuta), corrotinas (para programação assíncrona e concorrente com menor complexidade), e funções de extensão (que deixam o código mais fluido).
 
