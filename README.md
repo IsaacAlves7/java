@@ -822,18 +822,21 @@ Comandos de controle de fluxo Servem para determinar se as condições são verd
 
 ## [Java] Estrutura condicional
 
-<pre>Se (if):
+Se (`if`):
 
+```java
 if (condição) {
 
 // instruções;
 
 }
 
-// A cláusula else é opcional.</pre>
+// A cláusula else é opcional.
+```
 
-<pre>if ... else,
+`if ... else`:
 
+```java
 if (condição) {
 
 // instruções;
@@ -844,10 +847,12 @@ else {
 
 // instruções;
 
-}</pre>
+}
+```
 
-<pre>if ... else if ... else,
+`if ... else if ... else`
 
+```java
 if (condição1) {
 
 instruções;
@@ -870,9 +875,10 @@ else {
 
 instruções;
 
-}</pre>
+}
+```
 
-<blockquote>A cláusula if deve ocorrer apenas uma vez; As cláusulas else if podem ocorrer: nenhuma, uma ou várias vezes; A cláusula else só pode ocorrer uma única vez.</blockquote>
+> A cláusula `if` deve ocorrer apenas uma vez; As cláusulas `else if` podem ocorrer: nenhuma, uma ou várias vezes; A cláusula `else` só pode ocorrer uma única vez.
 
 <code>switch … case</code>
 
