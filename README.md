@@ -2709,6 +2709,12 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 - Inversão de Controle (IoC) e Injeção de Dependência (DI).
 
+- DTO
+
+- Java Bean
+
+- POJO
+
 - Programação orientada a aspectos (AOP).
 
 - Acesso a banco de dados via JDBC, JPA/Hibernate.
