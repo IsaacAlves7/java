@@ -617,19 +617,25 @@ Operadores aritméticos
 
 Exemplos:
 
-<pre>int v = 7 / 2; // o valor atribuído será 3 e não 3.5, porque ambos os operandos são inteiros
+```java
+// o valor atribuído será 3 e não 3.5, porque ambos os operandos são inteiros
+int v = 7 / 2;
 
-double v = 7.0 / 2; // o valor atribuído será 3.5, porque o primeiro operando é real.</pre>
-
+// o valor atribuído será 3.5, porque o primeiro operando é real.
+double v = 7.0 / 2;
+```
+	
 A mesma lógica serve para variáveis:
 
-<pre>int a, b=7, c=2;
+```java
+int a, b=7, c=2;
 
 a = b / c; // será armazenado 3 em a.
 
 double a, b=7.0, c=2.0;
 
-a = b / c; // será armazenado 3.5 em a.</pre>
+a = b / c; // será armazenado 3.5 em a.
+```
 
 Podemos alterar o tipo de um operando em uma expressão utilizando o **cast**, que nada mais é do que informar que o valor armazenado na variável terá o seu valor em função do tipo alterado. 
 
