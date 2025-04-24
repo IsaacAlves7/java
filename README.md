@@ -441,19 +441,21 @@ A linguagem Java possui nove tipos de dados básicos, sendo oito deles primitivo
 
 Primitivos (armazenam apenas valores)
 
-Tipo lógico (boolean)
-O tipo lógico só permite dois estados, verdadeiro (<code>true</code>) ou falso (<code>false</code>); em Java ainda é permitido o uso de <code>on</code> e <code>off</code>, ou <code>yes</code> e <code>no</code>. 
+Tipo lógico (`boolean`), o tipo lógico só permite dois estados, verdadeiro (<code>true</code>) ou falso (<code>false</code>); em Java ainda é permitido o uso de <code>on</code> e <code>off</code>, ou <code>yes</code> e <code>no</code>. 
 
 Exemplo:
 
-<pre>boolean status = true;</pre>
+```java
+boolean status = true;
+```
 
-Tipo caractere (char)
-O tipo char permite que seja armazenado na memória apenas um caractere e se difere do texto (String) por ser definido entre ‘e’. Quando usamos aspas simples ou dupla determinamos apenas um caractere.
+Tipo caractere (`char`), o tipo `char` permite que seja armazenado na memória apenas um caractere e se difere do texto (`String`) por ser definido entre `‘e’`. Quando usamos aspas simples ou dupla determinamos apenas um caractere.
 
 Exemplo:
 
-<pre>char letra = ‘A’;</pre>
+```java
+char letra = ‘A’;
+```
 
 Também é possível armazenar caracteres de controle:
 
@@ -490,8 +492,7 @@ Também é possível armazenar caracteres de controle:
 
 <blockquote><b>OBS:</b> A barra invertida na frente indica que é um caractere especial.</blockquote>
 
-Tipos inteiros (byte, short, int e long)
-São quatro diferentes tipos de inteiros, que se diferenciam pela quantidade de bits que cada um ocupa em memória para armazenar um valor. Isto faz com que, quanto menor a quantidade de bits, maior seja a limitação do valor a ser armazenado. Entretanto, em ocasiões onde a memória é pouca, devemos trabalhar muito bem com estas diferenças para reduzir o espaço de memória necessário. O uso mais comum é do <code>int</code>, mas, para números muito grandes ou muito pequenos, devemos usar o <code>long</code>. Já para economizar memória podemos usar <code>byte</code> ou <code>short</code>, de acordo com o valor que será armazenado.
+Tipos inteiros (`byte`, `short`, `int` e `long`), são quatro diferentes tipos de inteiros, que se diferenciam pela quantidade de bits que cada um ocupa em memória para armazenar um valor. Isto faz com que, quanto menor a quantidade de bits, maior seja a limitação do valor a ser armazenado. Entretanto, em ocasiões onde a memória é pouca, devemos trabalhar muito bem com estas diferenças para reduzir o espaço de memória necessário. O uso mais comum é do <code>int</code>, mas, para números muito grandes ou muito pequenos, devemos usar o <code>long</code>. Já para economizar memória podemos usar <code>byte</code> ou <code>short</code>, de acordo com o valor que será armazenado.
 
 <table>
   <tr>
