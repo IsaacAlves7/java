@@ -1438,9 +1438,21 @@ Quando não temos um construtor em uma classe, um construtor VAZIO é criado no 
 # ☕ [Java] Polimorfismo
 **Polimorfismo** quer dizer muitas formas. O **polimorfismo de sobrecarga** permite o emprego de operadores e identificadores de várias formas, sendo então necessária uma contextualização para que seja realizada a operação adequada. Este contexto está ligado ao emprego do operador, método etc., de acordo com uma situação.
 
-Polimorfismo de sobrecarga de operadores
+Polimorfismo de sobrecarga de operadores:
 
-![code](https://user-images.githubusercontent.com/61624336/120408734-fcf43080-c325-11eb-890b-a76dc584a7db.png)
+```java
+int b=5, c=3;
+
+int a = b + c;
+// o símbolo de + neste contexto está realizando uma operação
+
+// de soma entre valores inteiros, no caso b + c (inteiros)
+
+double x=3.5, y=2.2;
+
+// temos um novo contexto, pois a operação será realizada entre dois valores reais, no caso x+y
+double z = x + y;
+```
 
 A mudança de contexto faz com que as operações a serem realizadas sejam diferentes, pois toda linguagem de programação possui diferentes formas de realizar as operações de soma inteira e real. Desta forma, a expressão aritmética a seguir utiliza as duas operações conjuntamente:
 
