@@ -2020,13 +2020,13 @@ Vamos determinar poucos atributos para cada uma delas, apenas para entendermos m
   <tr>
    <td>PlacaMae</td>
    <td>
-       <code>Marca : texto</code>
+       Marca : texto
        
-       <code>Modelo : texto</code>
+       Modelo : texto
        
-       <code>Preco : real</code>
+       Preco : real
        
-       <code>TipoProcessador : texto</code>
+       TipoProcessador : texto
        
    </td>
   </tr>
