@@ -2267,13 +2267,13 @@ A relação apresentada está em ordem de nível de restrição, indo do *menos 
 
 Visibilidade:
 
-- **Public**: Uma classe definida como public pode ser acessada por qualquer classe ou aplicação, sem restrições. Seus membros são igualmente acessíveis (visíveis) por qualquer outra classe ou aplicação. Determina o nível menos restritivo de acesso e visibilidade aos membros (atributos e métodos) de uma classe;
+- `Public`: Uma classe definida como public pode ser acessada por qualquer classe ou aplicação, sem restrições. Seus membros são igualmente acessíveis (visíveis) por qualquer outra classe ou aplicação. Determina o nível menos restritivo de acesso e visibilidade aos membros (atributos e métodos) de uma classe;
 
-- **Private**: Um membro definido como privado só pode ser acessado por membros da própria classe, ou seja, apenas métodos existentes na própria classe poderão ter acesso (visibilidade) aos atributos e métodos definidos como private. É o nível com maior restrição, pois nem mesmo subclasses dessa classe terão visibilidade sobre esses membros;
+- `Private`: Um membro definido como privado só pode ser acessado por membros da própria classe, ou seja, apenas métodos existentes na própria classe poderão ter acesso (visibilidade) aos atributos e métodos definidos como private. É o nível com maior restrição, pois nem mesmo subclasses dessa classe terão visibilidade sobre esses membros;
 
-- **Protected**: Um membro definido como protegido pode ser acessado apenas por membros da própria classe, das suas subclasses e por outras classes ou aplicações que estejam no mesmo pacote (package);
+- `Protected`: Um membro definido como protegido pode ser acessado apenas por membros da própria classe, das suas subclasses e por outras classes ou aplicações que estejam no mesmo pacote (package);
 
-- **Default** (padrão, omissão): Quando não é usado um modificador de encapsulamento, a visibilidade é dita padrão e os membros têm visibilidade, ou seja, só podem ser acessados por classes e aplicações que estejam no mesmo pacote.
+- `Default` (padrão, omissão): Quando não é usado um modificador de encapsulamento, a visibilidade é dita padrão e os membros têm visibilidade, ou seja, só podem ser acessados por classes e aplicações que estejam no mesmo pacote.
 
 Exemplos de visibilidade de membros:
 
