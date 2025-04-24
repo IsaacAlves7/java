@@ -2711,9 +2711,9 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 - DTO
 
-- Java Bean
+- Java Bean é uma classe Java que segue um conjunto de convenções específicas, usadas para encapsular dados e facilitar a reutilização e o gerenciamento de componentes em aplicações Java. Ele é amplamente utilizado em frameworks e bibliotecas Java, especialmente em ambientes que lidam com interfaces gráficas (Swing, JavaFX) ou frameworks web (como Spring e JavaServer Faces).
 
-- POJO
+- POJO (Plain Old Java Object) é um termo utilizado para descrever um objeto Java simples, que não segue nenhuma restrição específica imposta por frameworks ou bibliotecas. Ele é usado para criar classes que contenham dados e lógica básica, sem herdar de classes específicas ou implementar interfaces obrigatórias, exceto aquelas necessárias para sua funcionalidade (como `Serializable`, por exemplo).
 
 - Programação orientada a aspectos (AOP).
 
