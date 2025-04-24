@@ -1919,43 +1919,43 @@ A **herança** é um conceito importantíssimo da programação orientada a Obje
     <td><b>Atributos</b></td>
   </tr>
   <tr>
-    <td>Desktop</td>
+    <td><code>Desktop</code></td>
     <td>
-MarcaPlacaMae : texto
+<code>MarcaPlacaMae : texto</code>
     
-ModeloPlacaMae : texto
+<code>ModeloPlacaMae : texto</code>
 
-PrecoPlacaMae: real
+<code>PrecoPlacaMae: real</code>
 
-TipoProcessador : texto
+<code>TipoProcessador : texto</code>
 
-MarcaHD : texto
+<code>MarcaHD : texto</code>
 
-ModeloHD : texto
+<code>ModeloHD : texto</code>
 
-PrecoHD : real
+<code>PrecoHD : real</code>
 
-TipoHD : texto
+<code>TipoHD : texto</code>
 
-CapacidadeHD : inteiro
+<code>CapacidadeHD : inteiro</code>
 
-MarcaPlacaVideo : texto
+<code>MarcaPlacaVideo : texto</code>
 
-ModeloPlacaVideo : texto
+<code>ModeloPlacaVideo : texto</code>
 
-PrecoPlacaVideo : real
+<code>PrecoPlacaVideo : real</code>
 
-Padrao : texto
+<code>Padrao : texto</code>
 
-MarcaMemoria : texto
+<code>MarcaMemoria : texto</code>
 
-ModeloMemoria : texto
+<code>ModeloMemoria : texto</code>
 
-PrecoMemoria: real
+<code>PrecoMemoria: real</code>
 
-TipoMemoria : texto
+<code>TipoMemoria : texto</code>
 
-CapacidadeMemoria : inteiro</td>
+<code>CapacidadeMemoria : inteiro</code></td>
   </tr>
 </table>
 
