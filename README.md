@@ -1031,7 +1031,7 @@ idade = Integer.<b>parseInt</b>(entrada.nextLine());
 - `entrada.nextFloat();`
 - `entrada.nextInt();`
 
-Estes métodos, quando usados em conjunto, podem fazer com que a aplicação pule alguma entrada de dados, sendo necessário que seja realizada uma “limpeza de buffer”. Este tipo de problema pode ser contornado ao usar sempre o método “nextLine()” e a conversão de tipos.
+Estes métodos, quando usados em conjunto, podem fazer com que a aplicação pule alguma entrada de dados, sendo necessário que seja realizada uma “limpeza de buffer”. Este tipo de problema pode ser contornado ao usar sempre o método “`nextLine()`” e a conversão de tipos.
 
 A **saída de dados** (output) em modo texto pode ser realizada pela *classe* <code>System</code>, e o método <code>out.print</code> (não pula linha), <code>out.println</code> (pula linha) ou outros métodos:
 
@@ -1043,11 +1043,14 @@ System.out.println("Entre com a Nota A1.........: ");
 
 2) Mensagem e conteúdo de variáveis:
 
-<pre>System.out.println(" Nome: " + nome + " Idade: " + idade + " Nota 1: " + nota1);</pre>
+```java
+System.out.println(" Nome: " + nome + " Idade: " + idade + " Nota 1: " + nota1);
+```
 
 A seguir temos o exemplo completo de um programa que recebe duas notas e apresenta a média.
 
-<pre>public class <b>Exemplo</b> {
+```java
+public class Exemplo {
 
 public static void main(String[] args) {
 
@@ -1073,7 +1076,8 @@ sc.close();
 
 }
 
-}</pre>
+}
+```
 
 ## [Java] Conversão de tipos
 A conversão de tipos em Java pode ser feita por cast ou com o uso de conversão por classes. Ambos já foram vistos em exemplos anteriores:
@@ -1131,13 +1135,15 @@ final String nomeCompleto;
 
 Exemplos:
 
-<pre>public class Carro { ... }
+```java
+public class Carro { ... }
 
 public class Carro Hibrido { ... }
 
 public interface Basico { ... }
 
-public interface MetodosBasicos { ... }</pre>
+public interface MetodosBasicos { ... }
+```
 
 # ☕ [Java] Classes e objetos
 A **programação orientada a objetos (POO)** tem como principal conceito representar, em um sistema computacional, um **objeto da vida real**.
