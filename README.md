@@ -968,25 +968,25 @@ import java.util.Scanner;
 
 Depois é necessário criar o **objeto** para realizar as entradas de dados:
 
-<pre>public class <b>EntradaDados</b> {
-
-public static void main (String[] args) {
-
-Scanner entrada = new Scanner(System.in);
-
+```java
+public class EntradaDados {
+  public static void main (String[] args) {
+    Scanner entrada = new Scanner(System.in);
+  }
 }
+```
 
-}</pre>
-
-Existem vários métodos associados a classe **Scanner** para a entrada de dados, mas para evitarmos problemas futuros podemos usar sempre a entrada de dados de texto <code>(nextLine())</code> e converter o texto para o tipo desejado.
+Existem vários métodos associados a classe `Scanner` para a entrada de dados, mas para evitarmos problemas futuros podemos usar sempre a entrada de dados de texto <code>(nextLine())</code> e converter o texto para o tipo desejado.
 
 Exemplo:
 
 1) Para entrada de texto (String):
 
-<pre>String nome;
+```java
+String nome;
 
-Nome = entrada.nextLine(); // não precisa de conversão, apenas da entrada.</pre>
+Nome = entrada.nextLine(); // não precisa de conversão, apenas da entrada.
+```
 
 2) Para entrada de valor real:
 
