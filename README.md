@@ -997,25 +997,29 @@ Nome = entrada.nextLine(); // não precisa de conversão, apenas da entrada.
 
 2) Para entrada de valor real:
 
-<pre>double nota1;
+```java
+double nota1;
 
-nota1=Double.<b>parseDouble</b>(entrada.nextLine());
+nota1=Double.parseDouble(entrada.nextLine());
 
-// a entrada de dados em texto precisa de conversão para double.</pre>
+// a entrada de dados em texto precisa de conversão para double.
+```
 
 3) Para entrada de valor inteiro:
 
-<pre>int idade;
+```java
+int idade;
 
 idade = Integer.<b>parseInt</b>(entrada.nextLine());
 
-// a entrada de dados em texto precisa de conversão para int.</pre>
+// a entrada de dados em texto precisa de conversão para int
+```
 
 É aconselhável evitar o uso de métodos como:
 
-- entrada.nextDouble();
-- entrada.nextFloat();
-- entrada.nextInt();
+- `entrada.nextDouble();`
+- `entrada.nextFloat();`
+- `entrada.nextInt();`
 
 Estes métodos, quando usados em conjunto, podem fazer com que a aplicação pule alguma entrada de dados, sendo necessário que seja realizada uma “limpeza de buffer”. Este tipo de problema pode ser contornado ao usar sempre o método “nextLine()” e a conversão de tipos.
 
@@ -1023,7 +1027,9 @@ A **saída de dados** (output) em modo texto pode ser realizada pela *classe* <c
 
 1) Apenas uma mensagem:
 
-<pre>System.out.println("Entre com a Nota A1.........: ");</pre>
+```java
+System.out.println("Entre com a Nota A1.........: ");
+```
 
 2) Mensagem e conteúdo de variáveis:
 
@@ -1101,13 +1107,15 @@ String nomeCompleto;
 
 Exemplos:
 
-<pre>final int idade;
+```java
+final int idade;
 
 final int maiorIdade;
 
 final String nome;
 
-final String nomeCompleto;</pre>
+final String nomeCompleto;
+```
 
 3) Classes e interfaces (tipo especial de classe) devem iniciar por letras maiúsculas. Quando houver mais de uma palavra, deve-se começar cada nova palavra com uma letra maiúscula. 
 
