@@ -2357,9 +2357,13 @@ A referência <code>this</code> altera a identificação do objeto pelo seu iden
 
 Dessa forma, podemos substituir o nome do objeto pela sua referência, e também separar quando tem o mesmo nome variáveis e atributos:
 
+```java
+
+```
+
 ![code](https://user-images.githubusercontent.com/61624336/121282961-be73ee00-c8b0-11eb-972f-9e15749a9efa.png)
 
-Nota: O <code>this</code> separa os membros da classe das demais variáveis auxiliares e parâmetros da classe.
+> Nota: O `this` separa os membros da classe das demais variáveis auxiliares e parâmetros da classe.
 
 ## [Java] O modificador `static`
 Este modificador pode ser aplicado sobre atributos e métodos e transforma o atributo ou método para a forma “compartilhada”. O modificador `static` aplicado a um atributo. Este modificador ao ser aplicado em um atributo de uma classe modifica este atributo de objeto (ou de instância) para um atributo de classe1.
