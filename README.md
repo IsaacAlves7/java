@@ -1970,17 +1970,28 @@ O **particionamento de classes** nos permite criar objetos menores e mais simple
 
 Vamos imaginar um computador do tipo `Desktop`, que é um objeto bem complexo, com diferentes partes. Muitas dessas partes são usadas por outros objetos também, tal como `Notebooks` e `Servidores`.
 
-Um `HD` (HardDisk), por exemplo, pode ser usado por cada um deles, assim como a placa de vídeo, a placa-mãe, o vídeo, a memória, além de outros dispositivos. Se formos criar uma classe para representar um Desktop, teremos uma classe com muitos atributos, o que a tornaria grande e complexa, com muitas linhas de código e de difícil manutenção. Isso porque, se fosse necessário realizar alguma mudança, teríamos que trabalhar em uma classe altamente complexa. Outro ponto importante seria a criação das classes Notebook e Servidor, que seriam igualmente complexas, sem contar que, para realizar uma alteração em um único componente que fosse, teríamos que fazê-la em todas as três classes (Desktop, Notebook e Servidor).
+Um `HD` (HardDisk), por exemplo, pode ser usado por cada um deles, assim como a placa de vídeo, a placa-mãe, o vídeo, a memória, além de outros dispositivos. Se formos criar uma classe para representar um Desktop, teremos uma classe com muitos atributos, o que a tornaria grande e complexa, com muitas linhas de código e de difícil manutenção. Isso porque, se fosse necessário realizar alguma mudança, teríamos que trabalhar em uma classe altamente complexa. Outro ponto importante seria a criação das classes Notebook e Servidor, que seriam igualmente complexas, sem contar que, para realizar uma alteração em um único componente que fosse, teríamos que fazê-la em todas as três classes (`Desktop`, `Notebook` e `Servidor`).
 
 Inicialmente, nossa classe desktop ficaria com os seguintes atributos:
 
 Podemos analisar como ficará a classe `Desktop`. Declaração dos atributos da classe `Desktop`:
 
 ```java
-
+public class Desktop {
+  public String marcaPlacaMae
+  public double precoPlacaMae
+  public String tipoProcessador
+  public double precoHD
+  public String tipoHD
+  public int capacidadeHD
+  public String marcaPlacaVideo
+  public double precoPlacaVideo
+  public String padrao
+  public double precoMemoria;
+  public String tipoMemoria;
+  public int capacidadeMemoria;
+}
 ```
-
-![code](https://user-images.githubusercontent.com/61624336/121084669-5392bc00-c7b7-11eb-94b5-c9aea538887e.png)
 
 A classe ficou extensa, complexa, sem contar que precisaremos ainda incluir os métodos de acesso (Setters e Getters), construtores, entradaDados, imprimir, cadastrar, além de outros métodos que possam se fazer necessários, sem contar a grande quantidade de atributos.
 
