@@ -2726,11 +2726,11 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 - Inversão de Controle (IoC) e Injeção de Dependência (DI).
 
-- Data Transfer Object (DTO) é um padrão de software voltado para a transferência de dados entre as camadas de uma aplicação. Ele consiste basicamente no entendimento de como as informações trafegam dentro de um sistema. Ele simplesmente consiste em transportar dados de uma camada para outra.
-
 - Java Bean é uma classe Java que segue um conjunto de convenções específicas, usadas para encapsular dados e facilitar a reutilização e o gerenciamento de componentes em aplicações Java. Ele é amplamente utilizado em frameworks e bibliotecas Java, especialmente em ambientes que lidam com interfaces gráficas (Swing, JavaFX) ou frameworks web (como Spring e JavaServer Faces). Java bean consiste somente em getters e setters.
 
-- POJO (Plain Old Java Object) é um termo utilizado para descrever um objeto Java simples, que não segue nenhuma restrição específica imposta por frameworks ou bibliotecas. Ele é usado para criar classes que contenham dados e lógica básica, sem herdar de classes específicas ou implementar interfaces obrigatórias, exceto aquelas necessárias para sua funcionalidade (como `Serializable`, por exemplo).
+- Data Transfer Object (DTO) é um padrão de software voltado para a transferência de dados entre as camadas de uma aplicação. Ele consiste basicamente no entendimento de como as informações trafegam dentro de um sistema. Ele simplesmente consiste em transportar dados de uma camada para outra, embora tanto os DTOs quanto os JavaBeans usem getters e setters, eles têm propósitos diferentes. O DTO é focado exclusivamente em transportar dados, enquanto o JavaBean segue uma especificação mais formal e é usado como um componente reutilizável em aplicações Java.
+
+- POJO (Plain Old Java Object) é um termo utilizado para descrever um objeto Java simples, que não segue nenhuma restrição específica imposta por frameworks ou bibliotecas. Ele é usado para criar classes que contenham dados e lógica básica, sem herdar de classes específicas ou implementar interfaces obrigatórias, exceto aquelas necessárias para sua funcionalidade (como `Serializable`, por exemplo). POJO é simplesmente um objeto Java antigo, mas então você pode estar pensando: qual é a diferença entre Java Bean e o POJO? Bem, POJO é um objeto que possui atributos e comportamento, portanto, não são apenas getters e setters
 
 - Programação orientada a aspectos (AOP).
 
