@@ -2134,7 +2134,7 @@ Outro ponto muito importante é que todas essas classes criadas através do part
 # ☕ [Java] Agregação
 A programação orientada a objetos nos ajuda a resolver de forma mais simples problemas com alta complexidade. A **agregação de classes** é um conceito voltado a facilitar a solução de problemas muito complexos. Podemos *dividir* uma classe em classes menores, particionando esta classe em diversas outras classes mais simples, para posteriormente as reunirmos em conjunto, formando uma classe maior e mais complexa.
 
-A reunião de uma ou mais classes para formar novas classes é chamada de agregação. Uma nova classe pode ser formada por um conjunto de diferentes objetos. Seguindo nosso exemplo, poderíamos reaproveitar as classes PlacaMae, HD, PlacaVideo, e Memória para criar novas classes, como Desktop, Notebook e Servidor, como nos exemplos a seguir:
+A reunião de uma ou mais classes para formar novas classes é chamada de agregação. Uma nova classe pode ser formada por um conjunto de diferentes objetos. Seguindo nosso exemplo, poderíamos reaproveitar as classes `PlacaMae`, `HD`, `PlacaVideo`, e `Memória` para criar novas classes, como `Desktop`, `Notebook` e `Servidor`, como nos exemplos a seguir:
 
 ![code](https://user-images.githubusercontent.com/61624336/121120415-e05b6b00-c7f3-11eb-8fd2-cf4ebeef81da.png)
 
@@ -2149,13 +2149,11 @@ A reunião de uma ou mais classes para formar novas classes é chamada de agrega
 
 Uma oportunidade se apresenta com o uso da agregação, que não é possível resolver facilmente com a herança. Não confunda herança com agregação, pois são conceitos diferentes.
 
-Imagine agora a situação dos slots de memória: na herança, só poderíamos herdar uma memória, mas, com a agregação, podemos criar quantas memórias quisermos, como no exemplo a seguir. Para a classe Memoria foram criados apenas os métodos de Acesso (Setters e Getters) para facilitar o entendimento:
+Imagine agora a situação dos slots de memória: na herança, só poderíamos herdar uma memória, mas, com a agregação, podemos criar quantas memórias quisermos, como no exemplo a seguir. Para a classe `Memoria` foram criados apenas os métodos de Acesso (Setters e Getters) para facilitar o entendimento:
 
 ![code](https://user-images.githubusercontent.com/61624336/121124283-0afcf200-c7fb-11eb-9315-0c8f4f23d186.png)
 
-
-
-1. O Desktop possui quatro slots de memória;
+1. O `Desktop` possui quatro slots de memória;
 
 2. Como cada slot é um objeto diferente, eles possuem propriedades diferentes, sem que nenhum tenha relação direta com os demais;
 
@@ -2167,7 +2165,7 @@ Agora que vimos como aplicar os conceitos de agregação e particionamento, pode
 
 ![pg14](https://user-images.githubusercontent.com/61624336/121124491-68913e80-c7fb-11eb-859a-1bd49cafeede.png)
 
-Devemos identificar os atributos comuns às classes, sendo que os atributos Marca, Modelo e Preço são comuns a todas as classes. Já os atributos Tipo e Capacidade são comuns apenas às classes HD e Memoria, sendo necessária uma classe intermediária. O atributo TipoProcessador pertence apenas à classe PlacaMae e o atributo Padrão pertence apenas à classe PlacaVideo. As classes HD e Memoria não terão atributos específicos, ficarão apenas nas superclasses.
+Devemos identificar os atributos comuns às classes, sendo que os atributos `Marca`, `Modelo` e `Preço` são comuns a todas as classes. Já os atributos `Tipo` e `Capacidade` são comuns apenas às classes `HD` e `Memoria`, sendo necessária uma classe intermediária. O atributo `TipoProcessador` pertence apenas à classe `PlacaMae` e o atributo `Padrão` pertence apenas à classe `PlacaVideo`. As classes `HD` e `Memoria` não terão atributos específicos, ficarão apenas nas superclasses.
 
 Classes Particionadas redefinidas após a aplicação da Herança
 
