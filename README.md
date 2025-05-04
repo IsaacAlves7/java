@@ -1271,7 +1271,15 @@ O uso de um método Setter neste caso evitará que seja atribuído um valor inv�
 
 Exemplo: Setters
 
+```java
+
+```
+
 ![print](https://user-images.githubusercontent.com/61624336/119926413-c39a7a00-bf4d-11eb-9797-aa6ef37af735.png)
+
+```java
+
+```
 
 ![print](https://user-images.githubusercontent.com/61624336/119926215-4f5fd680-bf4d-11eb-9d3a-96fb33b2ec6d.png)
 
@@ -1294,6 +1302,10 @@ Características dos métodos Getters:
 - Não possui parâmetro: esses métodos nunca receberão parâmetros, uma vez que não farão atribuições ou ações com parâmetros, realizando apenas o retorno do valor armazenado no atributo.
 
 Exemplo:
+
+```java
+
+```
 
 ![print](https://user-images.githubusercontent.com/61624336/119929490-02333300-bf54-11eb-93ac-6fba6362af6e.png)
 
