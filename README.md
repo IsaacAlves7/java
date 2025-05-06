@@ -2834,6 +2834,12 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 - Integração com serviços na nuvem e muito mais.
 
+Sobre o **Spring Actions** nós temos gerenciamento de dependências (Dependency management) com a ajuda do Maven. Também temos acesso a dados. Removemos o código boilerplate ao lidar com transações, gerenciamento de conexões, acesso remoto e segurança. E, finalmente, temos o controlador (controller) de visualização do modelo ou o MVC com integração do controlador.
+
+Mas e quanto ao contexto das aplicações de vínculo? Bem, e quanto à Bean Factory, suas portas?
+
+Todos os objetos que o Spring gerencia, mas também temos o Factory pattern, que serve ao Bean Factory por meio da operação de inversão de controle (IoC) para seus objetos. E ele também transmite todas as informações sobre a definição do objeto da aplicação e o que ele mede ao longo de seu ciclo de vida.
+
 O Spring Framework Runtime Environment (ambiente de execução do Spring) não é um termo técnico oficial dentro do ecossistema Spring, ele varia conforme o tipo de aplicação. Se for uma aplicação Spring Boot, o runtime pode ser apenas um JAR executável com um servidor embutido. Se for uma aplicação corporativa, pode envolver servidores de aplicação externos, bancos de dados, serviços na nuvem, entre outros. Mas no fim das contas, tudo sempre roda dentro da JVM, gerenciado pelo **Spring Container**.
 
 O ambiente de execução do Spring pode ser entendido como o conjunto de componentes e infraestrutura necessários para que uma aplicação Spring rode corretamente.
