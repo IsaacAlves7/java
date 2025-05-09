@@ -2948,3 +2948,5 @@ O Spring Boot, por sua vez, continua fornecendo suas principais qualidades: auto
 Na prática, você pode escrever controladores REST com classes Kotlin, criar repositórios com interfaces do Spring Data, e usar corrotinas em chamadas assíncronas com WebFlux, por exemplo. O Spring Boot reconhece arquivos `.kt`, e o build geralmente é feito com Gradle (especialmente usando Kotlin DSL no `build.gradle.kts`).
 
 Resumindo: usar Spring Boot com Kotlin é apostar em um desenvolvimento mais conciso, moderno e seguro, sem abrir mão do poder do ecossistema Spring. É uma das combinações preferidas hoje por quem deseja construir aplicações sólidas com menos fricção e mais produtividade.
+
+# 🧪 [Java] TDD, BDD e DDD
