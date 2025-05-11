@@ -2713,9 +2713,47 @@ Não precisa de tratamento obrigatório.
 | `Unchecked Exception` | 🚫 Não | `NullPointerException`, `ArithmeticException` |
 
 # 🪶 [Java] Apache Maven
-<img src="" height="77" align="right">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg" height="77" align="right">
 
 O **Apache Maven** é uma ferramenta de automação de construção e gerenciamento de projetos, especialmente para projetos Java, mas também pode ser usada para outras linguagens. Ele simplifica o processo de construção, gerenciamento de dependências e geração de relatórios. O Maven é baseado no conceito de <a href="">Project Object Model (POM)</a>, onde as dependências do projeto são definidas em um arquivo XML. 
+
+O Maven baixa bibliotecas Java e seus plug-ins dinamicamente de um ou mais repositórios, como o Maven 2 Central Repository, e armazena-os em uma área de cache local. Este cache local de artefatos baixados pode também ser atualizado com artefatos criados por projetos locais. Repositórios públicos podem também ser atualizados.
+
+O Maven é construído utilizando uma arquitetura baseada em plugin, que permite que ele faça uso de qualquer aplicação controlável através da entrada padrão. Teoricamente, isto permitiria qualquer um escrever plugins para fazer interface com ferramentas de construção (compiladores, ferramentas de teste de unidade, etc.) para qualquer outra linguagem. De fato, o suporte e uso para linguagens diferentes de Java tem sido mínimas. Atualmente existe um plugin para o framework .NET e é mantido, e um plugin nativo C/C++ é mantido para o Maven 2.
+
+Projetos Maven são configurados usando um Project Object Model, que é armazenado em um arquivo `pom.xml`. A seguir está um exemplo mínimo:
+
+```xml
+<project>
+  <!-- model version is always 4.0.0 for Maven 2.x POMs -->
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- project coordinates, i.e. a group of values which
+       uniquely identify this project -->
+
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>my-app</artifactId>
+  <version>1.0</version>
+
+  <!-- library dependencies -->
+
+  <dependencies>
+    <dependency>
+
+      <!-- coordinates of the required library -->
+
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+
+      <!-- this dependency is only used for running and compiling tests -->
+
+      <scope>test</scope>
+
+    </dependency>
+  </dependencies>
+</project>
+```
 
 # 🤖 [Java] Primefaces
 <img src="https://user-images.githubusercontent.com/61624336/192927385-5a585bf9-2cac-4344-89b4-f0d194cac6b5.svg" height="77" align="right">
