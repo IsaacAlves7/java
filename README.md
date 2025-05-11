@@ -2712,6 +2712,11 @@ Não precisa de tratamento obrigatório.
 | `Checked Exception` | ✅ Sim | `IOException`, `SQLException` |
 | `Unchecked Exception` | 🚫 Não | `NullPointerException`, `ArithmeticException` |
 
+# 🪶 [Java] Apache Maven
+<img src="" height="77" align="right">
+
+O **Apache Maven** é uma ferramenta de automação de construção e gerenciamento de projetos, especialmente para projetos Java, mas também pode ser usada para outras linguagens. Ele simplifica o processo de construção, gerenciamento de dependências e geração de relatórios. O Maven é baseado no conceito de <a href="">Project Object Model (POM)</a>, onde as dependências do projeto são definidas em um arquivo XML. 
+
 # 🤖 [Java] Primefaces
 <img src="https://user-images.githubusercontent.com/61624336/192927385-5a585bf9-2cac-4344-89b4-f0d194cac6b5.svg" height="77" align="right">
 
