@@ -2187,6 +2187,10 @@ A reunião de uma ou mais classes para formar novas classes é chamada de agrega
 
 ![code](https://user-images.githubusercontent.com/61624336/121120415-e05b6b00-c7f3-11eb-8fd2-cf4ebeef81da.png)
 
+```java
+
+```
+
 > [!Warning]
 > 1. Foram incluídos novos atributos para entendermos que a agregação pode incluir não apenas classes, mas também novos atributos;
 > 
@@ -2199,6 +2203,10 @@ A reunião de uma ou mais classes para formar novas classes é chamada de agrega
 Uma oportunidade se apresenta com o uso da agregação, que não é possível resolver facilmente com a herança. Não confunda herança com agregação, pois são conceitos diferentes.
 
 Imagine agora a situação dos slots de memória: na herança, só poderíamos herdar uma memória, mas, com a agregação, podemos criar quantas memórias quisermos, como no exemplo a seguir. Para a classe `Memoria` foram criados apenas os métodos de Acesso (Setters e Getters) para facilitar o entendimento:
+
+```java
+
+```
 
 ![code](https://user-images.githubusercontent.com/61624336/121124283-0afcf200-c7fb-11eb-9315-0c8f4f23d186.png)
 
