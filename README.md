@@ -439,9 +439,9 @@ Neste caso, usamos este tipo de comentário apenas para descrever avisos e infor
 # ☕ [Java] Tipos de dados 
 A linguagem Java possui nove tipos de dados básicos, sendo oito deles primitivos e um tipo especial.
 
-Primitivos (armazenam apenas valores)
+**Primitivos** (armazenam apenas valores)
 
-Tipo lógico (`boolean`), o tipo lógico só permite dois estados, verdadeiro (<code>true</code>) ou falso (<code>false</code>); em Java ainda é permitido o uso de <code>on</code> e <code>off</code>, ou <code>yes</code> e <code>no</code>. 
+**Tipo lógico** (`boolean`), o tipo lógico só permite dois estados, verdadeiro (<code>true</code>) ou falso (<code>false</code>); em Java ainda é permitido o uso de <code>on</code> e <code>off</code>, ou <code>yes</code> e <code>no</code>. 
 
 Exemplo:
 
@@ -449,7 +449,7 @@ Exemplo:
 boolean status = true;
 ```
 
-Tipo caractere (`char`), o tipo `char` permite que seja armazenado na memória apenas um caractere e se difere do texto (`String`) por ser definido entre `‘e’`. Quando usamos aspas simples ou dupla determinamos apenas um caractere.
+**Tipo caractere** (`char`), o tipo `char` permite que seja armazenado na memória apenas um caractere e se difere do texto (`String`) por ser definido entre `‘e’`. Quando usamos aspas simples ou dupla determinamos apenas um caractere.
 
 Exemplo:
 
@@ -492,7 +492,7 @@ Também é possível armazenar caracteres de controle:
 
 > <b>OBS:</b> A barra invertida na frente indica que é um caractere especial.
 
-Tipos inteiros (`byte`, `short`, `int` e `long`), são quatro diferentes tipos de inteiros, que se diferenciam pela quantidade de bits que cada um ocupa em memória para armazenar um valor. Isto faz com que, quanto menor a quantidade de bits, maior seja a limitação do valor a ser armazenado. Entretanto, em ocasiões onde a memória é pouca, devemos trabalhar muito bem com estas diferenças para reduzir o espaço de memória necessário. O uso mais comum é do <code>int</code>, mas, para números muito grandes ou muito pequenos, devemos usar o <code>long</code>. Já para economizar memória podemos usar <code>byte</code> ou <code>short</code>, de acordo com o valor que será armazenado.
+**Tipos inteiros** (`byte`, `short`, `int` e `long`), são quatro diferentes tipos de inteiros, que se diferenciam pela quantidade de bits que cada um ocupa em memória para armazenar um valor. Isto faz com que, quanto menor a quantidade de bits, maior seja a limitação do valor a ser armazenado. Entretanto, em ocasiões onde a memória é pouca, devemos trabalhar muito bem com estas diferenças para reduzir o espaço de memória necessário. O uso mais comum é do <code>int</code>, mas, para números muito grandes ou muito pequenos, devemos usar o <code>long</code>. Já para economizar memória podemos usar <code>byte</code> ou <code>short</code>, de acordo com o valor que será armazenado.
 
 <table>
   <tr>
@@ -520,7 +520,7 @@ Tipos inteiros (`byte`, `short`, `int` e `long`), são quatro diferentes tipos d
     <td>-2⁶³ . . . . 2⁶³ - 1</td>
 </table>    
 
-Tipos reais (float e double) são dois diferentes tipos de valores reais, sendo um de precisão simples (<code>float</code>), que ocupa menos espaço de memória, e o de dupla precisão, que ocupa mais memória. Quanto maior o número de bits para armazenar um valor real, maior será a precisão deste número dentro do sistema. O uso do <code>float</code> é comum quando necessitamos economizar espaço de memória. Em Java, todo tipo de dado numérico é convertido para <code>double</code> automaticamente por coerção (força a conversão de tipo). Por isso, é mais indicado, quando não houver falta de espaço de memória, a utilização de <code>double</code> para armazenamento de valores reais.
+**Tipos reais** (`float` e `double`) são dois diferentes tipos de valores reais, sendo um de precisão simples (<code>float</code>), que ocupa menos espaço de memória, e o de dupla precisão, que ocupa mais memória. Quanto maior o número de bits para armazenar um valor real, maior será a precisão deste número dentro do sistema. O uso do <code>float</code> é comum quando necessitamos economizar espaço de memória. Em Java, todo tipo de dado numérico é convertido para <code>double</code> automaticamente por coerção (força a conversão de tipo). Por isso, é mais indicado, quando não houver falta de espaço de memória, a utilização de <code>double</code> para armazenamento de valores reais.
 
 <table>
   <tr>
