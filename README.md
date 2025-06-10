@@ -2503,10 +2503,8 @@ Outro ponto importante é que os atributos das classes **Exemplo** e **Tributos*
 # ☕ [Java] Classes abstratas e interfaces 
 As **classes abstratas** são usadas como moldes para a criação de outras classes e podem encapsular atributos e comportamentos comuns. Já **interface** é um recurso muito utilizado em Java. Uma classe pode implementar várias interfaces.
 
-## [Java] Modificadores: `static` e `final`
-Anteriormente, conhecemos os *modificadores de acesso* ou de *visibilidade* (Encapsulamento). Agora iremos conhecer mais alguns modificadores que podem ser aplicados sobre classes, no caso do final e sobre membros (Atributos e Métodos) de uma classe. Esses modificadores, como o nome já diz, servem para alterar a forma de uso de classes, métodos e/ou atributos.
+Modificadores: `static` e `final`, anteriormente, conhecemos os modificadores de acesso ou de *visibilidade* (Encapsulamento). Agora iremos conhecer mais alguns modificadores que podem ser aplicados sobre classes, no caso do final e sobre membros (Atributos e Métodos) de uma classe. Esses modificadores, como o nome já diz, servem para alterar a forma de uso de classes, métodos e/ou atributos.
 
-## [Java] Referência `.this`
 O uso do <code>this</code> em Java é para ajudar na questão das referências (endereçamento) de memória. O <code>this</code> é um ponteiro (variável que armazena endereço de memória) de forma implícita. Java não possui *endereçamento direto de memória* (endereçamento explícito), apenas o *endereçamento indireto* (implícito) de memória. A referência <code>this</code> então é uma referência implícita ao endereçamento de memória de um objeto.
 
 A referência <code>this</code> altera a identificação do objeto pelo seu identificador (nome) e pelo endereço de memória do objeto, e *só pode referenciar membros da classe*, ou seja, somente faz referência a *atributos e métodos*.
@@ -2519,7 +2517,8 @@ Dessa forma, podemos substituir o nome do objeto pela sua referência, e também
 
 ![code](https://user-images.githubusercontent.com/61624336/121282961-be73ee00-c8b0-11eb-972f-9e15749a9efa.png)
 
-> Nota: O `this` separa os membros da classe das demais variáveis auxiliares e parâmetros da classe.
+> [!Note]
+> O `this` separa os membros da classe das demais variáveis auxiliares e parâmetros da classe.
 
 ## [Java] O modificador `static`
 Este modificador pode ser aplicado sobre atributos e métodos e transforma o atributo ou método para a forma “compartilhada”. O modificador `static` aplicado a um atributo. Este modificador ao ser aplicado em um atributo de uma classe modifica este atributo de objeto (ou de instância) para um atributo de classe1.
