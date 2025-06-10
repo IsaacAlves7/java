@@ -1267,11 +1267,13 @@ Características dos métodos Setters:
 
 A verificação do valor a ser atribuído não pode ser realizada quando efetuamos uma atribuição direta:
 
-<pre>Aluno a = new Aluno();
+```java
+Aluno a = new Aluno();
 
-a.cr = -5.0;</pre>
+a.cr = -5.0;
+```
 
-O uso de um método Setter neste caso evitará que seja atribuído um valor inválido para o CR, no caso -5.0;
+O uso de um método Setter neste caso evitará que seja atribuído um valor inválido para o CR, no caso `-5.0`;
 
 Exemplo: Setters
 
@@ -1287,9 +1289,9 @@ Exemplo: Setters
 
 ![print](https://user-images.githubusercontent.com/61624336/119926215-4f5fd680-bf4d-11eb-9d3a-96fb33b2ec6d.png)
 
-- Note que o parâmetro c recebe o valor a ser atribuído ao CR (-5.0), mas antes de atribuir é realizada uma verificação do valor para averiguar se o mesmo é válido. No caso, o valor do parâmetro é menor do que zero.
+- Note que o parâmetro c recebe o valor a ser atribuído ao CR (`-5.0`), mas antes de atribuir é realizada uma verificação do valor para averiguar se o mesmo é válido. No caso, o valor do parâmetro é menor do que zero.
 
-- Como sabemos que um CR não pode ser negativo, a atribuição não será realizada, assim como a tentativa de realizar a atribuição de um CR maior do que 10 (dez) também não permitirá que a atribuição ocorra.
+- Como sabemos que um CR não pode ser negativo, a atribuição não será realizada, assim como a tentativa de realizar a atribuição de um CR maior do que `10` (dez) também não permitirá que a atribuição ocorra.
 
 **Apenas atribuições com valores válidos poderão ser realizadas neste caso.**
 
@@ -1321,9 +1323,17 @@ Exemplo: `Aluno.java` (versão com métodos Setters e Getters.)
 
 ![code](https://user-images.githubusercontent.com/61624336/120033833-86c49680-bfd2-11eb-83a8-2a1379ce07ac.png)
 
+```java
+
+```
+
 Exemplo: `AppAluno.java` (nova versão)
 
 ![code](https://user-images.githubusercontent.com/61624336/120039595-9399b800-bfdb-11eb-956a-bd8c7be22f31.png)
+
+```java
+
+```
 
 > [!Note]
 > 
@@ -1385,9 +1395,17 @@ Classe `Carro`:
 
 ![Carro](https://user-images.githubusercontent.com/61624336/120238115-a22ddc80-c232-11eb-8a1e-02ac44164306.png)
 
+```java
+
+```
+
 `AppCarro.java`
 
 ![AppCarro](https://user-images.githubusercontent.com/61624336/120238324-ab1eae00-c232-11eb-9504-872fe4511b68.png)
+
+```java
+
+```
 
 > [!Note]
 > Você pode ver que temos algumas repetições de código para realizar a entrada de dados de cada objeto. Se aumentarmos o número de objetos, aumentaremos consideravelmente o tamanho do código. Para resolver este problema e evitarmos a redundância de códigos, vamos incluir um novo método na classe Carro, um método para a entrada de dados. Desta forma, evitamos a redundância dos códigos de entrada de dados.
@@ -1437,8 +1455,16 @@ Nova solução do exercício prático, com a inclusão do método `entradaDados`
 `Aluno.java`
 ![code](https://user-images.githubusercontent.com/61624336/120251160-05316a80-c257-11eb-8ad1-8f93cc44a765.png)
 
+```java
+
+```
+
 `AppAluno.java`
 ![code2](https://user-images.githubusercontent.com/61624336/120251170-0febff80-c257-11eb-8ab6-a7a026cca2f5.png)
+
+```java
+
+```
 
 > [!Note]
 > Você pode perceber agora que existe um método para a entrada de dados na classe `Carro`, e que ele está sendo usado por cada carro para realizar a entrada de dados pelo teclado, evitando que os códigos das entradas de dados fiquem redundantes.
