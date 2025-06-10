@@ -216,7 +216,9 @@ O ambiente está pronto para digitarmos o código da aplicação: preencha o có
 import java.util.Scanner;
 
 public class Exemplo {
-  public static void main(String[] args)
+  public static void main(String[] args) {
+    
+  }
 }
 ```
 
