@@ -216,10 +216,29 @@ O ambiente está pronto para digitarmos o código da aplicação: preencha o có
 import java.util.Scanner;
 
 public class Exemplo {
-  public static void main(String[] args) {
-    
-  }
-}
+
+ // identação do bloco da classe Exemplo (a classe sempre possui o nome do arquivo, os dois andam bem alinhados!)
+ public static void main(String[] args) {
+
+// identação do bloco do método main
+
+// TODO Auto-generated method stub
+   Scanner sc = new Scanner(System.in);
+   double media, nota1, nota2;
+
+   System.out.println("Digite a nota 1:");
+   nota1 = Double.parseDouble(sc.nextLine());
+
+   System.out.println("Digite a nota 2:");
+   nota2 = Double.parseDouble(sc.nextLine());
+
+   media = (nota1 + nota2) /2.0;
+
+   System.out.println("A sua média é:" + media);
+   sc.close();
+
+  } // encerramento da identação do bloco do método main
+} // encerramento da identação da classe Exemplo
 ```
 
 Após o código estar pronto e sem erros, podemos executar a aplicação clicando sobre o “arquivo da classe” com o botão direito, e em seguida clicar sobre a opção `Run file`.
@@ -280,33 +299,25 @@ Exemplo:
 import java.util.Scanner;
 
 public class Exemplo {
-
-// identação do bloco da classe Exemplo (a classe sempre possui o nome do arquivo, os dois andam bem alinhados!)
-public static void main(String[] args) {
-
+ // identação do bloco da classe Exemplo (a classe sempre possui o nome do arquivo, os dois andam bem alinhados!)
+ public static void main(String[] args) {
 // identação do bloco do método main
-
 // TODO Auto-generated method stub
-Scanner sc = new Scanner(System.in);
+   Scanner sc = new Scanner(System.in);
+   double media, nota1, nota2;
 
-double media, nota1, nota2;
+   System.out.println("Digite a nota 1:");
+   nota1 = Double.parseDouble(sc.nextLine());
 
-System.out.println("Digite a nota 1:");
+   System.out.println("Digite a nota 2:");
+   nota2 = Double.parseDouble(sc.nextLine());
 
-nota1 = Double.parseDouble(sc.nextLine());
+   media = (nota1 + nota2) /2.0;
 
-System.out.println("Digite a nota 2:");
+   System.out.println("A sua média é:" + media);
+   sc.close();
 
-nota2 = Double.parseDouble(sc.nextLine());
-
-media = (nota1 + nota2) /2.0;
-
-System.out.println("A sua média é:" + media);
-
-sc.close();
-
-} // encerramento da identação do bloco do método main
-
+  } // encerramento da identação do bloco do método main
 } // encerramento da identação da classe Exemplo
 ```
 
