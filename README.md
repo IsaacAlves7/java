@@ -3091,7 +3091,7 @@ Na prática, você pode escrever controladores REST com classes Kotlin, criar re
 Resumindo, usar Spring Boot com Kotlin é apostar em um desenvolvimento mais conciso, moderno e seguro, sem abrir mão do poder do ecossistema Spring. É uma das combinações preferidas hoje por quem deseja construir aplicações sólidas com menos fricção e mais produtividade.
 
 # 🧪 [Java] TDD, BDD e DDD
-<img src="" align="right" height="77">
+<img src="https://github.com/user-attachments/assets/24967a96-5085-4f6e-997a-94e8ca6fd350" align="right" height="77">
 
 É totalmente possível aplicar **TDD (Test-Driven Development)**, **BDD (Behavior-Driven Development)** e **DDD (Domain-Driven Design)** em projetos Java, e o ecossistema da linguagem tem um suporte robusto para essas práticas.
 
