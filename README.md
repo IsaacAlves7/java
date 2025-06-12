@@ -2926,7 +2926,7 @@ Ecossistema Kotlin:
 4. **Kotlin Multiplatform**: Permite compartilhar código comum entre diferentes plataformas (JVM, JavaScript, iOS, etc.), facilitando o desenvolvimento de aplicativos multiplataforma.
 
 # 🍃 [Java] Spring
-[![Spring](https://img.shields.io/badge/-Spring-ffffff?style=flat&logo=Spring&logoColor=6DB33F)](#) [![Spring Boot](https://img.shields.io/badge/-Spring_Boot-ffffff?style=flat&logo=Spring-Boot&logoColor=6DB33F)](#) [![Spring Security](https://img.shields.io/badge/-Spring_Security-ffffff?style=flat&logo=Spring-Security&logoColor=6DB33F)](#) [![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-ffffff?style=flat&logo=RabbitMQ&logoColor=6DB33F)](#) [![React](https://img.shields.io/badge/-React-ffffff?style=flat&logo=React&logoColor=6DB33F)](#) [![Docker](https://img.shields.io/badge/-Docker-ffffff?style=flat&logo=Docker&logoColor=6DB33F)](#) [![Kubernetes](https://img.shields.io/badge/-Kubernetes-ffffff?style=flat&logo=Kubernetes&logoColor=6DB33F)](#) [![Kubernetes](https://img.shields.io/badge/-API_REST-ffffff?style=flat&logo=iCloud&logoColor=6DB33F)](#)
+[![Spring](https://img.shields.io/badge/-Spring-000000?style=flat&logo=Spring&logoColor=6DB33F)](#) [![Spring Boot](https://img.shields.io/badge/-Spring_Boot-000000?style=flat&logo=Spring-Boot&logoColor=6DB33F)](#) [![Spring Security](https://img.shields.io/badge/-Spring_Security-000000?style=flat&logo=Spring-Security&logoColor=6DB33F)](#) [![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-000000?style=flat&logo=RabbitMQ&logoColor=6DB33F)](#) [![React](https://img.shields.io/badge/-React-000000?style=flat&logo=React&logoColor=6DB33F)](#) [![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=Docker&logoColor=6DB33F)](#) [![Kubernetes](https://img.shields.io/badge/-Kubernetes-000000?style=flat&logo=Kubernetes&logoColor=6DB33F)](#) [![Kubernetes](https://img.shields.io/badge/-API_REST-000000?style=flat&logo=iCloud&logoColor=6DB33F)](#)
 
 <img src="https://www.svgrepo.com/show/354380/spring-icon.svg" align="right" height="77">
 
@@ -3065,6 +3065,8 @@ Outro grande benefício da inicialização automática do Spring Boot é o **Spr
 Com isso, ao invés de gastar tempo com configurações repetitivas e infraestrutura, os desenvolvedores podem focar diretamente no desenvolvimento das **regras de negócio**. É isso que faz o Spring Boot ser tão eficiente para criar microserviços, APIs REST e aplicações escaláveis rapidamente.
 
 ## [Java] Spring Boot com Kotlin
+[![Kotlin](https://img.shields.io/badge/-Kotlin-2.1.0-000000?style=flat&logo=Kotlin&logoColor=7F52FF)](#) [![Spring Boot](https://img.shields.io/badge/-Spring_Boot-000000?style=flat&logo=Spring-Boot&logoColor=6DB33F)](#) [![Spring Security](https://img.shields.io/badge/-Spring_Security-000000?style=flat&logo=Spring-Security&logoColor=6DB33F)](#) [![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-000000?style=flat&logo=RabbitMQ&logoColor=6DB33F)](#) [![React](https://img.shields.io/badge/-React-000000?style=flat&logo=React&logoColor=6DB33F)](#) [![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=Docker&logoColor=6DB33F)](#) [![Kubernetes](https://img.shields.io/badge/-Kubernetes-000000?style=flat&logo=Kubernetes&logoColor=6DB33F)](#) [![Kubernetes](https://img.shields.io/badge/-API_REST-000000?style=flat&logo=iCloud&logoColor=6DB33F)](#)
+
 <img src="https://github.com/user-attachments/assets/cc52c0e8-aef2-4212-a926-5491088885e8" align="right" height="77">
 
 O **Spring Boot com Kotlin** é uma combinação moderna e poderosa para o desenvolvimento de aplicações backend. O Spring Boot é um framework da plataforma Spring (Java) que simplifica a criação de aplicações web e APIs, enquanto o Kotlin é uma linguagem moderna, concisa e segura, desenvolvida pela JetBrains, que roda na JVM (Java Virtual Machine). Usar Spring Boot com Kotlin significa unir a robustez do ecossistema Spring com a expressividade, segurança e produtividade do Kotlin.
@@ -3075,6 +3077,6 @@ O Spring Boot, por sua vez, continua fornecendo suas principais qualidades: auto
 
 Na prática, você pode escrever controladores REST com classes Kotlin, criar repositórios com interfaces do Spring Data, e usar corrotinas em chamadas assíncronas com WebFlux, por exemplo. O Spring Boot reconhece arquivos `.kt`, e o build geralmente é feito com Gradle (especialmente usando Kotlin DSL no `build.gradle.kts`).
 
-Resumindo: usar Spring Boot com Kotlin é apostar em um desenvolvimento mais conciso, moderno e seguro, sem abrir mão do poder do ecossistema Spring. É uma das combinações preferidas hoje por quem deseja construir aplicações sólidas com menos fricção e mais produtividade.
+Resumindo, usar Spring Boot com Kotlin é apostar em um desenvolvimento mais conciso, moderno e seguro, sem abrir mão do poder do ecossistema Spring. É uma das combinações preferidas hoje por quem deseja construir aplicações sólidas com menos fricção e mais produtividade.
 
 # 🧪 [Java] TDD, BDD e DDD
