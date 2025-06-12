@@ -3091,7 +3091,7 @@ Na prática, você pode escrever controladores REST com classes Kotlin, criar re
 Resumindo, usar Spring Boot com Kotlin é apostar em um desenvolvimento mais conciso, moderno e seguro, sem abrir mão do poder do ecossistema Spring. É uma das combinações preferidas hoje por quem deseja construir aplicações sólidas com menos fricção e mais produtividade.
 
 # 🧪 [Java] TDD, BDD e DDD
-<img src="https://img.shields.io/badge/JUnit5-passing-25A162?style=flat&logo=JUnit5&logoColor=white"> <img src="https://img.shields.io/badge/Mockito-passing-25A162?style=flat&logo=Mockito&logoColor=white"> <img src="https://img.shields.io/badge/Gradle-passing-25A162?style=flat&logo=Gradle&logoColor=white"> <img src="https://img.shields.io/badge/Apache_Maven-build-crimson?style=flat&logo=Apache-Maven&logoColor=white">
+<img src="https://img.shields.io/badge/JUnit5-passing-25A162?style=flat&logo=JUnit5&logoColor=white"> <img src="https://img.shields.io/badge/Mockito-passing-25A162?style=flat&logo=Mockito&logoColor=white"> <img src="https://img.shields.io/badge/Gradle-passing-25A162?style=flat&logo=Gradle&logoColor=white"> <img src="https://img.shields.io/badge/Apache_Maven-build-crimson?style=flat&logo=Apache-Maven&logoColor=white"> ![Cucumber](https://img.shields.io/badge/-Cucumber-23D96C?style=badge&logo=cucumber&logoColor=white)
 
 <img src="https://github.com/user-attachments/assets/24967a96-5085-4f6e-997a-94e8ca6fd350" align="right" height="77">
 
