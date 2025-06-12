@@ -3093,7 +3093,7 @@ Resumindo, usar Spring Boot com Kotlin é apostar em um desenvolvimento mais con
 # 🧪 [Java] TDD, BDD e DDD
 <img src="https://github.com/user-attachments/assets/24967a96-5085-4f6e-997a-94e8ca6fd350" align="right" height="77">
 
-É totalmente possível aplicar **TDD (Test-Driven Development)**, **BDD (Behavior-Driven Development)** e **DDD (Domain-Driven Design)** em projetos Java, e o ecossistema da linguagem tem um suporte robusto para essas práticas.
+É totalmente possível aplicar **TDD (Test-Driven Development)**, **BDD (Behavior-Driven Development)** e **DDD (Domain-Driven Design)** em projetos Java, e o ecossistema da linguagem tem um suporte robusto para essas práticas. Kotlin também é uma linguagem plenamente capaz de adotar TDD, BDD e DDD, e inclusive se beneficia da sintaxe mais expressiva e concisa para aplicar esses paradigmas de forma elegante.
 
 O **TDD** em Java é amplamente utilizado e bem estabelecido. A prática envolve escrever testes antes da implementação, geralmente com frameworks como **JUnit** e **Mockito**. Você começa escrevendo um teste que falha, implementa o código mínimo necessário para passar no teste e depois refatora. Isso é comum em aplicações Java, principalmente usando IDEs como IntelliJ ou Eclipse, que integram bem essas ferramentas. Geralmente, o TDD em Java acompanha o quarteto: JUnit5, Mockito, Gradle e Maven. 
 
