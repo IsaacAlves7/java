@@ -220,9 +220,9 @@ public class Exemplo {
  // identação do bloco da classe Exemplo (a classe sempre possui o nome do arquivo, os dois andam bem alinhados!)
  public static void main(String[] args) {
 
-// identação do bloco do método main
+   // identação do bloco do método main
 
-// TODO Auto-generated method stub
+   // TODO Auto-generated method stub
    Scanner sc = new Scanner(System.in);
    double media, nota1, nota2;
 
