@@ -3091,3 +3091,14 @@ Na prática, você pode escrever controladores REST com classes Kotlin, criar re
 Resumindo, usar Spring Boot com Kotlin é apostar em um desenvolvimento mais conciso, moderno e seguro, sem abrir mão do poder do ecossistema Spring. É uma das combinações preferidas hoje por quem deseja construir aplicações sólidas com menos fricção e mais produtividade.
 
 # 🧪 [Java] TDD, BDD e DDD
+<img src="" align="right" height="77">
+
+É totalmente possível aplicar **TDD (Test-Driven Development)**, **BDD (Behavior-Driven Development)** e **DDD (Domain-Driven Design)** em projetos Java, e o ecossistema da linguagem tem um suporte robusto para essas práticas.
+
+O **TDD** em Java é amplamente utilizado e bem estabelecido. A prática envolve escrever testes antes da implementação, geralmente com frameworks como **JUnit** e **Mockito**. Você começa escrevendo um teste que falha, implementa o código mínimo necessário para passar no teste e depois refatora. Isso é comum em aplicações Java, principalmente usando IDEs como IntelliJ ou Eclipse, que integram bem essas ferramentas.
+
+O **BDD** se constrói sobre o TDD, com foco na descrição do comportamento do sistema em linguagem natural. Em Java, o framework mais popular para isso é o **Cucumber**, que permite escrever testes em **Gherkin**, um formato descritivo que usa estruturas como `Given`, `When`, `Then`. O Cucumber interpreta essas especificações e as vincula a implementações Java, promovendo colaboração entre desenvolvedores, QA e product owners.
+
+Já o **DDD** é mais arquitetural, sendo uma abordagem para modelar sistemas complexos com base no domínio da aplicação. Em Java, DDD é frequentemente aplicado em conjunto com frameworks como **Spring Boot**, que oferece suporte a uma arquitetura em camadas (Domain, Application, Infrastructure, etc). Classes como `Entity`, `ValueObject`, `Repository`, `Service`, `AggregateRoot` são modeladas diretamente no código para representar conceitos do negócio. O Spring Data, por exemplo, facilita a implementação do padrão **Repository**. DDD em Java também é impulsionado pela maturidade da linguagem e seu uso em sistemas corporativos, que geralmente têm um domínio de negócio complexo.
+
+É comum ver **DDD sendo aplicado com TDD**, e o **BDD como uma ponte de comunicação entre o domínio e os testes automatizados**. Em conjunto, essas práticas criam um ecossistema onde o código é bem testado, orientado ao negócio, e de fácil manutenção. Java, com sua vasta gama de bibliotecas e frameworks, oferece um ambiente maduro e bem documentado para a aplicação dessas metodologias.
