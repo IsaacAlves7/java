@@ -2043,9 +2043,17 @@ Como uma primeira forma de atender a demanda da classe `Cliente`, o método impr
 
 ![code](https://user-images.githubusercontent.com/61624336/120996631-dfc3c580-c75c-11eb-9902-eb957eb65e9c.png)
 
+```java
+
+```
+
 Note que as instruções na cor vermelha já existem no método imprimir da Superclasse e, assim, podemos reaproveitar os códigos da Superclasse ao chamar o método imprimir da Superclasse na Subclasse:
 
 ![code](https://user-images.githubusercontent.com/61624336/120996827-113c9100-c75d-11eb-920d-de4a93d2d09f.png)
+
+```java
+
+```
 
 Ao reaproveitar o método imprimir da Superclasse, temos dois ganhos muito importantes:
 
