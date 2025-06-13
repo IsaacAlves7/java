@@ -2273,7 +2273,9 @@ A **herança** é um conceito importantíssimo da programação orientada a Obje
 
 É a decomposição de classes extensas em classes menores, que podem ser mais bem reaproveitadas em outras classes, além de permitir melhor controle e manutenção.
 
-O **particionamento de classes** nos permite criar objetos menores e mais simples, que poderão ser reunidos em conjunto, capazes de criar novas classes, maiores e mais complexas. O particionamento de classes em Java pode ter diferentes significados dependendo do contexto. Geralmente, ele se refere a técnicas de organização, modularização e otimização de código, incluindo:
+O **particionamento de classes** nos permite criar objetos menores e mais simples, que poderão ser reunidos em conjunto, capazes de criar novas classes, maiores e mais complexas. O particionamento de classes em Java pode ter diferentes significados dependendo do contexto. 
+
+Geralmente, ele se refere a técnicas de organização, modularização e otimização de código, incluindo:
 
 1. Divisão de classes em pacotes (Organização modular)
 2. Uso de classes aninhadas e internas
