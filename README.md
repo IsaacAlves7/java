@@ -1439,8 +1439,6 @@ public class Aluno { // Declaração e início da classe
 }
 ```
 
-![print](https://user-images.githubusercontent.com/61624336/119929490-02333300-bf54-11eb-93ac-6fba6362af6e.png)
-
 Note que não existe parâmetro, o método apenas deve retornar o valor armazenado e por isso não pode ser <code>void</code>, sendo o tipo de retorno do mesmo tipo do atributo que será retornado, e a ação é a de retorno (`return`).
 
 **No futuro, os atributos das nossas classes serão protegidos contra acesso direto (privado)**, impedindo que a aplicação possa acessar diretamente um atributo. Dessa forma, é necessário que usemos os métodos *Setters* e *Getters* para atribuir e recuperar os valores do atributo.
