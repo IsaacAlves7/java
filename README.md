@@ -621,7 +621,7 @@ final NOMEEMPRESA = “Super Empreendimentos”;
   </tr>
 </table>
 
-Operadores aritméticos
+**Operadores aritméticos** em Java são usados para realizar operações matemáticas básicas entre valores numéricos. Eles incluem:
 
 > <b>OBS:</b> Java sempre realizará a operação inteira quando os operandos forem inteiros, e a operação real ocorrerá caso um ou mais operando seja real.
 
