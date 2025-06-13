@@ -1246,8 +1246,6 @@ Em cada sistema, temos **apenas uma aplicação**, que será **responsável pela
 
 Exemplo: `AppAluno.java` (aplicação)
 
-![print](https://user-images.githubusercontent.com/61624336/119884711-54019c00-bf07-11eb-9658-c7af50e520e2.png)
-
 ```java
 // Aplicação para uso da Classe Aluno
 public class AppAluno { // Declaração e início da classe
@@ -1333,16 +1331,78 @@ O uso de um método Setter neste caso evitará que seja atribuído um valor inv�
 Exemplo: Setters
 
 ```java
+// Classe Aluno
+public class Aluno { // Declaração e início da classe
+  // Atributos devem ser identificados começando por letras minúsculas
+  String matricula, nome;
+  double cr;
 
+  // Métodos devem ser identificados começando por letras minúsculas
+  public void imprimir() { // Método imprimir(os dados do Aluno)
+    System.out.println("Matrícula: " + matricula);
+    System.out.println("Nome: " + nome);
+    System.out.println("CR: " + cr);
+  }
+
+  public void setCr(doublec){ // Setter
+    if(c >= 0.0 && c <= 10.0){
+         cr = c;
+    }
+  }
+}
 ```
 
-![print](https://user-images.githubusercontent.com/61624336/119926413-c39a7a00-bf4d-11eb-9797-aa6ef37af735.png)
+Exemplo: `AppAluno.java` (aplicação com Setter)
 
 ```java
+// Aplicação para uso da Classe Aluno
+public class AppAluno { // Declaração e início da classe
+  // Atributos devem ser identificados começando por letras minúsculas
+  String matricula, nome;
+  double cr;
 
+  public static void main(String[] args){ // Método inicial da App
+      Aluno aluno1 = new Aluno();
+      Aluno aluno2 = new Aluno();
+      Aluno aluno3 = new Aluno();
+      Aluno a = new Aluno();
+
+     // Definindo valores para os atributos do aluno1
+     aluno1.matricula = "1001";
+     aluno1.nome = "André";
+     aluno1.cr = 6.7;
+
+     // Definindo valores para os atributos do aluno2
+     aluno2.matricula = "1002";
+     aluno2.nome = "Maria";
+     aluno2.cr = 7.5;
+
+     // Definindo valores para os atributos do aluno3
+     aluno3.matricula = "1003";
+     aluno3.nome = "João";
+     aluno3.cr = 7.0;
+
+     // Exibindo os valores dos atributos de cada aluno
+     aluno1.imprimir();
+     aluno2.imprimir();
+     aluno3.imprimir();
+     a.setCr(-5.0); // setter
+   }
+
+  // Métodos devem ser identificados começando por letras minúsculas
+  public void imprimir() { // Método imprimir(os dados do Aluno)
+    System.out.println("Matrícula: " + matricula);
+    System.out.println("Nome: " + nome);
+    System.out.println("CR: " + cr);
+  }
+
+  public void setCr(doublec){ // Setter
+    if(c >= 0.0 && c <= 10.0){
+         cr = c;
+    }
+  }
+}
 ```
-
-![print](https://user-images.githubusercontent.com/61624336/119926215-4f5fd680-bf4d-11eb-9d3a-96fb33b2ec6d.png)
 
 - Note que o parâmetro c recebe o valor a ser atribuído ao CR (`-5.0`), mas antes de atribuir é realizada uma verificação do valor para averiguar se o mesmo é válido. No caso, o valor do parâmetro é menor do que zero.
 
