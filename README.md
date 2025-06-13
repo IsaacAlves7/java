@@ -1792,23 +1792,33 @@ Exemplos de polimorfismo de sobrecarga válidos para uma mesma classe:
 
 ![code](https://user-images.githubusercontent.com/61624336/120412490-07fe8f00-c32d-11eb-9121-6c8bfce3ea88.png)
 
+```java
+
+```
+
 As assinaturas são respectivamente:
 
 ![code](https://user-images.githubusercontent.com/61624336/120412911-c3272800-c32d-11eb-9da7-9f4f1921a5c1.png)
+
+```java
+
+```
 
 Todos os métodos acima, apesar de possuírem a mesma quantidade de parâmetros, têm assinaturas diferentes que serão executadas em função de contexto diferentes, respectivamente:
 
 ![code](https://user-images.githubusercontent.com/61624336/120413132-1f8a4780-c32e-11eb-8815-16a432a0aad1.png)
 
+```java
+
+```
+
 Os valores armazenados em g, h, i e j serão respectivamente: 1, 2, 3 e 4.
 
 ## [Java] A sobrecarga de métodos construtores
 
-**Métodos construtores** são métodos e **também podem ser sobrecarregados**.
+**Métodos construtores** são métodos e também podem ser sobrecarregados. Uma classe que possui mais de um método construtor é uma classe que oferece diferentes formas de criação para os seus objetos.
 
-Uma classe que possui mais de um método construtor é uma classe que oferece diferentes formas de criação para os seus objetos.
-
-Outra forma de uso de *mais de um construtor* é para manter a **compatibilidade de uma classe com suas aplicações antigas**.
+Outra forma de uso de *mais de um construtor* é para manter a compatibilidade de uma classe com suas aplicações antigas.
 
 Se analisarmos a <code>classe Carro</code>, vista como exemplo anteriormente, podemos notar que ela **não possui nenhum método construtor**. Podemos então criar alguns métodos construtores para esta classe e preservar a aplicação antiga, criando e analisando uma classe nova (evoluída) e as duas aplicações, a antiga e a nova:
 
