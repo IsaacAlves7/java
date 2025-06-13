@@ -1776,15 +1776,16 @@ System.out.println("Área = " + area( 5, 6 ));
 > Com o uso da sobrecarga de métodos você poderá criar quantos métodos com o mesmo identificador (nome) quiser em uma mesma classe, desde que eles **não possuam a mesma assinatura de método**.
 
 ## [Java] Métodos
-Se quisesse incluir um método para calcular a **área de uma circunferência**, você não poderia incluir nesta classe, pois ele teria a mesma assinatura do método do cálculo da área do quadrado:
-
-![code](https://user-images.githubusercontent.com/61624336/120411706-9eca4c00-c32b-11eb-9041-9fee2bdce201.png)
+Se quisesse incluir um método para calcular a área de uma circunferência, você não poderia incluir nesta classe, pois ele teria a mesma assinatura do método do cálculo da área do quadrado:
 
 ```java
-
+public static int area(int raio) {
+  return ((int) Math.PI * Math.pow(raio,2));
+  // Math.Pow calcula o raio elevado a 2
+}
 ```
 
-O método teria a mesma assinatura do método **área do quadrado** e, no momento da execução, não haveria como saber qual dos dois deveria seria executado, pois ambos teriam o mesmo contexto:
+O método teria a mesma assinatura do método área do quadrado e, no momento da execução, não haveria como saber qual dos dois deveria seria executado, pois ambos teriam o mesmo contexto:
 
 ```java
 System.out.println("Área Quadrado = " + area( 5 ));
