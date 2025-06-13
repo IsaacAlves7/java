@@ -1596,19 +1596,19 @@ Nova solução do exercício prático, com a inclusão do método `entradaDados`
 > A partir deste momento, todas as classes deverão sempre conter o <code>método entradaDados()</code>.
 
 ## [Java] Métodos construtores
-A programação orientada a objetos permite que possamos controlar a criação de um objeto através dos chamados **métodos construtores**. Tal característica permite que um método especial, o **método construtor**, seja executado no momento em que ocorre a criação do objeto (objeto é instanciado) e um conjunto de ações (instruções) podem ser programadas para serem realizadas neste momento.
+A programação orientada a objetos permite que possamos controlar a criação de um objeto através dos chamados **métodos construtores**. Tal característica permite que um método especial, o método construtor, seja executado no momento em que ocorre a criação do objeto (objeto é instanciado) e um conjunto de ações (instruções) podem ser programadas para serem realizadas neste momento.
 
 Entre essas ações, pode-se destacar o recebimento de dados iniciais para serem atribuídos e/ou preparar o objeto para que este esteja apto a atender às necessidades para qual foi criado.
 
-Um *método construtor* pode ainda ser usado para determinar o tamanho de um vetor que será usado pelo objeto, assim como *pré-configurar estruturas de dados de suporte* ao objeto que está sendo criado.
+Um método construtor pode ainda ser usado para determinar o tamanho de um vetor que será usado pelo objeto, assim como *pré-configurar estruturas de dados de suporte* ao objeto que está sendo criado.
 
 São métodos especiais executados apenas uma vez por cada *objeto* criado, pois somente são executados no momento da **instanciação / criação do objeto**, sendo responsáveis por realizar as ações necessárias para a sua criação (controlar a criação do objeto).
 
 Características dos métodos construtores:
 
-1. São sempre públicos (public, característica de encapsulamento – veremos mais adiante), não podendo ter nenhum tipo de restrição;
+1. São sempre públicos (`public`, característica de encapsulamento – veremos mais adiante), não podendo ter nenhum tipo de restrição;
 
-2. Não existe definição de tipo de retorno, pois métodos construtores não podem retornar valores com a instrução “return”, são sem tipo;
+2. Não existe definição de tipo de retorno, pois métodos construtores não podem retornar valores com a instrução “`return`”, são sem tipo;
 
 3. Devem ser identificados sempre com o mesmo nome da classe;
 
@@ -1619,7 +1619,19 @@ Características dos métodos construtores:
 ![code](https://user-images.githubusercontent.com/61624336/120386438-fef6c900-c2fe-11eb-81f3-359dcbaf7019.png)
 
 ```java
+public class Pessoa {
+  // Attributes
+  String nome, identidade;
+  int idade;
 
+  // Constructor method
+  public Pessoa(String nome, String identidade, int idade) {
+    // Setters e Attributes
+    setNome(nome);
+    setIdentidade(identidade);
+    setIdade(idade);
+  }
+}
 ```
 
 `AppPessoa.java`
@@ -1650,12 +1662,12 @@ O método é público, não possui tipo de retorno antes no nome identificador d
 
 5. Os métodos `setIdentidade` (`String id`) e `setIdade` (`int id`) podem ter o mesmo identificador para o parâmetro porque o parâmetro `id` é declarado em diferentes métodos e, sendo assim, ele é válido internamente em cada um dos métodos separadamente.
 
-O processo de compilação de uma classe cria um método construtor vazio quando não for encontrado nenhum método construtor. Desta forma, nos exemplos anteriores, as classes Aluno e Carro não tinham métodos construtores, então o compilador criou respectivamente os métodos a seguir para as classes Aluno e Carro:
+O processo de compilação de uma classe cria um método construtor vazio quando não for encontrado nenhum método construtor. Desta forma, nos exemplos anteriores, as classes `Aluno` e `Carro` não tinham métodos construtores, então o compilador criou respectivamente os métodos a seguir para as classes `Aluno` e `Carro`:
 
 ```java
 public Aluno ( ) { }
 
-e
+// e
 
 public Carro ( ) { }
 ```
