@@ -1171,9 +1171,9 @@ Exemplo: A placa de um automóvel é importante para um sistema de estacionament
 
 Em alguns casos, o fabricante, modelo e a cor do automóvel poderão ser importantes, mas dificilmente iremos cadastrar o número do chassi do mesmo. Como o número do chassi não é facilmente visto e seu cadastramento dependeria da documentação do automóvel ou de uma análise para a identificação, que seria difícil, uma vez que é um identificador com muitas letras e números, acabaria por gerar filas e insatisfação dos clientes.
 
-Entretanto, para o sistema de cadastramento do DETRAN, por exemplo, o número do chassi é uma das informações mais importantes. Dessa forma, identificarmos a placa é importante como descritor do automóvel para o sistema de estacionamento, já o chassi não.</blockquote>
+Entretanto, para o sistema de cadastramento do DETRAN, por exemplo, o número do chassi é uma das informações mais importantes. Dessa forma, identificarmos a placa é importante como descritor do automóvel para o sistema de estacionamento, já o chassi não.
 
-Por isso, devemos analisar cada objeto separadamente e quais são as características importantes para o sistema em que o objeto será utilizado. Como outro exemplo, podemos notar que a matrícula, nome e CR de um aluno são importantes para o sistema acadêmico, mas o time para o qual o aluno torce ou sua religião não são. Por isso, os descritores time e religião não são importantes para o objeto Aluno em um sistema acadêmico.
+Por isso, devemos analisar cada objeto separadamente e quais são as características importantes para o sistema em que o objeto será utilizado. Como outro exemplo, podemos notar que a `matrícula`, `nome` e `CR` de um `aluno` são importantes para o sistema acadêmico, mas o time para o qual o `aluno` torce ou sua religião não são. Por isso, os descritores time e religião não são importantes para o objeto `Aluno` em um sistema acadêmico.
 
 As **classes** Java são responsáveis pelo **conjunto de códigos para a criação de objetos e aplicações**. Uma classe Java deve descrever as *características e ações* que o objeto possui ao ser representado em um sistema computacional, levando em consideração as caracteristicas (atributos) e as ações (métodos) juntamente ou não com seus argumentos (parâmetros).
 
@@ -1220,7 +1220,7 @@ Se consideramos a classe Aluno, podemos criar a partir desta classe dezenas, cen
 
 Os *objetos* só existem durante a execução do sistema, pois estes só existirão como referência na memória do computador neste momento. Dizemos também que os objetos só existem “em tempo de execução”, uma vez que o sistema ao ser encerrado terá toda a sua memória apagada. Consequentemente, todas as suas variáveis e objetos não existirão mais.
 
-Exemplo: `Aluno.java` (objeto)
+Exemplo: `Aluno.java` (objeto com o nome da classe)
 
 ```java
 // Classe Aluno
