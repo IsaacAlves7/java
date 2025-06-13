@@ -1900,7 +1900,8 @@ Entretanto, se mantivermos os métodos necessários para os sistemas mais antigo
 
 Exercício: Analisando os métodos abaixo (para uma mesma classe), podemos afirmar que foi aplicado o conceito de polimorfismo de sobrecarga?
 
-<pre>double calculo(double p, double a) {
+```java
+double calculo(double p, double a) {
 
 return p+a;
 
@@ -1916,18 +1917,21 @@ double calculo(double p, double a, double t) {
 
 return p-a+t;
 
-}</pre>
+}
+```
 
 Resolução: Não, apesar dos métodos possuírem o mesmo nome, eles não possuem a mesma assinatura.
 
 Assinaturas:
 
-<pre>double calculo(double, double)
+```java
+double calculo(double, double)
 
 double calculo(double, double)
 
-double calculo(double, double, double)</pre>
-
+double calculo(double, double, double)
+```
+	
 # ☕ [Java] Herança
 A programação orientada a objetos tem como um dos principais pilares o "reaproveitamento de código". <b>Reaproveitar o código</b> significa menos esforço em seu desenvolvimento e mais facilidade na manutenção do sistema. Ao evitarmos a redundância de código, fica mais fácil gerar alterações, uma vez que não precisaremos modificá-lo em vários locais diferentes.
 
