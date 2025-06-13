@@ -1724,9 +1724,9 @@ Aplicação usando diferentes construtores para criar os objetos: `AppCarro`
 4. Ambas as aplicações funcionaram apesar da alteração;
 
 ## [Java] Polimorfismo de sobrecarga e a evolução das classes
-Com o **polimorfismo de sobrecarga** podemos criar **diferentes implementações para métodos com o mesmo identificador (nome) em uma mesma classe**.
+Com o **polimorfismo de sobrecarga** podemos criar diferentes implementações para métodos com o mesmo identificador (nome) em uma mesma classe.
 
-Vamos imaginar que uma classe chamada **Login** fosse usada por vários de seus sistemas:
+Vamos imaginar que uma classe chamada `Login` fosse usada por vários de seus sistemas:
 
 `Login.java`
 
