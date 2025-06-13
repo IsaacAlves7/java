@@ -2542,7 +2542,16 @@ public class Encapsulamento {
 Na aplicação:
 
 ```java
+public class AppEncapsulamento {
+  public static void main(String[] args) {
+    // TODO Auto-generated method stub
+    Encapsulamento capsula = new Encapsulamento();
 
+    capsula.idade = -20;
+
+    System.out.println("Idade = " + capsula.idade);
+  }
+}
 ```
 
 ![code](https://user-images.githubusercontent.com/61624336/121256567-1431a180-c883-11eb-945e-9a899f87f10b.png)
