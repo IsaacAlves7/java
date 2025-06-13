@@ -1396,7 +1396,7 @@ public class AppAluno { // Declaração e início da classe
 
 **Apenas atribuições com valores válidos poderão ser realizadas neste caso.**
 
-O **Métodos Getters** são métodos especiais que **retornam o valor armazenado no atributo, evitando acesso direto a ele pela aplicação**. Assim como visto no método Setter, a proteção do atributo (private) fará com que a aplicação não tenha acesso direto a ele, fazendo com que seja necessário um método público para recuperar o valor atribuído ao mesmo.
+O **Métodos Getters** são métodos especiais que retornam o valor armazenado no atributo, evitando acesso direto a ele pela aplicação. Assim como visto no método Setter, a proteção do atributo (`private`) fará com que a aplicação não tenha acesso direto a ele, fazendo com que seja necessário um método público para recuperar o valor atribuído ao mesmo.
 
 Características dos métodos Getters:
 
@@ -1411,7 +1411,32 @@ Características dos métodos Getters:
 Exemplo: `Aluno.java` Getter
 
 ```java
+// Classe Aluno
+public class Aluno { // Declaração e início da classe
+  // Atributos devem ser identificados começando por letras minúsculas
+  String matricula, nome;
+  double cr;
 
+  // Métodos devem ser identificados começando por letras minúsculas
+  public void imprimir() { // Método imprimir(os dados do Aluno)
+    System.out.println("Matrícula: " + matricula);
+    System.out.println("Nome: " + nome);
+    System.out.println("CR: " + cr);
+  }
+
+  // Setter
+  public void setCr(double c){
+    if(c >= 0.0 && c <= 10.0){
+         cr = c;
+    }
+  }
+
+  // Getter
+  public double getCr() {
+    return cr;
+  }
+  
+}
 ```
 
 ![print](https://user-images.githubusercontent.com/61624336/119929490-02333300-bf54-11eb-93ac-6fba6362af6e.png)
