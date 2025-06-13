@@ -1294,8 +1294,7 @@ public class AppAluno { // Declaração e início da classe
 nome_da_classe nome_do_objeto = new método_construtor();
 ```
 
-## [Java] Biblioteca de classes e reaproveitamento de código
-A classe `Aluno` passou a ser `uma biblioteca`, e esta classe pode ser reutilizada em diversas outras aplicações. Esse conceito é um dos mais importantes na programação orientada a objetos, pois reduz o trabalho. Qualquer classe criada poderá ser reaproveitada inúmeras vezes por diversas aplicações, poupando esforço de desenvolvimento e facilitando a manutenção.
+A classe `Aluno` passou a ser uma **biblioteca de classes**, e esta classe pode ser reutilizada em diversas outras aplicações. Esse conceito é um dos mais importantes na programação orientada a objetos, pois reduz o trabalho. Qualquer classe criada poderá ser reaproveitada inúmeras vezes por diversas aplicações, poupando esforço de desenvolvimento e facilitando a manutenção.
 
 Cada classe criada se torna uma parte da sua biblioteca de classes e, conforme você vai criando novas classes, a sua biblioteca tende a aumentar. Dessa forma, quando você for criar novas aplicações, terá à sua disposição uma séria de classes já prontas e disponíveis para reaproveitar, sem precisar de novas.
 
