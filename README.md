@@ -450,9 +450,7 @@ O comentário de documentação se difere do comentário de bloco por possuir um
 Neste caso, usamos este tipo de comentário apenas para descrever avisos e informações das classes, de forma a realizar a documentação do sistema ainda durante sua fase de criação. Isto permite que o desenvolvedor descreva todo a documentação no próprio projeto, facilitando a descrição e a manutenção do sistema. Assim, ao terminar um projeto ou realizar algum tipo de modificação, basta gerar novamente a documentação do sistema que tudo estará atualizado.
 
 # ☕ [Java] Tipos de dados 
-A linguagem Java possui nove tipos de dados básicos, sendo oito deles primitivos e um tipo especial.
-
-**Primitivos** (armazenam apenas valores) são os tipos básicos de variáveis que armazenam valores simples, sem a necessidade de objetos ou referências. São fundamentais para armazenar valores simples e são divididos em oito categorias:
+A linguagem Java possui nove tipos de dados básicos, sendo oito deles primitivos e um tipo especial. Os **tipos primitivos** (armazenam apenas valores) são os tipos básicos de variáveis que armazenam valores simples, sem a necessidade de objetos ou referências. São fundamentais para armazenar valores simples e são divididos em oito categorias:
 
 **Tipo lógico** (`boolean`), o tipo lógico só permite dois estados, verdadeiro (<code>true</code>) ou falso (<code>false</code>); em Java ainda é permitido o uso de <code>on</code> e <code>off</code>, ou <code>yes</code> e <code>no</code>. 
 
