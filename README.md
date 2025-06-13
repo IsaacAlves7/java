@@ -1711,7 +1711,7 @@ double z = ( 7) / (5.0);
 
 Assim, a operação de divisão será real e não inteira porque existe um operando real.
 
-Em Java, **todas as operações aritméticas serão realizadas em função dos tipos dos operandos**, e a operação será inteira apenas se ambos os operandos foram inteiros. Caso contrário (um operando inteiro e outro real ou dois operandos reais), a operação será real.
+Em Java, todas as operações aritméticas serão realizadas em função dos tipos dos operandos, e a operação será inteira apenas se ambos os operandos foram inteiros. Caso contrário (um operando inteiro e outro real ou dois operandos reais), a operação será real.
 
 O operador <code>+</code> é um dos mais usados, sendo um bom exemplo de **sobrecarga de operadores**, pois pode ser utilizado de várias e diferentes formas em função do contexto:
 
