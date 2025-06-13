@@ -2429,10 +2429,10 @@ Uma oportunidade se apresenta com o uso da agregação, que não é possível re
 Imagine agora a situação dos slots de memória: na herança, só poderíamos herdar uma memória, mas, com a agregação, podemos criar quantas memórias quisermos, como no exemplo a seguir. Para a classe `Memoria` foram criados apenas os métodos de Acesso (Setters e Getters) para facilitar o entendimento:
 
 ```java
-
+public class Memoria {
+  
+}
 ```
-
-![code](https://user-images.githubusercontent.com/61624336/121124283-0afcf200-c7fb-11eb-9315-0c8f4f23d186.png)
 
 1. O `Desktop` possui quatro slots de memória;
 
