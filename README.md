@@ -1741,15 +1741,13 @@ public int area (int base){
 }
 ```
 
-![code](https://user-images.githubusercontent.com/61624336/120410374-3da17900-c329-11eb-8fbc-188422df67b8.png)
-
 Já para realizar o cálculo da área do retângulo, eu preciso do valor da base e da altura do quadrado. Assim, o método área ficaria da seguinte forma:
 
 ```java
-
+public int area(int base, int altura){
+  return(base * altura);
+}
 ```
-
-![code](https://user-images.githubusercontent.com/61624336/120410630-bd2f4800-c329-11eb-8232-7ef0f6245d9f.png)
 
 # ☕ [Java] Assinaturas
 Esses **dois métodos podem conviver na mesma classe**, uma vez que eles possuem **diferentes assinaturas**. A **assinatura de um método** é determinada pelo *tipo de parâmetros* e pela *ordem em que estes foram declarados*. Desta forma, a assinatura do primeiro método é:
