@@ -919,9 +919,7 @@ Uma única estrutura <code>switch</code> pode analisar vários diferentes valore
 A cláusula <code>case</code> pode ocorrer de uma a várias vezes, e a cláusula <code>default</code> é opcional.
 
 ## [Java] Estrutura de Laços de Repetição (Loops)
-
-for
-**Estrutura de repetição** (Laços de repetição ou Loop) controlada por uma ou mais variáveis contadoras e caracterizada pela existência de três parâmetros, sendo todos eles opcionais:
+`for` é uma estrutura de repetição (Laços de repetição ou Loop) controlada por uma ou mais variáveis contadoras e caracterizada pela existência de três parâmetros, sendo todos eles opcionais:
 
 **1** - Inicialização da(s) variável(is) de controle
 
