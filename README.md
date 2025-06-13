@@ -2385,10 +2385,34 @@ A programação orientada a objetos nos ajuda a resolver de forma mais simples p
 
 A reunião de uma ou mais classes para formar novas classes é chamada de agregação. Uma nova classe pode ser formada por um conjunto de diferentes objetos. Seguindo nosso exemplo, poderíamos reaproveitar as classes `PlacaMae`, `HD`, `PlacaVideo`, e `Memória` para criar novas classes, como `Desktop`, `Notebook` e `Servidor`, como nos exemplos a seguir:
 
-![code](https://user-images.githubusercontent.com/61624336/121120415-e05b6b00-c7f3-11eb-8fd2-cf4ebeef81da.png)
-
 ```java
+public class PlacaVideo {
+  public String tipoCooler;
 
+  public PlacaMae pm = new PlacaMae();
+  public PlacaVideo pv = new PlacaVideo();
+
+  public HD hd = new HD();
+  public Memoria me = new Memoria();
+}
+
+public class Notebook {
+  public double peso;
+
+  public PlacaMae pm = new PlacaMae();
+  public PlacaVideo pv = new PlacaVideo();
+  public HD hd = new HD();
+  public Memoria me = new Memoria();
+}
+
+public class Servidor {
+  public int numeroPlacasRede;
+
+  public PlacaMae pm = new PlacaMae();
+  public PlacaVideo pv = new PlacaVideo();
+  public HD hd = new HD();
+  public Memoria me = new Memoria();
+}
 ```
 
 > [!Warning]
