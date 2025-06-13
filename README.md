@@ -2554,8 +2554,6 @@ public class AppEncapsulamento {
 }
 ```
 
-![code](https://user-images.githubusercontent.com/61624336/121256567-1431a180-c883-11eb-945e-9a899f87f10b.png)
-
 Saída:
 
 ```java
