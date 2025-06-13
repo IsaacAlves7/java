@@ -1624,10 +1624,14 @@ Características dos métodos construtores:
 
 `AppPessoa.java`
 
-![code1](https://user-images.githubusercontent.com/61624336/120386442-00c08c80-c2ff-11eb-82ff-84f4cbf3431e.png)
-
 ```java
+public class AppPessoa {
+  public static void main(String[] args) {
+     Pessoa p1 = new Pessoa("Isaac", "7", 24);
 
+     p1.imprimir();
+  }
+}
 ```
 
 1. Na classe `Pessoa`, o método construtor:
