@@ -1239,6 +1239,10 @@ Exemplo: `AppAluno.java` (aplicação)
 
 ![print](https://user-images.githubusercontent.com/61624336/119884711-54019c00-bf07-11eb-9658-c7af50e520e2.png)
 
+```java
+
+```
+
 > [!Note]
 > 1. Cada **classe pública (public) deve ser criada em um arquivo próprio** e o **nome da classe deve ser o mesmo do arquivo**. Ou seja, a classe Aluno deve ser criada no **arquivo** <code>Aluno.java</code> e a **classe da aplicação** "AppAluno" deve ser criada no arquivo <code>AppAluno.java</code>. No projeto, seja no Eclipse ou no Netbeans, deverão ser criadas duas classes, uma para o **Aluno** e outra para a **aplicação**;
 >
@@ -1253,7 +1257,7 @@ Exemplo: `AppAluno.java` (aplicação)
 5. Operador <code>new</code> serve para criar um novo objeto e instancia-lo com <code>()</code>, portanto, é um método construtor.
 
 ```java
-nome_da_classe nome_do_objeto = <b>new</b> método_construtor();
+nome_da_classe nome_do_objeto = new método_construtor();
 ```
 
 ## [Java] Biblioteca de classes e reaproveitamento de código
