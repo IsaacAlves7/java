@@ -1167,11 +1167,7 @@ public interface MetodosBasicos { ... }
 ```
 
 # ☕ [Java] Classes e objetos
-A **programação orientada a objetos (POO)** tem como principal conceito representar, em um sistema computacional, um **objeto da vida real**.
-
-Esta representação deve descrever o objeto quanto às suas características e ações que poderá realizar dentro do sistema.
-
-Não devemos nos preocupar com todas as características presentes no objeto, mas com aquelas que serão necessárias ao sistema (requisitos).
+A **programação orientada a objetos (OOP)** tem como principal conceito representar, em um sistema computacional, um **objeto da vida real**. Esta representação deve descrever o objeto quanto às suas características e ações que poderá realizar dentro do sistema. Não devemos nos preocupar com todas as características presentes no objeto, mas com aquelas que serão necessárias ao sistema (requisitos).
 
 Exemplo: A placa de um automóvel é importante para um sistema de estacionamento, assim como a hora de chegada e saída.
 
