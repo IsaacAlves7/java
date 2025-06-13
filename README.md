@@ -1303,7 +1303,7 @@ Se você precisar realizar qualquer melhoria em uma classe da sua biblioteca, vo
 Com base no reaproveitamento de código da programação orientada a objetos, podemos realizar alterações de melhoria, atualização ou qualquer manutenção em uma classe. Isso fará com que todas as aplicações sejam atualizadas quando forem recompiladas.
 
 # ☕ [Java] Métodos Getters e Setters
-Por questões de **segurança e falta de controle**, **não é comum realizar acessos diretos aos atributos de um objeto**, por isso são criados métodos específicos para receber o valor e realizar a **atribuição (Setters)**, ou para a **recuperação (Getters)** de um valor armazenado nos atributos de um objeto. Este processo pode evitar que valores incorretos sejam atribuídos sem qualquer chance de análise.
+Por questões de segurança e falta de controle, não é comum realizar acessos diretos aos atributos de um objeto, por isso são criados métodos específicos para receber o valor e realizar a **atribuição (Setters)**, ou para a **recuperação (Getters)** de um valor armazenado nos atributos de um objeto. Este processo pode evitar que valores incorretos sejam atribuídos sem qualquer chance de análise.
 
 **Métodos Setters** são métodos especiais que recebem o valor do atributo e, por serem métodos, podem analisar se são válidos, sendo responsáveis pela atribuição. Quando o atributo é protegido (privado), é necessário um método para realizar a atribuição.
 
