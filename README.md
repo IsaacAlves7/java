@@ -2210,10 +2210,11 @@ Métodos de uma *SuperClasse* podem ser **sobrescritos** em suas *subclasses*, i
 Vamos analisar o método imprimir da Superclasse `Pessoa`:
 
 ```java
-
+public void imprimir() {
+  System.out.println("Identidade: " + getIdentidade());
+  System.out.println("Nome: " + getNome());
+}
 ```
-
-![code](https://user-images.githubusercontent.com/61624336/120993136-a3db3100-c759-11eb-8bc8-ecf17c716340.png)
 
 Ele não é suficiente para atender às necessidades da classe `Cliente`, então poderíamos tê-lo substituído por:
 
