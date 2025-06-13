@@ -1562,27 +1562,31 @@ Características dos métodos construtores:
 
 ```
 
-1. Na classe Pessoa, o método construtor:
+1. Na classe `Pessoa`, o método construtor:
 
-<pre>public Pessoa(String nome, String identidade, int idade)</pre>
+```java
+public Pessoa(String nome, String identidade, int idade)
+```
 
 O método é público, não possui tipo de retorno antes no nome identificador do método, seu identificador é igual ao nome da classe, por isso começou por letra maiúscula e só será usado para criar o objeto (instanciar);
 
 2. A partir do momento em que um método construtor é criado, a classe só poderá ser instanciada se usarmos um método construtor existente. Por isso, o objeto Pessoa p1 não pode ser criado e sua criação foi comentada na aplicação, pois este método tenta utilizar um método construtor que não existe na classe;
 
-3. O objeto p2 usa um método construtor existente e por isso pode ser criado;
+3. O objeto `p2` usa um método construtor existente e por isso pode ser criado;
 
 4. Com o uso do método construtor, os dados recebidos como parâmetros puderam ser utilizados para realizar as atribuições nos atributos do objeto, determinando os valores de suas propriedades no momento da criação do objeto;
 
-5. Os métodos setIdentidade (String id) e setIdade (int id) podem ter o mesmo identificador para o parâmetro porque o parâmetro id é declarado em diferentes métodos e, sendo assim, ele é válido internamente em cada um dos métodos separadamente.
+5. Os métodos `setIdentidade` (`String id`) e `setIdade` (`int id`) podem ter o mesmo identificador para o parâmetro porque o parâmetro `id` é declarado em diferentes métodos e, sendo assim, ele é válido internamente em cada um dos métodos separadamente.
 
 O processo de compilação de uma classe cria um método construtor vazio quando não for encontrado nenhum método construtor. Desta forma, nos exemplos anteriores, as classes Aluno e Carro não tinham métodos construtores, então o compilador criou respectivamente os métodos a seguir para as classes Aluno e Carro:
 
-<pre>public Aluno ( ) { }
+```java
+public Aluno ( ) { }
 
 e
 
-public Carro ( ) { }</pre>
+public Carro ( ) { }
+```
 
 Quando não temos um construtor em uma classe, um construtor VAZIO é criado no processo de compilação.
 
