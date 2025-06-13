@@ -2533,10 +2533,10 @@ Os atributos não devem ser manipulados diretamente, podendo ser alterados ou co
 
 Por exemplo: Na classe `Exemplo` temos o seguinte atributo
 
-![code](https://user-images.githubusercontent.com/61624336/121235688-7ed6e300-c86b-11eb-8f82-9c7bb4e9e2a4.png)
-
 ```java
-
+public class Encapsulamento {
+  int idade;
+}
 ```
 
 Na aplicação:
