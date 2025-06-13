@@ -2680,19 +2680,35 @@ Visibilidade:
 
 Exemplos de visibilidade de membros:
 
-- **Membros públicos**: é a forma normal para métodos de acesso *(Setters e Getters)*.
+- **Membros públicos**: é a forma normal para métodos de acesso (Setters e Getters).
+
+```java
+
+```
 
 ![code](https://user-images.githubusercontent.com/61624336/121268767-eead9380-c894-11eb-8e47-28a2e0fcfcbf.png)
 
 - **Membros com visibilidade padrão**: devemos evitar o uso do acesso padrão, para que tenhamos sempre a visibilidade definida.
 
+```java
+
+```
+
 ![code](https://user-images.githubusercontent.com/61624336/121269853-ee15fc80-c896-11eb-879f-f0806147e754.png)
 
-- **Membros privados**: é a forma normal para os atributos de classe que *não terá subclasses*, mas não é adequada para os métodos de acesso (*Setters e Getters*).
+- **Membros privados**: é a forma normal para os atributos de classe que *não terá subclasses*, mas não é adequada para os métodos de acesso (Setters e Getters).
+
+```java
+
+```
 
 ![code](https://user-images.githubusercontent.com/61624336/121272705-0d178d00-c89d-11eb-9970-8d1383ec8086.png)
 
-- **Membros protegidos**: é a forma normal para os atributos de classe que terão subclasses, mas também não é adequada para os métodos de acesso *(Setters e Getters)*.
+- **Membros protegidos**: é a forma normal para os atributos de classe que terão subclasses, mas também não é adequada para os métodos de acesso (Setters e Getters).
+
+```java
+
+```
 
 ![code](https://user-images.githubusercontent.com/61624336/121273141-e7d74e80-c89d-11eb-9aa5-9f2fa4ec09e6.png)
 
