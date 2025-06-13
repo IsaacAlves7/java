@@ -2515,13 +2515,17 @@ Isso ocorre porque as aplicações não estão encontrando as respectivas classe
 
 Para a aplicação do primeiro exemplo:
 
-<pre>import parte1.Exemplo;</pre>
+```java
+import parte1.Exemplo;
+```
 
 Para a aplicação do segundo exemplo:
 
-<pre>import parte2.Tributos;</pre>
+```java
+import parte2.Tributos;
+```
 
-Outro ponto importante é que os atributos das classes **Exemplo** e **Tributos** estavam com a visibilidade padrão e, para continuar a funcionar, é necessário alterar a visibilidade dos atributos para pública (public), uma vez que essas classes agora estão em diferentes pacotes.
+Outro ponto importante é que os atributos das classes `Exemplo` e `Tributos` estavam com a visibilidade padrão e, para continuar a funcionar, é necessário alterar a visibilidade dos atributos para pública (`public`), uma vez que essas classes agora estão em diferentes pacotes.
 
 # ☕ [Java] Classes abstratas e interfaces 
 As **classes abstratas** são usadas como moldes para a criação de outras classes e podem encapsular atributos e comportamentos comuns. Já **interface** é um recurso muito utilizado em Java. Uma classe pode implementar várias interfaces.
