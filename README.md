@@ -1736,7 +1736,9 @@ O **Polimorfismo de sobrecarga de métodos** permite que possamos ter mais de um
 Para realizar o cálculo da área do quadrado, eu preciso apenas do valor da base do quadrado. Assim, o método área ficaria da seguinte forma:
 
 ```java
-
+public int area (int base){
+  return ((int) Math.pow(base,2)); // Math.Pow calcula a base elevada a 2
+}
 ```
 
 ![code](https://user-images.githubusercontent.com/61624336/120410374-3da17900-c329-11eb-8fbc-188422df67b8.png)
