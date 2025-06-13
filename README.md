@@ -1871,9 +1871,17 @@ Vamos imaginar que uma classe chamada `Login` fosse usada por vários de seus si
 
 ![code](https://user-images.githubusercontent.com/61624336/120426078-cb8b5d00-c345-11eb-8d72-01414960c525.png)
 
+```java
+
+```
+
 `AppLogin.java`
 
 ![code](https://user-images.githubusercontent.com/61624336/120427380-30e04d80-c348-11eb-8bc3-e7a533fd602b.png)
+
+```java
+
+```
 
 Imagine a situação: você tem um *novo cliente*, e seus funcionários fazem o login não apenas com o nome de login e a senha, mas também utilizando um dispositivo eletrônico para geração de senhas (token).
 
@@ -1882,13 +1890,21 @@ A sua classe não iria funcionar com este novo contexto. Neste caso, a programa�
 Classe Atualizada: `Login`
 ![code](https://user-images.githubusercontent.com/61624336/120578541-5dee3800-c3fc-11eb-98a9-cc027d250441.png)
 
+```java
+
+```
+
 Aplicação: AppLogin com um objeto usando o novo construtor
 
 ![code1](https://user-images.githubusercontent.com/61624336/120578549-60e92880-c3fc-11eb-89fe-8998386427fc.png)
 
+```java
+
+```
+
 > [!Note]
 >
-> 01. A classe Login agora possui dois diferentes construtores e dois diferentes métodos verificaLogin, **ambos sobrecarregados**. A versão anterior foi preservada porque ainda é usada pelos sistemas dos antigos clientes. Entretanto, com a inclusão dos novos métodos, a classe foi atualizada e também passou a atender ao cliente novo;
+> 01. A classe Login agora possui dois diferentes construtores e dois diferentes métodos verificaLogin, ambos sobrecarregados. A versão anterior foi preservada porque ainda é usada pelos sistemas dos antigos clientes. Entretanto, com a inclusão dos novos métodos, a classe foi atualizada e também passou a atender ao cliente novo;
 >
 > 02. Foi incluído ainda o método verificarToken, que só é usado pelo cliente novo. Sua inclusão na classe não atrapalha em nada os sistemas dos clientes antigos;
 >
