@@ -551,7 +551,11 @@ Também é possível armazenar caracteres de controle:
   </tr>
 </table>    
 
-Tipo especial
+**Tipo especial** pode se referir a estruturas que vão além dos tipos primitivos e de referência comuns. Alguns exemplos incluem, `Enum` (enumeração) que define um conjunto fixo de constantes nomeadas:
+
+```java
+enum DiaDaSemana { SEGUNDA, TERÇA, QUARTA, QUINTA, SEXTA, SÁBADO, DOMINGO }
+```
 
 **Tipo texto** (<code>String</code>) não é um tipo primitivo, mas um tipo especial. Na verdade, o tipo String é uma classe e por isso começa com letra maiúscula, ao contrário dos tipos primitivos, que sempre começam por minúsculas. Este tipo de dado armazena um conjunto de caracteres, formando palavras ou frases de tamanhos variados. Como classe, veremos mais tarde que elementos do tipo String possuem métodos que podem realizar ações específicas sobre o seu conteúdo. 
 
