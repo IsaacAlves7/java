@@ -1218,15 +1218,26 @@ A classe modela o **objeto** de acordo com as necessidades do sistema para a sua
 
 Se consideramos a classe Aluno, podemos criar a partir desta classe dezenas, centenas ou mesmo milhares de objetos Alunos com características semelhantes, tais como matrícula, nome e CR, mas com propriedades (valores próprios nos atributos de cada objeto) diferentes.
 
-Os *objetos* **só existem durante a execução do sistema**, pois estes só existirão como referência na memória do computador neste momento. Dizemos também que os objetos só existem “em tempo de execução”, uma vez que o sistema ao ser encerrado terá toda a sua memória apagada. Consequentemente, todas as suas variáveis e objetos não existirão mais.
+Os *objetos* só existem durante a execução do sistema, pois estes só existirão como referência na memória do computador neste momento. Dizemos também que os objetos só existem “em tempo de execução”, uma vez que o sistema ao ser encerrado terá toda a sua memória apagada. Consequentemente, todas as suas variáveis e objetos não existirão mais.
 
 Exemplo: `Aluno.java` (objeto)
 
 ```java
+// Classe Aluno
+public class Aluno { // declaração e início da classe
 
+   // Atributos devem ser identificados começando por letras minúsculas
+   String matricula, nome;
+   double cr;
+
+   // Métodos devem ser identificados começando por letras minúsculas
+   public void imprimir() {
+     System.out.println("Matrícula: " + matricula);
+     System.out.println("Nome: " + nome);
+     System.out.println("CR: " + cr);
+   }
+} // termino da classe
 ```
-
-![print](https://user-images.githubusercontent.com/61624336/119859616-edbb5000-beeb-11eb-833d-c0b2e0cb77ba.png)
 
 # ☕ [Java] Aplicações Java
 **Aplicações em Java** são classes especiais que possuem um método <code>main()</code>. O método `main` é responsável por criar os objetos e realizar a combinação de diferentes classes para atender às necessidades de um sistema.
