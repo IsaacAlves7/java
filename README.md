@@ -1242,14 +1242,41 @@ public class Aluno { // declaração e início da classe
 # ☕ [Java] Aplicações Java
 **Aplicações em Java** são classes especiais que possuem um método <code>main()</code>. O método `main` é responsável por criar os objetos e realizar a combinação de diferentes classes para atender às necessidades de um sistema.
 
-Em cada sistema, temos **apenas uma aplicação**, que será **responsável pela lógica de criação e uso das classes**. A comunicação entre os objetos ocorre por meio de **trocas de mensagens**, que são **expressas com o uso de métodos**. Uma aplicação, então, cria objetos a partir de uma ou mais classes e usa os métodos dos objetos para realizar as ações que atenderão às necessidades dos usuários.
+Em cada sistema, temos **apenas uma aplicação**, que será **responsável pela lógica de criação e uso das classes**. A comunicação entre os objetos ocorre por meio de trocas de mensagens, que são expressas com o uso de métodos. Uma aplicação, então, cria objetos a partir de uma ou mais classes e usa os métodos dos objetos para realizar as ações que atenderão às necessidades dos usuários.
 
 Exemplo: `AppAluno.java` (aplicação)
 
 ![print](https://user-images.githubusercontent.com/61624336/119884711-54019c00-bf07-11eb-9658-c7af50e520e2.png)
 
 ```java
+// Aplicação para uso da Classe Aluno
+public class AppAluno { // Declaração e início da classe
+   public static void main(String[] args){ // Método inicial da App
+      Aluno aluno1 = new Aluno();
+      Aluno aluno2 = new Aluno();
+      Aluno aluno3 = new Aluno();
 
+     // Definindo valores para os atributos do aluno1
+     aluno1.matricula = "1001";
+     aluno1.nome = "André";
+     aluno1.cr = 6.7;
+
+     // Definindo valores para os atributos do aluno2
+     aluno2.matricula = "1002";
+     aluno2.nome = "Maria";
+     aluno2.cr = 7.5;
+
+     // Definindo valores para os atributos do aluno3
+     aluno3.matricula = "1003";
+     aluno3.nome = "João";
+     aluno3.cr = 7.0;
+
+     // Exibindo os valores dos atributos de cada aluno
+     aluno1.imprimir();
+     aluno2.imprimir();
+     aluno3.imprimir();
+   }
+}
 ```
 
 > [!Note]
