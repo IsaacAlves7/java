@@ -452,7 +452,7 @@ Neste caso, usamos este tipo de comentário apenas para descrever avisos e infor
 # ☕ [Java] Tipos de dados 
 A linguagem Java possui nove tipos de dados básicos, sendo oito deles primitivos e um tipo especial.
 
-**Primitivos** (armazenam apenas valores)
+**Primitivos** (armazenam apenas valores) são os tipos básicos de variáveis que armazenam valores simples, sem a necessidade de objetos ou referências. São fundamentais para armazenar valores simples e são divididos em oito categorias:
 
 **Tipo lógico** (`boolean`), o tipo lógico só permite dois estados, verdadeiro (<code>true</code>) ou falso (<code>false</code>); em Java ainda é permitido o uso de <code>on</code> e <code>off</code>, ou <code>yes</code> e <code>no</code>. 
 
