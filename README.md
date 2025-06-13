@@ -1811,6 +1811,22 @@ Como ambos possuem o mesmo contexto, os métodos com a mesma assinatura não pod
 Exemplos de polimorfismo de sobrecarga válidos para uma mesma classe:
 
 ```java
+meuMetodo(int, double, String){
+}
+
+meuMetodo(double, String, int){
+}
+
+meuMetodo(String, int, double){
+}
+
+meuMetodo(String, double, int){
+}
+```
+
+As assinaturas são respectivamente:
+
+```java
 meuMetodo(int, double, String)
 
 meuMetodo(double, String, int)
@@ -1818,14 +1834,6 @@ meuMetodo(double, String, int)
 meuMetodo(String, int, double)
 
 meuMetodo(String, double, int)
-```
-
-As assinaturas são respectivamente:
-
-![code](https://user-images.githubusercontent.com/61624336/120412911-c3272800-c32d-11eb-9da7-9f4f1921a5c1.png)
-
-```java
-
 ```
 
 Todos os métodos acima, apesar de possuírem a mesma quantidade de parâmetros, têm assinaturas diferentes que serão executadas em função de contexto diferentes, respectivamente:
