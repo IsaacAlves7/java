@@ -560,7 +560,7 @@ Tipo especial
 Exemplo:
 
 ```java
-String nome = “João da Silva”;</pre>
+String nome = “João da Silva”;
 ```
 
 # ☕ [Java] Constantes e variáveis
@@ -665,7 +665,9 @@ a = (double) b / c; // o valor de b será convertido para double antes da opera�
 // forma a operação será real, armazenado 3.5 em a.
 ```
 
-<pre> +=   -=   *=   /=   %= </pre>
+```java
++=   -=   *=   /=   %=
+```
 
 Exemplo:
 
@@ -725,13 +727,13 @@ O **pós-decremento** determina que antes seja realizada a atribuição para só
 
 Exemplo:
 
-<pre>
+```java
 int a = 20, b=0;
 
 b = a--; // primeiro b receberá o valor de a, que é 20 (antes do incremento),
 
 // depois a será decrementado e, assim, o valor de a será 19 e o de b será 20.
-</pre>
+```
 
 Operadores de Relacionais são usados para definir condições.
 
@@ -768,11 +770,13 @@ Operadores de Relacionais são usados para definir condições.
 
 Exemplos:
 
-<pre>1) if(a > b) { ... }
+```java
+/*1)*/ if(a > b) { ... }
 
-2) while (a <=100) { ... }
+/*2)*/ while (a <=100) { ... }
 
-3) for (int c =0; c<50; c++) { ... }</pre>
+/*3)*/ for (int c =0; c<50; c++) { ... }
+```
 
 Operadores de em Expressões Lógicas
 
