@@ -801,21 +801,23 @@ Operadores de em Expressões Lógicas
 
 São os determinantes das tabelas-verdade. 
 
-Ordem de precedência: **!, &&, ||** 
+Ordem de precedência: `!, &&, ||`
 
 Exemplos:
 
-<pre>if(a > b && c < d) { ... }
+```java
+if(a > b && c < d) { ... }
 
 while (a <=100 || b == 10) { ... }
 
 if( !a == 15 && b >= 10) { ... }
 
-if( !a == 15 || c > d && b >= 10) { ... }</pre>
+if( !a == 15 || c > d && b >= 10) { ... }
+```
 
-Pela ordem de precedência: if( (!a == 15) || (c > d && b >= 10)) 
+Pela ordem de precedência: `if( (!a == 15) || (c > d && b >= 10))` 
 
-Primeiro será executada a negação (!); depois o e lógico (&&) e por último o ou lógico (||).
+Primeiro será executada a negação (`!`); depois o e lógico (`&&`) e por último o ou lógico (`||`).
 
 Operadores de bits
 
