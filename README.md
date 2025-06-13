@@ -1353,7 +1353,7 @@ public class Aluno { // Declaração e início da classe
 }
 ```
 
-Exemplo: `AppAluno.java` (aplicação chamando o Setter)
+Exemplo: `AppAluno.java` (aplicação chamando o Setter) - `AppAluno.class`
 
 ```java
 // Aplicação para uso da Classe Aluno
