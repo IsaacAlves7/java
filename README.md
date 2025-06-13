@@ -1811,21 +1811,13 @@ Como ambos possuem o mesmo contexto, os métodos com a mesma assinatura não pod
 Exemplos de polimorfismo de sobrecarga válidos para uma mesma classe:
 
 ```java
-int meuMetodo(int a, double b, String c) {
-  return 1;
-}
+meuMetodo(int, double, String)
 
-int meuMetodo(double b, String c, int a) {
-  return 2;
-}
+meuMetodo(double, String, int)
 
-int meuMetodo(String c, int a, double b) {
-  return 3;
-}
+meuMetodo(String, int, double)
 
-int meuMetodo(String c, double b, int a) {
-  return 4;
-}
+meuMetodo(String, double, int)
 ```
 
 As assinaturas são respectivamente:
