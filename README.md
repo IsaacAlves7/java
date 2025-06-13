@@ -2492,11 +2492,23 @@ Por exemplo: Na classe `Exemplo` temos o seguinte atributo
 
 ![code](https://user-images.githubusercontent.com/61624336/121235688-7ed6e300-c86b-11eb-8f82-9c7bb4e9e2a4.png)
 
+```java
+
+```
+
 Na aplicação:
+
+```java
+
+```
 
 ![code](https://user-images.githubusercontent.com/61624336/121256567-1431a180-c883-11eb-945e-9a899f87f10b.png)
 
-Saída:<pre>Idade = -20</pre>
+Saída:
+
+```java
+Idade = -20
+```
 
 1. Como não temos restrição sobre o atributo Idade, a aplicação poderá realizar um acesso direto ao atributo;
 
@@ -2512,9 +2524,18 @@ Por exemplo: A classe `Tributos`
 
 ![code](https://user-images.githubusercontent.com/61624336/121261589-4b0ab600-c889-11eb-9916-3abce6cf74a7.png)
 
+```java
+
+```
+
 Na aplicação:
 
 ![code](https://user-images.githubusercontent.com/61624336/121263973-d20d5d80-c88c-11eb-9fdc-1612a54a7995.png)
+
+
+```java
+
+```
 
 Saída:
 <pre>
@@ -2553,7 +2574,7 @@ Imposto e método corretos
 Valor a pagar [método correto 00]= 281.0
 </pre>
 
-1. Imaginemos que tipo de produto é um valor entre os seguintes: [00, 01, 02, 10, 11, 12, 20, 21 e 22], em que o primeiro dígito se refere ao tipo do produto e o segundo à faixa do imposto;
+1. Imaginemos que tipo de produto é um valor entre os seguintes: `[00, 01, 02, 10, 11, 12, 20, 21 e 22]`, em que o primeiro dígito se refere ao tipo do produto e o segundo à faixa do imposto;
 
 2. Primeiro, o método <code>calculaImposto()</code> irá determinar o método a ser usado para cada tipo de imposto, e a faixa será usada dentro do método específico;
 
@@ -2561,7 +2582,7 @@ Valor a pagar [método correto 00]= 281.0
 
 4. Se um desenvolvedor sem conhecimento correto usar diretamente um dos métodos específicos, o cálculo poderá resultar em um valor errado, pois dificilmente ele irá determinar a faixa correta, pois acabará por passar como parâmetro o tipo do produto e não a faixa;
 
-5. Se os testes forem realizados apenas com os tipos entre 00 e 02, provavelmente o resultado estará correto porque será passada apenas a faixa, mas, para os demais casos, de 10 a 12 ou de 20 a 22, provavelmente o resultado será 0 (zero) ou calculado pela última faixa;
+5. Se os testes forem realizados apenas com os tipos entre `00` e `02`, provavelmente o resultado estará correto porque será passada apenas a faixa, mas, para os demais casos, de `10` a `12` ou de `20` a `22`, provavelmente o resultado será `0` (zero) ou calculado pela última faixa;
 
 6. Uma aplicação ainda poderá burlar os cálculos da classe, simplesmente determinando um valor ao atributo imposto [tributo.imposto = -20;], o que resultaria em um imposto incorreto, aumentando o preço do produto; como o imposto é negativo e a operação aritmética é de subtração, haverá um sobre preço sobre o valor.
 
