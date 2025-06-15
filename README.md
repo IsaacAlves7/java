@@ -1466,6 +1466,16 @@ public class Aluno {
   public String getMatricula() {
      return matricula; // retorna a matricula
   }
+
+  public void setNome(String n){
+    if(!n.isEmpty()){ // se o parâmetro n NÃO (!) estiver vazio
+       nome = n; // será feita a atribuição
+    }
+  }
+
+  public String getNome(){
+    return nome; // retorna o nome
+  }
 }
 ```
 
