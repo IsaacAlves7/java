@@ -1448,8 +1448,6 @@ No futuro, os atributos das nossas classes serão protegidos contra acesso diret
 
 Exemplo: `Aluno.java` (versão com métodos Setters e Getters.)
 
-![code](https://user-images.githubusercontent.com/61624336/120033833-86c49680-bfd2-11eb-83a8-2a1379ce07ac.png)
-
 ```java
 public class Aluno {
   // Atributos devem ser identificados começando por letras minúsculas
@@ -1487,8 +1485,11 @@ public class Aluno {
     return cr; // retorna o CR
   }
 
-  public void imprimir(){
-    // Os Getters foram usados aqui
+  public void imprimir() { // Método imprimir(os dados do Aluno)
+    // Os Getters usados aqui!
+    System.out.println("Matrícula: " + getMatricula());
+    System.out.println("Nome: " + getNome());
+    System.out.println("CR: " + getCr());
   }
 }
 ```
