@@ -426,7 +426,7 @@ Observe que os exemplos 2 e 3 possuem a mesma grafia, mas, como existe mudança 
 
 > <b>OBS:</b> Todas as palavras reservadas começam por letras minúsculas e são palavras do idioma inglês.
 
-## [Java] Comentários em Java
+## [Java] Comentários
 O uso de comentários em Java é semelhante ao usado na linguagem C, mas apenas dois destes tipos são iguais nas duas linguagens, sendo o terceiro tipo somente disponibilizado na linguagem Java.
 
 Vejamos:
