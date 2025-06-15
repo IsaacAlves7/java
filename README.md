@@ -737,7 +737,7 @@ b = a--; // primeiro b receberá o valor de a, que é 20 (antes do incremento),
 // depois a será decrementado e, assim, o valor de a será 19 e o de b será 20.
 ```
 
-Operadores de Relacionais são usados para definir condições.
+**Operadores de Relacionais** são usados para definir condições.
 
 <table>
   <tr>
