@@ -1451,7 +1451,22 @@ Exemplo: `Aluno.java` (versão com métodos Setters e Getters.)
 ![code](https://user-images.githubusercontent.com/61624336/120033833-86c49680-bfd2-11eb-83a8-2a1379ce07ac.png)
 
 ```java
+public class Aluno {
+  // Atributos devem ser identificados começando por letras minúsculas
+  String matricula, nome;
+  double cr;
 
+  // Métodos também
+  public void setMatricula(String m){
+    if(!m.isEmpty()) { // se o parâmetro m NÃO (!) estiver vazio
+        matricula = m; // será feita a atribuição
+    } 
+  }
+
+  public String getMatricula() {
+     return matricula; // retorna a matricula
+  }
+}
 ```
 
 Exemplo: `AppAluno.java` (nova versão)
