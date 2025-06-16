@@ -3393,7 +3393,7 @@ Na prática, você pode escrever controladores REST com classes Kotlin, criar re
 
 <img src="https://github.com/user-attachments/assets/24967a96-5085-4f6e-997a-94e8ca6fd350" align="right" height="77">
 
-É totalmente possível aplicar **TDD (Test-Driven Development)**, **BDD (Behavior-Driven Development)** e **DDD (Domain-Driven Design)** em projetos Java, e o ecossistema da linguagem tem um suporte robusto para essas práticas. Kotlin também é uma linguagem plenamente capaz de adotar TDD, BDD e DDD, e inclusive se beneficia da sintaxe mais expressiva e concisa para aplicar esses paradigmas de forma elegante. Para desenvolvimento mobile em Android, o TDD (Test-Driven Development) em Java segue os mesmos princípios fundamentais que no back-end Java tradicional, mas com algumas nuances específicas do ambiente Android.
+É totalmente possível aplicar **TDD (Test-Driven Development)**, **BDD (Behavior-Driven Development)** e **DDD (Domain-Driven Design)** em projetos Java, e o ecossistema da linguagem tem um suporte robusto para essas práticas. Kotlin também é uma linguagem plenamente capaz de adotar TDD, BDD e DDD, e inclusive se beneficia da sintaxe mais expressiva e concisa para aplicar esses paradigmas de forma elegante. Para desenvolvimento mobile em Android, o TDD (Test-Driven Development) em Java, o mesmo ocorre com Kotlin, segue os mesmos princípios fundamentais que no back-end Java tradicional, mas com algumas nuances específicas do ambiente Android.
 
 <img src="https://github.com/user-attachments/assets/fda7d7c9-1f9a-47e0-9b9f-8131d7b836e1" align="right" height="77">
 
