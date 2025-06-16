@@ -1878,10 +1878,14 @@ meuMetodo(String, double, int)
 
 Todos os métodos acima, apesar de possuírem a mesma quantidade de parâmetros, têm assinaturas diferentes que serão executadas em função de contexto diferentes, respectivamente:
 
-![code](https://user-images.githubusercontent.com/61624336/120413132-1f8a4780-c32e-11eb-8815-16a432a0aad1.png)
-
 ```java
+int g = meuMetodo(2, 2.25, "Casa");
 
+int h = meuMetodo(2.25, "Casa", 2);
+
+int i = meuMetodo("Casa", 2, 2.25);
+
+int j = meuMetodo("Casa", 2.25, 2);
 ```
 
 Os valores armazenados em `g`, `h`, `i` e `j` serão respectivamente: `1, 2, 3 e 4`.
