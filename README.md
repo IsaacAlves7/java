@@ -2263,10 +2263,14 @@ public void imprimir() {
 Ele não é suficiente para atender às necessidades da classe `Cliente`, então poderíamos tê-lo substituído por:
 
 ```java
-
+public void imprimir() {
+  System.out.println("Identidade: " + getIdentidade());
+  System.out.println("Nome: " + getNome());
+  System.out.println("Código do cliente: " + getCodigoCliente());
+  System.out.println("Telefone: " + getTelefone());
+  System.out.println("Idade: " + getIdade());
+}
 ```
-
-![code](https://user-images.githubusercontent.com/61624336/120993557-046a6e00-c75a-11eb-95c0-525e4b89a82b.png)
 
 Esta substituição permitiria que o método imprimir fosse substituído na **Subclasse** por um método mais completo que atendesse a sua necessidade.
 
