@@ -1906,14 +1906,26 @@ Classe: `Carro` (atualizada com cinco métodos construtores)
 
 ![code](https://user-images.githubusercontent.com/61624336/120420000-de983000-c339-11eb-9488-b90efb896231.png)
 
+```java
+
+```
+
 Aplicação antiga `AppCarro`
 ![code](https://user-images.githubusercontent.com/61624336/120421372-8878bc00-c33c-11eb-8505-9a0825f440e3.png)
+
+```java
+
+```
 
 A execução da aplicação não foi afetada pelas mudanças na classe porque foi criado o construtor vazio <code>public Carro ( ) { }</code> que garantiu a compatibilidade:
 
 Aplicação usando diferentes construtores para criar os objetos: `AppCarro`
 
 ![code](https://user-images.githubusercontent.com/61624336/120423047-038fa180-c340-11eb-8894-6b52a1f12313.png)
+
+```java
+
+```
 
 > [!Note]
 
