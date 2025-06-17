@@ -3186,74 +3186,6 @@ Alguns dos principais recursos e componentes fornecidos pelo PrimeFaces incluem:
 
 O PrimeFaces é uma opção popular para o desenvolvimento de aplicativos web Java que desejam fornecer interfaces de usuário ricas e interativas. Ele é amplamente usado em várias indústrias e fornece uma base sólida para a criação de aplicativos web empresariais.
 
-# 🥛 [Java] Kotlin
-<img src="https://cdn.worldvectorlogo.com/logos/kotlin-2.svg" height="77" align="right">
-
-**Kotlin** é uma linguagem de programação moderna, concisa e segura que foi projetada para interoperar plenamente com o Java. Desenvolvida pela JetBrains, Kotlin se tornou uma escolha popular para o desenvolvimento de aplicativos Android, servidores, web e desktop. Kotlin é uma linguagem versátil e poderosa que tem ganhado popularidade rapidamente devido à sua concisão, segurança e interoperabilidade com Java. É amplamente adotada para desenvolvimento Android, mas também é adequada para back-end, web e desenvolvimento multiplataforma.
-
-Principais Características da Linguagem Kotlin:
-
-1. **Interoperabilidade com Java**: Kotlin é totalmente compatível com Java, o que significa que você pode chamar código Java a partir de Kotlin e vice-versa. Isso facilita a integração com projetos existentes em Java.
-
-2. **Sintaxe Concisa**: Kotlin foi projetada para ser mais expressiva e concisa do que Java. Muitas construções comuns podem ser escritas de forma mais curta e clara em Kotlin.
-
-3. **Segurança Nula**: Um dos principais problemas em Java é o null pointer exception (NPE). Kotlin aborda isso de forma nativa com seu sistema de tipos que diferencia entre tipos que podem ser nulos e tipos que não podem ser nulos.
-
-4. **Funções de Extensão**: Permitem que você adicione novas funcionalidades a classes existentes sem ter que herdá-las ou usar padrões de design como Decorator.
-
-5. **Suporte para Programação Funcional**: Kotlin suporta muitos paradigmas de programação funcional, incluindo lambdas, funções de alta ordem, e imutabilidade.
-
-6. **Coroutines para Programação Assíncrona**: Coroutines facilitam a escrita de código assíncrono, permitindo a execução de operações de longo prazo, como chamadas de rede ou operações de E/S, de maneira não bloqueante.
-
-7. **Null Safety**: O sistema de tipos do Kotlin tem null safety integrada, reduzindo a probabilidade de erros de referência nula.
-
-8. **Estrutura Moderna de Linguagem**: Kotlin possui várias características modernas de linguagem, como propriedades, delegados, data classes, sealed classes, entre outros, que ajudam a escrever código mais limpo e expressivo.
-
-Exemplo de Código em Kotlin:
-
-```kotlin
-// Declaração de uma função de extensão para a classe String
-fun String.lastChar(): Char = this[this.length - 1]
-
-fun main() {
-    // Declaração de uma variável imutável (val)
-    val name: String = "Kotlin"
-    // Uso da função de extensão
-    println(name.lastChar())  // Saída: n
-
-    // Exemplo de null safety
-    var nullableName: String? = null
-    println(nullableName?.length)  // Saída: null
-
-    // Exemplo de uma data class
-    data class User(val name: String, val age: Int)
-    
-    val user = User("John Doe", 30)
-    println(user)  // Saída: User(name=John Doe, age=30)
-
-    // Uso de coroutines
-    runBlocking {
-        launch {
-            delay(1000L)
-            println("World!")
-        }
-        println("Hello,")
-    }
-}
-```
-
-Ecossistema Kotlin:
-
-1. **Desenvolvimento Android**: Kotlin é a linguagem preferida para o desenvolvimento de aplicativos Android. A Google anunciou suporte total para Kotlin como uma linguagem de primeira classe para o desenvolvimento Android em 2017.
-
-2. **Kotlin/JS**: Permite escrever código Kotlin que pode ser compilado para JavaScript, possibilitando o desenvolvimento front-end.
-
-3. **Kotlin/Native**: Permite a compilação de código Kotlin para binários que podem rodar sem uma Máquina Virtual Java (JVM), permitindo o desenvolvimento para plataformas onde a JVM não está disponível, como iOS.
-
-4. **Kotlin Multiplatform**: Permite compartilhar código comum entre diferentes plataformas (JVM, JavaScript, iOS, etc.), facilitando o desenvolvimento de aplicativos multiplataforma.
-
-## [Kotlin] Hello, World
-
 # 🍃 [Java] Spring
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring-2.1.2-6DB33F?style=flat&logo=Spring&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
 
@@ -3392,6 +3324,74 @@ Com o **Spring Boot Starters**, basta adicionar a dependência certa no `pom.xml
 Outro grande benefício da inicialização automática do Spring Boot é o **Spring Boot Actuator**, que fornece endpoints para monitoramento e métricas da aplicação sem precisar de configurações complexas. Além disso, o **Spring Boot DevTools** ajuda na produtividade, permitindo recarregamento automático da aplicação durante o desenvolvimento.
 
 Com isso, ao invés de gastar tempo com configurações repetitivas e infraestrutura, os desenvolvedores podem focar diretamente no desenvolvimento das **regras de negócio**. É isso que faz o Spring Boot ser tão eficiente para criar microserviços, APIs REST e aplicações escaláveis rapidamente.
+
+# 🥛 [Java] Kotlin
+<img src="https://cdn.worldvectorlogo.com/logos/kotlin-2.svg" height="77" align="right">
+
+**Kotlin** é uma linguagem de programação moderna, concisa e segura que foi projetada para interoperar plenamente com o Java. Desenvolvida pela JetBrains, Kotlin se tornou uma escolha popular para o desenvolvimento de aplicativos Android, servidores, web e desktop. Kotlin é uma linguagem versátil e poderosa que tem ganhado popularidade rapidamente devido à sua concisão, segurança e interoperabilidade com Java. É amplamente adotada para desenvolvimento Android, mas também é adequada para back-end, web e desenvolvimento multiplataforma.
+
+Principais Características da Linguagem Kotlin:
+
+1. **Interoperabilidade com Java**: Kotlin é totalmente compatível com Java, o que significa que você pode chamar código Java a partir de Kotlin e vice-versa. Isso facilita a integração com projetos existentes em Java.
+
+2. **Sintaxe Concisa**: Kotlin foi projetada para ser mais expressiva e concisa do que Java. Muitas construções comuns podem ser escritas de forma mais curta e clara em Kotlin.
+
+3. **Segurança Nula**: Um dos principais problemas em Java é o null pointer exception (NPE). Kotlin aborda isso de forma nativa com seu sistema de tipos que diferencia entre tipos que podem ser nulos e tipos que não podem ser nulos.
+
+4. **Funções de Extensão**: Permitem que você adicione novas funcionalidades a classes existentes sem ter que herdá-las ou usar padrões de design como Decorator.
+
+5. **Suporte para Programação Funcional**: Kotlin suporta muitos paradigmas de programação funcional, incluindo lambdas, funções de alta ordem, e imutabilidade.
+
+6. **Coroutines para Programação Assíncrona**: Coroutines facilitam a escrita de código assíncrono, permitindo a execução de operações de longo prazo, como chamadas de rede ou operações de E/S, de maneira não bloqueante.
+
+7. **Null Safety**: O sistema de tipos do Kotlin tem null safety integrada, reduzindo a probabilidade de erros de referência nula.
+
+8. **Estrutura Moderna de Linguagem**: Kotlin possui várias características modernas de linguagem, como propriedades, delegados, data classes, sealed classes, entre outros, que ajudam a escrever código mais limpo e expressivo.
+
+Exemplo de Código em Kotlin:
+
+```kotlin
+// Declaração de uma função de extensão para a classe String
+fun String.lastChar(): Char = this[this.length - 1]
+
+fun main() {
+    // Declaração de uma variável imutável (val)
+    val name: String = "Kotlin"
+    // Uso da função de extensão
+    println(name.lastChar())  // Saída: n
+
+    // Exemplo de null safety
+    var nullableName: String? = null
+    println(nullableName?.length)  // Saída: null
+
+    // Exemplo de uma data class
+    data class User(val name: String, val age: Int)
+    
+    val user = User("John Doe", 30)
+    println(user)  // Saída: User(name=John Doe, age=30)
+
+    // Uso de coroutines
+    runBlocking {
+        launch {
+            delay(1000L)
+            println("World!")
+        }
+        println("Hello,")
+    }
+}
+```
+
+Ecossistema Kotlin:
+
+1. **Desenvolvimento Android**: Kotlin é a linguagem preferida para o desenvolvimento de aplicativos Android. A Google anunciou suporte total para Kotlin como uma linguagem de primeira classe para o desenvolvimento Android em 2017.
+
+2. **Kotlin/JS**: Permite escrever código Kotlin que pode ser compilado para JavaScript, possibilitando o desenvolvimento front-end.
+
+3. **Kotlin/Native**: Permite a compilação de código Kotlin para binários que podem rodar sem uma Máquina Virtual Java (JVM), permitindo o desenvolvimento para plataformas onde a JVM não está disponível, como iOS.
+
+4. **Kotlin Multiplatform**: Permite compartilhar código comum entre diferentes plataformas (JVM, JavaScript, iOS, etc.), facilitando o desenvolvimento de aplicativos multiplataforma.
+
+## [Kotlin] Hello, World
 
 ## [Kotlin] Spring Boot com Kotlin
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
