@@ -3393,7 +3393,7 @@ Outro grande benefício da inicialização automática do Spring Boot é o **Spr
 
 Com isso, ao invés de gastar tempo com configurações repetitivas e infraestrutura, os desenvolvedores podem focar diretamente no desenvolvimento das **regras de negócio**. É isso que faz o Spring Boot ser tão eficiente para criar microserviços, APIs REST e aplicações escaláveis rapidamente.
 
-## [Java] Spring Boot com Kotlin
+## [Kotlin] Spring Boot com Kotlin
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
  
 <img src="https://github.com/user-attachments/assets/cc52c0e8-aef2-4212-a926-5491088885e8" align="right" height="77">
