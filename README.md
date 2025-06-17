@@ -3240,6 +3240,8 @@ Ecossistema Kotlin:
 
 4. **Kotlin Multiplatform**: Permite compartilhar código comum entre diferentes plataformas (JVM, JavaScript, iOS, etc.), facilitando o desenvolvimento de aplicativos multiplataforma.
 
+## [Kotlin] Hello, World
+
 # 🍃 [Java] Spring
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring-2.1.2-6DB33F?style=flat&logo=Spring&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
 
