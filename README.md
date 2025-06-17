@@ -1928,11 +1928,11 @@ Aplicação usando diferentes construtores para criar os objetos: `AppCarro`
 ```
 
 > [!Note]
-
-1. O primeiro método construtor criado foi o vazio, para garantir a compatibilidade com a aplicação antiga;
-2. Foram incluídos mais quatro métodos construtores seguindo o conceito da sobrecarga de métodos;
-3. Na nova aplicação, foram criados cinco diferentes objetos, cada um usando um construtor diferente;
-4. Ambas as aplicações funcionaram apesar da alteração;
+>
+> 1. O primeiro método construtor criado foi o vazio, para garantir a compatibilidade com a aplicação antiga;
+> 2. Foram incluídos mais quatro métodos construtores seguindo o conceito da sobrecarga de métodos;
+> 3. Na nova aplicação, foram criados cinco diferentes objetos, cada um usando um construtor diferente;
+> 4. Ambas as aplicações funcionaram apesar da alteração;
 
 ## [Java] Polimorfismo de sobrecarga e a evolução das classes
 Com o **polimorfismo de sobrecarga** podemos criar diferentes implementações para métodos com o mesmo identificador (nome) em uma mesma classe.
