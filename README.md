@@ -3327,6 +3327,8 @@ Outro grande benefício da inicialização automática do Spring Boot é o **Spr
 
 Com isso, ao invés de gastar tempo com configurações repetitivas e infraestrutura, os desenvolvedores podem focar diretamente no desenvolvimento das **regras de negócio**. É isso que faz o Spring Boot ser tão eficiente para criar microserviços, APIs REST e aplicações escaláveis rapidamente.
 
+## [Java] Spring Data JPA (Hibernate)
+
 # 🥛 [Java] Kotlin
 <img src="https://cdn.worldvectorlogo.com/logos/kotlin-2.svg" height="77" align="right">
 
