@@ -2094,10 +2094,23 @@ public void entradaDados(){
 ```
 
 Aplicação antiga `AppCarro`
-![code](https://user-images.githubusercontent.com/61624336/120421372-8878bc00-c33c-11eb-8505-9a0825f440e3.png)
 
 ```java
+public class AppCarro {
+  public static void main(String[] args) {
+    Carro car1 = new Carro();
+    car1.entradadeDados();
+    car1.imprimir();
 
+    Carro car2 = new Carro();
+    car2.entradadeDados();
+    car2.imprimir();
+
+    Carro car3 = new Carro();
+    car3.entradadeDados();
+    car3.imprimir();
+  } 
+}
 ```
 
 A execução da aplicação não foi afetada pelas mudanças na classe porque foi criado o construtor vazio <code>public Carro ( ) { }</code> que garantiu a compatibilidade:
