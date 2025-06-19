@@ -3167,7 +3167,7 @@ Projetos Maven são configurados usando um Project Object Model, que é armazena
 </project>
 ```
 
-<img src="https://github.com/user-attachments/assets/462ca3d7-7280-46bd-a860-6992d98804b2" align="right" height="77">
+<img src="https://github.com/user-attachments/assets/c9216b54-8ae5-441b-92ec-9f6bf5268519" align="right" height="77">
 
 **Gradle** é uma ferramenta de automação de builds, ou seja, um sistema que organiza, compila, empacota, testa e implanta projetos de software de forma automatizada e padronizada. Ele é muito usado em projetos Java, Kotlin, Android e também em outras linguagens, e é uma alternativa moderna ao Maven e ao mais antigo Ant. Em resumo, o Gradle é a engrenagem que automatiza tudo o que seu projeto precisa para rodar, testar, empacotar e evoluir com segurança e eficiência. Ele é altamente configurável, moderno e muito usado em grandes ecossistemas como o Spring e o Android.
 
