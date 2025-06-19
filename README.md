@@ -3379,6 +3379,21 @@ Além disso, ele possui suporte nativo a resolução de dependências via reposi
 
 Se você está em um projeto Android, inclusive, o Gradle já é o sistema de build padrão do Android Studio, então você provavelmente está usando ele sem perceber.
 
+<img src="https://github.com/user-attachments/assets/af8e214d-8228-4527-ac3f-5849ff7119c4" align="right" height="77">
+
+**SonarQube** é uma plataforma de análise contínua da qualidade do código-fonte. Ele examina seu código em busca de bugs, vulnerabilidades de segurança, duplicações, má formatação, complexidade excessiva, falhas em padrões de codificação e muito mais. Seu principal objetivo é ajudar equipes de desenvolvimento a manterem um código limpo, seguro e sustentável ao longo do tempo.
+
+Quando integrado ao processo de desenvolvimento (como em pipelines de CI/CD ou IDEs), o SonarQube age como um **raio-X do projeto**, apontando problemas antes que eles virem dívida técnica ou bugs em produção. Ele suporta diversas linguagens, incluindo Java, JavaScript, Python, C#, C/C++, Kotlin, TypeScript, entre muitas outras.
+
+A análise é feita por meio de uma **engine estática**, ou seja, sem executar o código — apenas lendo e analisando sua estrutura, regras, estilo e complexidade. Cada regra detectada é classificada com severidades (por exemplo: **code smell**, **bug**, ou **security vulnerability**) e o sistema atribui uma **nota geral de qualidade** ao projeto (como uma média escolar), com níveis de cobertura de testes, duplicação de código, quantidade de problemas críticos, etc.
+
+O SonarQube também se integra com ferramentas como **Maven**, **Gradle**, **Jenkins**, **GitLab CI**, **GitHub Actions**, e pode ser acessado via interface web para acompanhamento em tempo real, por desenvolvedores, QA e líderes técnicos.
+
+A ideia central do SonarQube é **criar uma cultura de qualidade de software**, onde cada commit, pull request ou build é avaliado com critérios automáticos e objetivos — evitando que más práticas ou falhas passem despercebidas e se acumulem.
+
+Em resumo, **SonarQube é uma ferramenta essencial para times que querem manter o código limpo, seguro e com alta manutenibilidade**, funcionando como uma espécie de "fiscal automático" da qualidade do seu repositório.
+
+
 # 🤖 [Java] Primefaces
 <img src="https://user-images.githubusercontent.com/61624336/192927385-5a585bf9-2cac-4344-89b4-f0d194cac6b5.svg" height="77" align="right">
 
