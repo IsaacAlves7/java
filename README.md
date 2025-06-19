@@ -1496,21 +1496,26 @@ public class Aluno {
 
 Exemplo: `AppAluno.java` (nova versão)
 
-![code](https://user-images.githubusercontent.com/61624336/120039595-9399b800-bfdb-11eb-956a-bd8c7be22f31.png)
-
 ```java
-
+// Aplicação para o uso da Classe Aluno
+public class Aluno {
+   public static void main(String[] args) {
+      Aluno aluno1 = new Aluno();
+      Aluno aluno2 = new Aluno();
+      Aluno aluno3 = new Aluno();
+   }
+}
 ```
 
 > [!Note]
 > 
-> 1. Os valores dos atributos dos alunos 1 e 2 serão atribuídos normalmente, mas os valores do aluno3 não, porque a matrícula e o nome estão vazios e o CR não é válido;
+> 1. Os valores dos atributos dos alunos `1` e `2` serão atribuídos normalmente, mas os valores do aluno3 não, porque a `matrícula` e o `nome` estão vazios e o `CR` não é válido;
 > 
 > 2. Os valores foram atribuídos utilizando os métodos Setters, que verificaram se os valores eram válidos para só então realizar as atribuições;
 > 
 > 3. Os métodos Getters foram usados na própria classe Aluno para buscar os valores armazenados nos atributos do objeto no método imprimir.
 
-Exemplo: A classe `Carro` possui os atributos e métodos a seguir, crie a **classe Carro** e a **aplicação AppCarro**, realize a entrada de dados na aplicação através do teclado, e ao final imprima os dados dos respectivos carros (através do método <code>imprimir()</code>).
+Exemplo: A classe `Carro` possui os atributos e métodos a seguir, crie a classe `Carro` e a aplicação `AppCarro`, realize a entrada de dados na aplicação através do teclado, e ao final imprima os dados dos respectivos carros (através do método <code>imprimir()</code>).
 
 Classe `Carro`:
 
