@@ -3167,6 +3167,20 @@ Projetos Maven são configurados usando um Project Object Model, que é armazena
 </project>
 ```
 
+<img src="https://github.com/user-attachments/assets/462ca3d7-7280-46bd-a860-6992d98804b2" align="right" height="77">
+
+**Gradle** é uma ferramenta de automação de builds, ou seja, um sistema que organiza, compila, empacota, testa e implanta projetos de software de forma automatizada e padronizada. Ele é muito usado em projetos Java, Kotlin, Android e também em outras linguagens, e é uma alternativa moderna ao Maven e ao mais antigo Ant. Em resumo, o Gradle é a engrenagem que automatiza tudo o que seu projeto precisa para rodar, testar, empacotar e evoluir com segurança e eficiência. Ele é altamente configurável, moderno e muito usado em grandes ecossistemas como o Spring e o Android.
+
+Em vez de você ter que compilar arquivos `.java` na mão, copiar dependências, gerar arquivos `.jar`, rodar testes um por um, o Gradle faz tudo isso por você com comandos simples como `gradle build`, `gradle test`, `gradle run`, entre outros.
+
+A principal vantagem do Gradle está na sua flexibilidade e desempenho. Ele usa uma linguagem de script baseada em **Groovy** (ou **Kotlin DSL**) para definir os passos do build no arquivo `build.gradle` (ou `build.gradle.kts`, se for em Kotlin). Isso permite customizar praticamente tudo, com uma sintaxe mais enxuta que a do Maven (que usa XML).
+
+Outra característica marcante do Gradle é o seu sistema de cache inteligente e builds incrementais, que evita refazer tarefas que não mudaram, acelerando muito o processo em projetos grandes.
+
+Além disso, ele possui suporte nativo a resolução de dependências via repositórios como Maven Central ou JCenter. Isso significa que você pode declarar que precisa, por exemplo, da biblioteca do Lombok ou do Spring Boot com apenas uma linha, e o Gradle baixa tudo automaticamente.
+
+Se você está em um projeto Android, inclusive, o Gradle já é o sistema de build padrão do Android Studio, então você provavelmente está usando ele sem perceber.
+
 # 🤖 [Java] Primefaces
 <img src="https://user-images.githubusercontent.com/61624336/192927385-5a585bf9-2cac-4344-89b4-f0d194cac6b5.svg" height="77" align="right">
 
