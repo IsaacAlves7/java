@@ -1500,20 +1500,40 @@ Exemplo: `AppAluno.java` (nova versão)
 // Aplicação para o uso da Classe Aluno
 public class Aluno {
    public static void main(String[] args) {
-      Aluno aluno1 = new Aluno();
-      Aluno aluno2 = new Aluno();
-      Aluno aluno3 = new Aluno();
+      Aluno aluno1 = new Aluno(); // Criação da nova instância do objeto aluno1 (instanciação)
+      Aluno aluno2 = new Aluno(); // Criação da nova instância do objeto aluno2 (instanciação)
+      Aluno aluno3 = new Aluno(); // Criação da nova instância do objeto aluno3 (instanciação)
+
+     // Definindo valores para os atributos do aluno1
+      aluno1.
+      aluno1.
+      aluno1.
+
+     // Definindo valores para os atributos do aluno2
+      aluno2.
+      aluno2.
+      aluno2.
+
+     // Definindo valores para os atributos do aluno3
+      aluno3.
+      aluno3.
+      aluno3.
+
+     // Exibição dos valores dos atributos de cada aluno
+      aluno1.imprimir();
+      aluno2.imprimir();
+      aluno3.imprimir();
    }
 }
 ```
 
 > [!Note]
 > 
-> 1. Os valores dos atributos dos alunos `1` e `2` serão atribuídos normalmente, mas os valores do aluno3 não, porque a `matrícula` e o `nome` estão vazios e o `CR` não é válido;
+> 1. Os valores dos atributos dos alunos `1` e `2` serão atribuídos normalmente, mas os valores do `aluno3` não, porque a `matrícula` e o `nome` estão vazios e o `CR` não é válido;
 > 
 > 2. Os valores foram atribuídos utilizando os métodos Setters, que verificaram se os valores eram válidos para só então realizar as atribuições;
 > 
-> 3. Os métodos Getters foram usados na própria classe Aluno para buscar os valores armazenados nos atributos do objeto no método imprimir.
+> 3. Os métodos Getters foram usados na própria classe `Aluno` para buscar os valores armazenados nos atributos do objeto no método `imprimir`.
 
 Exemplo: A classe `Carro` possui os atributos e métodos a seguir, crie a classe `Carro` e a aplicação `AppCarro`, realize a entrada de dados na aplicação através do teclado, e ao final imprima os dados dos respectivos carros (através do método <code>imprimir()</code>).
 
