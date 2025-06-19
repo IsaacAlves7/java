@@ -3328,9 +3328,11 @@ Outro grande benefício da inicialização automática do Spring Boot é o **Spr
 Com isso, ao invés de gastar tempo com configurações repetitivas e infraestrutura, os desenvolvedores podem focar diretamente no desenvolvimento das **regras de negócio**. É isso que faz o Spring Boot ser tão eficiente para criar microserviços, APIs REST e aplicações escaláveis rapidamente.
 
 ## [Java] Spring Data JPA (Hibernate)
+<img src="https://github.com/user-attachments/assets/711800ec-db40-48b3-97b4-02d3fdf133fd" align="right" height="77">
+
 **Spring Data JPA** é uma abstração poderosa da Spring Framework que simplifica significativamente o uso do JPA (Java Persistence API) em aplicações Java, facilitando o acesso, manipulação e persistência de dados em bancos relacionais. Ele foi criado para reduzir o boilerplate de código necessário para operações com banco de dados, eliminando a necessidade de escrever implementações detalhadas de repositórios ou consultas SQL/JPA personalizadas para tarefas básicas do dia a dia.
 
-Por trás do Spring Data JPA, geralmente está o Hibernate, que é a implementação mais amplamente utilizada da especificação JPA. Hibernate traduz os objetos Java para tabelas relacionais e vice-versa — um processo conhecido como ORM (Object-Relational Mapping). Isso permite que os desenvolvedores trabalhem com entidades Java (classes com anotações específicas) como se fossem objetos normais, enquanto o framework cuida da persistência dos dados no banco de dados real.
+Por trás do Spring Data JPA, geralmente está o **Hibernate**, que é a implementação mais amplamente utilizada da especificação JPA. Hibernate traduz os objetos Java para tabelas relacionais e vice-versa — um processo conhecido como ORM (Object-Relational Mapping). Isso permite que os desenvolvedores trabalhem com entidades Java (classes com anotações específicas) como se fossem objetos normais, enquanto o framework cuida da persistência dos dados no banco de dados real.
 
 O grande diferencial do Spring Data JPA é que ele permite a criação de repositórios baseados apenas em interfaces, sem necessidade de implementação concreta. Isso é possível graças a mecanismos de proxy e reflexão do Spring, que interpretam nomes de métodos e os convertem em consultas automaticamente. Por exemplo, se você definir um método como `findByEmail(String email)`, o Spring Data JPA entende que precisa gerar uma consulta que busca um registro pelo campo `email`.
 
