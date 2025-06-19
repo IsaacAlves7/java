@@ -3327,6 +3327,36 @@ Outro grande benefício da inicialização automática do Spring Boot é o **Spr
 
 Com isso, ao invés de gastar tempo com configurações repetitivas e infraestrutura, os desenvolvedores podem focar diretamente no desenvolvimento das **regras de negócio**. É isso que faz o Spring Boot ser tão eficiente para criar microserviços, APIs REST e aplicações escaláveis rapidamente.
 
+**Lombok** é uma biblioteca Java que tem como objetivo principal reduzir o boilerplate, ou seja, aquele código repetitivo e verboso — gerando automaticamente métodos como `getters`, `setters`, `toString`, `equals`, `hashCode`, construtores, builders, entre outros, por meio de anotações simples diretamente nas classes. Com ela, é possível deixar o código mais limpo, legível e focado na lógica de negócio, sem precisar escrever manualmente coisas que o compilador pode gerar por você.
+
+Ela funciona utilizando anotações em tempo de compilação, através de uma técnica chamada "annotation processing", o que significa que os métodos gerados por Lombok não aparecem diretamente no código fonte, mas sim nos arquivos `.class` compilados. Isso exige que a IDE usada (como IntelliJ ou Eclipse) também tenha suporte para Lombok, caso contrário, pode parecer que os métodos não existem, mesmo estando lá.
+
+Para instalar o Lombok em um projeto Maven, basta adicionar a dependência no arquivo `pom.xml`:
+
+```xml
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.30</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+Se o projeto usa Gradle, adicione no `build.gradle`:
+
+```groovy
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+}
+```
+
+E se for usar com o Spring Boot, o suporte é pleno e altamente compatível. Muitas vezes o `Spring Initializr` já oferece a opção de incluir Lombok automaticamente.
+
+Além da dependência, para que Lombok funcione corretamente na sua IDE, é necessário instalar o **plugin do Lombok**. No IntelliJ IDEA, vá até `Settings → Plugins → Marketplace`, procure por "Lombok", instale e reinicie a IDE. Em seguida, vá em `Settings → Build, Execution, Deployment → Compiler → Annotation Processors` e habilite a opção “Enable annotation processing”. No Eclipse, você pode baixar o jar de instalação do Lombok no site oficial e executá-lo, que ele se integra ao Eclipse automaticamente.
+
+Depois disso, basta usar anotações como `@Getter`, `@Setter`, `@AllArgsConstructor`, `@NoArgsConstructor`, `@Builder`, `@Data`, entre outras, para ver seu código se tornar muito mais enxuto e produtivo.
+
 ## [Java] Spring Data JPA (Hibernate)
 <img src="https://github.com/user-attachments/assets/711800ec-db40-48b3-97b4-02d3fdf133fd" align="right" height="77">
 
@@ -3339,7 +3369,6 @@ O grande diferencial do Spring Data JPA é que ele permite a criação de reposi
 Além disso, ele oferece integração facilitada com queries personalizadas via JPQL (Java Persistence Query Language), SQL nativo, e também com a API Criteria, quando consultas mais dinâmicas são necessárias. A integração com o Spring Boot, por sua vez, torna a configuração e o uso ainda mais automáticos, permitindo que você conecte sua aplicação a um banco de dados e comece a salvar ou recuperar dados com mínima configuração.
 
 No fim das contas, o Spring Data JPA (com Hibernate como base) é uma solução madura, robusta e produtiva para persistência de dados em aplicações Java, que reduz drasticamente o tempo de desenvolvimento ao abstrair tarefas repetitivas e promover boas práticas de acesso a dados com foco em legibilidade, desacoplamento e manutenção do código.
-
 
 # 🥛 [Java] Kotlin
 <img src="https://cdn.worldvectorlogo.com/logos/kotlin-2.svg" height="77" align="right">
