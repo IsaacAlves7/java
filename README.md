@@ -1505,19 +1505,20 @@ public class Aluno {
       Aluno aluno3 = new Aluno(); // Criação da nova instância do objeto aluno3 (instanciação)
 
      // Definindo valores para os atributos do aluno1
-      aluno1.
-      aluno1.
-      aluno1.
+      aluno1.setMatricula("1001");
+      aluno1.setNome("André");
+      aluno1.setCr(6.7);
 
      // Definindo valores para os atributos do aluno2
-      aluno2.
-      aluno2.
-      aluno2.
+      aluno2.setMatricula("1002");
+      aluno2.setNome("Isaac");
+      aluno2.setCr(7.7);
 
      // Definindo valores para os atributos do aluno3
-      aluno3.
-      aluno3.
-      aluno3.
+// Valores vazios e inválidos, não serão atribuídos
+      aluno3.setMatricula("");
+      aluno3.setNome("");
+      aluno3.setCr(12);
 
      // Exibição dos valores dos atributos de cada aluno
       aluno1.imprimir();
