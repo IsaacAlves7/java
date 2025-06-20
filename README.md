@@ -2486,31 +2486,37 @@ Resposta: Será necessário alterar apenas a classe PessoaEmpresa, já que as cl
 Resposta: Será necessário alterar apenas a classe Cliente.
 
 > [!Warning]
-> Após analisarmos as duas soluções, chegamos à conclusão de que, ao utilizar a *herança*, não só evitamos a **redundância de códigos (repetição)** como *facilitamos a manutenção*, uma vez que, para realizar qualquer atualização, deveremos sempre alterar **apenas** *uma das classes*.
+> Após analisarmos as duas soluções, chegamos à conclusão de que, ao utilizar a *herança*, não só evitamos a **redundância de códigos (repetição)** como facilitamos a manutenção, uma vez que, para realizar qualquer atualização, deveremos sempre alterar apenas uma das classes.
 
-No final, a **classe Gerente** é composta por todos os membros de **Pessoa**, **PessoaEmpresa** e **Gerente**, uma vez que Gerente estende PessoaEmpresa, que por sua vez estende a classe Pessoa:
+No final, a classe `Gerente` é composta por todos os membros de `Pessoa`, `PessoaEmpresa` e `Gerente`, uma vez que `Gerente` estende `PessoaEmpresa`, que por sua vez estende a classe `Pessoa`:
 
-<pre>Pessoa +
+<pre>
+Pessoa +
 PessoaEmpresa +
-Gerente</pre>
+Gerente
+</pre>
 
 O mesmo ocorre com a classe Funcionário, composta por todos os membros de Pessoa, PessoaEmpresa e Funcionário, uma vez que Funcionário estende PessoaEmpresa, que por sua vez estende a classe Pessoa:
 
-<pre>Pessoa +
+<pre>
+Pessoa +
 PessoaEmpresa +
-Funcionário</pre>
+Funcionário
+</pre>
 
-Já a classe Cliente é composta por todos os membros de Pessoa e Cliente, uma vez que Cliente estende a classe Pessoa:
+Já a classe `Cliente` é composta por todos os membros de `Pessoa` e `Cliente`, uma vez que `Cliente` estende a classe `Pessoa`:
 
-<pre>Pessoa +
-Cliente</pre>
+<pre>
+Pessoa +
+Cliente
+</pre>
 
 ## [Java] Herança de métodos construtores
 Vamos analisar os métodos construtores da classe `Cliente`:
 
 ![code](https://user-images.githubusercontent.com/61624336/120968564-68336d80-c73f-11eb-8327-c36c4c87a0cd.png)
 
-Alguns destes métodos repassam os parâmetros recebidos para a **Superclasse**, através da palavra reservada <code>super</code>. Esta instrução diz ao compilador que o(s) parâmetro(s) será(ão) repassado(s) a um método construtor com a *mesma assinatura na SuperClasse*.
+Alguns destes métodos repassam os parâmetros recebidos para a **Superclasse**, através da palavra reservada <code>super</code>. Esta instrução diz ao compilador que o(s) parâmetro(s) será(ão) repassado(s) a um método construtor com a mesma assinatura na SuperClasse.
 
 Assim, o método:
 
@@ -2558,14 +2564,18 @@ public void imprimir() {
 
 Esta substituição permitiria que o método imprimir fosse substituído na **Subclasse** por um método mais completo que atendesse a sua necessidade.
 
-Note que as assinaturas dos métodos, tanto na **Superclasse Pessoa** como na **Subclasse Cliente**, são idênticas: <code>imprimir( );</code> desta forma, houve uma *Sobrescrita (Override)* e não uma *Sobrecarga (Overhead)*.
+Note que as assinaturas dos métodos, tanto na **Superclasse Pessoa** como na **Subclasse Cliente**, são idênticas: <code>imprimir( );</code> desta forma, houve uma **Sobrescrita** (`Override`) e não uma **Sobrecarga** (`Overhead`).
 
-Como uma primeira forma de atender a demanda da classe `Cliente`, o método imprimir nesta nova versão seria suficiente, mas podemos melhorar nossa solução, observe que parte do código já existe no método imprimir da Superclasse `Pessoa`, ocorrendo uma redundância de código nas instruções destacadas na cor vermelha:
+Como uma primeira forma de atender a demanda da classe `Cliente`, o método `imprimir` nesta nova versão seria suficiente, mas podemos melhorar nossa solução, observe que parte do código já existe no método `imprimir` da Superclasse `Pessoa`, ocorrendo uma redundância de código nas instruções destacadas na cor vermelha:
 
-![code](https://user-images.githubusercontent.com/61624336/120996631-dfc3c580-c75c-11eb-9902-eb957eb65e9c.png)
-
-```java
-
+```diff
+public void imprimir() {
+-  System.out.println("Identidade: " + getIdentidade());
+-  System.out.println("Nome: " + getNome());
+  System.out.println("Código do cliente: " + getCodigoCliente());
+  System.out.println("Telefone: " + getTelefone());
+  System.out.println("Idade: " + getIdade());
+}
 ```
 
 Note que as instruções na cor vermelha já existem no método imprimir da Superclasse e, assim, podemos reaproveitar os códigos da Superclasse ao chamar o método imprimir da Superclasse na Subclasse:
