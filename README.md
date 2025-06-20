@@ -2578,19 +2578,22 @@ public void imprimir() {
 }
 ```
 
-Note que as instruções na cor vermelha já existem no método imprimir da Superclasse e, assim, podemos reaproveitar os códigos da Superclasse ao chamar o método imprimir da Superclasse na Subclasse:
-
-![code](https://user-images.githubusercontent.com/61624336/120996827-113c9100-c75d-11eb-920d-de4a93d2d09f.png)
+Note que as instruções na cor vermelha já existem no método `imprimir` da Superclasse e, assim, podemos reaproveitar os códigos da Superclasse ao chamar o método `imprimir` da Superclasse na Subclasse:
 
 ```java
-
+public void imprimir() {
+  super.imprimir();
+  System.out.println("Código do cliente: " + getCodigoCliente());
+  System.out.println("Telefone: " + getTelefone());
+  System.out.println("Idade: " + getIdade());
+}
 ```
 
-Ao reaproveitar o método imprimir da Superclasse, temos dois ganhos muito importantes:
+Ao reaproveitar o método `imprimir` da Superclasse, temos dois ganhos muito importantes:
 
-1. Não haverá redundância de códigos, as instruções do método imprimir da Superclasse serão reaproveitadas na Subclasse;
+1. Não haverá redundância de códigos, as instruções do método `imprimir` da Superclasse serão reaproveitadas na Subclasse;
 
-2. Caso haja a necessidade de incluir um novo atributo no método imprimir, só precisaremos realizar a alteração em apenas uma classe, pois, se for um atributo específico da classe `Cliente`, só precisaremos incluir a instrução no método da classe `Cliente`. Caso contrário, se o atributo for comum às demais classes, a instrução deverá ser incluída apenas na Superclasse `Pessoa`.
+2. Caso haja a necessidade de incluir um novo atributo no método `imprimir`, só precisaremos realizar a alteração em apenas uma classe, pois, se for um atributo específico da classe `Cliente`, só precisaremos incluir a instrução no método da classe `Cliente`. Caso contrário, se o atributo for comum às demais classes, a instrução deverá ser incluída apenas na Superclasse `Pessoa`.
 
 A **herança** é um conceito importantíssimo da programação orientada a Objetos, permitindo que reaproveitemos membros Superclasse, que serão herdados pelas Subclasses, evitando redundância de códigos, além de facilitar a manutenção das nossas classes, uma vez que qualquer necessidade de mudança implicará na alteração de apenas uma classe.
 
