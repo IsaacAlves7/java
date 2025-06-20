@@ -3128,7 +3128,7 @@ Dessa forma, podemos substituir o nome do objeto pela sua referência, e também
 > O `this` separa os membros da classe das demais variáveis auxiliares e parâmetros da classe.
 
 ## [Java] O modificador `static`
-Este modificador pode ser aplicado sobre atributos e métodos e transforma o atributo ou método para a forma “compartilhada”. O modificador `static` aplicado a um atributo. Este modificador ao ser aplicado em um atributo de uma classe modifica este atributo de objeto (ou de instância) para um atributo de classe1.
+Este modificador pode ser aplicado sobre atributos e métodos e transforma o atributo ou método para a forma “compartilhada”. O modificador `static` aplicado a um atributo. Este modificador ao ser aplicado em um atributo de uma classe modifica este atributo de objeto (ou de instância) para um atributo de `classe1`.
 
 Exemplo 1 - Aplicação com o compartilhamento de um valor: <code>private static double valorDolar</code>
 
