@@ -3182,6 +3182,21 @@ public class RfThis {
   public int getIdade() {
     return this.idade;
   }
+  // a referência this indica que this.nome
+  // faz referência ao atributo nome da classe e
+  // sem o this nome identifica o parâmetro nome do método
+  public void setIdade(int idade) {
+     this.idade = idade;
+  }
+  public double getPeso() {
+     return this.peso;
+  }
+  // a referência this indica que this.nome
+  // faz referência ao atributo nome da classe e
+  // sem o this nome identifica o parâmetro nome do método
+  public void setPeso(double peso) {
+     this.peso = peso;
+  }
 }
 ```
 
