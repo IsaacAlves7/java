@@ -2234,9 +2234,9 @@ Aplicação: AppLogin com um objeto usando o novo construtor
 
 > [!Note]
 >
-> 01. A classe Login agora possui dois diferentes construtores e dois diferentes métodos verificaLogin, ambos sobrecarregados. A versão anterior foi preservada porque ainda é usada pelos sistemas dos antigos clientes. Entretanto, com a inclusão dos novos métodos, a classe foi atualizada e também passou a atender ao cliente novo;
+> 01. A classe Login agora possui dois diferentes construtores e dois diferentes métodos `verificaLogin`, ambos sobrecarregados. A versão anterior foi preservada porque ainda é usada pelos sistemas dos antigos clientes. Entretanto, com a inclusão dos novos métodos, a classe foi atualizada e também passou a atender ao cliente novo;
 >
-> 02. Foi incluído ainda o método verificarToken, que só é usado pelo cliente novo. Sua inclusão na classe não atrapalha em nada os sistemas dos clientes antigos;
+> 02. Foi incluído ainda o método `verificarToken`, que só é usado pelo cliente novo. Sua inclusão na classe não atrapalha em nada os sistemas dos clientes antigos;
 >
 > 03. A aplicação agora pode instanciar (criar) objetos das duas formas, com e sem o token, sem que uma atrapalhe a outra.
 
@@ -2288,7 +2288,7 @@ Já as **classes originais** permanecerão apenas com os membros não comuns, se
 Em algumas linguagens de programação no conceito de POO se trabalha muito com os dois tipos de herança. Entretanto, a linguagem Java não trabalha com Heranças múltiplas, somente com herança simples.
 
 ## [Java] Herança Simples
-Em Java, temos **apenas** a implementação da *herança simples*. A **herança simples** se caracteriza por **cada classe herdar sempre de apenas uma outra classe por vez**. Devemos observar que, mesmo que tenhamos uma sequência de classes herdando, em que uma herda da outra, ainda assim, temos a herança simples, que pode ser observada nos exemplos das figuras a seguir:
+Em Java, temos **apenas** a implementação da *herança simples*. A **herança simples** se caracteriza por cada classe herdar sempre de apenas uma outra classe por vez. Devemos observar que, mesmo que tenhamos uma sequência de classes herdando, em que uma herda da outra, ainda assim, temos a herança simples, que pode ser observada nos exemplos das figuras a seguir:
 
 ![img02](https://user-images.githubusercontent.com/61624336/120694581-c979e900-c480-11eb-8366-93a82d90a124.jpg)
 
