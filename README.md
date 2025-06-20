@@ -2244,7 +2244,7 @@ Aplicação: AppLogin com um objeto usando o novo construtor
 
 > [!Note]
 >
-> 01. A classe Login agora possui dois diferentes construtores e dois diferentes métodos `verificaLogin`, ambos sobrecarregados. A versão anterior foi preservada porque ainda é usada pelos sistemas dos antigos clientes. Entretanto, com a inclusão dos novos métodos, a classe foi atualizada e também passou a atender ao cliente novo;
+> 01. A classe `Login` agora possui dois diferentes construtores e dois diferentes métodos `verificaLogin`, ambos sobrecarregados. A versão anterior foi preservada porque ainda é usada pelos sistemas dos antigos clientes. Entretanto, com a inclusão dos novos métodos, a classe foi atualizada e também passou a atender ao cliente novo;
 >
 > 02. Foi incluído ainda o método `verificarToken`, que só é usado pelo cliente novo. Sua inclusão na classe não atrapalha em nada os sistemas dos clientes antigos;
 >
