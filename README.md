@@ -1609,6 +1609,16 @@ public class Carro {
        cor = c;
     }
   }
+  public void setPlaca (String p){
+    if(!p.isEmpty()) {
+       placa = p;
+    }
+  }
+  public void setValor (String val){
+    if(!val.isEmpty()) {
+       valor = val;
+    }
+  }
 }
 ```
 
