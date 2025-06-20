@@ -2772,7 +2772,36 @@ Vamos determinar poucos atributos para cada uma delas, apenas para entendermos m
 
 Assim, vamos criar as classes separadamente, dividindo a classe `Desktop` conforme proposto:
 
-![code](https://user-images.githubusercontent.com/61624336/121097161-eccace00-c7c9-11eb-81e3-fe7e5d272768.png)
+```java
+public class PlacaMae {
+   public String marca, modelo, tipoProcessador;
+   public double preco;
+}
+
+public class HD {
+   public String marca, modelo, tipo;
+   public double preco;
+   public int capacidade;
+}
+
+public class Processador {
+   public String marca, modelo;
+   public double preco;
+   public int capacidade;
+}
+
+public class PlacaVideo {
+   public String marca, modelo;
+   public double preco;
+   public int capacidade;
+}
+
+public class Memoria {
+   public String marca, modelo, tipo;
+   public double preco;
+   public int capacidade;
+}
+```
 
 > [!Warning]
 > 1. A decomposição da classe `Desktop` foi feita em quatro classes mais simples;
