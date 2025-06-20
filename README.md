@@ -2143,10 +2143,26 @@ A execução da aplicação não foi afetada pelas mudanças na classe porque fo
 
 Aplicação usando diferentes construtores para criar os objetos: `AppCarro`
 
-![code](https://user-images.githubusercontent.com/61624336/120423047-038fa180-c340-11eb-8894-6b52a1f12313.png)
-
 ```java
+public class AppCarroNovo{
+  public static void main(String[] args){
+    Carro car1 = new Carro();
+    car1.entradaDados();
+    car1.imprimir();
 
+    Carro car2 = new Carro();
+    car2.imprimir();
+
+    Carro car3 = new Carro();
+    car3.imprimir();
+
+    Carro car4 = new Carro();
+    car4.imprimir();
+
+    Carro car5 = new Carro();
+    car5.imprimir();
+  }
+}
 ```
 
 > [!Note]
