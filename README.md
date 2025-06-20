@@ -3173,6 +3173,15 @@ public class RfThis {
   public String getNome() {
     return this.nome;
   }
+  // a referência this indica que this.nome
+  // faz referência ao atributo nome da classe e
+  // sem o this nome identifica o parâmetro nome do método
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+  public int getIdade() {
+    return this.idade;
+  }
 }
 ```
 
