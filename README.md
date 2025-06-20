@@ -1586,10 +1586,20 @@ Classe `Carro`:
 
 `Carro.java`
 
-![Carro](https://user-images.githubusercontent.com/61624336/120238115-a22ddc80-c232-11eb-8a1e-02ac44164306.png)
-
 ```java
+public class Carro {
+  // Attributes
+  String fabricante, modelo, cor, placa;
+  double valor;
+  int numeroPortas, anoFabricacao, anoModelo;
 
+  // Setter methods
+  public void setFabricante (String fab){
+    if(!fab.isEmpty()) {
+       fabricante = fab;
+    }
+  }
+}
 ```
 
 `AppCarro.java`
