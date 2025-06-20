@@ -2658,7 +2658,9 @@ Geralmente, ele se refere a técnicas de organização, modularização e otimiz
 
 Vamos imaginar um computador do tipo `Desktop`, que é um objeto bem complexo, com diferentes partes. Muitas dessas partes são usadas por outros objetos também, tal como `Notebooks` e `Servidores`.
 
-Um `HD` (HardDisk), por exemplo, pode ser usado por cada um deles, assim como a placa de vídeo, a placa-mãe, o vídeo, a memória, além de outros dispositivos. Se formos criar uma classe para representar um `Desktop`, teremos uma classe com muitos atributos, o que a tornaria grande e complexa, com muitas linhas de código e de difícil manutenção. Isso porque, se fosse necessário realizar alguma mudança, teríamos que trabalhar em uma classe altamente complexa. 
+Um `HD` (HardDisk), por exemplo, pode ser usado por cada um deles, assim como a placa de vídeo, a placa-mãe, o vídeo, a memória, além de outros dispositivos. 
+
+Se formos criar uma classe para representar um `Desktop`, teremos uma classe com muitos atributos, o que a tornaria grande e complexa, com muitas linhas de código e de difícil manutenção. Isso porque, se fosse necessário realizar alguma mudança, teríamos que trabalhar em uma classe altamente complexa. 
 
 Outro ponto importante seria a criação das classes `Notebook` e `Servidor`, que seriam igualmente complexas, sem contar que, para realizar uma alteração em um único componente que fosse, teríamos que fazê-la em todas as três classes (`Desktop`, `Notebook` e `Servidor`).
 
