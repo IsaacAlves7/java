@@ -2578,11 +2578,11 @@ public void imprimir() {
 }
 ```
 
-Note que as instruções na cor vermelha já existem no método `imprimir` da Superclasse e, assim, podemos reaproveitar os códigos da Superclasse ao chamar o método `imprimir` da Superclasse na Subclasse:
+Note que as instruções na cor vermelha já existem no método `imprimir` da Superclasse e, assim, podemos reaproveitar os códigos da Superclasse ao chamar o método `imprimir` da Superclasse na Subclasse: Podemos acessar ou chamar membros/métodos da superclasse que foram herdados ou sobrescritos (mesmo que tenham sido sobrescritos).
 
-```java
+```diff
 public void imprimir() {
-  super.imprimir();
++ super.imprimir();
   System.out.println("Código do cliente: " + getCodigoCliente());
   System.out.println("Telefone: " + getTelefone());
   System.out.println("Idade: " + getIdade());
