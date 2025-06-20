@@ -3163,10 +3163,18 @@ A referência <code>this</code> altera a identificação do objeto pelo seu iden
 Dessa forma, podemos substituir o nome do objeto pela sua referência, e também separar quando tem o mesmo nome variáveis e atributos:
 
 ```java
+package biblioteca;
 
+public class RfThis {
+  private String nome;
+  private int idade;
+  private double peso;
+
+  public String getNome() {
+    return this.nome;
+  }
+}
 ```
-
-![code](https://user-images.githubusercontent.com/61624336/121282961-be73ee00-c8b0-11eb-972f-9e15749a9efa.png)
 
 > [!Note]
 > O `this` separa os membros da classe das demais variáveis auxiliares e parâmetros da classe.
