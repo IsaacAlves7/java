@@ -1599,6 +1599,16 @@ public class Carro {
        fabricante = fab;
     }
   }
+  public void setModelo (String mod){
+    if(!mod.isEmpty()) {
+       modelo = mod;
+    }
+  }
+  public void setCor (String c){
+    if(!c.isEmpty()) {
+       cor = c;
+    }
+  }
 }
 ```
 
