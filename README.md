@@ -2903,9 +2903,9 @@ Classe Particionada `Memoria`:
 
 ![code](https://user-images.githubusercontent.com/61624336/121127917-e86dd780-c800-11eb-962c-4d280e202af4.png)
 
-Com a evolução das classes particionadas com a aplicação do conceito de herança, foram mantidas as compatibilidades e as classes Desktop, Notebook e Servidor não precisam ser alteradas, assim como a aplicação, que funcionará da mesma forma que no exemplo anterior. As mudanças com a evolução das classes particionadas não afetaram as classes agregadoras, nem a aplicação.
+Com a evolução das classes particionadas com a aplicação do conceito de herança, foram mantidas as compatibilidades e as classes `Desktop`, `Notebook` e `Servidor` não precisam ser alteradas, assim como a aplicação, que funcionará da mesma forma que no exemplo anterior. As mudanças com a evolução das classes particionadas não afetaram as classes agregadoras, nem a aplicação.
 
-Caso seja necessária alguma alteração específica, basta alterar a classe afetada. Entretanto, se for alguma alteração sobre as classes Memoria e HD, basta alterar a classe Armazenamento; caso seja uma alteração que afete ao mesmo tempo as quatro classes particionadas, basta alterar a superclasse Identificação.
+Caso seja necessária alguma alteração específica, basta alterar a classe afetada. Entretanto, se for alguma alteração sobre as classes `Memoria` e `HD`, basta alterar a classe `Armazenamento`; caso seja uma alteração que afete ao mesmo tempo as quatro classes particionadas, basta alterar a superclasse `Identificação`.
 
 Temos então um melhor controle sobre a aplicação e maior facilidade de manutenção de todo o sistema.
 
