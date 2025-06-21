@@ -2209,10 +2209,16 @@ Vamos imaginar que uma classe chamada `Login` fosse usada por vários de seus si
 
 `Login.java`
 
-![code](https://user-images.githubusercontent.com/61624336/120426078-cb8b5d00-c345-11eb-8d72-01414960c525.png)
-
 ```java
+public class Login {
+   // Attributes
+   String nome;
+   String nomeLogin;
+   String senha;
+   Int nivelAcesso;
 
+  
+}
 ```
 
 `AppLogin.java`
