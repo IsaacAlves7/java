@@ -2320,9 +2320,7 @@ A herança múltipla pode ser observada nos exemplos das figuras a seguir:
 
 ![img07](https://user-images.githubusercontent.com/61624336/120708698-482b5200-c492-11eb-97e7-d2ea8ed6125e.jpg)
 
-Vejamos um exemplo:
-
-Sejam as três classes a seguir referentes a uma empresa:
+Vejamos um exemplo: Sejam as três classes a seguir referentes a uma empresa:
 
 <table>
 <tr>
@@ -2408,20 +2406,20 @@ Sejam as três classes a seguir referentes a uma empresa:
 </tr>
 </table>
 
-Ao analisar as classes, podemos afirmar que teremos que repetir a declaração dos atributos **Identidade** e **Nome** em todas elas, bem como os métodos **Setters** e **Getters** destes atributos em todas as três classes, sem contar que ainda teremos que repetir parte da codificação dos métodos **cadastrar**, **imprimir** e **entradaDados**.
+Ao analisar as classes, podemos afirmar que teremos que repetir a declaração dos atributos `Identidade` e `Nome` em todas elas, bem como os métodos **Setters** e **Getters** destes atributos em todas as três classes, sem contar que ainda teremos que repetir parte da codificação dos métodos `cadastrar`, `imprimir` e `entradaDados`.
 
 Neste caso, podemos aplicar os conceitos de **herança** e teremos a seguinte estrutura para atender ao problema descrito acima:
 
 ![img08](https://user-images.githubusercontent.com/61624336/120713682-a1967f80-c498-11eb-9a70-f98b89632c26.jpg)
 
-- Como os atributos Identidade e Nome são comuns às três classes, eles ficarão na Superclasse de maior hierarquia;
-- Como os atributos Matrícula e Salário pertencem somente às classes Gerente e Funcionário, teremos uma classe intermediária chamada PessoaEmpresa, que herdará da classe Pessoa, mas esta também será uma Superclasse para as classes Gerente e Funcionário;
-- A classe Cliente herdará da classe Pessoa;
-- As classes Gerente e Funcionário herdarão da classe PessoaEmpresa.
+- Como os atributos `Identidade` e `Nome` são comuns às três classes, eles ficarão na Superclasse de maior hierarquia;
+- Como os atributos `Matrícula` e `Salário` pertencem somente às classes `Gerente` e `Funcionário`, teremos uma classe intermediária chamada `PessoaEmpresa`, que herdará da classe `Pessoa`, mas esta também será uma Superclasse para as classes `Gerente` e `Funcionário`;
+- A classe `Cliente` herdará da classe `Pessoa`;
+- As classes `Gerente` e `Funcionário` herdarão da classe `PessoaEmpresa`.
 
 Desta forma, não teremos redundância de códigos, escreveremos menos linhas e teremos maior facilidade na manutenção das classes da nossa biblioteca de classes.
 
-Vamos analisar agora as diferenças entre as versões das nossas classes com e **sem a aplicação da herança**:
+Vamos analisar agora as diferenças entre as versões das nossas classes com e sem a aplicação da herança:
 
 Classe `Gerente` sem o uso do conceito de herança:
 
