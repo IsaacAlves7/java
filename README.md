@@ -2429,22 +2429,22 @@ Classe `Cliente` sem o uso do conceito de herança:
 
 Vamos a algumas perguntas:
 
-- Se for necessário incluir um novo atributo com o CPF em todas as classes?
+- Se for necessário incluir um novo atributo com o `CPF` em todas as classes?
 Resposta: Teremos que alterar todas as classes, dificultando a manutenção.
 
-- Se for necessário um novo atributo para armazenar a data de admissão para Gerentes e Funcionários?
-Resposta: Será necessário alterar as classes Gerente e Funcionário.
+- Se for necessário um novo atributo para armazenar a data de admissão para `Gerentes` e `Funcionários`?
+Resposta: Será necessário alterar as classes `Gerente` e `Funcionário`.
 
 - Se for necessário incluir a data da primeira compra do cliente?
-Resposta: Será necessário alterar apenas a classe Cliente.
+Resposta: Será necessário alterar apenas a classe `Cliente`.
 
 Vamos guardar estas perguntas e repeti-las após a aplicação da herança.
 
 Aplicando os conceitos de herança: Primeiro de tudo, vamos arquitetar o conceito de superclasses e subclasses:
 
-- **SuperClasse**: Pessoa;
-- **SubClasse de Pessoa**: PessoaEmpresa, Cliente; 
-- **SubClasse de PessoaEmpresa**: Gerente, Funcionario. 
+- **SuperClasse**: `Pessoa`;
+- **SubClasse de Pessoa**: `PessoaEmpresa`, `Cliente`; 
+- **SubClasse de PessoaEmpresa**: `Gerente`, `Funcionario`. 
 
 Logo, iremos aplicar esse conceito:
 
@@ -2470,17 +2470,17 @@ Classe `Cliente` com o uso do conceito de herança (SubClasse de `Pessoa`):
 
 Vamos responder novamente às três perguntas feitas anteriormente:
 
-- Se for necessário incluir um novo atributo com o CPF em todas as classes?
-Resposta: Teremos que alterar apenas a classe Pessoa, uma vez que todas as demais classes irão herdar qualquer atualização nesta classe.
+- Se for necessário incluir um novo atributo com o `CPF` em todas as classes?
+Resposta: Teremos que alterar apenas a classe `Pessoa`, uma vez que todas as demais classes irão herdar qualquer atualização nesta classe.
 
-- Se for necessário um novo atributo para armazenar a data de admissão para Gerentes e Funcionários?
-Resposta: Será necessário alterar apenas a classe PessoaEmpresa, já que as classes Gerente e Funcionário herdarão desta classe.
+- Se for necessário um novo atributo para armazenar a data de admissão para `Gerentes` e `Funcionários`?
+Resposta: Será necessário alterar apenas a classe `PessoaEmpresa`, já que as classes `Gerente` e `Funcionário` herdarão desta classe.
 
 - Se for necessário incluir a data da primeira compra do cliente?
-Resposta: Será necessário alterar apenas a classe Cliente.
+Resposta: Será necessário alterar apenas a classe `Cliente`.
 
 > [!Warning]
-> Após analisarmos as duas soluções, chegamos à conclusão de que, ao utilizar a *herança*, não só evitamos a **redundância de códigos (repetição)** como facilitamos a manutenção, uma vez que, para realizar qualquer atualização, deveremos sempre alterar apenas uma das classes.
+> Após analisarmos as duas soluções, chegamos à conclusão de que, ao utilizar a herança, não só evitamos a **redundância de códigos (repetição)** como facilitamos a manutenção, uma vez que, para realizar qualquer atualização, deveremos sempre alterar apenas uma das classes.
 
 No final, a classe `Gerente` é composta por todos os membros de `Pessoa`, `PessoaEmpresa` e `Gerente`, uma vez que `Gerente` estende `PessoaEmpresa`, que por sua vez estende a classe `Pessoa`:
 
