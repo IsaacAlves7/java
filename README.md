@@ -1169,13 +1169,13 @@ public interface MetodosBasicos { ... }
 ```
 
 # ☕ [Java] Classes e objetos
-A **programação orientada a objetos (OOP)** tem como principal conceito representar, em um sistema computacional, um **objeto da vida real**. Esta representação deve descrever o objeto quanto às suas características e ações que poderá realizar dentro do sistema. Não devemos nos preocupar com todas as características presentes no objeto, mas com aquelas que serão necessárias ao sistema (requisitos).
+A **programação orientada a objetos (OOP)** tem como principal conceito representar, em um sistema computacional, um objeto da vida real. Esta representação deve descrever o objeto quanto às suas características e ações que poderá realizar dentro do sistema. Não devemos nos preocupar com todas as características presentes no objeto, mas com aquelas que serão necessárias ao sistema (requisitos).
 
 Exemplo: A placa de um automóvel é importante para um sistema de estacionamento, assim como a hora de chegada e saída.
 
-Em alguns casos, o fabricante, modelo e a cor do automóvel poderão ser importantes, mas dificilmente iremos cadastrar o número do chassi do mesmo. Como o número do chassi não é facilmente visto e seu cadastramento dependeria da documentação do automóvel ou de uma análise para a identificação, que seria difícil, uma vez que é um identificador com muitas letras e números, acabaria por gerar filas e insatisfação dos clientes.
+Em alguns casos, o `fabricante`, `modelo` e a `cor` do automóvel poderão ser importantes, mas dificilmente iremos cadastrar o número do `chassi` do mesmo. Como o número do `chassi` não é facilmente visto e seu cadastramento dependeria da documentação do automóvel ou de uma análise para a identificação, que seria difícil, uma vez que é um identificador com muitas letras e números, acabaria por gerar filas e insatisfação dos clientes.
 
-Entretanto, para o sistema de cadastramento do DETRAN, por exemplo, o número do chassi é uma das informações mais importantes. Dessa forma, identificarmos a placa é importante como descritor do automóvel para o sistema de estacionamento, já o chassi não.
+Entretanto, para o sistema de cadastramento do `DETRAN`, por exemplo, o número do `chassi` é uma das informações mais importantes. Dessa forma, identificarmos a `placa` é importante como descritor do automóvel para o sistema de estacionamento, já o `chassi` não.
 
 Por isso, devemos analisar cada objeto separadamente e quais são as características importantes para o sistema em que o objeto será utilizado. Como outro exemplo, podemos notar que a `matrícula`, `nome` e `CR` de um `aluno` são importantes para o sistema acadêmico, mas o time para o qual o `aluno` torce ou sua religião não são. Por isso, os descritores time e religião não são importantes para o objeto `Aluno` em um sistema acadêmico.
 
