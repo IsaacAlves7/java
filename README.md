@@ -2388,10 +2388,12 @@ public class Login {
 
 Aplicação: `AppLogin` com um objeto usando o novo construtor
 
-![code1](https://user-images.githubusercontent.com/61624336/120578549-60e92880-c3fc-11eb-89fe-8998386427fc.png)
-
 ```java
-
+public class AppLogin{
+  public static void main(String[] args){
+    // TODO Auto-generated method stub
+  }
+}
 ```
 
 > [!Note]
