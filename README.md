@@ -3581,6 +3581,17 @@ Alguns dos principais recursos e componentes fornecidos pelo PrimeFaces incluem:
 O PrimeFaces é uma opção popular para o desenvolvimento de aplicativos web Java que desejam fornecer interfaces de usuário ricas e interativas. Ele é amplamente usado em várias indústrias e fornece uma base sólida para a criação de aplicativos web empresariais.
 
 # 🧩 [Java] Design Patterns
+Na engenharia de software, um padrão de projeto ou padrões de design (design patterns) de software é uma solução geral e reutilizável para um problema comum dentro de um determinado contexto no projeto de software no nível do código-fonte. Não é um projeto acabado que pode ser transformado diretamente em código-fonte ou código de máquina. Se você é um desenvolvedor, é importante que você saiba qual é o princípio do SOLID e como um design pattern (padrão de design) deve resolver problemas regulares. Portanto, Design Patterns (Padrões de Projeto) são sobre design de software, eles representam soluções reutilizáveis para problemas recorrentes no desenvolvimento de software, oferecendo uma forma estruturada e eficiente de abordar desafios comuns de design.
+
+Os padrões de design mais comuns que podem ser implementados em Java, por padrão assim como na maioria das outras linguagens de programação, tudo o que precisa saber sobre padrões de design de cada uma das três principais categorias: 
+
+- Operational (operacional):
+
+- Structural (estrutural):
+
+- Behavioral (comportamental):
+
+Mas primeiro, o que é um padrão de design? Um padrão de design pode ser pensado como uma solução razoável que pode ser aplicada a cenários comuns de programação; como desenvolvedor, você encontrará padrões de design em toda parte. A API do Java sozinha resolve a maioria de seus desafios de programação com diferentes padrões de design; podemos pensar em um padrão de design como uma solução para um problema comum e também como uma estrutura que tornará o código mais fácil de manter. Por último, mas não menos importante, ele fornece mais credibilidade para o código, tornando-o mais fácil de ler.
 
 # 🍃 [Java] Spring
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring-2.1.2-6DB33F?style=flat&logo=Spring&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
