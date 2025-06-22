@@ -2221,6 +2221,12 @@ public class Login {
    public Login(String n1, String s){
       setNivelAcesso(verificaLogin(n1, s));
    }
+
+   public int verificaLogin(String nolog, String sem){
+     int na = 0;
+     if(nolog.equals("carneiro5") && sen.equals("123456")){
+     }
+   }
 }
 ```
 
