@@ -2483,17 +2483,14 @@ Vejamos um exemplo: Sejam as três classes a seguir referentes a uma empresa:
 <tr>
  <td><b>Gerente</b></td>
  <td>
- Identidade: texto
- 
- Nome: texto
- 
- Matrícula: texto
- 
- Salário: real
- 
- PercentualVenda: real
- 
- NívelGerente: inteiro
+  <ul>
+    <li>Identidade: texto</li>
+    <li>Nome: texto</li>
+    <li>Matrícula: texto</li>
+    <li>Salário: real</li>
+    <li>PercentualVenda: real</li>
+    <li>NívelGerente: inteiro</li>
+  </ul>
  </td>
 <td>
   <ul>
