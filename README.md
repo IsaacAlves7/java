@@ -1956,7 +1956,7 @@ Os valores armazenados em `g`, `h`, `i` e `j` serão respectivamente: `1, 2, 3 e
 
 Outra forma de uso de *mais de um construtor* é para manter a compatibilidade de uma classe com suas aplicações antigas.
 
-Se analisarmos a classe <code>Carro</code>, vista como exemplo anteriormente, podemos notar que ela **não possui nenhum método construtor**. Podemos então criar alguns métodos construtores para esta classe e preservar a aplicação antiga, criando e analisando uma classe nova (evoluída) e as duas aplicações, a antiga e a nova:
+Se analisarmos a classe <code>Carro</code>, vista como exemplo anteriormente, podemos notar que ela não possui nenhum método construtor. Podemos então criar alguns métodos construtores para esta classe e preservar a aplicação antiga, criando e analisando uma classe nova (evoluída) e as duas aplicações, a antiga e a nova:
 
 Classe: `Carro` (atualizada com cinco métodos construtores)
 
@@ -2215,9 +2215,12 @@ public class Login {
    String nome;
    String nomeLogin;
    String senha;
-   Int nivelAcesso;
+   Int nivelAcesso; // nível de acesso do usuário ao sistema
 
-  
+   // Constructor Methods
+   public Login(String n1, String s){
+      setNivelAcesso(verificaLogin(n1, s));
+   }
 }
 ```
 
