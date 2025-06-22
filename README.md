@@ -3585,11 +3585,11 @@ Na engenharia de software, um padrão de projeto ou padrões de design (design p
 
 Os padrões de design mais comuns que podem ser implementados em Java, assim como na maioria das linguagens de programação, estão organizados em três categorias principais. Abaixo, veja o que você precisa saber sobre os padrões de cada uma delas: 
 
-- Criacional (creational): Responsáveis pela criação de objetos, oferecendo maior flexibilidade e abstração no processo de instanciação.
+- Creational (criacional): Responsáveis pela criação de objetos, oferecendo maior flexibilidade e abstração no processo de instanciação.
 
 - Structural (estrutural): Dizem respeito à composição de classes e objetos para formar estruturas maiores e mais eficientes.
 
-- Behavioral (comportamental): Lidam com a comunicação e interação entre objetos, definindo padrões de fluxo de responsabilidade.
+- Behavioural (comportamental): Lidam com a comunicação e interação entre objetos, definindo padrões de fluxo de responsabilidade.
 
 Mas primeiro, o que é um padrão de design? Um padrão de design pode ser pensado como uma solução razoável que pode ser aplicada a cenários comuns de programação; como desenvolvedor, você encontrará padrões de design em toda parte. A API do Java sozinha resolve a maioria de seus desafios de programação com diferentes padrões de design; podemos pensar em um padrão de design como uma solução para um problema comum e também como uma estrutura que tornará o código mais fácil de manter. Por último, mas não menos importante, ele fornece mais credibilidade para o código, tornando-o mais fácil de ler.
 
