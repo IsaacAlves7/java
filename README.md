@@ -2238,6 +2238,12 @@ public class Login {
    public String getNome(){
      return nome;
    }
+
+   public void setNome(String no){
+      if(!no.isEmpty()){
+         nome = no;
+      }
+   }
 }
 ```
 
