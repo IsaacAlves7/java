@@ -2225,6 +2225,11 @@ public class Login {
    public int verificaLogin(String nolog, String sem){
      int na = 0;
      if(nolog.equals("carneiro5") && sen.equals("123456")){
+       na = 10;
+       setNome("André");
+     }
+     else {
+       na = 0;
      }
    }
 }
