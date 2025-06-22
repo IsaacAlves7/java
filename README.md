@@ -1395,7 +1395,7 @@ public class AppAluno { // Declaração e início da classe
 
 - Como sabemos que um CR não pode ser negativo, a atribuição não será realizada, assim como a tentativa de realizar a atribuição de um CR maior do que `10` (dez) também não permitirá que a atribuição ocorra.
 
-**Apenas atribuições com valores válidos poderão ser realizadas neste caso.**
+Apenas atribuições com valores válidos poderão ser realizadas neste caso.
 
 O **Métodos Getters** são métodos especiais que retornam o valor armazenado no atributo, evitando acesso direto a ele pela aplicação. Assim como visto no método Setter, a proteção do atributo (`private`) fará com que a aplicação não tenha acesso direto a ele, fazendo com que seja necessário um método público para recuperar o valor atribuído ao mesmo.
 
