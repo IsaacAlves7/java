@@ -2244,6 +2244,33 @@ public class Login {
          nome = no;
       }
    }
+
+   public String getIdentidade(){
+     return identidade;
+   }
+
+   public void setIdentidade(String iden){
+      if(!iden.isEmpty()){
+         identidade = iden;
+      }
+   }
+
+   public String getIdade(){
+     return idade;
+   }
+
+   public void setIdade(int ida){
+      if(ida > 0){
+         idade = ida;
+      }
+   }
+
+   // Imprimir() method
+   public void imprimir(){
+     System.out.println("Pessoa: " + nome);
+     System.out.println("Identidade: " + identidade);
+     System.out.println("Idade: " + idade);
+   }
 }
 ```
 
