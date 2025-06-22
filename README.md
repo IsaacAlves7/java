@@ -566,9 +566,7 @@ String nome = “João da Silva”;
 ```
 
 # ☕ [Java] Constantes e variáveis
-Variáveis e constantes em Java devem **obrigatoriamente possuir um tipo**. Isso ocorre porque **Java é uma linguagem de programação fortemente tipada**.
-
-Linguagens de programação fortemente tipadas Obrigam que todas as variáveis e constantes sejam definidas por um tipo de dado.
+**Variáveis** e **constantes** em Java devem obrigatoriamente possuir um tipo. Isso ocorre porque Java é uma linguagem de programação fortemente tipada. Linguagens de programação fortemente tipadas Obrigam que todas as variáveis e constantes sejam definidas por um tipo de dado.
 
 Linguagens de programação fracamente tipadas permitem que variáveis sejam usadas a qualquer momento, sem a necessidade de terem um tipo predefinido. Isso quer dizer que o tipo de dado pode variar em diferentes partes do programa.
 
