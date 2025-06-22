@@ -2233,7 +2233,11 @@ public class Login {
      }
      return na;
    }
+
    // Getters & Setters
+   public String getNome(){
+     return nome;
+   }
 }
 ```
 
