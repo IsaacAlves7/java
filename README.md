@@ -2295,13 +2295,98 @@ Imagine a situação: você tem um novo cliente, e seus funcionários fazem o `l
 A sua classe não iria funcionar com este novo contexto. Neste caso, a programação orientada a objetos nos ajuda muito, pois faremos uma atualização na classe `Login` e ela será capaz, não só de atender a esta nova demanda, mas de continuar a atender os antigos clientes.
 
 Classe Atualizada: `Login`
-![code](https://user-images.githubusercontent.com/61624336/120578541-5dee3800-c3fc-11eb-98a9-cc027d250441.png)
 
 ```java
+public class Login {
 
+    String nome;
+    String nomeLogin;
+    String senha;
+    int nivelAcesso; // nível de acesso do usuário ao sistema
+
+    public Login(String nL, String s) {
+        setNivelAcesso(verificaLogin(nL, s));
+    }
+
+    public Login(String nL, String s, int token) {
+        setNivelAcesso(verificaLogin(nL, s, token));
+    }
+
+    public int verificaLogin(String noLog, String sen) {
+        int na = 0;
+        if (noLog.equals("carneiro5") && sen.equals("123456")) {
+            na = 10;
+            setNome("André");
+        } else {
+            na = 0;
+        }
+        return na;
+    }
+
+    public int verificaLogin(String noLog, String sen, int tk) {
+        int na = 0;
+        if (noLog.equals("pereira") && sen.equals("246810") &&
+            verificarToken(tk)) {
+            na = 8;
+            setNome("Maria");
+        } else {
+            na = 0;
+        }
+        return na;
+    }
+
+    public boolean verificarToken(int tk) {
+        if (tk == 1000 || tk == 2000 || tk == 3000) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String no) {
+        if (!no.isEmpty()) {
+            nome = no;
+        }
+    }
+
+    public String getNomeLogin() {
+        return nomeLogin;
+    }
+
+    public void setNomeLogin(String nL) {
+        if (!nL.isEmpty()) {
+            nomeLogin = nL;
+        }
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String sem) {
+        if (!sem.isEmpty()) {
+            senha = sem;
+        }
+        this.senha = senha;
+    }
+
+    public int getNivelAcesso() {
+        return nivelAcesso;
+    }
+
+    public void setNivelAcesso(int na) {
+        if (na >= 0) {
+            nivelAcesso = na;
+        }
+    }
+}
 ```
 
-Aplicação: AppLogin com um objeto usando o novo construtor
+Aplicação: `AppLogin` com um objeto usando o novo construtor
 
 ![code1](https://user-images.githubusercontent.com/61624336/120578549-60e92880-c3fc-11eb-89fe-8998386427fc.png)
 
