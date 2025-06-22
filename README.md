@@ -2274,10 +2274,20 @@ public class Login {
 
 `AppLogin.java`
 
-![code](https://user-images.githubusercontent.com/61624336/120427380-30e04d80-c348-11eb-8bc3-e7a533fd602b.png)
-
 ```java
+public class AppLogin {
+  public static void main(String[] args){
+  // TODO Auto-generated method stub
+  Login lg1 = new Login("carneiro5", "123456");
+  System.out.println("O seu nome é: " + lg1.getNome());
 
+  System.out.println("O seu nivel de acesso é: " + lg1.getNivelAcesso());
+  Login lg2 = new Login("kkj", "000000");
+
+  System.out.println("O seu nome é: " + lg2.getNome());
+  System.out.println("O seu nivel de acesso é: " + lg2.getNivelAcesso());
+  }
+}
 ```
 
 Imagine a situação: você tem um novo cliente, e seus funcionários fazem o `login` não apenas com o nome de `login` e a `senha`, mas também utilizando um dispositivo eletrônico para geração de senhas (`token`).
