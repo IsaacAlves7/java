@@ -570,7 +570,7 @@ String nome = “João da Silva”;
 
 Linguagens de programação fracamente tipadas permitem que variáveis sejam usadas a qualquer momento, sem a necessidade de terem um tipo predefinido. Isso quer dizer que o tipo de dado pode variar em diferentes partes do programa.
 
-**Variáveis** são declaradas por meio de *um tipo* e *um identificador*, sem que sejam necessárias outras informações. A boa prática em programação Java determina que todas as variáveis comecem por letras minúsculas e, somente se tiver mais de uma palavra, o inicial da segunda palavra em diante deverá começar por letras maiúsculas. 
+**Variáveis** são declaradas por meio de um tipo e um identificador, sem que sejam necessárias outras informações. A boa prática em programação Java determina que todas as variáveis comecem por letras minúsculas e, somente se tiver mais de uma palavra, o inicial da segunda palavra em diante deverá começar por letras maiúsculas. 
 
 Exemplos:
 
