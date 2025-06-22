@@ -2232,9 +2232,9 @@ public class Login {
 
 ```
 
-Imagine a situação: você tem um *novo cliente*, e seus funcionários fazem o login não apenas com o nome de login e a senha, mas também utilizando um dispositivo eletrônico para geração de senhas (token).
+Imagine a situação: você tem um novo cliente, e seus funcionários fazem o `login` não apenas com o nome de `login` e a `senha`, mas também utilizando um dispositivo eletrônico para geração de senhas (`token`).
 
-A sua classe não iria funcionar com este novo contexto. Neste caso, a programação orientada a objetos nos ajuda muito, pois faremos uma atualização na classe Login e ela será capaz, não só de atender a esta nova demanda, mas de continuar a atender os antigos clientes.
+A sua classe não iria funcionar com este novo contexto. Neste caso, a programação orientada a objetos nos ajuda muito, pois faremos uma atualização na classe `Login` e ela será capaz, não só de atender a esta nova demanda, mas de continuar a atender os antigos clientes.
 
 Classe Atualizada: `Login`
 ![code](https://user-images.githubusercontent.com/61624336/120578541-5dee3800-c3fc-11eb-98a9-cc027d250441.png)
@@ -2302,12 +2302,12 @@ A programação orientada a objetos tem como um dos principais pilares o "reapro
 
 A **herança** é um conceito muito importante que *possibilita identificar duas ou mais classes que possuam semelhanças*. Estas podem ser definidas através de *uma hierarquia*, em que os membros comuns às **duas ou mais classes passam para uma nova classe**, conhecida como **Superclasse** ou **classe “mãe”**.
 
-Já as **classes originais** permanecerão apenas com os membros não comuns, sendo denominadas **Subclasses** ou **classes “filhas”**. Ao aplicar este conceito, podemos trabalhar com uma hierarquia entre as classes, em que as de **maior hierarquia** *aglutinam os membros comuns* e as de **menor hierarquia** possuem *apenas membros distintos entre elas*.
+Já as **classes originais** permanecerão apenas com os membros não comuns, sendo denominadas **Subclasses** ou **classes “filhas”**. Ao aplicar este conceito, podemos trabalhar com uma hierarquia entre as classes, em que as de **maior hierarquia** aglutinam os membros comuns e as de **menor hierarquia** possuem *apenas membros distintos entre elas*.
 
 Em algumas linguagens de programação no conceito de POO se trabalha muito com os dois tipos de herança. Entretanto, a linguagem Java não trabalha com Heranças múltiplas, somente com herança simples.
 
 ## [Java] Herança Simples
-Em Java, temos **apenas** a implementação da *herança simples*. A **herança simples** se caracteriza por cada classe herdar sempre de apenas uma outra classe por vez. Devemos observar que, mesmo que tenhamos uma sequência de classes herdando, em que uma herda da outra, ainda assim, temos a herança simples, que pode ser observada nos exemplos das figuras a seguir:
+Em Java, temos apenas a implementação da herança simples. A **herança simples** se caracteriza por cada classe herdar sempre de apenas uma outra classe por vez. Devemos observar que, mesmo que tenhamos uma sequência de classes herdando, em que uma herda da outra, ainda assim, temos a herança simples, que pode ser observada nos exemplos das figuras a seguir:
 
 ![img02](https://user-images.githubusercontent.com/61624336/120694581-c979e900-c480-11eb-8366-93a82d90a124.jpg)
 
