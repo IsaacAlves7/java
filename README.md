@@ -2492,6 +2492,8 @@ double calculo(double, double, double)
 ```
 	
 # ☕ [Java] Herança
+<img src="https://img.shields.io/badge/Java-class_diagram-25A162?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-crimson?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-25A162?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-crimson?style=flat&logo=diagramsdotnet&logoColor=white">
+
 A programação orientada a objetos tem como um dos principais pilares o "reaproveitamento de código". <b>Reaproveitar o código</b> significa menos esforço em seu desenvolvimento e mais facilidade na manutenção do sistema. Ao evitarmos a redundância de código, fica mais fácil gerar alterações, uma vez que não precisaremos modificá-lo em vários locais diferentes.
 
 A **herança** é um conceito muito importante que possibilita identificar duas ou mais classes que possuam semelhanças. Estas podem ser definidas através de uma hierarquia, em que os membros comuns às duas ou mais classes passam para uma nova classe, conhecida como **Superclasse** ou **classe “mãe”**.
