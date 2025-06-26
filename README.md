@@ -1729,6 +1729,11 @@ public class Pessoa {
     setIdentidade(identidade);
     setIdade(idade);
   }
+
+  // Getters and Setters - Nome
+  public String getNome(){
+    return nome;
+  }  
 }
 ```
 
