@@ -1819,6 +1819,8 @@ public Carro ( ) { }
 Quando não temos um construtor em uma classe, um construtor VAZIO é criado no processo de compilação.
 
 # ☕ [Java] Polimorfismo
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
 **Polimorfismo** quer dizer muitas formas. O **polimorfismo de sobrecarga** permite o emprego de operadores e identificadores de várias formas, sendo então necessária uma contextualização para que seja realizada a operação adequada. Este contexto está ligado ao emprego do operador, método etc., de acordo com uma situação.
 
 Polimorfismo de sobrecarga de operadores:
@@ -3298,6 +3300,8 @@ Caso seja necessária alguma alteração específica, basta alterar a classe afe
 Temos então um melhor controle sobre a aplicação e maior facilidade de manutenção de todo o sistema.
 
 # ☕ [Java] Encapsulamento
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
 O **encapsulamento** permite uma classe encapsular atributos e métodos, ocultando os detalhes de implementação dos objetos. Trabalharemos também os tipos de visibilidade de membros de uma classe: <code>public</code>, <code>protected</code>, <code>private</code> e <code>package</code>. Desenvolveremos uma aplicação utilizando o conceito de encapsulamento em conjunto com os conceitos de herança e agregação.
 
 No desenvolvimento de aplicações, temos situações nas quais a segurança é muito importante. Em muitas situações os membros de uma classe (atributos e métodos) precisam ter o seu acesso restringido para que não sejam burlados por meio das aplicações. Esse processo de limitação de acesso aos membros de uma classe é chamado de **Programação Orientada a Objetos de Encapsulamento**.
