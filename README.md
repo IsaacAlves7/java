@@ -2519,17 +2519,14 @@ Vejamos um exemplo: Sejam as três classes a seguir referentes a uma empresa:
 <tr>
   <td><b>Funcionário</b></td>
   <td>
-   Identidade: texto
-
-   Nome: texto
-
-   Matrícula: texto
-
-   Salário: real
-
-   Setor: texto
-
-   NomeGerente: texto
+    <ul>
+     <li>Identidade: texto</li>
+     <li>Nome: texto</li>
+     <li>Matrícula: texto</li>
+     <li>Salário: real</li>
+     <li>Setor: texto</li>
+     <li>NomeGerente: texto</li>
+    </ul>
   </td>
   <td>
     <ul>
