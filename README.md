@@ -1892,6 +1892,8 @@ public int area(int base, int altura){
 ```
 
 ## [Java] Assinaturas
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
 Esses dois métodos podem conviver na mesma classe, uma vez que eles possuem diferentes *assinaturas*. A **assinatura de um método** é determinada pelo tipo de parâmetros e pela ordem em que estes foram declarados. Desta forma, a assinatura do primeiro método é:
 
 ```java
@@ -1922,6 +1924,8 @@ System.out.println("Área = " + area( 5, 6 ));
 > Com o uso da sobrecarga de métodos você poderá criar quantos métodos com o mesmo identificador (nome) quiser em uma mesma classe, desde que eles **não possuam a mesma assinatura de método**.
 
 ## [Java] Métodos
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
 Se quisesse incluir um método para calcular a área de uma circunferência, você não poderia incluir nesta classe, pois ele teria a mesma assinatura do método do cálculo da área do quadrado:
 
 ```java
@@ -1997,6 +2001,7 @@ int j = meuMetodo("Casa", 2.25, 2);
 Os valores armazenados em `g`, `h`, `i` e `j` serão respectivamente: `1, 2, 3 e 4`.
 
 ## [Java] A sobrecarga de métodos construtores
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
 
 **Métodos construtores** são métodos e também podem ser sobrecarregados. Uma classe que possui mais de um método construtor é uma classe que oferece diferentes formas de criação para os seus objetos.
 
@@ -2249,6 +2254,8 @@ public class AppCarroNovo{
 > 4. Ambas as aplicações funcionaram apesar da alteração;
 
 ## [Java] Polimorfismo de sobrecarga e a evolução das classes
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
 Com o **polimorfismo de sobrecarga** podemos criar diferentes implementações para métodos com o mesmo identificador (nome) em uma mesma classe.
 
 Vamos imaginar que uma classe chamada `Login` fosse usada por vários de seus sistemas:
@@ -2527,6 +2534,8 @@ Em Java, temos apenas a implementação da herança simples. A **herança simple
 > Em todos os casos, temos sempre a *herança simples*, pois cada classe sempre herda **apenas** da sua *classe superior*, mesmo se incluirmos novos níveis.
 
 ## [Java] Herança Múltipla
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
 A **herança múltipla** se caracteriza quando uma mesma classe herda de duas ou mais classes ao mesmo tempo. Java não permite a implementação da herança múltipla; mesmo este sendo um conceito da programação orientada a objetos, algumas linguagens de programação não implementam este conceito. A linguagem C permite a implementação de herança múltipla, mas Java e C#, por exemplo, não permitem esta implementação.
 
 A herança múltipla pode ser observada nos exemplos das figuras a seguir:
@@ -2878,6 +2887,8 @@ Cliente
 </pre>
 
 ## [Java] Herança de métodos construtores
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
 Vamos analisar os métodos construtores da classe `Cliente`:
 
 ```java
@@ -2999,6 +3010,7 @@ Ao reaproveitar o método `imprimir` da Superclasse, temos dois ganhos muito imp
 A **herança** é um conceito importantíssimo da programação orientada a Objetos, permitindo que reaproveitemos membros Superclasse, que serão herdados pelas Subclasses, evitando redundância de códigos, além de facilitar a manutenção das nossas classes, uma vez que qualquer necessidade de mudança implicará na alteração de apenas uma classe.
 
 # ☕ [Java] Particionamento
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
 
 <table align="right">
   <tr>
