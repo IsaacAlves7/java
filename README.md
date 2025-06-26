@@ -2582,14 +2582,23 @@ Classe `Gerente` sem o uso do conceito de herança:
 
 ![code](https://user-images.githubusercontent.com/61624336/120906829-12719f00-c633-11eb-875f-7ca163c6e07c.png)
 
+```java
+
+```
+
 Classe `Funcionário` sem o uso do conceito de herança:
 
 ![code1](https://user-images.githubusercontent.com/61624336/120907573-1b656f00-c639-11eb-9eb6-5383db64336f.png)
+
+```java
+
+```
 
 Classe `Cliente` sem o uso do conceito de herança:
 
 Vamos a algumas perguntas:
 
+```txt
 - Se for necessário incluir um novo atributo com o `CPF` em todas as classes?
 Resposta: Teremos que alterar todas as classes, dificultando a manutenção.
 
@@ -2598,6 +2607,7 @@ Resposta: Será necessário alterar as classes `Gerente` e `Funcionário`.
 
 - Se for necessário incluir a data da primeira compra do cliente?
 Resposta: Será necessário alterar apenas a classe `Cliente`.
+```
 
 Vamos guardar estas perguntas e repeti-las após a aplicação da herança.
 
