@@ -1843,8 +1843,8 @@ public int area(int base, int altura){
 }
 ```
 
-# ☕ [Java] Assinaturas
-Esses **dois métodos podem conviver na mesma classe**, uma vez que eles possuem **diferentes assinaturas**. A **assinatura de um método** é determinada pelo *tipo de parâmetros* e pela *ordem em que estes foram declarados*. Desta forma, a assinatura do primeiro método é:
+## [Java] Assinaturas
+Esses dois métodos podem conviver na mesma classe, uma vez que eles possuem diferentes *assinaturas*. A **assinatura de um método** é determinada pelo tipo de parâmetros e pela ordem em que estes foram declarados. Desta forma, a assinatura do primeiro método é:
 
 ```java
 area ( int );
