@@ -1733,7 +1733,42 @@ public class Pessoa {
   // Getters and Setters - Nome
   public String getNome(){
     return nome;
-  }  
+  }
+
+  public void setNome(String no) {
+    if(!no.isEmpty()) {
+      nome = no;
+    }
+  }
+
+  // Getters and Setters - Identidade
+  public String getIdentidade(){
+    return identidade;
+  }
+
+  public void setIdentidade(String iden) {
+    if(!iden.isEmpty()) {
+      identidade = iden;
+    }
+  }
+
+  // Getters and Setters - Idade
+  public String getIdade(){
+    return identidade;
+  }
+
+  public void setIdade(String ida) {
+    if(ida > 0) {
+      idade = ida;
+    }
+  }
+
+  // Método imprimir()
+  public void imprimir() {
+    System.out.println("Pessoa: " + nome);
+    System.out.println("RG: " + identidade);
+    System.out.println("Idade: " + idade);
+  }
 }
 ```
 
