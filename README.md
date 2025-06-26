@@ -2621,11 +2621,162 @@ Logo, iremos aplicar esse conceito:
 
 Classe `Pessoa` com o uso do conceito de herança (SuperClasse):
 
-![code](https://user-images.githubusercontent.com/61624336/120913193-89c32500-c66b-11eb-94b9-669f12caa596.png)
+```java
+import java.util.Scanner;
+
+public class Pessoa {
+    // Atributos
+    String identidade, nome;
+
+    // Getters and Setters
+
+    // Identidade
+    public String getIdentidade() {
+        return identidade;
+    }
+
+    public void setIdentidade(String id) {
+        if (!id.isEmpty()) {
+            identidade = id;
+        }
+    }
+
+    // Nome
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String no) {
+        if (!no.isEmpty()) {
+            nome = no;
+        }
+    }
+
+    // Métodos Construtores
+    public Pessoa() { }
+
+    public Pessoa(String id) {
+        setIdentidade(id);
+    }
+
+    public Pessoa(String id, String no) {
+        setIdentidade(id);
+        setNome(no);
+    } // Só podemos criar 3 construtores para a classe Pessoa
+
+    public void cadastrar(String id, String no) {
+        setIdentidade(id);
+        setNome(no);
+    }
+
+    public void entradaDados() {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Identidade :");
+        setIdentidade(entrada.nextLine());
+
+        System.out.println("Nome :");
+        setNome(entrada.nextLine());
+
+        entrada.close();
+    }
+
+    public void imprimir() {
+        System.out.println("Identidade :" + getIdentidade());
+        System.out.println("Nome :" + getNome());
+    }
+}
+```
 
 Classe `PessoaEmpresa` com o uso do conceito de herança (SubClasse de `Pessoa`):
 
-![code](https://user-images.githubusercontent.com/61624336/120913772-fe985e00-c66f-11eb-8a5f-29f525201230.png)
+```java
+import java.util.Scanner;
+
+public class PessoaEmpresa extends Pessoa {
+    // Atributos
+    String matricula;
+    double salario;
+
+    // Getters and Setters \\
+
+    // Matricula
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String ma) {
+        if (!ma.isEmpty()) {
+            matricula = ma;
+        }
+    }
+
+    // Salario
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double sa) {
+        if (sa >= 0) {
+            salario = sa;
+        }
+    }
+
+    // Constructor Methods
+
+    public PessoaEmpresa() { }
+
+    public PessoaEmpresa(String id) {
+        super(id);
+    }
+
+    public PessoaEmpresa(double sa) {
+        setSalario(sa);
+    }
+
+    public PessoaEmpresa(String id, double sa) {
+        super(id);
+        setSalario(sa);
+    }
+
+    public PessoaEmpresa(double sa, String id) {
+        super(id);
+        setSalario(sa);
+    }
+
+    public PessoaEmpresa(String id, String no, String ma, double sa) {
+        super(id, no);
+        setMatricula(ma);
+        setSalario(sa);
+    }
+
+    public void cadastrar(String id, String no, String ma, double sa) {
+        super.cadastrar(id, no);
+        setMatricula(ma);
+        setSalario(sa);
+    }
+
+    public void entradaDados() {
+        Scanner entrada = new Scanner(System.in);
+
+        super.entradaDados();
+
+        System.out.println("Matricula :");
+        setMatricula(entrada.nextLine());
+
+        System.out.println("Salário :");
+        setSalario(Double.parseDouble(entrada.nextLine()));
+
+        entrada.close();
+    }
+
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Matricula :" + getMatricula());
+        System.out.println("Salário :" + getSalario());
+    }
+}
+```
 
 Classe `Gerente` com o uso do conceito de herança (SubClasse de `PessoaEmpresa`):
 
@@ -2679,7 +2830,7 @@ Cliente
 ## [Java] Herança de métodos construtores
 Vamos analisar os métodos construtores da classe `Cliente`:
 
-```sh
+```java
 // Métodos construtores
 public Cliente() { }
 
