@@ -2542,15 +2542,13 @@ Vejamos um exemplo: Sejam as três classes a seguir referentes a uma empresa:
 <tr>
   <td><b>Cliente</b></td>
   <td>
-    Identidade: texto
-	  
-    Nome: texto
-    
-    CódigoCliente: texto
-    
-    Idade: inteiro
-    
-    Telefone: texto
+    <ul>
+      <li>Identidade: texto</li>
+      <li>Nome: texto</li>
+      <li>CódigoCliente: texto</li>
+      <li>Idade: inteiro</li>
+      <li>Telefone: texto</li>
+     </ul>
   </td>
   <td>
      <ul>
