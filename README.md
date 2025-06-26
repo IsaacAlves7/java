@@ -1714,8 +1714,6 @@ Características dos métodos construtores:
 
 `Pessoa.java`
 
-![code](https://user-images.githubusercontent.com/61624336/120386438-fef6c900-c2fe-11eb-81f3-359dcbaf7019.png)
-
 ```java
 public class Pessoa {
   // Attributes
