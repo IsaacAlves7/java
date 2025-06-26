@@ -2679,7 +2679,42 @@ Cliente
 ## [Java] Herança de métodos construtores
 Vamos analisar os métodos construtores da classe `Cliente`:
 
-![code](https://user-images.githubusercontent.com/61624336/120968564-68336d80-c73f-11eb-8327-c36c4c87a0cd.png)
+```sh
+// Métodos construtores
+public Cliente() { }
+
+public Cliente(String id) {
+  super(id);
+}
+
+public Cliente(int id) {
+  setIdade(id);
+}
+
+public Cliente(String id, int ida) {
+  super(id);
+  setIdade(id);
+}
+
+public Cliente(int ida, String id) {
+  super(id);
+  setIdade(id);
+}
+
+public Cliente(String id, String no, String cc, String tf, int ida) {
+  super(id, no);
+  setCodigoCliente(cc);
+  setTelefone(tf);
+  setIdade(ida);
+}
+
+public void cadastrar(String id, String no, String cc, String tf, int ida) {
+  super.cadastrar(id, no);
+  setCodigoCliente(cc);
+  setTelefone(tf);
+  setIdade(ida);
+}
+```
 
 Alguns destes métodos repassam os parâmetros recebidos para a **Superclasse**, através da palavra reservada <code>super</code>. Esta instrução diz ao compilador que o(s) parâmetro(s) será(ão) repassado(s) a um método construtor com a mesma assinatura na SuperClasse.
 
