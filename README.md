@@ -3099,60 +3099,49 @@ Vamos determinar poucos atributos para cada uma delas, apenas para entendermos m
   <tr>
    <td>PlacaMae</td>
    <td>
-       Marca : texto
-       
-       Modelo : texto
-       
-       Preco : real
-       
-       TipoProcessador : texto
-       
+      <ul>
+        <li>Marca : texto</li>
+	<li>Modelo : texto</li>
+	<li>Preco : real</li>
+	<li>TipoProcessador : texto</li>
+     </ul>
    </td>
   </tr>
   
   <tr>
    <td>HD</td>
    <td>
-     	Marca : texto
-      
-      Modelo : texto
-      
-      Preco : real
-      
-      Tipo : texto
-      
-      Capacidade : inteiro
+      <ul>
+     	<li>Marca : texto</li>
+        <li>Modelo : texto</li>
+	<li>Preco : real</li>
+	<li>Tipo : texto</li>
+	<li>Capacidade : inteiro</li>
+     </ul>
    </td>
   </tr>
   
   <tr>
     <td>PlacaVideo</td>
     <td>
-    
-    Marca : texto
-    
-    Modelo : texto
-
-    Preco : real
-    
-    Padrão : texto
-    
+      <ul>
+     	<li>Marca : texto</li>
+     	<li>Modelo : texto</li>
+     	<li>Preco : real</li>
+     	<li>Padrão : texto</li>
+     </ul>
     </td>
   </tr>
   <tr>
     <td>Memoria</td>
     <td>
-    
-    Marca : texto
-    
-    Modelo : texto
-    
-    Preco : real
-    
-    Tipo : texto
-    
-    Capacidade : inteiro
-    
+      <ul>
+     	<li>Marca : texto</li>
+     	<li>Modelo : texto</li>
+     	<li>Preco : real</li>
+     	<li>Tipo : texto</li>
+     	<li>Capacidade : inteiro</li>
+     </ul>
     </td>
    
   </tr>
