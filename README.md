@@ -3214,7 +3214,9 @@ public class Memoria {
 Outro ponto muito importante é que todas essas classes criadas através do particionamento poderão ser reaproveitadas para as classes `Notebook` e `Servidor`. Dessa forma, a nossa biblioteca de classes poderá criar novos objetos quando reunida em conjunto.
 
 # ☕ [Java] Agregação
-A programação orientada a objetos nos ajuda a resolver de forma mais simples problemas com alta complexidade. A **agregação de classes** é um conceito voltado a facilitar a solução de problemas muito complexos. Podemos *dividir* uma classe em classes menores, particionando esta classe em diversas outras classes mais simples, para posteriormente as reunirmos em conjunto, formando uma classe maior e mais complexa.
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
+A programação orientada a objetos nos ajuda a resolver de forma mais simples problemas com alta complexidade. A **agregação de classes** é um conceito voltado a facilitar a solução de problemas muito complexos. Podemos dividir uma classe em classes menores, particionando esta classe em diversas outras classes mais simples, para posteriormente as reunirmos em conjunto, formando uma classe maior e mais complexa.
 
 A reunião de uma ou mais classes para formar novas classes é chamada de agregação. Uma nova classe pode ser formada por um conjunto de diferentes objetos. Seguindo nosso exemplo, poderíamos reaproveitar as classes `PlacaMae`, `HD`, `PlacaVideo`, e `Memória` para criar novas classes, como `Desktop`, `Notebook` e `Servidor`, como nos exemplos a seguir:
 
@@ -3509,9 +3511,11 @@ Exemplos de visibilidade de membros:
 Como vimos, o encapsulamento determina a **visibilidade de classes** ou de **seus membros**. É comum protegermos os atributos de uma classe para que eles não tenham *acesso direto*, e os *valores* a serem atribuídos possam ser analisados por um método antes da atribuição.
 
 # ☕ [Java] Pacotes
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
 **Pacotes**, em Java, são usados para facilitar o armazenamento e controle da biblioteca de classes. Como vimos até o momento, nossa biblioteca de classes vem crescendo e, dessa forma, várias classes foram criadas e estão em diferentes locais. É necessário organizarmos nossas classes e, para isso, podemos usar os pacotes.
 
-Pacotes não passam de uma *estrutura de diretórios* em que colocamos as nossas classes por afinidade. Por afinidade devemos entender que são classes com algum tipo de aderência, similaridade ou que pertencem a um mesmo assunto.
+Pacotes não passam de uma estrutura de diretórios em que colocamos as nossas classes por afinidade. Por afinidade devemos entender que são classes com algum tipo de aderência, similaridade ou que pertencem a um mesmo assunto.
 
 No projeto criado para nossos exemplos dessa unidade, temos a seguinte estrutura:
 
