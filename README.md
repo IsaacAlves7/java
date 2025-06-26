@@ -3939,7 +3939,7 @@ Se você está em um projeto Android, inclusive, o Gradle já é o sistema de bu
 
 <img src="https://github.com/user-attachments/assets/af8e214d-8228-4527-ac3f-5849ff7119c4" align="right" height="77">
 
-**SonarQube** é uma plataforma de análise contínua da qualidade do código-fonte. Ele examina seu código em busca de bugs, vulnerabilidades de segurança, duplicações, má formatação, complexidade excessiva, falhas em padrões de codificação e muito mais. Seu principal objetivo é ajudar equipes de desenvolvimento a manterem um código limpo, seguro e sustentável ao longo do tempo.
+**SonarQube** é uma plataforma de análise contínua da qualidade do código-fonte. Ele examina seu código em busca de bugs, vulnerabilidades de segurança, duplicações, má formatação, complexidade excessiva, falhas em padrões de codificação e muito mais. Seu principal objetivo é ajudar equipes de desenvolvimento a manterem um código limpo, seguro e sustentável ao longo do tempo. Em resumo, SonarQube é uma ferramenta essencial para times que querem manter o código limpo, seguro e com alta manutenibilidade, funcionando como uma espécie de "fiscal automático" da qualidade do seu repositório.
 
 Quando integrado ao processo de desenvolvimento (como em pipelines de CI/CD ou IDEs), o SonarQube age como um **raio-X do projeto**, apontando problemas antes que eles virem dívida técnica ou bugs em produção. Ele suporta diversas linguagens, incluindo Java, JavaScript, Python, C#, C/C++, Kotlin, TypeScript, entre muitas outras.
 
@@ -3949,10 +3949,9 @@ O SonarQube também se integra com ferramentas como **Maven**, **Gradle**, **Jen
 
 A ideia central do SonarQube é **criar uma cultura de qualidade de software**, onde cada commit, pull request ou build é avaliado com critérios automáticos e objetivos — evitando que más práticas ou falhas passem despercebidas e se acumulem.
 
-Em resumo, **SonarQube é uma ferramenta essencial para times que querem manter o código limpo, seguro e com alta manutenibilidade**, funcionando como uma espécie de "fiscal automático" da qualidade do seu repositório.
-
-
 # 🤖 [Java] Primefaces
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
 <img src="https://user-images.githubusercontent.com/61624336/192927385-5a585bf9-2cac-4344-89b4-f0d194cac6b5.svg" height="77" align="right">
 
 O **PrimeFaces** é uma biblioteca de componentes de interface de usuário (UI) de código aberto que é usada no desenvolvimento de aplicativos web Java Enterprise Edition (Java EE). Ela fornece uma ampla variedade de componentes de interface de usuário ricos e predefinidos que podem ser facilmente incorporados em aplicativos web Java, permitindo aos desenvolvedores criar interfaces de usuário atraentes e funcionais de maneira eficiente.
@@ -3972,6 +3971,8 @@ Alguns dos principais recursos e componentes fornecidos pelo PrimeFaces incluem:
 O PrimeFaces é uma opção popular para o desenvolvimento de aplicativos web Java que desejam fornecer interfaces de usuário ricas e interativas. Ele é amplamente usado em várias indústrias e fornece uma base sólida para a criação de aplicativos web empresariais.
 
 # 🧩 [Java] Design Patterns
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
 Na engenharia de software, um **padrão de projeto** ou **padrões de design** (design patterns) de software é uma solução geral e reutilizável para um problema comum dentro de um determinado contexto no projeto de software no nível do código-fonte. Não é um projeto acabado que pode ser transformado diretamente em código-fonte ou código de máquina. Se você é um desenvolvedor, é importante que você saiba qual é o princípio do SOLID e como um design pattern (padrão de design) deve resolver problemas regulares. Portanto, Design Patterns (Padrões de Projeto) são sobre design de software, eles representam soluções reutilizáveis para problemas recorrentes no desenvolvimento de software, oferecendo uma forma estruturada e eficiente de abordar desafios comuns de design.
 
 Os padrões de design mais comuns que podem ser implementados em Java, assim como na maioria das linguagens de programação, estão organizados em três categorias principais. Abaixo, veja o que você precisa saber sobre os padrões de cada uma delas: 
