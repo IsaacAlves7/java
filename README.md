@@ -3496,9 +3496,19 @@ Alguns destes métodos repassam os parâmetros recebidos para a **Superclasse**,
 
 Assim, o método:
 
-![code](https://user-images.githubusercontent.com/61624336/120941213-d2282480-c6f7-11eb-89e7-37ff6e1364ab.png)
-![code](https://user-images.githubusercontent.com/61624336/120941168-a2791c80-c6f7-11eb-84f4-bd03dcdc2df2.png)
-![code](https://user-images.githubusercontent.com/61624336/120941234-e9ffa880-c6f7-11eb-880b-bbdf3f538fbf.png)
+```java
+public Cliente(String id) {
+  super(id);
+}
+```
+
+O `super` repassará o parâmetro `id` para o método.
+
+```java
+public Pessoa(String id) {
+  setIdentidade(id);
+}
+```
 
 O método:
 
