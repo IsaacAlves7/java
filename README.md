@@ -4120,7 +4120,82 @@ public class Identificacao {
 
 Classe Particionada `Armazenamento`:
 
-![code](https://user-images.githubusercontent.com/61624336/121126687-f3c00380-c7fe-11eb-8052-5795ca008935.png)
+```java
+import java.util.Scanner;
+
+public class Armazenamento extends Identificacao {
+    public String tipo;
+    public int capacidade;
+
+    public Armazenamento() {
+        super();
+    }
+
+    public Armazenamento(String ti, int co) {
+        setTipo(ti);
+        setCapacidade(co);
+    }
+
+    public Armazenamento(String ma, String mo) {
+        super(ma, mo);
+    }
+
+    public Armazenamento(String ma, double pa) {
+        super(ma, pa);
+    }
+
+    public Armazenamento(String ma, String mo, double pa) {
+        super(ma, mo, pa);
+    }
+
+    public Armazenamento(String ma, String mo, double pa, String ti, int co) {
+        super(ma, mo, pa);
+        setTipo(ti);
+        setCapacidade(co);
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String ti) {
+        if(!ti.isEmpty()) {
+            tipo = ti;
+        }
+    }
+
+    public int getCapacidade() {
+        return capacidade;
+    }
+
+    public void setCapacidade(int co) {
+        if(co > 0) {
+            capacidade = co;
+        }
+    }
+
+    public void cadastrar(String ma, String mo, String ti, double pa, int co) {
+        super.cadastrar(ma, mo, pa);
+        setTipo(ti);
+        setCapacidade(co);
+    }
+
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Processável: " + getTipo());
+        System.out.println("Capacidade: " + getCapacidade());
+    }
+
+    public void entradaDialogo() {
+        Scanner entrada = new Scanner(System.in);
+        super.entradaDialogo();
+        System.out.println("Tipo: ");
+        setTipo(entrada.nextLine());
+        System.out.println("Capacidade: ");
+        setCapacidade(Integer.parseInt(entrada.nextLine()));
+    }
+}
+```
 
 Classe Particionada `PlacaMae`:
 
