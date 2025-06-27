@@ -2639,8 +2639,6 @@ Vamos analisar agora as diferenças entre as versões das nossas classes com e s
 
 Classe `Gerente` sem o uso do conceito de herança:
 
-![code](https://user-images.githubusercontent.com/61624336/120906829-12719f00-c633-11eb-875f-7ca163c6e07c.png)
-
 ```java
 Claro! Abaixo está o conteúdo da imagem transcrito em Java:
 
