@@ -1726,18 +1726,33 @@ Classe `Carro`
 
 Nova solução do exercício prático, com a inclusão do método `entradaDados` na classe `Carro`:
 
-`Aluno.java`
+`Carro.java`
+
 ![code](https://user-images.githubusercontent.com/61624336/120251160-05316a80-c257-11eb-8ad1-8f93cc44a765.png)
 
 ```java
 
 ```
 
-`AppAluno.java`
-![code2](https://user-images.githubusercontent.com/61624336/120251170-0febff80-c257-11eb-8ab6-a7a026cca2f5.png)
+`AppCarro.java`
 
 ```java
+public class AppCarro {
+   public static void main (String[] args){
+      // TODO Auto-generated method stub
+      Carro car1 = new Carro();
+      car1.entradaDados();
+      car1.imprimir();
 
+      Carro car2 = new Carro();
+      car2.entradaDados();
+      car2.imprimir();
+
+      Carro car3 = new Carro();
+      car3.entradaDados();
+      car3.imprimir();
+   }
+}
 ```
 
 > [!Note]
