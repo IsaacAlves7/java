@@ -4396,7 +4396,19 @@ Exemplos de visibilidade de membros:
 - **Membros públicos**: é a forma normal para métodos de acesso (Setters e Getters).
 
 ```java
+public class MembrosPublicos {
+  public String nome;
 
+  public void setNome(String no) {
+    if(!no.isEmpty()) {
+      nome = no;
+    }
+  }
+
+ public String getNome() {
+   return nome;
+ }
+}
 ```
 
 ![code](https://user-images.githubusercontent.com/61624336/121268767-eead9380-c894-11eb-8e47-28a2e0fcfcbf.png)
