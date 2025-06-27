@@ -4411,33 +4411,76 @@ public class MembrosPublicos {
 }
 ```
 
-![code](https://user-images.githubusercontent.com/61624336/121268767-eead9380-c894-11eb-8e47-28a2e0fcfcbf.png)
-
 - **Membros com visibilidade padrão**: devemos evitar o uso do acesso padrão, para que tenhamos sempre a visibilidade definida.
 
 ```java
+public class AcessoMembrosPadrao {
+  String nome;
+  void setNome(String no) {
+    if(!no.isEmpty()) {
+      nome = no;
+    }
+  }
 
+  String getNome() {
+    return nome;
+  }
+}
 ```
-
-![code](https://user-images.githubusercontent.com/61624336/121269853-ee15fc80-c896-11eb-879f-f0806147e754.png)
 
 - **Membros privados**: é a forma normal para os atributos de classe que *não terá subclasses*, mas não é adequada para os métodos de acesso (Setters e Getters).
 
 ```java
+public class AcessoMembrosPrivados {
+  private String nome;
 
+  public void setNome(String no) {
+    nome = analisaNome(no);
+  }
+
+  public String getNome() {
+    return nome;
+  }
+
+  private String analisaNome(String no) {
+    if(!no.isEmpty()) {
+      return no;
+    }
+
+   else {
+     System.out.println("Nome não preenchido!");
+     return "";
+   }
+  }
+}
 ```
-
-![code](https://user-images.githubusercontent.com/61624336/121272705-0d178d00-c89d-11eb-9970-8d1383ec8086.png)
 
 - **Membros protegidos**: é a forma normal para os atributos de classe que terão subclasses, mas também não é adequada para os métodos de acesso (Setters e Getters).
 
 ```java
+public class AcessoMembrosProtegidos {
+  protected String nome;
 
+  public void setNome(String no) {
+    nome = analisaNome(no);
+  }
+
+  public String getNome(){
+    return nome;
+  }
+
+  protected String analisaNome(String no) {
+    if(!no.isEmpty()){
+      return no;
+    } else {
+      System.out.println("Nome não preenchido!");
+      return "";
+    }
+  }
+}
 ```
 
-![code](https://user-images.githubusercontent.com/61624336/121273141-e7d74e80-c89d-11eb-9aa5-9f2fa4ec09e6.png)
-
-Como vimos, o encapsulamento determina a **visibilidade de classes** ou de **seus membros**. É comum protegermos os atributos de uma classe para que eles não tenham *acesso direto*, e os *valores* a serem atribuídos possam ser analisados por um método antes da atribuição.
+Como vimos, o encapsulamento determina a visibilidade de classes ou de seus membros. É comum protegermos os atributos de uma classe para que eles não tenham *acesso direto*, e os *valores* a serem atribuídos possam ser analisados por um método antes da atribuição.
 
 # ☕ [Java] Pacotes
 <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
