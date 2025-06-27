@@ -3221,18 +3221,196 @@ public class Gerente extends PessoaEmpresa {
 
 Classe `Funcionário` com o uso do conceito de herança (SubClasse de `PessoaEmpresa`):
 
-![code](https://user-images.githubusercontent.com/61624336/120934666-a1cf8e80-c6d5-11eb-96c0-b28ec46734d9.png)
-
 ```java
+import java.util.Scanner;
 
+public class Funcionario {
+    // Attributes
+    String setor, nomeGerente;
+
+    // Getters and Setters
+
+    // Setor
+    public String getSetor() {
+        return setor;
+    }
+
+    public void setSetor(String se) {
+        if (!se.isEmpty()) {
+            setor = se;
+        }
+    }
+
+    // Nome do Gerente
+    public String getNomeGerente() {
+        return nomeGerente;
+    }
+
+    public void setNomeGerente(String ng) {
+        if (!ng.isEmpty()) {
+            nomeGerente = ng;
+        }
+    }
+
+    // Constructor Methods
+    public Funcionario() { }
+
+    public Funcionario(String id) {
+        super(id);
+    }
+
+    public Funcionario(double sa) {
+        super(sa);
+    }
+
+    public Funcionario(String id, double sa) {
+        super(id, sa);
+    }
+
+    public Funcionario(double sa, String id) {
+        super(id, sa);
+    }
+
+    public Funcionario(String id, String no, String ma, double sa) {
+        super(id, no, ma, sa);
+        setSetor(se);
+        setNomeGerente(ng);
+    }
+
+    public void cadastrar(String id, String no, String ma, double sa, String se, String ng) {
+        super.cadastrar(id, no, ma, sa);
+        setSetor(se);
+        setNomeGerente(ng);
+    }
+
+    // EntradaDados() Method
+    public void entradaDados() {
+        Scanner entrada = new Scanner(System.in);
+        super.entradaDados();
+
+        System.out.println("Setor: ");
+        setSetor(entrada.nextLine());
+
+        System.out.println("Nome do Gerente: ");
+        setNomeGerente(entrada.nextLine());
+    }
+
+    // Imprimir() Method
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Setor: " + getSetor());
+        System.out.println("Nome do Gerente: " + getNomeGerente());
+    }
+}
 ```
 
 Classe `Cliente` com o uso do conceito de herança (SubClasse de `Pessoa`):
 
-![code](https://user-images.githubusercontent.com/61624336/120969534-a1b8a880-c740-11eb-8ae1-4ff30254b352.png)
-
 ```java
+import java.util.Scanner;
 
+public class Cliente {
+    // Attributes
+    String codigoCliente, telefone;
+    int idade;
+
+    // Getters and Setters
+
+    // Código Cliente
+    public String getCodigoCliente() {
+        return codigoCliente;
+    }
+
+    public void setCodigoCliente(String cc) {
+        if (!cc.isEmpty()) {
+            codigoCliente = cc;
+        }
+    }
+
+    // Telefone
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String tel) {
+        if (!tel.isEmpty()) {
+            telefone = tel;
+        }
+    }
+
+    // Idade
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int id) {
+        if (id >= 0) {
+            idade = id;
+        }
+    }
+
+    // Constructor Methods
+
+    public Cliente() { }
+
+    public Cliente(String id) {
+        super(id);
+    }
+
+    public Cliente(int id) {
+        setIdade(id);
+    }
+
+    public Cliente(String id, int ida) {
+        super(id);
+        setIdade(ida);
+    }
+
+    public Cliente(int ida, String id) {
+        super(id);
+        setIdade(ida);
+    }
+
+    public Cliente(String id, String no, String cc, String tf, int ida) {
+        super(id, no);
+        setCodigoCliente(cc);
+        setTelefone(tf);
+        setIdade(ida);
+    }
+
+    public void cadastrar(String id, String no, String cc, String tf, int ida) {
+        super.cadastrar(id, no);
+        setCodigoCliente(cc);
+        setTelefone(tf);
+        setIdade(ida);
+    }
+
+    // EntradaDados() Method
+    public void entradaDados() {
+        Scanner entrada = new Scanner(System.in);
+
+        super.entradaDados();
+        System.out.println("Código do Cliente :");
+        setCodigoCliente(entrada.nextLine());
+
+        System.out.println("Telefone :");
+        setTelefone(entrada.nextLine());
+
+        System.out.println("Idade :");
+        setIdade(Integer.parseInt(entrada.nextLine()));
+
+        entrada.close();
+    }
+
+    // Imprimir() Method
+    public void imprimir() {
+        super.imprimir();
+
+        System.out.println("Código do Cliente :" + getCodigoCliente());
+        System.out.println("Telefone :" + getTelefone());
+        System.out.println("Idade :" + getIdade());
+    }
+}
 ```
 
 Vamos responder novamente às três perguntas feitas anteriormente:
