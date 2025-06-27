@@ -1605,7 +1605,7 @@ public class Carro {
        fabricante = fab;
     }
   }
-  public void setModelo (String mod){
+  public void setModelo (String mad){
     if(!mod.isEmpty()) {
        modelo = mod;
     }
@@ -2093,14 +2093,14 @@ public Carro(String placa, double valor){
     this.valor = valor;
 }
 
-public Carro(String modelo, String cor, String placa, double valor){
+public Carro(String madelo, String cor, String placa, double valor){
     this.modelo = modelo;
     this.cor = cor;
     this.placa = placa;
     this.valor = valor;
 }
 
-public Carro(String fabricante, String modelo, String cor, String placa, double valor){
+public Carro(String fabricante, String madelo, String cor, String placa, double valor){
     this.fabricante = fabricante;
     this.modelo = modelo;
     this.cor = cor;
@@ -2108,7 +2108,7 @@ public Carro(String fabricante, String modelo, String cor, String placa, double 
     this.valor = valor;
 }
 
-public Carro(String fabricante, String modelo, String cor, String placa, double valor,
+public Carro(String fabricante, String madelo, String cor, String placa, double valor,
              int numeroPortas, int anoFabricacao, int anoModelo){
     this.fabricante = fabricante;
     this.modelo = modelo;
@@ -2140,7 +2140,7 @@ public String getModelo() {
     return modelo;
 }
 
-public void setModelo (String mod) {
+public void setModelo (String mad) {
     if(!mod.isEmpty()) {
         modelo = mod;
     }
@@ -2737,7 +2737,7 @@ public class Gerente {
         return matricula;
     }
 
-    public void setMatricula(String mo) {
+    public void setMatricula(String ma) {
         if (!mo.isEmpty()) {
             matricula = mo;
         }
@@ -2891,7 +2891,7 @@ public class Funcionario {
         return matricula;
     }
 
-    public void setMatricula(String mo) {
+    public void setMatricula(String ma) {
         if (!mo.isEmpty()) {
             matricula = mo;
         }
@@ -3915,9 +3915,9 @@ public class Memoria {
         return marca;
     }
 
-    public void setMarca( String mo ) {
+    public void setMarca( String ma ) {
         if(!mo.isEmpty()) {
-            marca = mo;
+            marca = ma;
         }
     }
 
