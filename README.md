@@ -3136,15 +3136,104 @@ public class PessoaEmpresa extends Pessoa {
 
 Classe `Gerente` com o uso do conceito de herança (SubClasse de `PessoaEmpresa`):
 
-![code](https://user-images.githubusercontent.com/61624336/120914141-694a9900-c672-11eb-8825-1d677e8c40fc.png)
+```java
+import java.util.Scanner;
+
+public class Gerente extends PessoaEmpresa {
+    // Attributes
+    double percentualVenda;
+    int nivelGerente;
+
+    // Getters and Setters \\
+
+    // Percentual de Venda
+    public double getPercentualVenda() {
+        return percentualVenda;
+    }
+
+    public void setPercentualVenda(double pv) {
+        if (pv >= 0) {
+            percentualVenda = pv;
+        }
+    }
+
+    public int getNivelGerente() {
+        return nivelGerente;
+    }
+
+    public void setNivelGerente(int ng) {
+        if (ng >= 0) {
+            nivelGerente = ng;
+        }
+    }
+
+    public Gerente() { }
+
+    public Gerente(String id) {
+        super(id);
+    }
+
+    public Gerente(double sa) {
+        super(sa);
+    }
+
+    public Gerente(String id, double sa) {
+        super(id, sa);
+    }
+
+    public Gerente(double sa, String id) {
+        super(id, sa);
+    }
+
+    public Gerente(String id, String no, String ma, double sa, double pv, int ng) {
+        super(id, no, ma, sa);
+        setPercentualVenda(pv);
+        setNivelGerente(ng);
+    }
+
+    public void cadastrar(String id, String no, String ma, double sa, double pv, int ng) {
+        super.cadastrar(id, no, ma, sa);
+        setPercentualVenda(pv);
+        setNivelGerente(ng);
+    }
+
+    public void entradaDados() {
+        Scanner entrada = new Scanner(System.in);
+
+        super.entradaDados();
+
+        System.out.println("Percentual de Venda:");
+        setPercentualVenda(Double.parseDouble(entrada.nextLine()));
+
+        System.out.println("Nível Gerencia :");
+        setNivelGerente(Integer.parseInt(entrada.nextLine()));
+
+        entrada.close();
+    }
+
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Percentual de Venda:" + getPercentualVenda());
+        System.out.println("Nível Gerencia :" + getNivelGerente());
+    }
+}
+```
 
 Classe `Funcionário` com o uso do conceito de herança (SubClasse de `PessoaEmpresa`):
 
 ![code](https://user-images.githubusercontent.com/61624336/120934666-a1cf8e80-c6d5-11eb-96c0-b28ec46734d9.png)
 
+```java
+
+```
+
 Classe `Cliente` com o uso do conceito de herança (SubClasse de `Pessoa`):
 
 ![code](https://user-images.githubusercontent.com/61624336/120969534-a1b8a880-c740-11eb-8ae1-4ff30254b352.png)
+
+```java
+
+```
 
 Vamos responder novamente às três perguntas feitas anteriormente:
 
