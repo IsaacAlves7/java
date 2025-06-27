@@ -36,7 +36,7 @@ Principais características e vantagens da tecnologia Java:
 
 <img src="https://cdn.worldvectorlogo.com/logos/java-1.svg" height="77" align="right">
 
-- Orientada a objetos, com uma grande diversidade de bibliotecas de classes disponível;
+- <a href="https://manoelcampos.gitbooks.io/poo-java/content/">Orientada a objetos</a>, com uma grande diversidade de bibliotecas de classes disponível;
 - Independe de plataforma: write once, run everywhere ;
 - Segurança - Mecanismos para sistemas livres de vírus, pacotes para criptografia;
 - Simplicidade;
