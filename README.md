@@ -1735,7 +1735,14 @@ public class Carro {
   // Usando regras de boas práticas em Java
   // Para identificadores da classe, dos atributos e dos métodos
 
+  String fabricante, modelo, cor, placa;
+  double valor;
+  int numeroPortas, anoFabricacao, anoModelo;
 
+  // Getters e Setters Fabricante
+  public String getFabricante(){
+    return fabricante;
+  }
 }
 ```
 
