@@ -4702,10 +4702,28 @@ Exemplo 2 - Aplicação com um contador de objetos criados: <code>private static
 
 Classe `Teste` (pacote: `biblioteca`):
 
-![code](https://user-images.githubusercontent.com/61624336/121296690-701e1980-c8c7-11eb-8295-bfc760c66398.png)
+```java
+package biblioteca;
+
+public class Teste{
+  private static int contador;
+
+  public Teste() {
+    contador++;
+  }
+
+  public int getContador(){
+    return contador;
+  }
+}
+```
 
 Classe Exemplo2 (pacote: aplicacao)
 ![code](https://user-images.githubusercontent.com/61624336/121296809-a196e500-c8c7-11eb-8c75-cb8a53954b57.png)
+
+```java
+
+```
 
 <pre>
 Contador =1
