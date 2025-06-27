@@ -4299,7 +4299,12 @@ Na aplicação: `AppTributos.java`
 import java.util.Scanner;
 
 public class AppTributos {
-  
+  public static void main(String[] args){
+    // TODO Auto-generated method stub
+    Scanner entrada = new Scanner(System.in);
+    double preco = 0, valorPago = 0;
+    System.out.println("Digite o preco: ");
+  }
 }
 ```
 
