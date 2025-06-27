@@ -3510,16 +3510,21 @@ public Pessoa(String id) {
 }
 ```
 
-O método:
-
-![code](https://user-images.githubusercontent.com/61624336/120941545-9d1cd180-c6f9-11eb-98e1-00ecc736079d.png)
-![code](https://user-images.githubusercontent.com/61624336/120941586-cd647000-c6f9-11eb-8e88-ae99830f0db6.png)
-![code](https://user-images.githubusercontent.com/61624336/120942042-92177080-c6fc-11eb-9dfb-1ab0dad67edf.png)
+O método: repassará o parâmetro `id` para o mesmo método construtor usado no anterior.
 
 Por final o método:
 
-![code](https://user-images.githubusercontent.com/61624336/120944419-c3973880-c70a-11eb-9df1-6f45d803569e.png)
-![code](https://user-images.githubusercontent.com/61624336/120944378-82068d80-c70a-11eb-8aa9-d43c15ad512c.png)
+```java
+public Cliente(String id, String no, String cc, String tf, int ida) {
+  super(id, no);
+  setCodigoCliente(cc);
+  setTelefone(tf);
+  setIdade(ida);
+}
+```
+
+Repassará os parâmetros do `id` e no para o método construtor da SuperClasse com a assinatura equivalente a estes dois parâmetros, que será o método:
+
 ![code](https://user-images.githubusercontent.com/61624336/120944888-43be9d80-c70d-11eb-8de1-63d524e88747.png)
 
 Todo método construtor de uma SubClasse deve referenciar um construtor da SuperClasse, isso quer dizer que para o construtor vazio: <code>public Cliente() { }</code>, será obrigatório que exista um construtor vazio na SuperClasse: <code>public Pessoa() { }</code>.
