@@ -3567,7 +3567,12 @@ public Cliente(String id, String no, String cc, String tf, int ida) {
 
 Repassará os parâmetros do `id` e no para o método construtor da SuperClasse com a assinatura equivalente a estes dois parâmetros, que será o método:
 
-![code](https://user-images.githubusercontent.com/61624336/120944888-43be9d80-c70d-11eb-8de1-63d524e88747.png)
+```java
+public Pessoa(String id, String no) {
+  setIdentidade(id);
+  setNome(no);
+}
+```
 
 Todo método construtor de uma SubClasse deve referenciar um construtor da SuperClasse, isso quer dizer que para o construtor vazio: <code>public Cliente() { }</code>, será obrigatório que exista um construtor vazio na SuperClasse: <code>public Pessoa() { }</code>.
 
