@@ -2795,14 +2795,159 @@ public class Gerente {
 
 Se quiser, posso te ajudar a criar uma classe `Main` para executar esse código.
 
-```
-
 Classe `Funcionário` sem o uso do conceito de herança:
 
-![code1](https://user-images.githubusercontent.com/61624336/120907573-1b656f00-c639-11eb-9eb6-5383db64336f.png)
-
 ```java
+import java.util.Scanner;
 
+public class Funcionario {
+    // Attributes
+    String identidade, nome, matricula, setor, nomeGerente;
+    double salario;
+
+    // Getters and Setters \\
+
+    // Identidade
+    public String getIdentidade() {
+        return identidade;
+    }
+
+    public void setIdentidade(String id) {
+        if (!id.isEmpty()) {
+            identidade = id;
+        }
+    }
+
+    // Nome
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String no) {
+        if (!no.isEmpty()) {
+            nome = no;
+        }
+    }
+
+    // Matricula
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String mo) {
+        if (!mo.isEmpty()) {
+            matricula = mo;
+        }
+    }
+
+    // Salario
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double sa) {
+        if (sa >= 0) {
+            salario = sa;
+        }
+    }
+
+    // Setor
+    public String getSetor() {
+        return setor;
+    }
+
+    public void setSetor(String se) {
+        if (!se.isEmpty()) {
+            setor = se;
+        }
+    }
+
+    // Nome do Gerente
+    public String getNomeGerente() {
+        return nomeGerente;
+    }
+
+    public void setNomeGerente(String ng) {
+        if (!ng.isEmpty()) {
+            nomeGerente = ng;
+        }
+    }
+
+    // Constructor Methods
+
+    public Funcionario() { }
+
+    public Funcionario(String id) {
+        setIdentidade(id);
+    }
+
+    public Funcionario(double sa) {
+        setSalario(sa);
+    }
+
+    public Funcionario(String id, double sa) {
+        setIdentidade(id);
+        setSalario(sa);
+    }
+
+    public Funcionario(double sa, String id) {
+        setIdentidade(id);
+        setSalario(sa);
+    }
+
+    public Funcionario(String id, String no, String ma, double sa, String se, String ng) {
+        setIdentidade(id);
+        setNome(no);
+        setMatricula(ma);
+        setSalario(sa);
+        setSetor(se);
+        setNomeGerente(ng);
+    }
+
+    public void cadastrar(String id, String no, String ma, double sa, String se, String ng) {
+        setIdentidade(id);
+        setNome(no);
+        setMatricula(ma);
+        setSalario(sa);
+        setSetor(se);
+        setNomeGerente(ng);
+    }
+
+    // EntradaDados() Method
+    public void entradaDados() {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Identidade :");
+        setIdentidade(entrada.nextLine());
+
+        System.out.println("Nome :");
+        setNome(entrada.nextLine());
+
+        System.out.println("Matricula :");
+        setMatricula(entrada.nextLine());
+
+        System.out.println("Salário :");
+        setSalario(Double.parseDouble(entrada.nextLine()));
+
+        System.out.println("Setor :");
+        setSetor(entrada.nextLine());
+
+        System.out.println("Nome Gerente:");
+        setNomeGerente(entrada.nextLine());
+
+        entrada.close();
+    }
+
+    // Imprimir() Method
+    public void imprimir() {
+        System.out.println("Identidade : " + getIdentidade());
+        System.out.println("Nome : " + getNome());
+        System.out.println("Matrícula : " + getMatricula());
+        System.out.println("Salário : " + getSalario());
+        System.out.println("Setor : " + getSetor());
+        System.out.println("Nome Gerente : " + getNomeGerente());
+    }
+}
 ```
 
 Classe `Cliente` sem o uso do conceito de herança:
