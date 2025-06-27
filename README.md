@@ -4213,7 +4213,19 @@ public class Armazenamento extends Identificacao {
 
 Classe Particionada `PlacaMae`:
 
-![code](https://user-images.githubusercontent.com/61624336/121126928-587b5e00-c7ff-11eb-8724-de889f63f23f.png)
+```java
+import java.util.Scanner;
+
+public class PlacaMae extends Identificacao {
+  public String tipoProcessador;
+
+  public PlacaMae() { }
+
+  public PlacaMae(String ma, String mo) {
+    super(ma,mo);
+  }
+}
+```
 
 Classe Particionada `PlacaVideo`:
 
