@@ -4125,6 +4125,8 @@ import parte2.Tributos;
 Outro ponto importante é que os atributos das classes `Exemplo` e `Tributos` estavam com a visibilidade padrão e, para continuar a funcionar, é necessário alterar a visibilidade dos atributos para pública (`public`), uma vez que essas classes agora estão em diferentes pacotes.
 
 # ☕ [Java] Classes abstratas e interfaces 
+<img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
+
 As **classes abstratas** são usadas como moldes para a criação de outras classes e podem encapsular atributos e comportamentos comuns. Já **interface** é um recurso muito utilizado em Java. Uma classe pode implementar várias interfaces.
 
 Modificadores: `static` e `final`, anteriormente, conhecemos os modificadores de acesso ou de *visibilidade* (Encapsulamento). Agora iremos conhecer mais alguns modificadores que podem ser aplicados sobre classes, no caso do final e sobre membros (Atributos e Métodos) de uma classe. Esses modificadores, como o nome já diz, servem para alterar a forma de uso de classes, métodos e/ou atributos.
