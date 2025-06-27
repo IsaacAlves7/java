@@ -4229,7 +4229,11 @@ public class PlacaMae extends Identificacao {
 
 Classe Particionada `PlacaVideo`:
 
-![code](https://user-images.githubusercontent.com/61624336/121127084-a001ea00-c7ff-11eb-8c67-d88584cb9de1.png)
+```java
+public class PlacaVideo {
+  
+}
+```
 
 Classe Particionada `Memoria`:
 
