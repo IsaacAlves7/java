@@ -2685,9 +2685,6 @@ Vamos analisar agora as diferenças entre as versões das nossas classes com e s
 Classe `Gerente` sem o uso do conceito de herança:
 
 ```java
-Claro! Abaixo está o conteúdo da imagem transcrito em Java:
-
-```java
 import java.util.Scanner;
 
 public class Gerente {
