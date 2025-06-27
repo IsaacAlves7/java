@@ -4021,13 +4021,102 @@ Agora que vimos como aplicar os conceitos de agregação e particionamento, pode
 
 Devemos identificar os atributos comuns às classes, sendo que os atributos `Marca`, `Modelo` e `Preço` são comuns a todas as classes. Já os atributos `Tipo` e `Capacidade` são comuns apenas às classes `HD` e `Memoria`, sendo necessária uma classe intermediária. O atributo `TipoProcessador` pertence apenas à classe `PlacaMae` e o atributo `Padrão` pertence apenas à classe `PlacaVideo`. As classes `HD` e `Memoria` não terão atributos específicos, ficarão apenas nas superclasses.
 
-Classes Particionadas redefinidas após a aplicação da Herança
+Classes Particionadas redefinidas após a aplicação da Herança:
 
 ![pg14-b](https://user-images.githubusercontent.com/61624336/121125855-9f685400-c7fd-11eb-841d-b6c0f1610e5f.png)
 
 Classe Particionada `Identificação`:
 
-![code](https://user-images.githubusercontent.com/61624336/121126576-c410fb80-c7fe-11eb-8b2f-21cab5a159eb.png)
+```java
+import java.util.Scanner;
+
+public class Identificacao {
+
+    public String marca, modelo;
+    public double preco;
+
+    public Identificacao() { }
+
+    public Identificacao(String ma) {
+        setMarca(ma);
+    }
+
+    public Identificacao(double pr) {
+        setPreco(pr);
+    }
+
+    public Identificacao(String ma, String mo) {
+        setMarca(ma);
+        setModelo(mo);
+    }
+
+    public Identificacao(String ma, double pr) {
+        setMarca(ma);
+        setPreco(pr);
+    }
+
+    public Identificacao(String ma, String mo, double pr) {
+        setMarca(ma);
+        setModelo(mo);
+        setPreco(pr);
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String ma) {
+        if (!ma.isEmpty()) {
+            marca = ma;
+        }
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String mo) {
+        if (!mo.isEmpty()) {
+            modelo = mo;
+        }
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double pr) {
+        if (pr > 0) {
+            preco = pr;
+        }
+    }
+
+    public void cadastrar(String ma, String mo, double pr) {
+        setMarca(ma);
+        setModelo(mo);
+        setPreco(pr);
+    }
+
+    public void imprimir() {
+        System.out.println("Marca: " + getMarca());
+        System.out.println("Modelo: " + getModelo());
+        System.out.println("Preço: " + getPreco());
+    }
+
+    public void entradaDados() {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Marca: ");
+        setMarca(entrada.nextLine());
+
+        System.out.println("Modelo: ");
+        setModelo(entrada.nextLine());
+
+        System.out.println("Preço: ");
+        setPreco(Double.parseDouble(entrada.nextLine()));
+    }
+}
+```
 
 Classe Particionada `Armazenamento`:
 
