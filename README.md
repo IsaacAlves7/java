@@ -1728,10 +1728,15 @@ Nova solução do exercício prático, com a inclusão do método `entradaDados`
 
 `Carro.java`
 
-![code](https://user-images.githubusercontent.com/61624336/120251160-05316a80-c257-11eb-8ad1-8f93cc44a765.png)
-
 ```java
+import java.util.Scanner;
 
+public class Carro {
+  // Usando regras de boas práticas em Java
+  // Para identificadores da classe, dos atributos e dos métodos
+
+
+}
 ```
 
 `AppCarro.java`
