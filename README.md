@@ -4345,9 +4345,7 @@ public class AppAgregacao {
 }
 ```
 
-Se precisar da definição das classes `PlacaMae`, `PlacaVideo` e `HD` (que aparecem como atributos no `Desktop`), posso ajudar a implementar elas também. Deseja isso?
-
-```
+A definição das classes `PlacaMae`, `PlacaVideo` e `HD` (que aparecem como atributos no `Desktop`), podem ser implementadas também.
 
 Com a evolução das classes particionadas com a aplicação do conceito de herança, foram mantidas as compatibilidades e as classes `Desktop`, `Notebook` e `Servidor` não precisam ser alteradas, assim como a aplicação, que funcionará da mesma forma que no exemplo anterior. As mudanças com a evolução das classes particionadas não afetaram as classes agregadoras, nem a aplicação.
 
