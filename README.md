@@ -4238,9 +4238,6 @@ public class PlacaVideo {
 Classe Particionada `Memoria`:
 
 ```java
-Claro! Aqui está o conteúdo da imagem lido por OCR e formatado corretamente em Java:
-
-```java
 public class Memoria {
     public String marca, modelo, tipo;
     public double preco;
@@ -4409,7 +4406,16 @@ Por exemplo: A classe `Tributos`
 
 ```java
 public class Tributos {
-  
+  double imposto;
+
+  public double calcularImposto(double preco, int tipoProduto){
+    if(tipoProduto < 10){
+       // Exemplo: 01, tipo 0, faixa 0
+       imposto = calcularTipoProduto0(preco, TipoProduto);
+    } else {
+       
+    }
+  }
 }
 ```
 
