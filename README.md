@@ -5059,7 +5059,29 @@ Não precisa de tratamento obrigatório.
 | `Unchecked Exception` | 🚫 Não | `NullPointerException`, `ArithmeticException` |
 
 # ☕ [Java] ORM - Object-Relational Mapping
-JDBC (Java Database Connectivity) no Java.
+No ecossistema Java, o uso de ORM (Object-Relational Mapping) é bastante consolidado e fundamental para aplicações que interagem com bancos de dados relacionais. O objetivo de um ORM é mapear as classes e objetos do código Java para tabelas e registros em bancos de dados, facilitando o desenvolvimento ao esconder as complexidades do SQL puro. O framework mais popular e amplamente adotado para isso em Java é o **Hibernate**, que inclusive serve de base para outros frameworks, como o JPA (Java Persistence API).
+
+O **Hibernate** é uma implementação completa de ORM, oferecendo recursos como mapeamento de entidades, relacionamento entre tabelas (um-para-um, um-para-muitos, muitos-para-muitos), cache, lazy loading e suporte a bancos como MySQL, PostgreSQL, Oracle, SQL Server, entre outros. O Hibernate pode ser usado diretamente, mas geralmente ele é utilizado através do padrão JPA, que é uma especificação oficial da plataforma Java EE (e hoje também do Jakarta EE). O **JPA** define uma API de persistência e o Hibernate é a implementação mais comum dessa especificação, embora existam outras, como **EclipseLink** e **OpenJPA**.
+
+Outro framework importante, especialmente no contexto do Spring, é o **Spring Data JPA**, que abstrai ainda mais a complexidade de persistência e permite definir interfaces para acessar dados com métodos simples como `findByEmail()` ou `findAllByStatus()`, sem a necessidade de escrever consultas SQL ou JPQL diretamente. Ele integra de forma fluida com Hibernate e JPA por trás dos panos.
+
+Além desses, há também bibliotecas mais leves ou com propostas diferentes:
+
+* **MyBatis** (antigo iBATIS) é uma alternativa ao ORM completo. Ele não faz mapeamento automático de objetos, mas permite escrever SQL diretamente e mapear os resultados para objetos Java, sendo mais controlado e flexível para casos complexos.
+* **jOOQ** (Java Object Oriented Querying) foca em oferecer uma forma fluente e tipada de escrever SQL diretamente em Java, mantendo controle total da consulta, mas com segurança e estrutura orientada a objetos.
+* **Ebean ORM** é outra alternativa mais moderna e leve que foca em simplicidade, oferecendo uma experiência semelhante ao Active Record do Ruby on Rails, mas ainda assim com suporte a JPA.
+
+Para bancos de dados NoSQL, frameworks como **Spring Data MongoDB**, **Spring Data Redis**, **Morphia** (para MongoDB), entre outros, também seguem a ideia de facilitar o acesso a dados, mas fora do modelo relacional tradicional.
+
+Portanto, os principais frameworks e bibliotecas de ORM e persistência em Java são: **Hibernate**, **JPA**, **Spring Data JPA**, **MyBatis**, **jOOQ**, **Ebean** e **EclipseLink**, sendo o trio Hibernate + JPA + Spring Data o mais comum nas aplicações modernas.
+
+O **JDBC (Java Database Connectivity)** é a API padrão da linguagem Java para acesso a bancos de dados relacionais. Ele permite que aplicações Java se conectem, consultem, insiram, atualizem e removam dados em bancos como MySQL, PostgreSQL, Oracle, SQL Server, entre outros, usando SQL diretamente. Diferente dos frameworks ORM como Hibernate ou JPA, o JDBC trabalha em um nível mais baixo e exige que o desenvolvedor escreva manualmente as instruções SQL e gerencie aspectos como conexões, prepared statements, result sets e fechamento de recursos. Resumidamente, o JDBC é a ponte direta entre o Java e o SQL, essencial para quem quer ou precisa de controle absoluto nas operações com banco de dados, mas que pode ser substituído por abstrações de alto nível em sistemas maiores para reduzir complexidade e repetição de código.
+
+JDBC (em Java), pg-promise (em Node.js) e PDO (em PHP) não são tecnicamente "SQL Embutidos" (Embedded SQL) no sentido acadêmico, mas todos trabalham com SQL cru (raw SQL) dentro do código, geralmente como strings ou templates, integradas diretamente nas funções ou métodos que interagem com o banco de dados.
+
+A estrutura básica de uso do JDBC envolve alguns passos principais: carregar o driver JDBC apropriado para o banco (o JAR fornecido pelo fabricante), abrir uma conexão com o banco via `DriverManager`, preparar comandos SQL com `PreparedStatement` ou `Statement`, executar consultas com `executeQuery()` ou atualizações com `executeUpdate()`, e iterar sobre os resultados com `ResultSet`. Tudo isso geralmente ocorre dentro de blocos `try-with-resources` ou com tratamento explícito de exceções e fechamento manual de recursos, o que pode ser verboso, mas oferece total controle da execução.
+
+Um exemplo simples de uso do JDBC seria: importar o driver JDBC do MySQL, abrir uma conexão com `DriverManager.getConnection(url, user, password)`, criar um `PreparedStatement` com um `SELECT` ou `INSERT`, executar a consulta e percorrer os dados com um `ResultSet`. Por ser tão fundamental, o JDBC serve como a base para bibliotecas mais sofisticadas como o Hibernate, JPA e Spring Data JPA, que por trás dos panos também usam JDBC para comunicação com o banco, mas automatizam e simplificam esse processo.
 
 ## [Java] JasperReports
 **JasperReports** é uma biblioteca de código aberto em Java usada para gerar relatórios dinâmicos e bem formatados a partir de diversas fontes de dados, como bancos de dados relacionais, arquivos XML, coleções Java e até arquivos CSV. Ela permite criar relatórios que podem incluir tabelas, gráficos, imagens, sub-relatórios e textos estilizados, sendo amplamente utilizada em aplicações corporativas que precisam apresentar informações de forma organizada, profissional e exportável. 
