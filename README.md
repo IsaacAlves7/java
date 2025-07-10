@@ -5058,9 +5058,10 @@ Não precisa de tratamento obrigatório.
 | `Checked Exception` | ✅ Sim | `IOException`, `SQLException` |
 | `Unchecked Exception` | 🚫 Não | `NullPointerException`, `ArithmeticException` |
 
-# [Java]
+# ☕ [Java] ORM - Object-Relational Mapping
+JDBC (Java Database Connectivity) no Java.
 
-## [Java] JaperReports
+## [Java] JasperReports
 **JasperReports** é uma biblioteca de código aberto em Java usada para gerar relatórios dinâmicos e bem formatados a partir de diversas fontes de dados, como bancos de dados relacionais, arquivos XML, coleções Java e até arquivos CSV. Ela permite criar relatórios que podem incluir tabelas, gráficos, imagens, sub-relatórios e textos estilizados, sendo amplamente utilizada em aplicações corporativas que precisam apresentar informações de forma organizada, profissional e exportável. 
 
 Esses relatórios podem ser gerados em diversos formatos como PDF, HTML, XLS, DOC, RTF, ODT e até imagens, o que dá bastante flexibilidade para integrá-los em sistemas de gestão, ERPs, sistemas bancários, entre outros. O JasperReports geralmente é usado em conjunto com o iReport Designer ou Jaspersoft Studio, que são ferramentas gráficas para desenhar visualmente os templates dos relatórios (arquivos `.jrxml`), permitindo que desenvolvedores e analistas criem relatórios complexos sem escrever tudo manualmente. Depois de desenhado, o template é compilado para um arquivo .jasper, que é interpretado em tempo de execução pelo JasperReports para gerar o relatório final com os dados preenchidos. 
