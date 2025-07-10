@@ -5059,7 +5059,7 @@ Não precisa de tratamento obrigatório.
 | `Unchecked Exception` | 🚫 Não | `NullPointerException`, `ArithmeticException` |
 
 # ☕ [Java] ORM - Object-Relational Mapping
-<img src="https://github.com/user-attachments/assets/1139b1bb-d3ea-45ee-9324-f8b70d8c88ac" align="right" height="77">
+<a href="https://hibernate.org/"><img src="https://github.com/user-attachments/assets/1139b1bb-d3ea-45ee-9324-f8b70d8c88ac" align="right" height="77"></a>
 
 No ecossistema Java, o uso de ORM (Object-Relational Mapping) é bastante consolidado e fundamental para aplicações que interagem com bancos de dados relacionais. O objetivo de um ORM é mapear as classes e objetos do código Java para tabelas e registros em bancos de dados, facilitando o desenvolvimento ao esconder as complexidades do SQL puro. O framework mais popular e amplamente adotado para isso em Java é o **Hibernate**, que inclusive serve de base para outros frameworks, como o JPA (Java Persistence API).
 
