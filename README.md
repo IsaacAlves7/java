@@ -5058,6 +5058,21 @@ Não precisa de tratamento obrigatório.
 | `Checked Exception` | ✅ Sim | `IOException`, `SQLException` |
 | `Unchecked Exception` | 🚫 Não | `NullPointerException`, `ArithmeticException` |
 
+# [Java]
+
+## [Java] JaperReports
+**JasperReports** é uma biblioteca de código aberto em Java usada para gerar relatórios dinâmicos e bem formatados a partir de diversas fontes de dados, como bancos de dados relacionais, arquivos XML, coleções Java e até arquivos CSV. Ela permite criar relatórios que podem incluir tabelas, gráficos, imagens, sub-relatórios e textos estilizados, sendo amplamente utilizada em aplicações corporativas que precisam apresentar informações de forma organizada, profissional e exportável. 
+
+Esses relatórios podem ser gerados em diversos formatos como PDF, HTML, XLS, DOC, RTF, ODT e até imagens, o que dá bastante flexibilidade para integrá-los em sistemas de gestão, ERPs, sistemas bancários, entre outros. O JasperReports geralmente é usado em conjunto com o iReport Designer ou Jaspersoft Studio, que são ferramentas gráficas para desenhar visualmente os templates dos relatórios (arquivos `.jrxml`), permitindo que desenvolvedores e analistas criem relatórios complexos sem escrever tudo manualmente. Depois de desenhado, o template é compilado para um arquivo .jasper, que é interpretado em tempo de execução pelo JasperReports para gerar o relatório final com os dados preenchidos. 
+
+Ele também permite a criação de relatórios interativos com parâmetros, filtros e agrupamentos dinâmicos, e por isso é uma solução poderosa para quem precisa de funcionalidades avançadas de Business Intelligence (BI) embutidas diretamente nas aplicações Java.
+
+O *JasperReports* é considerado uma biblioteca de Business Intelligence (BI) no ecossistema Java, mas com um foco diferente do **Streamlit**, que é mais voltado à construção de aplicações interativas para ciência de dados em Python. JasperReports é uma ferramenta de BI da linguagem Java, mas com foco em relatórios formais e impressão, diferente da proposta mais interativa e exploratória do Streamlit no Python.
+
+Enquanto o *Streamlit* permite criar dashboards e apps com gráficos interativos usando poucas linhas de código Python, o *JasperReports* é especializado em geração de relatórios complexos e formatados, como PDFs com tabelas, faturas, recibos, gráficos, sub-relatórios e layouts sofisticados. Ele é muito utilizado em ambientes corporativos que precisam gerar documentos formais ou relatórios empresariais, com grande capacidade de personalização visual.
+
+Ou seja, ambos podem ser usados em contextos de BI, mas com propósitos distintos. JasperReports é mais forte em documentos estáticos e formais, enquanto Streamlit é mais voltado a dashboards dinâmicos e prototipagem de interfaces analíticas. Além disso, o JasperReports se integra profundamente com o ecossistema Java, podendo ser embutido em aplicações Java Web, Spring Boot, JavaFX ou qualquer sistema backend que utilize Java, sendo usado frequentemente com o Jaspersoft Studio para desenhar os relatórios visualmente.
+
 # 🪶 [Java] Apache Maven e Gradle
 <img src="https://img.shields.io/badge/Gradle-build-25A162?style=flat&logo=Gradle&logoColor=white"> <img src="https://img.shields.io/badge/Apache_Maven-build-crimson?style=flat&logo=Apache-Maven&logoColor=white">
 
