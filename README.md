@@ -5103,7 +5103,7 @@ Enquanto o *Streamlit* permite criar dashboards e apps com gráficos interativos
 Ou seja, ambos podem ser usados em contextos de BI, mas com propósitos distintos. JasperReports é mais forte em documentos estáticos e formais, enquanto Streamlit é mais voltado a dashboards dinâmicos e prototipagem de interfaces analíticas. Além disso, o JasperReports se integra profundamente com o ecossistema Java, podendo ser embutido em aplicações Java Web, Spring Boot, JavaFX ou qualquer sistema backend que utilize Java, sendo usado frequentemente com o Jaspersoft Studio para desenhar os relatórios visualmente.
 
 # 🪶 [Java] Apache Maven e Gradle
-<img src="https://img.shields.io/badge/Gradle-build-25A162?style=flat&logo=Gradle&logoColor=white"> <img src="https://img.shields.io/badge/Apache_Maven-build-crimson?style=flat&logo=Apache-Maven&logoColor=white">
+<img src="https://img.shields.io/badge/Gradle-build-25A162?style=flat&logo=Gradle&logoColor=white"> <img src="https://img.shields.io/badge/Apache_Maven-build-crimson?style=flat&logo=Apache-Maven&logoColor=white"> <img src="https://img.shields.io/badge/Apache_Maven-build-crimson?style=flat&logo=Apache-Maven&logoColor=white"> <img src="https://img.shields.io/badge/Apache_Maven-build-crimson?style=flat&logo=Apache-Maven&logoColor=white"> <img src="https://img.shields.io/badge/Apache_Maven-build-crimson?style=flat&logo=Apache-Maven&logoColor=white"> 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg" height="77" align="right">
 
