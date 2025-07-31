@@ -7,6 +7,14 @@
 
 <img src="https://user-images.githubusercontent.com/61624336/183478203-20b992ae-b018-448a-bd56-e2fae9c5f7ae.svg" align="right" height="77">
 
+Sou um especialista em desenvolvimento de software com foco no ecossistema Java/Kotlin, atuando com frameworks robustos como Spring Boot, Jakarta EE e Quarkus. Tenho sólida experiência na aplicação de boas práticas de engenharia de software, como os princípios SOLID, DRY, KISS, TDA e SoC, com domínio na aplicação de design patterns (criacionais, estruturais e comportamentais), além da adoção dos princípios de Clean Code e Clean Architecture para garantir legibilidade, manutenibilidade e escalabilidade do código.
+
+No front-end, colaboro em projetos com SPAs desenvolvidas em React, Angular e Vue, integradas com back-ends Java via APIs REST ou GraphQL. Também participo de aplicações SSR com frameworks como Next.js ou Thymeleaf em projetos fullstack Java. Tenho domínio de HTML/CSS, Flexbox e CSS Grid, com foco em design responsivo baseado em protótipos UI/UX elaborados no Figma.
+
+No back-end, desenvolvo APIs RESTful e GraphQL utilizando Spring Boot (com Spring Web, Spring Data, Spring Security e graphql-java). Tenho experiência com Git e colaboração em times ágeis com pipelines CI/CD (Jenkins, GitLab CI, GitHub Actions), análise estática e linting com ferramentas como Checkstyle, PMD e SonarQube, além da escrita de testes unitários e de integração com JUnit, Mockito, Testcontainers e REST-assured. Trabalho em arquiteturas distribuídas e baseadas em microsserviços com comunicação via REST e mensageria (RabbitMQ, Apache Kafka), com observabilidade garantida por Prometheus, Grafana e logs estruturados com Logback, Logstash ou Elastic Stack.
+
+Também aplico ferramentas de analytics como Google Analytics 4 e Segment, monitorando a usabilidade de componentes e o comportamento dos usuários em ambientes de produção. Tenho experiência com deploy e escalabilidade de aplicações em ambientes PaaS (Heroku, Azure App Service) e uso de recursos em nuvens públicas como AWS (EC2, ECS, RDS, S3), Azure e Google Cloud (App Engine, GKE).
+
 <div align="left"><a href="https://github.com/IsaacAlves7/java-programming"><img src="https://cdn.icon-icons.com/icons2/2530/PNG/512/java_button_icon_151928.png" height="47"></a></div>
 
 # ☕ The History of Java language
