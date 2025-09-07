@@ -5189,7 +5189,11 @@ A análise é feita por meio de uma **engine estática**, ou seja, sem executar 
 
 O SonarQube também se integra com ferramentas como **Maven**, **Gradle**, **Jenkins**, **GitLab CI**, **GitHub Actions**, e pode ser acessado via interface web para acompanhamento em tempo real, por desenvolvedores, QA e líderes técnicos.
 
-A ideia central do SonarQube é **criar uma cultura de qualidade de software**, onde cada commit, pull request ou build é avaliado com critérios automáticos e objetivos — evitando que más práticas ou falhas passem despercebidas e se acumulem.
+A ideia central do SonarQube é criar uma cultura de qualidade de software, onde cada commit, pull request ou build é avaliado com critérios automáticos e objetivos — evitando que más práticas ou falhas passem despercebidas e se acumulem.
+
+## [Java] JSP (Java Server Pages)
+
+## [Java] JSF (JavaServer Faces)
 
 # 🤖 [Java] Primefaces
 <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
