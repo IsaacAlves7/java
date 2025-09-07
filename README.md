@@ -5216,6 +5216,27 @@ Alguns dos principais recursos e componentes fornecidos pelo PrimeFaces incluem:
 
 O PrimeFaces é uma opção popular para o desenvolvimento de aplicativos web Java que desejam fornecer interfaces de usuário ricas e interativas. Ele é amplamente usado em várias indústrias e fornece uma base sólida para a criação de aplicativos web empresariais.
 
+Primefaces é parecido com Razor Pages, eles têm semelhanças, mas também diferenças importantes porque vêm de ecossistemas distintos (Java no caso do PrimeFaces/JSF e .NET no caso do Razor Pages). Destrinchando, o **PrimeFaces** é um *UI framework* que roda em cima do **JSF (JavaServer Faces)**. Ele fornece **componentes ricos e prontos** (grids, calendários, gráficos, diálogos modais, etc.), que você pode usar em suas páginas Facelets (`.xhtml`). Ele segue o paradigma **component-based**, ou seja, cada elemento da tela é um componente com propriedades, eventos e ciclo de vida controlado pelo JSF. A ideia é que o desenvolvedor Java consiga construir interfaces complexas com pouco código HTML e sem se preocupar com o JavaScript por trás — o PrimeFaces já abstrai isso.
+
+Já o **Razor Pages** é um modelo de desenvolvimento do **ASP.NET Core**, introduzido como uma alternativa simplificada ao MVC. Ele usa páginas `.cshtml` (HTML + sintaxe Razor para misturar com C#) e é **page-based**, não component-based. Ou seja, cada página é autocontida: você tem o HTML + o code-behind (um arquivo `.cs`) que trata os eventos daquela página. Ele é parecido com o antigo WebForms no conceito de "página com lógica associada", mas muito mais enxuto e moderno.
+
+Onde eles se parecem:
+
+* Ambos buscam **facilitar o desenvolvimento full-stack sem precisar de muito JavaScript ou frameworks externos**.
+* Em ambos, você consegue declarar elementos visuais diretamente em HTML/XML com marcações adicionais, e eles se ligam à lógica no back-end.
+* São usados em **aplicações server-side renderizadas** com forte integração entre front e back.
+
+Onde eles diferem:
+
+* **PrimeFaces/JSF**: orientado a **componentes reutilizáveis**. Você monta a tela com tags `<p:datatable>`, `<p:calendar>` etc., e o JSF gerencia o ciclo de vida e eventos.
+* **Razor Pages**: orientado a **páginas**. O foco é simplicidade — cada página tem sua lógica de forma clara, mas não há um ecossistema tão rico de componentes visuais prontos quanto no PrimeFaces.
+
+Dá pra pensar assim: **PrimeFaces está mais próximo de Blazor Components** do que de Razor Pages. Porque o Blazor, sim, é component-based como o JSF/PrimeFaces. O Razor Pages é mais um meio-termo entre o MVC tradicional e a simplicidade de “páginas com lógica”.
+
+Então: **PrimeFaces ≈ Blazor Components (pela ideia de componentes)**.
+
+Enquanto isso: **Razor Pages ≈ Facelets “simples” sem PrimeFaces (pela ideia de page-based)**.
+
 # 🧩 [Java] Design Patterns
 <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
 
