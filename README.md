@@ -5072,7 +5072,7 @@ Não precisa de tratamento obrigatório.
 
 ## [Java] JSF (JavaServer Faces)
 
-# ☕ [Java] ORM - Object-Relational Mapping
+## [Java] Hibernate
 <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
 
 <a href="https://hibernate.org/"><img src="https://github.com/user-attachments/assets/1139b1bb-d3ea-45ee-9324-f8b70d8c88ac" align="right" height="77"></a>
