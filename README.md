@@ -5067,10 +5067,41 @@ Não precisa de tratamento obrigatório.
 | `Unchecked Exception` | 🚫 Não | `NullPointerException`, `ArithmeticException` |
 
 # ☕ [Java] Javalin
+Agora você está cruzando os conceitos entre **Java e Node.js**. O *Express.js* é minimalista, pensado para construir APIs e rotas HTTP com bastante flexibilidade, sem impor uma estrutura pesada. Ele não lida com “interface de usuário” diretamente (isso fica a cargo de engines de template ou de um front separado).
+
+No **mundo Java**, o que se aproxima do *Express.js* não é o JSF/PrimeFaces, mas sim frameworks voltados para rotas e APIs. Os principais equivalentes seriam:
+
+* **Spring Boot (com Spring MVC)** → o mais usado hoje. Você define endpoints com anotações (`@RestController`, `@GetMapping`, etc.), bem parecido com as rotas no Express (`app.get(...)`). Ele também é leve na configuração (principalmente com Boot), mas já vem com muito mais recursos prontos do que o Express puro.
+
+* **Javalin** → este é o **mais próximo ao Express em simplicidade**. É um microframework Java inspirado no Express/Koa. Você cria rotas em poucas linhas (`app.get("/users", ctx -> {...})`).
+
+* **Spark Java** → outro microframework muito parecido com o Express, criado antes do Javalin. Também é bem direto para definir rotas e retornar respostas HTTP.
+
+* **Vert.x** → mais robusto, mas ainda assim leve, focado em aplicações reativas e event-driven. Ele lembra o Express em termos de trabalhar bem com concorrência e eventos.
+
+Agora, se a sua dúvida era mais na linha **JSF/PrimeFaces ↔ Express**, aí temos uma diferença conceitual importante:
+
+* **JSF/PrimeFaces** = frameworks de **camada de apresentação (UI)**, baseados em componentes de interface.
+* **Express.js** = framework de **backend HTTP**, que só expõe rotas e serviços, sem UI nativa.
+
+Ou seja, JSF/PrimeFaces estão mais próximos de algo como **Blazor/Razor Pages** no .NET, enquanto o Express estaria mais próximo de **Spring Boot, Javalin ou Spark Java** no ecossistema Java.
+
+Pergunto: você pensou nessa comparação porque está avaliando migrar tanto a **camada de UI (JSF/PrimeFaces)** quanto a **camada de backend (Servlets/Java EE)**, ou queria entender só a equivalência da parte de **backend tipo Express**?
 
 ## [Java] JSP (Java Server Pages)
+O JSP e JSF fazem parte do ecossistema Java/Kotlin para desenvolvimento web e surgiram como formas diferentes de construir aplicações Java na camada de apresentação (a interface com o usuário).
+
+O **JSP (Java Server Pages)** nasceu nos anos 1990 como uma tecnologia simples para gerar páginas dinâmicas em Java. O JSP funciona de forma parecida ao **PHP ou ASP clássico ou EJS**: você escreve código HTML e intercala trechos de Java entre `<% ... %>`. Esse código Java é processado no servidor, e o resultado (HTML puro) é enviado ao navegador. Com o tempo, o uso de **tags libraries (JSTL)** e **EL (Expression Language)** deixou o JSP mais limpo e menos “misturado” com código Java. O JSP é, portanto, uma solução de **template engine** para a web no mundo Java.
 
 ## [Java] JSF (JavaServer Faces)
+Já o **JSF (JavaServer Faces)** veio depois, como uma evolução mais estruturada. É um **framework MVC para a camada de apresentação** padronizado pela especificação Java EE (hoje Jakarta EE). Diferente do JSP, o JSF é **component-based**: em vez de você misturar HTML e Java, você trabalha com **componentes reutilizáveis (botões, tabelas, inputs, etc.)** definidos em XML/Facelets, e os eventos (como cliques ou submits) são tratados por *managed beans* (objetos Java). Isso traz uma separação de responsabilidades melhor e torna o desenvolvimento mais organizado.
+
+Para resumir:
+
+* **JSP** → mais simples, estilo “template dinâmico”, rápido para páginas, mas tende a virar “bagunça” se o projeto crescer muito.
+* **JSF** → mais robusto, baseado em componentes e ciclo de vida controlado, indicado para aplicações corporativas com muita lógica de interface.
+
+Hoje em dia, tanto JSP quanto JSF perderam espaço para frameworks modernos (como Spring MVC/Thymeleaf, Spring Boot com APIs REST, ou até front-ends separados como React, Angular e Vue). Mas em sistemas legados e grandes soluções corporativas, principalmente dentro de empresas que adotaram **Jakarta EE**, você ainda encontra bastante JSF.
 
 ## [Java] Hibernate
 <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-class_diagram-chocolate?style=flat&logo=UML&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white"> <img src="https://img.shields.io/badge/Java-Use_Case_diagram-chocolate?style=flat&logo=diagramsdotnet&logoColor=white">
