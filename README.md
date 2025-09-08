@@ -5066,10 +5066,10 @@ Não precisa de tratamento obrigatório.
 | `Checked Exception` | ✅ Sim | `IOException`, `SQLException` |
 | `Unchecked Exception` | 🚫 Não | `NullPointerException`, `ArithmeticException` |
 
-# ☕ [Java] Javalin
-Agora você está cruzando os conceitos entre **Java e Node.js**. O *Express.js* é minimalista, pensado para construir APIs e rotas HTTP com bastante flexibilidade, sem impor uma estrutura pesada. Ele não lida com “interface de usuário” diretamente (isso fica a cargo de engines de template ou de um front separado).
+# ☕ [Java] Java MVC
+Agora, você está cruzando os conceitos de MVC (Model View Controller) para criação de aplicações web entre Java, Node.js, PHP e .NET. O *Express.js* é minimalista, pensado para construir APIs e rotas HTTP com bastante flexibilidade, sem impor uma estrutura pesada. Ele não lida com “interface de usuário” diretamente (isso fica a cargo de engines de template ou de um front separado).
 
-No **mundo Java**, o que se aproxima do *Express.js* não é o JSF/PrimeFaces, mas sim frameworks voltados para rotas e APIs. Os principais equivalentes seriam:
+No mundo Java, o que se aproxima do *Express.js* não é o JSF/PrimeFaces, mas sim frameworks voltados para rotas e APIs. Os principais equivalentes seriam:
 
 * **Spring Boot (com Spring MVC)** → o mais usado hoje. Você define endpoints com anotações (`@RestController`, `@GetMapping`, etc.), bem parecido com as rotas no Express (`app.get(...)`). Ele também é leve na configuração (principalmente com Boot), mas já vem com muito mais recursos prontos do que o Express puro.
 
@@ -5084,9 +5084,34 @@ Agora, se a sua dúvida era mais na linha **JSF/PrimeFaces ↔ Express**, aí te
 * **JSF/PrimeFaces** = frameworks de **camada de apresentação (UI)**, baseados em componentes de interface.
 * **Express.js** = framework de **backend HTTP**, que só expõe rotas e serviços, sem UI nativa.
 
-Ou seja, JSF/PrimeFaces estão mais próximos de algo como **Blazor/Razor Pages** no .NET, enquanto o Express estaria mais próximo de **Spring Boot, Javalin ou Spark Java** no ecossistema Java.
+Ou seja, JSF/PrimeFaces estão mais próximos de algo como Blazor/Razor Pages no .NET, enquanto o Express estaria mais próximo de Spring Boot, Javalin ou Spark Java no ecossistema Java.
 
-Pergunto: você pensou nessa comparação porque está avaliando migrar tanto a **camada de UI (JSF/PrimeFaces)** quanto a **camada de backend (Servlets/Java EE)**, ou queria entender só a equivalência da parte de **backend tipo Express**?
+Pergunto: você pensou nessa comparação porque está avaliando migrar tanto a **camada de UI (JSF/PrimeFaces)** quanto a **camada de backend (Servlets/Java EE)**, ou queria entender só a equivalência da parte de **backend tipo Express**? Porque muita gente associa **MVC em Java** diretamente ao **Spring MVC**, mas a história começou bem antes. O ecossistema Java teve uma evolução longa de frameworks web, cada um tentando melhorar as dores da geração anterior.
+
+Antes do Spring MVC (2003), já existiam várias opções para implementar MVC em Java:
+
+Nos anos 90, a base de tudo eram os **Servlets** (lançados em 1997, com J2EE 1.2). Eles eram “o controlador cru”, processando requisições HTTP diretamente. Para a camada de apresentação, surgiu o **JSP (Java Server Pages)** em 1999, que junto com **JSTL/EL** ajudava a aplicar o padrão MVC separando a View do Controller. Só que JSP+Servlets ainda deixavam muito boilerplate e não forçavam uma arquitetura consistente.
+
+Em 1999–2000, surgiram os primeiros frameworks MVC *de fato* no ecossistema Java:
+
+* **Apache Struts (2000)** → pioneiro do MVC em Java. Foi o framework que realmente consolidou o modelo **Front Controller + Action + JSP**. Era o “pai” de todos os frameworks web Java.
+* **JavaServer Faces (JSF, 2004)** → oficializado pela Oracle como padrão Java EE para UI component-based. Embora seja posterior ao Struts, sua especificação começou antes do Spring MVC ganhar popularidade.
+* **Tapestry (2000)** → concorrente do Struts, trazia um modelo de componentes orientado a objetos, parecido com o que anos depois seria comum em frameworks SPA.
+* **WebWork (2001)** → framework criado pela comunidade, com ideias mais flexíveis que o Struts. Mais tarde foi incorporado ao Struts 2.
+* **Wicket (2005)** → modelo baseado em componentes, mas mais leve que o JSF.
+
+Então a linha do tempo, em resumo:
+
+* **1997** → Servlets (base de tudo).
+* **1999** → JSP.
+* **2000** → Apache Struts (primeiro grande MVC).
+* **2000** → Tapestry.
+* **2001** → WebWork (virou Struts 2).
+* **2004** → JSF.
+* **2003** → Spring MVC (ganhou espaço depois do Struts).
+* **2005** → Wicket.
+
+Ou seja, antes do Spring MVC já existiam **Struts, Tapestry, WebWork e JSF**, todos tentando aplicar MVC no mundo Java. O Spring só dominou porque trouxe menos configuração, mais integração com o container de IoC e mais produtividade em comparação com o Struts pesadão e o JSF burocrático.
 
 ## [Java] JSP (Java Server Pages)
 O JSP e JSF fazem parte do ecossistema Java/Kotlin para desenvolvimento web e surgiram como formas diferentes de construir aplicações Java na camada de apresentação (a interface com o usuário).
