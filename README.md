@@ -5594,6 +5594,11 @@ O Spring Boot, por sua vez, continua fornecendo suas principais qualidades: auto
 
 Na prática, você pode escrever controladores REST com classes Kotlin, criar repositórios com interfaces do Spring Data, e usar corrotinas em chamadas assíncronas com WebFlux, por exemplo. O Spring Boot reconhece arquivos `.kt`, e o build geralmente é feito com Gradle (especialmente usando Kotlin DSL no `build.gradle.kts`).
 
+## [Java] Quarkus
+**Quarkus** é um framework Java projetado para implantação no Kubernetes. Os principais componentes de tecnologia relacionados a ele são o OpenJDK HotSpot e o GraalVM. O Quarkus tem como objetivo tornar o Java uma plataforma de destaque em ambientes Kubernetes e serverless, além de oferecer aos desenvolvedores um modelo de programação reativo e imperativo unificado para atender de forma otimizada a uma ampla gama de arquiteturas de aplicações distribuídas.
+
+![545396924_1535613304553565_5956882820855096625_n](https://github.com/user-attachments/assets/85285f40-81a3-48df-a02b-6b3e1f84ca29)
+
 # 🧪 [Java] TDD, BDD e DDD
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> ![Cucumber](https://img.shields.io/badge/-Cucumber-23D96C?style=badge&logo=cucumber&logoColor=white) <img src="https://img.shields.io/badge/JUnit5-passing-25A162?style=flat&logo=JUnit5&logoColor=white"> <img src="https://img.shields.io/badge/Mockito-passing-25A162?style=flat&logo=Mockito&logoColor=white"> <img src="https://img.shields.io/badge/Gradle-build-25A162?style=flat&logo=Gradle&logoColor=white"> <img src="https://img.shields.io/badge/Apache_Maven-build-crimson?style=flat&logo=Apache-Maven&logoColor=white"> <img src="https://img.shields.io/badge/Log4J-logging-orangered?style=flat&logo=Apache-Log4J&logoColor=white">
 
