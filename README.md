@@ -149,6 +149,8 @@ A sigla JSE pode referir-se a diferentes tecnologias dependendo do contexto, mas
 
 Portanto, a sigla JSE pode se referir tanto ao Java Standard Edition, relacionado à linguagem de programação Java, quanto a um motor JavaScript, relacionado ao JavaScript. O significado exato depende do contexto em que a sigla é utilizada.
 
+![1752755951665](https://github.com/user-attachments/assets/677e64be-31d6-4a07-a535-a3e412f39aae)
+
 ## [Java] Ambiente de desenvolvimento
 <img src="https://user-images.githubusercontent.com/61624336/171005805-d123b7c1-89e6-492c-9d03-3dcafb40142e.png" align="right" height="77">
 
