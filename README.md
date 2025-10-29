@@ -275,8 +275,12 @@ public class HelloWorld {
 Configurando a saída do programa pela interface de linha de comando (CLI) do terminal:
 
 ```sh
+# Compilar o App na JVM
 javac app.java
 java app
+
+# Compilar o arquivo .JAR na JVM
+java -jar app.jar
 ```
 
 A linguagem **Java** tem boa parte de suas características herdadas da linguagem **C**. Muitos dos seus operadores, formação de identificadores, comandos de controle de fluxo e várias outras características são compartilhados entre estas duas linguagens.
