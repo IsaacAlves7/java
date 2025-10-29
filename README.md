@@ -281,6 +281,9 @@ java app
 
 # Compilar o arquivo .JAR na JVM
 java -jar app.jar
+
+# Compilar o arquivo .JAR na JVM pelo Powershell usando versão específica
+& "C:\Program Files\Java\jre1.8.0_471\bin\java.exe" -jar app.jar --installServer
 ```
 
 A linguagem **Java** tem boa parte de suas características herdadas da linguagem **C**. Muitos dos seus operadores, formação de identificadores, comandos de controle de fluxo e várias outras características são compartilhados entre estas duas linguagens.
