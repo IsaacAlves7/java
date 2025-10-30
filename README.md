@@ -5517,7 +5517,9 @@ No fim das contas, o Spring Data JPA (com Hibernate como base) é uma solução 
 # 🥛 [Java] Kotlin
 <img src="https://cdn.worldvectorlogo.com/logos/kotlin-2.svg" height="77" align="right">
 
-**Kotlin** é uma linguagem de programação moderna, concisa e segura que foi projetada para interoperar plenamente com o Java. Desenvolvida pela JetBrains, Kotlin se tornou uma escolha popular para o desenvolvimento de aplicativos Android, servidores, web e desktop. Kotlin é uma linguagem versátil e poderosa que tem ganhado popularidade rapidamente devido à sua concisão, segurança e interoperabilidade com Java. É amplamente adotada para desenvolvimento Android, mas também é adequada para back-end, web e desenvolvimento multiplataforma.
+**Kotlin** é uma linguagem de programação moderna, concisa e segura que foi projetada para interoperar plenamente com o Java. Desenvolvida pela JetBrains, Kotlin se tornou uma escolha popular para o desenvolvimento de aplicativos Android, servidores, web e desktop. Kotlin é uma linguagem versátil e poderosa que tem ganhado popularidade rapidamente devido à sua concisão, segurança e interoperabilidade com Java. 
+
+É amplamente adotada para desenvolvimento Android, mas também é adequada para back-end, web e desenvolvimento multiplataforma.
 
 Todo desenvolvedor de back-end que você encontra hoje diria que codifica em JavaScript, Python, PHP ou Ruby. Há uma pequena porcentagem de pessoas que você conheceria que mudaram para o Kotlin como sua escolha de linguagem para criar servidores da Web nos últimos anos. 
 
