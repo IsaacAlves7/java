@@ -5624,10 +5624,39 @@ fun main() = runBlocking { // this: CoroutineScope
 ## [Kotlin] Parâmetros nomeados
 Em Kotlin, você pode invocar funções usando o nome do parâmetro junto com seu valor, independentemente da ordem dos parâmetros. Isso torna o código altamente legível e fácil de depurar. Ter parâmetros nomeados com parâmetros padrão na definição de função exige alta flexibilidade.
 
+```kotlin
+fun Application.configureRoutes() {
+  routing {
+    route("/greet") {
+      get {
+        call.respondText(
+          text = "Hello, World!",    // <- named parameters
+          status = HttpStatusCode.OK
+        )
+      }
+    }
+  }
+}
+```
+
+O acima obviamente não é o melhor código, mas mostra o uso de parâmetros nomeados.
+
 ## [Kotlin] Funções de extensão
 O que você viu acima também é um exemplo de uma função de extensão.
 
 Em outras linguagens de programação, você não pode adicionar funções a uma classe existente (que é um arquivo somente leitura). No entanto, no Kotlin, você pode definir Extension Functions que se comportam como se fossem membros dessa classe específica.
+
+```kotlin
+fun String.countDigits(): Int {
+  return this.count { it in '0'..'9'}
+}
+
+fun main() {
+  println("hello1234".countDigits())
+}
+```
+
+Não posso alterar a definição de , mas posso estendê-la com uma função definida pelo `user.String`
 
 ## [Kotlin] Classes de dados
 As classes de dados são super importantes quando se trata de lidar com o desenvolvimento de back-end. Eles (com listas) são facilmente serializáveis em dados JSON. As classes de dados são usadas para criar objetos de modelo com tipos de dados primitivos. Tipos de dados complexos podem ser usados se e somente se forem classes de dados (serializáveis) também.
