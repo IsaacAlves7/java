@@ -5659,7 +5659,45 @@ fun main() {
 Não posso alterar a definição de , mas posso estendê-la com uma função definida pelo `user.String`
 
 ## [Kotlin] Classes de dados
-As classes de dados são super importantes quando se trata de lidar com o desenvolvimento de back-end. Eles (com listas) são facilmente serializáveis em dados JSON. As classes de dados são usadas para criar objetos de modelo com tipos de dados primitivos. Tipos de dados complexos podem ser usados se e somente se forem classes de dados (serializáveis) também.
+As **classes de dados** são super importantes quando se trata de lidar com o desenvolvimento de back-end. Eles (com listas) são facilmente serializáveis em dados JSON. As classes de dados são usadas para criar objetos de modelo com tipos de dados primitivos. Tipos de dados complexos podem ser usados se e somente se forem classes de dados (serializáveis) também.
+
+Os benefícios do uso de classes de dados são
+
+- `toString` gerado automaticamente.
+- `equals` é gerada uma função que compara o conteúdo de suas propriedades.
+- Função embutida que copia as propriedades em um novo `objeto.copy`
+
+```kotlin
+class Order(
+  val number: Int,
+  val items: List<String>
+)
+
+data class OrderData(
+  val number: Int,
+  val items: List<String>
+)
+
+fun main() {
+  val ord1 = Order(1, listOf("Banana"))
+  val ord2 = Order(1, listOf("Banana"))
+
+  val ord3 = OrderData(2, listOf("Apple"))
+  val ord4 = OrderData(2, listOf("Apple"))
+
+  println(ord1) // Order@65b54208
+  println(ord3) // OrderData(number=2, items=[Apple])
+
+  println(ord1 == ord2) // false
+  println(ord3 == ord4) // true
+
+  val ord5 = ord1.copy() // Compilation error
+  val ord6 = ord3.copy( 
+    items = ord3.items + "Orange" // Modifying the items property
+  )
+  println(ord6) // OrderData(number=2, items=[Apple, Orange])
+}
+```
 
 ## [Kotlin] DSL Kotlin
 Kotlin DSL é um recurso brilhante implementado pela JetBrains. Isso permite que você use o Kotlin para criar código para qualquer outra linguagem com facilidade. Por exemplo, se você quiser enviar de volta um arquivo HTML com uma solicitação recebida, poderá escrever um código DSL HTML em Kotlin e retornar sua representação de string.
