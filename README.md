@@ -5586,6 +5586,16 @@ Ecossistema Kotlin:
 
 4. **Kotlin Multiplatform**: Permite compartilhar código comum entre diferentes plataformas (JVM, JavaScript, iOS, etc.), facilitando o desenvolvimento de aplicativos multiplataforma.
 
+Já existem inúmeras bibliotecas disponíveis para os amantes do Kotlin. Os mais populares são:
+
+O **Ktor** é uma estrutura para criar facilmente aplicativos conectados - aplicativos da web, serviços HTTP, aplicativos móveis e de navegador. Os aplicativos conectados modernos precisam ser assíncronos para fornecer a melhor experiência aos usuários, e as corrotinas Kotlin fornecem recursos incríveis para fazer isso de maneira fácil e direta.
+
+Um servidor **http4k** é apenas uma função regular que é invocada com uma solicitação e retorna uma resposta.
+
+**Javalin** é um framework web simples para Java e Kotlin.
+
+**Primavera** com o Spring Boot em seu aplicativo, apenas algumas linhas de código são tudo o que você precisa para começar a criar serviços como um chefe.
+
 ## [Kotlin] Hello, World
 
 ```kotlin
@@ -5608,6 +5618,22 @@ fun main() = runBlocking { // this: CoroutineScope
     print("Hello, ") // main coroutine continues while a previous one is delayed
 }
 ```
+
+## [Kotlin] Parâmetros nomeados
+Em Kotlin, você pode invocar funções usando o nome do parâmetro junto com seu valor, independentemente da ordem dos parâmetros. Isso torna o código altamente legível e fácil de depurar. Ter parâmetros nomeados com parâmetros padrão na definição de função exige alta flexibilidade.
+
+## [Kotlin] Funções de extensão
+O que você viu acima também é um exemplo de uma função de extensão.
+
+Em outras linguagens de programação, você não pode adicionar funções a uma classe existente (que é um arquivo somente leitura). No entanto, no Kotlin, você pode definir Extension Functions que se comportam como se fossem membros dessa classe específica.
+
+## [Kotlin] Classes de dados
+As classes de dados são super importantes quando se trata de lidar com o desenvolvimento de back-end. Eles (com listas) são facilmente serializáveis em dados JSON. As classes de dados são usadas para criar objetos de modelo com tipos de dados primitivos. Tipos de dados complexos podem ser usados se e somente se forem classes de dados (serializáveis) também.
+
+## [Kotlin] DSL Kotlin
+Kotlin DSL é um recurso brilhante implementado pela JetBrains. Isso permite que você use o Kotlin para criar código para qualquer outra linguagem com facilidade. Por exemplo, se você quiser enviar de volta um arquivo HTML com uma solicitação recebida, poderá escrever um código DSL HTML em Kotlin e retornar sua representação de string.
+
+Depois de importar as dependências corretas, você pode escrever DSL como o seguinte:
 
 ## [Kotlin] Spring Boot com Kotlin
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
