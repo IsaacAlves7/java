@@ -5519,6 +5519,12 @@ No fim das contas, o Spring Data JPA (com Hibernate como base) é uma solução 
 
 **Kotlin** é uma linguagem de programação moderna, concisa e segura que foi projetada para interoperar plenamente com o Java. Desenvolvida pela JetBrains, Kotlin se tornou uma escolha popular para o desenvolvimento de aplicativos Android, servidores, web e desktop. Kotlin é uma linguagem versátil e poderosa que tem ganhado popularidade rapidamente devido à sua concisão, segurança e interoperabilidade com Java. É amplamente adotada para desenvolvimento Android, mas também é adequada para back-end, web e desenvolvimento multiplataforma.
 
+Todo desenvolvedor de back-end que você encontra hoje diria que codifica em JavaScript, Python, PHP ou Ruby. Há uma pequena porcentagem de pessoas que você conheceria que mudaram para o Kotlin como sua escolha de linguagem para criar servidores da Web nos últimos anos. 
+
+Por que Kotlin? Kotlin é uma linguagem de programação multiparadigma. Ele suporta muitos recursos de linguagens diferentes de vários outros linguagens. Se um recurso estiver ausente, não será difícil criar um código em Kotlin que o incorpore. 
+
+Por exemplo, <a href="https://medium.com/codex/mix-up-your-kotlin-functions-with-function-composition-c0f635d40c87">Haskell</a> — uma linguagem puramente funcional — usa o para compor duas funções juntas. Em Kotlin, você pode escrever uma função que executa o comportamento exato.
+
 Principais Características da Linguagem Kotlin:
 
 1. **Interoperabilidade com Java**: Kotlin é totalmente compatível com Java, o que significa que você pode chamar código Java a partir de Kotlin e vice-versa. Isso facilita a integração com projetos existentes em Java.
@@ -5585,6 +5591,21 @@ Ecossistema Kotlin:
 ```kotlin
 fun main() {
     println("Hello, World!")
+}
+```
+
+## [Kotlin] Corrotinas
+As **corrotinas** são operações leves do tipo thread que se saem bem em simultaneidade e na gravação de código assíncrono. Ao contrário do Java, o Kotlin abandonou a ideia de multi-threading e adotou um método de suspensão de funções e corrotinas.
+
+As corrotinas são executadas com muito mais rapidez e eficiência. Também é possível que várias corrotinas sejam executadas na mesma linha de execução.
+
+```kotlin
+fun main() = runBlocking { // this: CoroutineScope
+    launch { // launch a new coroutine and continue
+        delay(1000L) // non-blocking delay for 1 second (default time unit is ms)
+        println("World!") // print after delay
+    }
+    print("Hello, ") // main coroutine continues while a previous one is delayed
 }
 ```
 
