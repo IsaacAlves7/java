@@ -5642,9 +5642,7 @@ fun Application.configureRoutes() {
 O acima obviamente não é o melhor código, mas mostra o uso de parâmetros nomeados.
 
 ## [Kotlin] Funções de extensão
-O que você viu acima também é um exemplo de uma função de extensão.
-
-Em outras linguagens de programação, você não pode adicionar funções a uma classe existente (que é um arquivo somente leitura). No entanto, no Kotlin, você pode definir Extension Functions que se comportam como se fossem membros dessa classe específica.
+O que você viu acima também é um exemplo de uma **função de extensão**. Em outras linguagens de programação, você não pode adicionar funções a uma classe existente (que é um arquivo somente leitura). No entanto, no Kotlin, você pode definir Extension Functions que se comportam como se fossem membros dessa classe específica.
 
 ```kotlin
 fun String.countDigits(): Int {
@@ -5700,9 +5698,39 @@ fun main() {
 ```
 
 ## [Kotlin] DSL Kotlin
-Kotlin DSL é um recurso brilhante implementado pela JetBrains. Isso permite que você use o Kotlin para criar código para qualquer outra linguagem com facilidade. Por exemplo, se você quiser enviar de volta um arquivo HTML com uma solicitação recebida, poderá escrever um código DSL HTML em Kotlin e retornar sua representação de string.
+**Kotlin DSL** é um recurso brilhante implementado pela JetBrains. Isso permite que você use o Kotlin para criar código para qualquer outra linguagem com facilidade. Por exemplo, se você quiser enviar de volta um arquivo HTML com uma solicitação recebida, poderá escrever um código DSL HTML em Kotlin e retornar sua representação de string.
 
 Depois de importar as dependências corretas, você pode escrever DSL como o seguinte:
+
+```kotlin
+fun main() {
+  val htmlContent = html {
+    head {
+      title { +"This is Kotlin DSL" }
+      style {
+        css(".color-red") {
+          color = "#ff0000"
+        }
+        css("h1") {
+          cursor = "pointer"
+          fontSize = "2.5rem"
+        }
+      }
+    }
+    body {
+      h1 {
+        +"Heading 1 is 2.5rem big."
+      }
+      p(className = "color-red") {
+        +"Red"
+        b { +" and bold" }
+      }
+    }
+  }
+
+  println(htmlContent)
+}
+```
 
 ## [Kotlin] Spring Boot com Kotlin
  <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-orange?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
