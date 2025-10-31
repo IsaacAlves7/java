@@ -344,6 +344,8 @@ Em todas as linguagens de programação, devemos identificar variáveis, program
 
 Exemplos de identificadores válidos em Java:
 
+<img height="177" align="right" src="https://github.com/user-attachments/assets/d561bc7f-fa2c-4bfd-9ca1-34ad677e8101" />
+
 - `identificador`
 - `nomeCompleto`
 - `NomeCompleto`
