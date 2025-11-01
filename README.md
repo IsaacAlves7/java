@@ -5603,6 +5603,7 @@ Um servidor **http4k** é apenas uma função regular que é invocada com uma so
 **Primavera** com o Spring Boot em seu aplicativo, apenas algumas linhas de código são tudo o que você precisa para começar a criar serviços como um chefe.
 
 ## [Kotlin] Hello, World
+O estilo da sintaxe é parecido com as linguagens de programação modernas como Rust, Dart:
 
 ```kotlin
 fun main() {
