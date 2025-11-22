@@ -1145,7 +1145,7 @@ Byte.parseByte() / Short.parseShort()
 
 A boa prática em programação Java leva em conta um conjunto de regras que facilitam o desenvolvimento de aplicações e melhoram bastante o trabalho em conjunto realizado por equipes. Ao seguir estas regras, projetos podem ser desenvolvidos em paralelo por diferentes programadores, sem que seja necessário que cada componente precise esperar que outros terminem suas tarefas. Estas regras foram utilizadas na construção da linguagem permitindo que não seja necessário decorar as sintaxes de instruções Java. Não são obrigatórias, mas permitem a codificação melhor de nossas aplicações. Vamos ver algumas dessas regras na prática:
 
-1) Variáveis auxiliares, atributos, métodos e objetos devem ser identificados iniciando por letras minúsculas. Quando houver mais de uma palavra, deve-se começar cada nova palavra com uma letra maiúscula. 
+1 - Variáveis auxiliares, atributos, métodos e objetos devem ser identificados iniciando por letras minúsculas. Quando houver mais de uma palavra, deve-se começar cada nova palavra com uma letra maiúscula. 
 
 Exemplos:
 
@@ -1159,7 +1159,7 @@ String nome;
 String nomeCompleto;
 ```
 
-2) Constantes devem ser identificadas por letras maiúsculas em todo o seu nome; mesmo quando temos mais de uma palavra, todo o identificador deve ficar em maiúsculas. 
+2 - Constantes devem ser identificadas por letras maiúsculas em todo o seu nome; mesmo quando temos mais de uma palavra, todo o identificador deve ficar em maiúsculas. 
 
 Exemplos:
 
@@ -1173,7 +1173,7 @@ final String nome;
 final String nomeCompleto;
 ```
 
-3) Classes e interfaces (tipo especial de classe) devem iniciar por letras maiúsculas. Quando houver mais de uma palavra, deve-se começar cada nova palavra com uma letra maiúscula. 
+3 - Classes e interfaces (tipo especial de classe) devem iniciar por letras maiúsculas. Quando houver mais de uma palavra, deve-se começar cada nova palavra com uma letra maiúscula. 
 
 Exemplos:
 
@@ -1185,6 +1185,30 @@ public class Carro Hibrido { ... }
 public interface Basico { ... }
 
 public interface MetodosBasicos { ... }
+```
+
+4 - Técnicas Básicas de Economia de Memória para Programação em Java: Melhores Práticas para Otimizar Código Java e Reduzir o Uso de Memória. Java é uma linguagem de programação popular amplamente utilizada para desenvolver aplicações complexas. No entanto, um dos problemas comuns dos programas Java é o alto uso de memória, que pode levar a problemas de desempenho e até mesmo travamentos. Portanto, é importante usar técnicas de economia de memória para otimizar o código Java e reduzir o uso de memória.
+
+Uso de tipos de dados primitivos: Ao usar tipos de dados primitivos em vez de seus wrappers de objetos, podemos economizar memória evitando a sobrecarga da criação de objetos.
+
+```java
+int x = 42;      // use int instead of Integer
+double d = 3.14; // use double instead of Double
+boolean b = true; // use boolean instead of Boolean
+```
+
+Evite a criação desnecessária de objetos: 
+
+```java
+String s = "Hello" + " World"; // use StringBuilder instead
+```
+
+Essa linha de código cria um objeto de `new string` para a `string` concatenada `"Hello World"`. Em vez disso, podemos usar um `StringBuilder` para anexar as strings e evitar criar um novo objeto para cada concatenação:
+
+```java
+StringBuilder sb = new StringBuilder();
+sb.append("Hello");
+sb.append(" World");
 ```
 
 # ☕ [Java] Classes e objetos
