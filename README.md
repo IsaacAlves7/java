@@ -4812,13 +4812,58 @@ public class Cotacao {
 }
 ```
 
-Classe Exemplo1 (pacote: aplicacao):
+Classe Exemplo1 (pacote: `aplicacao`):
 
 ```java
+package aplicacao;
+import java.util.Scanner;
+import biblioteca.Cotacao;
 
+public class Cotacao {
+    private static double valorDolar;
+}
+
+public class Exemplo1 {
+
+    public static void main(String[] args) {
+
+        double valorReal;
+
+        Scanner entrada = new Scanner(System.in);
+
+        Cotacao cot_1 = new Cotacao();
+
+        cot_1.entrada();
+
+        System.out.println();
+
+        valorReal = Double.parseDouble(entrada.nextLine());
+
+        // Conversão com o objeto cot_1 de R$ 1000,00 com dólar R$ 3.82
+
+        cot_1.imprimir();
+
+        System.out.printf("Conversão de Real para dólar : U$ %.2f",
+        cot_1.converterRealParaDolar(valorReal));
+        System.out.println();
+
+        Cotacao cot_2 = new Cotacao(4.15);
+
+        // Conversão utilizando os objetos cot_1 e cot_2 com o mesmo valor de R$ 1000,00
+
+        cot_1.imprimir();
+        System.out.printf("Conversão de Real para dólar : U$ %.2f",
+        cot_1.converterRealParaDolar(valorReal));
+        System.out.println();
+
+        cot_2.imprimir();
+        System.out.printf("Conversão de Real para dólar : U$ %.2f",
+        cot_2.converterRealParaDolar(valorReal));
+        System.out.println();
+
+    }
+}
 ```
-
-![code](https://user-images.githubusercontent.com/61624336/121293518-22eb7900-c8c2-11eb-9b57-dd1021a736f8.png)
 
 Execução:
 
