@@ -5436,7 +5436,7 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 - Criação de APIs REST com Spring MVC e Spring Boot.
 
-- Gerenciamento de transações.
+- Gerenciamento de transações ideal para padrões como SAGA.
 
 - Integração com serviços na nuvem e muito mais.
 
