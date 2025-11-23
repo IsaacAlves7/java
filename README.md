@@ -5440,6 +5440,12 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 - Integração com serviços na nuvem e muito mais.
 
+As **Anotações de código**, como as usadas no ecossistema **Spring** no Java, são metadados declarativos que você adiciona diretamente sobre classes, métodos ou atributos para indicar ao framework como aquele trecho de código deve se comportar em tempo de execução. Elas não são comentários nem instruções diretas do programador para a máquina, mas sim **sinalizadores** que o Spring interpreta para aplicar comportamentos automáticos, recursos do framework ou integrações com seus módulos internos. A anotação `@Transactional`, por exemplo, é uma instrução declarativa que informa ao Spring que o método ou classe deve ser executado dentro de um contexto transacional. Isso significa que o framework irá abrir uma transação antes da execução, monitorar o método e, dependendo do resultado, confirmar (commit) ou desfazer (rollback) todas as operações de banco de dados feitas ali dentro. Essa abordagem permite que você trate transações complexas de maneira simples, sem precisar manipular manualmente conexões, commits ou rollbacks, deixando o código mais limpo, menos verboso e muito mais seguro.
+
+Esse mecanismo funciona graças ao uso de **AOP (Aspect-Oriented Programming)** no Spring, onde o framework intercepta a execução do método anotado e adiciona comportamentos antes e depois da execução sem alterar o código original. Isso vale não apenas para @Transactional, mas também para diversas outras anotações como `@Service`, `@Repository`, `@Controller`, `@Autowired`, `@RestController`, `@Configuration`, entre muitas outras, que também instruem o Spring a registrar componentes, montar injeções de dependência, configurar beans, habilitar APIs REST e controlar o ciclo de vida da aplicação inteira. Na prática, as anotações deixam o código declarativo e expressivo, permitindo que a infraestrutura técnica — transações, configurações, injeções, tratamento de erros, gerenciamento de componentes — seja tratada automaticamente, enquanto o desenvolvedor se concentra apenas na lógica central da aplicação.
+
+Portanto, anotações de Spring são uma forma elegante de estabelecer contratos entre o código e o framework. Elas indicam intenções arquiteturais e comportamentais sem poluir a lógica, trazendo organização, clareza e padronização. @Transactional é apenas um exemplo clássico de como uma simples anotação é capaz de ativar mecanismos poderosos e sofisticados, tornando o desenvolvimento mais seguro, produtivo e alinhado com boas práticas modernas.
+
 Sobre o **Spring Actions** nós temos gerenciamento de dependências (Dependency management) com a ajuda do Maven. Também temos acesso a dados. Removemos o código boilerplate ao lidar com transações, gerenciamento de conexões, acesso remoto e segurança. E, finalmente, temos o controlador (controller) de visualização do modelo ou o MVC com integração do controlador.
 
 Mas e quanto ao contexto das aplicações de vínculo? Bem, e quanto à Bean Factory, suas portas?
@@ -5462,7 +5468,7 @@ Principais componentes do ambiente de execução do Spring:
 
 5. **Banco de Dados e Integrações** Muitas aplicações Spring interagem com bancos de dados via **Spring Data JPA**, **JDBC**, **MongoDB**, **Redis**, etc. O ambiente de execução pode incluir conexões com serviços externos, como APIs REST, mensageria (RabbitMQ, Kafka), caches distribuídos, entre outros.
 
-6. **Spring Runtime e Nuvem** Se sua aplicação roda em **ambientes de nuvem**, como AWS, Azure, GCP ou Kubernetes, o runtime pode incluir:
+6. **Spring Runtime e Nuvem** Se sua aplicação roda em *ambientes de nuvem*, como AWS, Azure, GCP ou Kubernetes, o runtime pode incluir:
 
 - **Spring Cloud** (para microservices e integração com serviços na nuvem).
 - **Docker/Kubernetes** para implantação escalável.
