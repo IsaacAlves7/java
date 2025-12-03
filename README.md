@@ -5562,6 +5562,8 @@ Outro grande benefício da inicialização automática do Spring Boot é o **Spr
 
 Com isso, ao invés de gastar tempo com configurações repetitivas e infraestrutura, os desenvolvedores podem focar diretamente no desenvolvimento das **regras de negócio**. É isso que faz o Spring Boot ser tão eficiente para criar microserviços, APIs REST e aplicações escaláveis rapidamente.
 
+<img height="177" align="right" src="https://github.com/user-attachments/assets/3c3006a3-8c75-43b3-9a2c-a188aca287ae" />
+
 **Lombok** é uma biblioteca Java que tem como objetivo principal reduzir o boilerplate, ou seja, aquele código repetitivo e verboso — gerando automaticamente métodos como `getters`, `setters`, `toString`, `equals`, `hashCode`, construtores, builders, entre outros, por meio de anotações simples diretamente nas classes. Com ela, é possível deixar o código mais limpo, legível e focado na lógica de negócio, sem precisar escrever manualmente coisas que o compilador pode gerar por você.
 
 Ela funciona utilizando anotações em tempo de compilação, através de uma técnica chamada "annotation processing", o que significa que os métodos gerados por Lombok não aparecem diretamente no código fonte, mas sim nos arquivos `.class` compilados. Isso exige que a IDE usada (como IntelliJ ou Eclipse) também tenha suporte para Lombok, caso contrário, pode parecer que os métodos não existem, mesmo estando lá.
