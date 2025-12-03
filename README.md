@@ -5548,6 +5548,8 @@ O **Autowired** é uma anotação (indicação) onde deverá ocorrer uma injeç�
 
 Enquanto que o Spring Framework é baseado no padrão de injeção de dependências, o **Spring Boot** foca na configuração automática. O Spring Boot é um framework Java de código aberto usado para programar aplicativos autônomos baseados em Spring de nível de produção com o mínimo de esforço. O Spring Boot é uma extensão de convenção sobre configuração para a plataforma Spring Java destinada a ajudar a minimizar as preocupações de configuração ao criar aplicações baseadas no Spring. A maior parte do aplicativo pode ser pré-configurada usando a "visão opinativa" da equipe Spring da melhor configuração e uso da plataforma Spring e bibliotecas de terceiros.
 
+O Spring Boot, com sua poderosa configuração automática e ecossistema rico, tornou-se um framework líder em desenvolvimento Java. Além de sua funcionalidade principal, o Spring Framework oferece diversas classes utilitárias que podem simplificar drasticamente o desenvolvimento diário. Ao aproveitar essas ferramentas integradas, você pode escrever código mais limpo e robusto e reduzir sua dependência de bibliotecas externas como Apache Commons ou Guava.
+
 <img src="https://github.com/IsaacAlves7/java/assets/61624336/2a5b8942-1fc7-4c42-82e3-ba9d68d7d10f" align="right" height="277">
 
 Dado que a maior parte das configurações necessárias para o início de um projeto são sempre as mesmas, por que não iniciar um projeto com todas estas configurações já definidas?
@@ -5589,6 +5591,8 @@ E se for usar com o Spring Boot, o suporte é pleno e altamente compatível. Mui
 Além da dependência, para que Lombok funcione corretamente na sua IDE, é necessário instalar o **plugin do Lombok**. No IntelliJ IDEA, vá até `Settings → Plugins → Marketplace`, procure por "Lombok", instale e reinicie a IDE. Em seguida, vá em `Settings → Build, Execution, Deployment → Compiler → Annotation Processors` e habilite a opção “Enable annotation processing”. No Eclipse, você pode baixar o jar de instalação do Lombok no site oficial e executá-lo, que ele se integra ao Eclipse automaticamente.
 
 Depois disso, basta usar anotações como `@Getter`, `@Setter`, `@AllArgsConstructor`, `@NoArgsConstructor`, `@Builder`, `@Data`, entre outras, para ver seu código se tornar muito mais enxuto e produtivo.
+
+
 
 ## [Java] Spring Data JPA (Hibernate)
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring-2.1.2-6DB33F?style=flat&logo=Spring&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
