@@ -5424,7 +5424,15 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 <img src="https://github.com/IsaacAlves7/java/assets/61624336/95e714b2-1761-4b70-aef5-fe5af7f0ab57" align="right" height="277">
 
+- Spring Core
+
+- Programação orientada a aspectos (Spring AOP): é um paradigma que nasce para resolver um problema que aparece em praticamente todos os sistemas de médio ou grande porte: a existência dos chamados cross-cutting concerns, ou seja, comportamentos que atravessam diversas partes da aplicação, mas que não pertencem diretamente à lógica de negócio de nenhuma delas. Esse tipo de comportamento inclui auditoria, logging, autenticação, autorização, transações, métricas, rastreamento, tratamento padronizado de exceções e diversas outras funcionalidades que, se escritas diretamente dentro dos métodos, acabam poluindo o código (Code Smells), quebrando o encapsulamento e tornando difícil manter uma base organizada (Clean Code). O AOP tenta devolver a limpeza, modularidade e clareza ao sistema ao separar essas preocupações transversais em unidades isoladas chamadas “aspectos”.
+
 - Inversão de Controle (IoC) e Injeção de Dependência (DI).
+
+- Spring ORM
+
+- Spring Security
 
 - Java Bean é uma classe Java que segue um conjunto de convenções específicas, usadas para encapsular dados e facilitar a reutilização e o gerenciamento de componentes em aplicações Java. Ele é amplamente utilizado em frameworks e bibliotecas Java, especialmente em ambientes que lidam com interfaces gráficas (Swing, JavaFX) ou frameworks web (como Spring e JavaServer Faces). Java bean consiste somente em getters e setters.
 
@@ -5432,9 +5440,9 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 - POJO (Plain Old Java Object) é um termo utilizado para descrever um objeto Java simples, que não segue nenhuma restrição específica imposta por frameworks ou bibliotecas. Ele é usado para criar classes que contenham dados e lógica básica, sem herdar de classes específicas ou implementar interfaces obrigatórias, exceto aquelas necessárias para sua funcionalidade (como `Serializable`, por exemplo). POJO é simplesmente um objeto Java antigo, mas então você pode estar pensando: qual é a diferença entre Java Bean e o POJO? Bem, POJO é um objeto que possui atributos e comportamento, portanto, não são apenas getters e setters
 
-- Programação orientada a aspectos (AOP): é um paradigma que nasce para resolver um problema que aparece em praticamente todos os sistemas de médio ou grande porte: a existência dos chamados cross-cutting concerns, ou seja, comportamentos que atravessam diversas partes da aplicação, mas que não pertencem diretamente à lógica de negócio de nenhuma delas. Esse tipo de comportamento inclui auditoria, logging, autenticação, autorização, transações, métricas, rastreamento, tratamento padronizado de exceções e diversas outras funcionalidades que, se escritas diretamente dentro dos métodos, acabam poluindo o código (Code Smells), quebrando o encapsulamento e tornando difícil manter uma base organizada (Clean Code). O AOP tenta devolver a limpeza, modularidade e clareza ao sistema ao separar essas preocupações transversais em unidades isoladas chamadas “aspectos”.
-
 - Acesso a banco de dados via JDBC, JPA/Hibernate.
+
+- JMS (Java Message Service)
 
 - Criação de APIs REST com Spring MVC e Spring Boot.
 
