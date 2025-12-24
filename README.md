@@ -5697,13 +5697,13 @@ Ecossistema Kotlin:
 
 Já existem inúmeras bibliotecas disponíveis para os amantes do Kotlin. Os mais populares são:
 
-O **Ktor** é uma estrutura para criar facilmente aplicativos conectados - aplicativos da web, serviços HTTP, aplicativos móveis e de navegador. Os aplicativos conectados modernos precisam ser assíncronos para fornecer a melhor experiência aos usuários, e as corrotinas Kotlin fornecem recursos incríveis para fazer isso de maneira fácil e direta.
+- O **Ktor** é uma estrutura para criar facilmente aplicativos conectados - aplicativos da web, serviços HTTP, aplicativos móveis e de navegador. Os aplicativos conectados modernos precisam ser assíncronos para fornecer a melhor experiência aos usuários, e as corrotinas Kotlin fornecem recursos incríveis para fazer isso de maneira fácil e direta.
 
-Um servidor **http4k** é apenas uma função regular que é invocada com uma solicitação e retorna uma resposta.
+- Um servidor **http4k** é apenas uma função regular que é invocada com uma solicitação e retorna uma resposta.
 
-**Javalin** é um framework web simples para Java e Kotlin.
+- **Javalin** é um framework web simples para Java e Kotlin.
 
-**Primavera** com o Spring Boot em seu aplicativo, apenas algumas linhas de código são tudo o que você precisa para começar a criar serviços como um chefe.
+- <a href="">Spring</a> com o Spring Boot em seu aplicativo, apenas algumas linhas de código são tudo o que você precisa para começar a criar serviços como um chefe.
 
 ## [Kotlin] Hello, World
 O estilo da sintaxe é parecido com as linguagens de programação modernas como Rust, Dart:
