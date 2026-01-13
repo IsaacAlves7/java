@@ -1,8 +1,8 @@
 <a href="https://github.com/IsaacAlves7/java-programming"><img src="https://training.infnet.edu.br/wp-content/uploads/sites/18/2019/02/desenvolvedor-java.jpg"/></a>
 
-# It's a repository of Java language ☕
 > Versículo chave: "Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos." - Provérbios 16:3
 
+# It's a repository of Java language ☕
 > ☕ **Preparação**: Para este conteúdo, o aluno deverá dispor de um computador com acesso à internet, um web browser com suporte a HTML 5 (Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, Opera etc.), um editor de texto ou IDE (VSCode etc.) e o software JDK, com a versão mais recente, instalado na sua máquina local.
 
 <a href="https://github.com/IsaacAlves7/java-programming"><div align="center"><img src="https://github.com/IsaacAlves7/java/assets/61624336/4879f8a9-f7e2-4025-9f35-5b5997b49f7f" height="177"/></div></a>
@@ -938,6 +938,8 @@ Estruturas de decisão caracterizadas pela possibilidade de uma variável possui
 Uma única estrutura <code>switch</code> pode analisar vários diferentes valores para a variável de controle. A variável de controle em Java pode ser do tipo: <code>inteiro</code>, <code>caractere</code>, ou <code>String</code>. 
 
 A cláusula <code>case</code> pode ocorrer de uma a várias vezes, e a cláusula <code>default</code> é opcional.
+
+https://medium.com/javarevisited/re-write-this-java-if-else-code-block-or-ill-reject-your-pull-request-953f20c0f544
 
 ## [Java] Estrutura de Laços de Repetição (Loops)
 `for` é uma estrutura de repetição (Laços de repetição ou Loop) controlada por uma ou mais variáveis contadoras e caracterizada pela existência de três parâmetros, sendo todos eles opcionais:
