@@ -9,7 +9,9 @@
 
 <img src="https://user-images.githubusercontent.com/61624336/183478203-20b992ae-b018-448a-bd56-e2fae9c5f7ae.svg" align="right" height="77">
 
-Sou um especialista em desenvolvimento de software com foco no ecossistema Java/Kotlin, atuando com frameworks robustos como Spring Boot, Jakarta EE e Quarkus. Tenho sólida experiência na aplicação de boas práticas de engenharia de software, como os princípios SOLID, DRY, KISS, TDA e SoC, com domínio na aplicação de design patterns (criacionais, estruturais e comportamentais), além da adoção dos princípios de Clean Code e Clean Architecture para garantir legibilidade, manutenibilidade e escalabilidade do código.
+Sou um especialista em desenvolvimento de software com foco no ecossistema Java/Kotlin, atuando com frameworks robustos como Spring Boot, Jakarta EE e Quarkus. 
+
+Tenho sólida experiência na aplicação de boas práticas de engenharia de software, como os princípios SOLID, DRY, KISS, TDA e SoC, com domínio na aplicação de design patterns (criacionais, estruturais e comportamentais), além da adoção dos princípios de Clean Code e Clean Architecture para garantir legibilidade, manutenibilidade e escalabilidade do código.
 
 No front-end, colaboro em projetos com SPAs desenvolvidas em React, Angular e Vue, integradas com back-ends Java via APIs REST ou GraphQL. Também participo de aplicações SSR com frameworks como Next.js ou Thymeleaf em projetos fullstack Java. Tenho domínio de HTML/CSS, Flexbox e CSS Grid, com foco em design responsivo baseado em protótipos UI/UX elaborados no Figma.
 
@@ -67,6 +69,8 @@ Principais características e vantagens da tecnologia Java:
 - Desempenho;
 - Mais rápida que linguagens de script, porém mais lenta que as linguagens compiladas puras;
 - Hoje, os problemas de desempenho são resolvidos com compilação just-in-time.
+
+![623784202_1546511484145091_5190546318736151751_n](https://github.com/user-attachments/assets/494faef1-075c-4d00-aa33-dd494874d850)
 
 <img src="https://luizgustavoss.files.wordpress.com/2009/02/api_jse.png" height="277" align="right">
 
