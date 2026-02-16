@@ -5237,7 +5237,11 @@ Para bancos de dados NoSQL, frameworks como **Spring Data MongoDB**, **Spring Da
 
 Portanto, os principais frameworks e bibliotecas de ORM e persistência em Java são: **Hibernate**, **JPA**, **Spring Data JPA**, **MyBatis**, **jOOQ**, **Ebean** e **EclipseLink**, sendo o trio Hibernate + JPA + Spring Data o mais comum nas aplicações modernas.
 
-O **JDBC (Java Database Connectivity)** é a API padrão da linguagem Java para acesso a bancos de dados relacionais. Ele permite que aplicações Java se conectem, consultem, insiram, atualizem e removam dados em bancos como MySQL, PostgreSQL, Oracle, SQL Server, entre outros, usando SQL diretamente. Diferente dos frameworks ORM como Hibernate ou JPA, o JDBC trabalha em um nível mais baixo e exige que o desenvolvedor escreva manualmente as instruções SQL e gerencie aspectos como conexões, prepared statements, result sets e fechamento de recursos. Resumidamente, o JDBC é a ponte direta entre o Java e o SQL, essencial para quem quer ou precisa de controle absoluto nas operações com banco de dados, mas que pode ser substituído por abstrações de alto nível em sistemas maiores para reduzir complexidade e repetição de código.
+O **JDBC (Java Database Connectivity)** é a API padrão da linguagem Java para acesso a bancos de dados relacionais. Ele permite que aplicações Java se conectem, consultem, insiram, atualizem e removam dados em bancos como MySQL, PostgreSQL, Oracle, SQL Server, entre outros, usando SQL diretamente. Diferente dos frameworks ORM como Hibernate ou JPA, o JDBC trabalha em um nível mais baixo e exige que o desenvolvedor escreva manualmente as instruções SQL e gerencie aspectos como conexões, prepared statements, result sets e fechamento de recursos. 
+
+Resumidamente, o JDBC é a ponte direta entre o Java e o SQL, essencial para quem quer ou precisa de controle absoluto nas operações com banco de dados, mas que pode ser substituído por abstrações de alto nível em sistemas maiores para reduzir complexidade e repetição de código.
+
+<img width="424" height="416" alt="Captura de tela 2026-01-15 214044" src="https://github.com/user-attachments/assets/815afd79-be77-4cd7-919f-e4211e4299f2" />
 
 Isso significa que você escreve comandos SQL manualmente, como `SELECT`, `INSERT`, `UPDATE` e `DELETE`, e os passa diretamente para o mecanismo de execução — sem mapeamento automático de objetos como nos ORMs (tipo Hibernate, Doctrine, Prisma, etc.).
 
