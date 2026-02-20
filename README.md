@@ -5329,7 +5329,9 @@ A principal vantagem do Gradle está na sua flexibilidade e desempenho. Ele usa 
 
 Outra característica marcante do Gradle é o seu sistema de cache inteligente e builds incrementais, que evita refazer tarefas que não mudaram, acelerando muito o processo em projetos grandes.
 
-Além disso, ele possui suporte nativo a resolução de dependências via repositórios como Maven Central ou JCenter. Isso significa que você pode declarar que precisa, por exemplo, da biblioteca do Lombok ou do Spring Boot com apenas uma linha, e o Gradle baixa tudo automaticamente.
+Além disso, ele possui suporte nativo a resolução de dependências via repositórios como Maven Central ou JCenter. Isso significa que você pode declarar que precisa, por exemplo, da biblioteca do **Lombok** ou do Spring Boot com apenas uma linha, e o Gradle baixa tudo automaticamente.
+
+![FB_IMG_1724386160785](https://github.com/user-attachments/assets/9806f255-6b70-457e-a039-c6a372755ecd)
 
 Se você está em um projeto Android, inclusive, o Gradle já é o sistema de build padrão do Android Studio, então você provavelmente está usando ele sem perceber.
 
