@@ -5460,7 +5460,11 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 - Integração com serviços na nuvem e muito mais.
 
+![FB_IMG_1729854396734](https://github.com/user-attachments/assets/090f7c1d-91c7-4999-8e6c-1c89384146ef)
+
 As **Anotações de código**, como as usadas no ecossistema **Spring** no Java, são metadados declarativos que você adiciona diretamente sobre classes, métodos ou atributos para indicar ao framework como aquele trecho de código deve se comportar em tempo de execução. Elas não são comentários nem instruções diretas do programador para a máquina, mas sim **sinalizadores** que o Spring interpreta para aplicar comportamentos automáticos, recursos do framework ou integrações com seus módulos internos. A anotação `@Transactional`, por exemplo, é uma instrução declarativa que informa ao Spring que o método ou classe deve ser executado dentro de um contexto transacional. Isso significa que o framework irá abrir uma transação antes da execução, monitorar o método e, dependendo do resultado, confirmar (commit) ou desfazer (rollback) todas as operações de banco de dados feitas ali dentro. Essa abordagem permite que você trate transações complexas de maneira simples, sem precisar manipular manualmente conexões, commits ou rollbacks, deixando o código mais limpo, menos verboso e muito mais seguro.
+
+![FB_IMG_1720236099805](https://github.com/user-attachments/assets/0ee7c72d-df8d-454e-9545-127ede0e441f)
 
 Esse mecanismo funciona graças ao uso de **AOP (Aspect-Oriented Programming)** no Spring, onde o framework intercepta a execução do método anotado e adiciona comportamentos antes e depois da execução sem alterar o código original. Isso vale não apenas para `@Transactional`, mas também para diversas outras anotações como `@Service`, `@Repository`, `@Controller`, `@Autowired`, `@RestController`, `@Configuration`, entre muitas outras, que também instruem o Spring a registrar componentes, montar injeções de dependência, configurar beans, habilitar APIs REST e controlar o ciclo de vida da aplicação inteira. Na prática, as anotações deixam o código declarativo e expressivo, permitindo que a infraestrutura técnica — transações, configurações, injeções, tratamento de erros, gerenciamento de componentes — seja tratada automaticamente, enquanto o desenvolvedor se concentra apenas na lógica central da aplicação.
 
