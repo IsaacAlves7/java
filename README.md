@@ -5406,6 +5406,8 @@ Os padrões de design mais comuns que podem ser implementados em Java, assim com
 
 - **Behavioural** (comportamental): Lidam com a comunicação e interação entre objetos, definindo padrões de fluxo de responsabilidade.
 
+![Types-of-Design-Pattern-in-Java](https://github.com/user-attachments/assets/66c3cac3-10a3-447e-9a99-2da9ab60d8ee)
+
 Mas primeiro, o que é um padrão de design? Um padrão de design pode ser pensado como uma solução razoável que pode ser aplicada a cenários comuns de programação; como desenvolvedor, você encontrará padrões de design em toda parte. A API do Java sozinha resolve a maioria de seus desafios de programação com diferentes padrões de design; podemos pensar em um padrão de design como uma solução para um problema comum e também como uma estrutura que tornará o código mais fácil de manter. Por último, mas não menos importante, ele fornece mais credibilidade para o código, tornando-o mais fácil de ler.
 
 # 🦖 [Java] VRaptor
@@ -5898,5 +5900,7 @@ O **TDD** em Java é amplamente utilizado e bem estabelecido. A prática envolve
 No entanto, isso não impede, e muitas vezes exige que a aplicação seja complementada com ferramentas de logging e monitoring (observabilidade), mesmo durante o desenvolvimento guiado por testes. O Log4j (ou outras alternativas como SLF4J com Logback) é comumente usado para logar comportamentos importantes da aplicação, e isso pode inclusive ajudar nos testes, especialmente nos de integração e testes funcionais. Com o log ativado, é possível rastrear eventos, verificar se exceções foram corretamente capturadas e até usar os logs como apoio na escrita de asserts em testes mais elaborados.
 
 Para desenvolvimento Android, em Java ou Kotlin, você ainda pode usar JUnit 5 e Mockito para testes unitários puros, especialmente para testar lógica de negócio, `ViewModels`, `UseCases`, `Repositories`, etc. O Gradle continua sendo a ferramenta principal para build e integração de testes no Android Studio, que é a IDE padrão no Android e já vem altamente integrada com essas ferramentas.
+
+<img width="438" height="221" alt="mockito-tutorial" src="https://github.com/user-attachments/assets/a03a4233-2add-4d8c-83e4-d5d2a3781408" />
 
 O **BDD** se constrói sobre o TDD, com foco na descrição do comportamento do sistema em linguagem natural. Em Java, o framework mais popular para isso é o **Cucumber**, que permite escrever testes em **Gherkin**, um formato descritivo que usa estruturas como `Given`, `When`, `Then`. O Cucumber interpreta essas especificações e as vincula a implementações Java, promovendo colaboração entre desenvolvedores, QA e product owners.
