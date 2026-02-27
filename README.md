@@ -5642,6 +5642,16 @@ Além disso, ele oferece integração facilitada com queries personalizadas via 
 No fim das contas, o Spring Data JPA (com Hibernate como base) é uma solução madura, robusta e produtiva para persistência de dados em aplicações Java, que reduz drasticamente o tempo de desenvolvimento ao abstrair tarefas repetitivas e promover boas práticas de acesso a dados com foco em legibilidade, desacoplamento e manutenção do código.
 
 ## [Java] How Netflix Runs on Java?
+Não existe uma única Stack de Netflix. A Stack Java da Netflix tem evoluído nos últimos anos, começando desde frameworks internos até microserviços da era Groovy e, mais recentemente, migrando para a GraphQL Federation.
+
+Todas as mudanças foram feitas para resolver problemas da abordagem anterior. Por exemplo, a mudança para o RxJava foi para lidar melhor com os fanouts e a mudança para a Federação GraphQL foi para resolver os problemas de complexidade causados pelo RxJava.
+
+Junto com essas mudanças, houve também uma evolução paralela em termos de versões da linguagem Java do Java 8 para o 17 e agora para o 21+. Muito disso também foi motivado pelo Spring Boot versão 3 finalmente ultrapassando o Java 8 e forçando todo o ecossistema a atualizar.
+
+Essas mudanças permitiram que eles construíssem aplicações mais performantes que podem economizar custos de CPU e
+
+No geral, o tema tem sido a padronização da abordagem na construção de microserviços em toda a organização. No entanto, considerando os desafios constantes enfrentados para operar em sua escala mantendo-se à frente da concorrência, a evolução continuará.
+
 A arquitetura Java da Netflix em 2025 não é um resquício do passado, mas um sistema de engenharia moderno e deliberado. O que torna interessante não é a escolha da linguagem, mas a forma como essa escolha é continuamente reavaliada, otimizada e alinhada com as restrições do mundo real.
 
 O sistema não é estático. A Netflix ultrapassou os limites do Java 8 ao atualizar agressivamente sua pilha, não reescrevendo-a. Abraçou o Spring Boot como base, mas o expandiu para atender às demandas únicas de uma plataforma global de streaming. Adotou o GraphQL para flexibilidade, threads virtuais para concorrência e ZGC para desempenho.
@@ -5655,6 +5665,16 @@ Alguns pontos-chave são os seguintes:
 - Threads virtuais reduzem a complexidade. Eles mantêm um estilo de programação familiar enquanto escalam melhor sob carga. O retorno é um código mais limpo, menos bugs e modelos mentais mais simples.
 
 - A infraestrutura de ajuste, e não apenas o código, melhora a confiabilidade. Atualizar o coletor de lixo e otimizar o comportamento da thread resultou em menos timeouts, taxas de erro menores e um throughput mais consistente em geral.
+
+A Netflix é predominantemente uma loja de Java. Todo aplicativo backend na Netflix é um aplicativo Java. Isso inclui:
+
+- Aplicações internas
+- O software que alimenta um dos maiores estúdios de cinema do mundo e é usado para produzir filmes
+- O aplicativo de streaming da Netflix
+
+No entanto, isso não significa que a pilha Java da Netflix seja estática. Ao longo dos anos, evoluiu significativamente.
+
+Vamos analisar a evolução do uso do Java na Netflix à luz das mudanças arquitetônicas gerais que ocorreram para apoiar as necessidades em transformação.
 
 > [!Warning]
 > Os detalhes deste post foram derivados dos artigos/vídeos compartilhados online pela equipe de engenharia da Netflix. Todo o crédito pelos detalhes técnicos vai para a equipe de engenharia da Netflix. Os links para os artigos e vídeos originais estão presentes na seção de referências ao final do post. Tentamos analisar os detalhes e dar nossa opinião sobre eles. Se você encontrar alguma imprecisão ou omissão, por favor, deixe um comentário e faremos o possível para corrigi-las.
