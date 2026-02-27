@@ -5761,6 +5761,28 @@ Do ponto de vista do operador, essas melhorias foram significativas. Uma mudanç
 
 Uso de Threads Virtuais Java: No modelo tradicional de concorrência, cada manipulador de requisições roda em um thread separado.
 
+Como funcionam os Java Virtual Threads? Threads Virtuais são threads leves introduzidos no Java 19 (Prévia) e Java 21 (Estável). Eles permitem que o Java crie milhões de threads de forma eficiente, ajudando a lidar com tarefas simultâneas sem desperdiçar memória ou CPU.
+
+![unnamed](https://github.com/user-attachments/assets/bbaf6194-df40-424b-8abf-40b62d102f97)
+
+Threads virtuais não mapeiam 1:1 para as threads do sistema operacional e não substituem as threads originais da plataforma. As Threads de Plataforma são suportadas pelas Threads do SO e às vezes também são conhecidas como Threads de Operadora nesse contexto.
+
+Pense nos Threads de Plataforma como um pequeno grupo de trabalhadores, e nos Threads virtuais como tarefas. Com threads virtuais, as tarefas são atribuídas aos trabalhadores apenas quando necessário, permitindo que um trabalhador gerencie milhares de tarefas de forma eficiente.
+
+Veja como funcionam os Virtual Threads:
+
+1. Threads virtuais rodam sobre Threads de Plataforma. A JVM os agenda em um pequeno número de Threads de Plataforma.
+
+2. Quando uma Thread Virtual inicia, a JVM a atribui a uma Thread de Plataforma normal apoiada pelo sistema operacional.
+
+3. Threads Virtuais também podem lidar com trabalhos intensivos em CPU, mas sua verdadeira vantagem está em cenários com um alto número de tarefas de I/O ou concorrentes.
+
+4. Se a Thread Virtual realiza uma operação de bloqueio (como I/O, chamada de banco de dados, suspensão, etc.), a JVM a desmonta da Thread da Plataforma. No entanto, isso não bloqueia a thread do sistema operacional subjacente propriamente dita.
+
+5. A thread da Plataforma é liberada para gerenciar outra Thread Virtual.
+
+6. Quando a operação de bloqueio termina, a Thread Virtual é reagendada em qualquer thread disponível da Plataforma.
+
 Para sistemas de alta produtividade, isso leva a um alto número de threads, uso inflacionado de memória e sobrecarga de escalonamento. A Netflix enfrentou exatamente essa situação, especialmente em sua pilha GraphQL, onde resolvers de campo individuais podem realizar I/O bloqueadores.
 
 Paralelizar essas chamadas de resolver manualmente era possível, mas doloroso. Os desenvolvedores precisavam raciocinar sobre pools de threads, gerenciar "CompletableFutures" e lidar com a complexidade de misturar modelos bloqueantes e não bloqueantes. A maioria não se preocupava a menos que o desempenho tornasse inevitável.
