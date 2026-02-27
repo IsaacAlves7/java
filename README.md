@@ -5641,6 +5641,22 @@ Além disso, ele oferece integração facilitada com queries personalizadas via 
 
 No fim das contas, o Spring Data JPA (com Hibernate como base) é uma solução madura, robusta e produtiva para persistência de dados em aplicações Java, que reduz drasticamente o tempo de desenvolvimento ao abstrair tarefas repetitivas e promover boas práticas de acesso a dados com foco em legibilidade, desacoplamento e manutenção do código.
 
+## [Java] How Netflix Runs on Java?
+> [!Warning]
+> Os detalhes deste post foram derivados dos artigos/vídeos compartilhados online pela equipe de engenharia da Netflix. Todo o crédito pelos detalhes técnicos vai para a equipe de engenharia da Netflix. Os links para os artigos e vídeos originais estão presentes na seção de referências ao final do post. Tentamos analisar os detalhes e dar nossa opinião sobre eles. Se você encontrar alguma imprecisão ou omissão, por favor, deixe um comentário e faremos o possível para corrigi-las.
+
+A Netflix é uma aula magistral em engenharia backend em grande escala. Por trás da reprodução contínua, recomendações personalizadas e consistência entre dispositivos, existe uma arquitetura complexa alimentada por Java.
+
+A maioria dos serviços de backend da Netflix roda em Java. Isso pode surpreender engenheiros que já assistiram à ascensão de Kotlin, Go, Rust e frameworks reativos. Mas a Netflix não vai continuar com Java por inércia. Java amadureceu, assim como o ecossistema ao seu redor. JVMs modernas oferecem coletores de lixo poderosos. O Spring Boot se tornou tanto extensível quanto confiável. E com a chegada de threads virtuais e concorrência estruturada, o Java está recuperando seu lugar no design de sistemas de alta taxa e baixa latência, sem a sobrecarga da complexidade reativa.
+
+Neste artigo, vamos explicar como a Netflix usa Java hoje. Também abordaremos os seguintes temas:
+
+- A espinha dorsal arquitetônica da Netflix: uma plataforma federada GraphQL que conecta aplicativos clientes a dezenas de serviços backend em Java.
+
+- O modelo de concorrência: como threads virtuais Java e coletores de lixo modernos mudam o desempenho e a confiabilidade.
+
+- A evolução: uma migração em toda a empresa da dívida técnica para Spring Boot, JDK 21+ e além.
+
 # 🥛 [Java] Kotlin
 <a href="https://www.youtube.com/watch?v=14K_a2kKTxU"><img src="https://img.shields.io/badge/Kotlin-API_Pagination-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://github.com/IsaacAlves7/devsecops/blob/master/pages/cn.md"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href=""><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href=""><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://youtu.be/qXJ3S3T3xJY"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://notebooklm.google/"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a>
 
