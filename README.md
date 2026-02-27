@@ -5419,7 +5419,7 @@ Um dos pontos fortes do VRaptor é sua curva de aprendizado mais amigável em co
 
 Apesar disso, o VRaptor perdeu espaço nos últimos anos com a ascensão de frameworks mais modernos e populares como Spring Boot, que oferece uma abordagem mais integrada e estável para aplicações completas. Ainda assim, o VRaptor foi um passo importante para tornar o desenvolvimento web em Java mais pragmático e voltado à produtividade, influenciando a forma como muitos desenvolvedores brasileiros aprenderam a construir aplicações web em Java.
 
-# 🍃 [Java] Spring
+# 🍃 [Java] Spring e Spring Boot
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring-2.1.2-6DB33F?style=flat&logo=Spring&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
 
 <img src="https://www.svgrepo.com/show/354380/spring-icon.svg" align="right" height="77">
@@ -5656,6 +5656,22 @@ Neste artigo, vamos explicar como a Netflix usa Java hoje. Também abordaremos o
 - O modelo de concorrência: como threads virtuais Java e coletores de lixo modernos mudam o desempenho e a confiabilidade.
 
 - A evolução: uma migração em toda a empresa da dívida técnica para Spring Boot, JDK 21+ e além.
+
+Arquitetura Backend com a GraphQL Foundation: No coração do backend da Netflix está uma arquitetura GraphQL federada. Esta é a abstração principal pela qual todas as aplicações clientes interagem com os dados do backend. O modelo oferece tanto flexibilidade quanto isolamento: os clientes podem expressar exatamente o que precisam, e as equipes de backend podem evoluir seus serviços de forma independente.
+
+<img width="1100" height="729" alt="unnamed" src="https://github.com/user-attachments/assets/17e068ef-f380-4d08-984e-91815c9035e4" />
+
+Toda consulta GraphQL de um cliente Netflix, seja de uma smart TV, telefone ou navegador, chega a um API Gateway centralizado. Esse gateway analisa a consulta, decompõe-a em subconsultas e as direciona para os serviços backend apropriados.
+
+Cada equipe backend possui um Domain Graph Service (DGS), que implementa uma fatia do esquema geral do GraphQL. Todo Domain Graph Service (DGS) da Netflix é um aplicativo Spring Boot.
+
+O próprio framework DGS é construído como uma extensão do Spring Boot. Isso significa que suporta os seguintes recursos:
+
+A injeção de dependências, configuração e gerenciamento do ciclo de vida são gerenciados pelo Spring Boot.
+
+Resolvers GraphQL são apenas componentes Spring anotados.
+
+Observabilidade, segurança, lógica de retentativa e integração com malha de serviço são implementadas usando os mecanismos do Spring.
 
 # 🥛 [Java] Kotlin
 <a href="https://www.youtube.com/watch?v=14K_a2kKTxU"><img src="https://img.shields.io/badge/Kotlin-API_Pagination-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://github.com/IsaacAlves7/devsecops/blob/master/pages/cn.md"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href=""><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href=""><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://youtu.be/qXJ3S3T3xJY"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://notebooklm.google/"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a>
