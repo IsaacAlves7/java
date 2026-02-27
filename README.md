@@ -5679,6 +5679,153 @@ Vamos analisar a evolução do uso do Java na Netflix à luz das mudanças arqui
 > [!Warning]
 > Os detalhes deste post foram derivados dos artigos/vídeos compartilhados online pela equipe de engenharia da Netflix. Todo o crédito pelos detalhes técnicos vai para a equipe de engenharia da Netflix. Os links para os artigos e vídeos originais estão presentes na seção de referências ao final do post. Tentamos analisar os detalhes e dar nossa opinião sobre eles. Se você encontrar alguma imprecisão ou omissão, por favor, deixe um comentário e faremos o possível para corrigi-las.
 
+A Era Groovy com melhores amigos: É de conhecimento geral que a Netflix tem uma arquitetura de microsserviços.
+
+Cada funcionalidade e cada dado pertence a um microserviço e existem milhares de microsserviços. Além disso, múltiplos microserviços se comunicam entre si para realizar algumas das funcionalidades mais complexas.
+
+Por exemplo, quando você abre o aplicativo da Netflix, vê a tela do LOLOMO. Aqui, LOLOMO significa lista de listas de filmes e é essencialmente construído buscando dados de muitos microserviços, tais como:
+
+- Serviço que retorna uma lista dos 10 melhores filmes
+- Serviço de arte que fornece imagens personalizadas para cada filme
+- Serviço de metadados de filmes que retorna os títulos dos filmes, detalhes dos atores e descrições
+- LOLOMO que fornece quais listas realmente renderizar para a página inicial do usuário.
+
+O diagrama abaixo mostra essa situação:
+
+<img width="1600" height="975" alt="unnamed" src="https://github.com/user-attachments/assets/93214bed-8a75-4914-9291-5f10f0a78b1e" />
+
+É bem possível que renderizar apenas uma tela no aplicativo da Netflix envolva ligar para 10 serviços.
+
+No entanto, ligar para tantos serviços pelo seu dispositivo (como a televisão) ou pelo aplicativo móvel geralmente é ineficiente. Fazer 10 chamadas de rede não escala e resulta em uma experiência ruim para o cliente. Muitos aplicativos de streaming sofrem com esses problemas de desempenho.
+
+Para evitar esses problemas, a Netflix usou uma única porta principal para as várias APIs. O dispositivo faz uma ligação para essa porta da frente que realiza o fanout para todos os diferentes microserviços. A porta da frente funciona como um portal e a Netflix usou Zuul para esse fim.
+
+Essa abordagem funciona porque a chamada para múltiplos microserviços ocorre na rede interna, que é muito rápida, eliminando assim as implicações de desempenho.
+
+No entanto, havia outro problema a ser resolvido.
+
+Todos os diferentes dispositivos que os usuários podem usar para acessar a Netflix têm requisitos distintos de maneiras sutis. Embora a Netflix tenha tentado manter uma aparência e sensação consistentes para a interface e seu comportamento em todos os dispositivos, cada dispositivo ainda tem limitações diferentes em termos de memória ou largura de banda de rede e, portanto, carrega os dados de maneiras um pouco diferentes.
+
+É difícil criar uma única API REST que funcione em todos esses dispositivos diferentes. Alguns dos problemas são os seguintes:
+
+APIs REST Ou buscam dados demais ou de muito poucos
+
+Mesmo que criassem uma API REST para cuidar de todas as necessidades de dados, seria uma experiência ruim porque estariam desperdiçando muitos dados
+
+No caso de múltiplas APIs, isso significaria múltiplas chamadas de rede
+
+Para lidar com isso, a Netflix usou o padrão backend para frontend (BFF).
+
+Nesse padrão, cada frontend ou interface de usuário recebe seu próprio mini backend. O mini backend é responsável por realizar o fanout e buscar os dados que a interface precisa naquele ponto específico.
+
+O diagrama abaixo retrata o conceito do padrão BFF:
+
+<img width="1600" height="1097" alt="unnamed" src="https://github.com/user-attachments/assets/c71a1199-3a5d-4bb7-91ce-6ad656d85ac8" />
+
+No caso da Netflix, os melhores amigos eram basicamente um roteiro Groovy para uma tela específica em um dispositivo específico.
+
+Os scripts eram escritos por desenvolvedores de interface, pois eles sabiam exatamente quais dados precisavam para renderizar uma tela específica. Uma vez escritos, os scripts eram implantados em um servidor API e realizavam o fanout para todos os diferentes microsserviços, chamando as bibliotecas clientes Java apropriadas. Essas bibliotecas clientes eram wrappers para um serviço gRPC ou um cliente REST.
+
+O diagrama abaixo mostra essa configuração.
+
+<img width="1600" height="927" alt="unnamed" src="https://github.com/user-attachments/assets/00726f03-70a4-4d75-b855-9c76cd90d135" />
+
+The Use of RxJava and Reactive Programming: Os roteiros do Groovy ajudaram a realizar o lançamento.
+
+Mas fazer esse tipo de expansão em Java não é trivial. A abordagem tradicional era criar vários threads e tentar gerenciar o fanout usando o gerenciamento mínimo de threads.
+
+No entanto, as coisas ficaram complicadas rapidamente por causa da tolerância a falhas. Ao lidar com vários serviços, pode ser que um deles não responda rápido o suficiente ou falha, resultando em uma situação em que você precisa limpar threads e garantir que tudo funcione corretamente.
+
+Foi aí que o RxJava e a programação reativa ajudaram a Netflix a lidar melhor com os fanouts, cuidando de toda a complexidade do gerenciamento de threads.
+
+Além do RxJava, a Netflix criou uma biblioteca tolerante a falhas chamada Hystrix, que cuidava de failover e bulkheading. Embora a programação reativa fosse complicada, fazia muito sentido para a época e a arquitetura permitia atender à maior parte das necessidades de tráfego da Netflix.
+
+No entanto, havia algumas limitações importantes nessa abordagem:
+
+Havia um script para cada endpoint, resultando em muitos scripts para manter e gerenciar
+
+Desenvolvedores de UI tiveram que criar todos os mini backends e não gostaram de trabalhar no espaço Java Groovy com RxJava. Não é a linguagem principal que eles usam diariamente que dificulta as coisas
+
+Programação reativa geralmente é difícil e tem uma curva de aprendizado íngreme.
+
+A Mudança para a Federação GraphQL
+Nos últimos anos, a Netflix tem migrado para uma arquitetura completamente nova quando se trata de seus serviços Java. O centro dessa nova arquitetura é a GraphQL Federation.
+
+Quando você compara GraphQL com REST, a principal diferença é que GraphQL sempre tem um esquema. Esse esquema ajuda a definir alguns aspectos-chave como:
+
+Todas as operações, junto com as várias consultas e mutações
+
+Campos disponíveis dos tipos que estão sendo retornados pelas consultas
+
+Por exemplo, no caso da Netflix, você pode ter uma consulta para todos os programas que retornam um tipo de programa. Tem um programa como título e também contém críticas, que podem ser de outro tipo.
+
+Com o GraphQL, o cliente precisa ser explícito sobre a seleção do campo. Você não pode simplesmente pedir por shows e obter todos os dados deles. Em vez disso, você precisa mencionar especificamente que quer obter o título do programa e a nota de várias críticas. Se você não pedir um campo, não vai conseguir o campo.
+
+Com o REST, isso era o oposto, porque você recebia o que o serviço REST decidia enviar.
+
+Embora seja mais trabalho para o cliente especificar a consulta no GraphQL, isso resolve todo o problema de over-fetching, onde você obtém muito mais dados do que realmente precisa. Isso abre caminho para criar uma API única que possa atender todas as diferentes interfaces.
+
+Para complementar o GraphQL, a Netflix foi além e usou a GraphQL Federation para reintegrá-lo em sua arquitetura de microsserviços.
+
+O diagrama abaixo mostra a configuração com o GraphQL Federation.
+
+<img width="1600" height="1152" alt="unnamed" src="https://github.com/user-attachments/assets/79912c5d-c339-434e-82e6-5d7e84455080" />
+
+Como você pode ver, os microserviços agora são chamados de DGS ou Domain Graph Service.
+
+DGS é um framework interno desenvolvido pela Netflix para construir serviços GraphQL. Quando começaram a migrar para GraphQL e GraphQL Federation, não havia nenhum framework Java maduro o suficiente para usar na escala da Netflix. Por isso, eles construíram sobre o framework Java de baixo nível GraphQL e o complementaram com recursos como geração de código para tipos de esquema e suporte para federação.
+
+No seu cerne, um DGS é apenas um microserviço Java com um endpoint GraphQL e um esquema.
+
+Embora existam múltiplos DGSs, existe apenas um grande esquema GraphQL do ponto de vista de um dispositivo como a TV. Esse esquema contém todos os dados possíveis que podem ser renderizados. O dispositivo não precisa se preocupar com todos os diferentes microserviços que fazem parte do esquema no backend.
+
+Por exemplo, a DGS da LOLOMO pode definir um tipo de show apenas com o título. Depois, as imagens que o DGS pode estender esse tipo aparecem e adicionam uma URL de arte a ele. Os dois DGS diferentes não sabem nada um sobre o outro. Tudo o que eles precisam fazer é publicar o esquema deles no gateway federado. O gateway federado sabe como se comunicar com um DGS porque todos eles têm um endpoint GraphQL.
+
+Existem várias vantagens nesse setup:
+
+Não há mais duplicação de APIs.
+
+Não há necessidade de backend para frontend (BFF) porque o GraphQL como API é flexível o suficiente para suportar diferentes dispositivos devido ao recurso de seleção de campos.
+
+Não há necessidade de desenvolvimento do lado do servidor por engenheiros de interface. Os desenvolvedores do backend e os desenvolvedores da interface apenas colaboram no esquema.
+
+Não há mais necessidade de bibliotecas clientes em Java. Isso porque o gateway federado sabe como se comunicar com um serviço genérico GraphQL sem a necessidade de escrever código específico.
+
+Versões em Java na Netflix
+Recentemente, a Netflix migrou do Java 8 para o Java 17. Após a migração, eles viram cerca de 20% melhor no uso de CPU no Java 17 do que no Java 8, sem nenhuma alteração no código. Isso se deveu às melhorias no coletor de lixo G1. Na escala da Netflix, uma utilização de CPU 20% melhor é um grande valor em termos de custos.
+
+Ao contrário do que muitos pensam, a Netflix não tem sua própria JVM. Eles estão apenas usando a Azul Zulu JVM, que é uma build do OpenJDK.
+
+No total, a Netflix possui cerca de 2800 aplicações Java que são em sua maioria microserviços de tamanhos variados. Além disso, eles têm cerca de 1500 bibliotecas internas. Algumas delas são bibliotecas reais, enquanto muitas são apenas bibliotecas clientes na frente de um serviço gRPC ou REST.
+
+Para o sistema de build, a Netflix depende do Gradle. Além do Gradle, eles usam o Nebula, que é um conjunto de plugins open-source do Gradle. O aspecto mais importante do Nebula está na resolução das bibliotecas. Nebula ajuda com o bloqueio de versões, o que ajuda com builds reprodutíveis.
+
+Mais recentemente, a Netflix tem testado ativamente e implementado mudanças com Java 21. Comparando a transição do Java 8 para o Java 17, é significativamente fácil passar do Java 17 para o 21. O Java 21 também oferece alguns recursos importantes, tais como:
+
+Threads virtuais permitem que aplicações do lado do servidor, escritas no estilo thread-per-request, escalem com a utilização ideal de hardware. No estilo thread-per-request, uma solicitação chega e o servidor fornece uma thread para ela. Todo o trabalho do pedido acontece neste tópico
+
+Um coletor de lixo ZGC atualizado que foca em tempos de pausa baixos e funciona bem em uma variedade maior de casos de uso.
+
+Programação orientada a dados com uma combinação de registros e correspondência de padrões
+
+Uso da Spring Boot na Netflix: A Netflix é famosa pelo uso do Spring Boot. No último ano, eles deixaram completamente a pilha Java criada no Guice e padronizaram completamente o Spring Boot.
+
+Por que a Spring Boot? É o framework Java mais popular e tem sido muito bem mantido ao longo dos anos.
+
+A Netflix encontrou muitos benefícios ao aproveitar a enorme comunidade open-source do framework Spring, a documentação existente e as oportunidades de treinamento facilmente disponíveis. A evolução de Spring e seus longas se alinham muito bem com o princípio central da Netflix de "altamente alinhado, frouxamente acoplado".
+
+A Netflix usa a versão mais recente do OSS Spring Boot e seu objetivo é se manter o mais próximo possível da comunidade open source. No entanto, para se integrar de perto com o ecossistema e a infraestrutura da Netflix, eles também criaram o Spring Boot Netflix, que é um conjunto de módulos construídos sobre o Spring Boot.
+
+Spring Boot A Netflix oferece suporte para várias coisas, como:
+
+- Cliente gRPC
+- Suporte a servidores integrado à pilha SSO da Netflix para AuthZ e AuthN
+- Observabilidade na forma de rastreamento, métricas e registro distribuído
+- Clientes HTTP que suportam mTLS
+- Service Discovery com Eureka
+- Integração AWS/Titus
+- Integração com Kafka, Cassandra e Zookeeper
+
 A Netflix é uma aula magistral em engenharia backend em grande escala. Por trás da reprodução contínua, recomendações personalizadas e consistência entre dispositivos, existe uma arquitetura complexa alimentada por Java.
 
 A maioria dos serviços de backend da Netflix roda em Java. Isso pode surpreender engenheiros que já assistiram à ascensão de Kotlin, Go, Rust e frameworks reativos. Mas a Netflix não vai continuar com Java por inércia. Java amadureceu, assim como o ecossistema ao seu redor. JVMs modernas oferecem coletores de lixo poderosos. O Spring Boot se tornou tanto extensível quanto confiável. E com a chegada de threads virtuais e concorrência estruturada, o Java está recuperando seu lugar no design de sistemas de alta taxa e baixa latência, sem a sobrecarga da complexidade reativa.
