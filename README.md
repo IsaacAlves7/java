@@ -5642,6 +5642,20 @@ Além disso, ele oferece integração facilitada com queries personalizadas via 
 No fim das contas, o Spring Data JPA (com Hibernate como base) é uma solução madura, robusta e produtiva para persistência de dados em aplicações Java, que reduz drasticamente o tempo de desenvolvimento ao abstrair tarefas repetitivas e promover boas práticas de acesso a dados com foco em legibilidade, desacoplamento e manutenção do código.
 
 ## [Java] How Netflix Runs on Java?
+A arquitetura Java da Netflix em 2025 não é um resquício do passado, mas um sistema de engenharia moderno e deliberado. O que torna interessante não é a escolha da linguagem, mas a forma como essa escolha é continuamente reavaliada, otimizada e alinhada com as restrições do mundo real.
+
+O sistema não é estático. A Netflix ultrapassou os limites do Java 8 ao atualizar agressivamente sua pilha, não reescrevendo-a. Abraçou o Spring Boot como base, mas o expandiu para atender às demandas únicas de uma plataforma global de streaming. Adotou o GraphQL para flexibilidade, threads virtuais para concorrência e ZGC para desempenho.
+
+Alguns pontos-chave são os seguintes:
+
+- Java ainda é competitivo quando tratado como um ecossistema. A Netflix extrai ganhos significativos de desempenho dos recursos modernos da JVM. Não se contenta com configurações padrão ou frameworks antigos. A evolução é deliberada.
+
+- Possuir a plataforma possibilita velocidade. Construir ferramentas internas para patches, transformações e implantações transforma as atualizações de risco em rotina. A propriedade da plataforma é uma vantagem para eles.
+
+- Threads virtuais reduzem a complexidade. Eles mantêm um estilo de programação familiar enquanto escalam melhor sob carga. O retorno é um código mais limpo, menos bugs e modelos mentais mais simples.
+
+- A infraestrutura de ajuste, e não apenas o código, melhora a confiabilidade. Atualizar o coletor de lixo e otimizar o comportamento da thread resultou em menos timeouts, taxas de erro menores e um throughput mais consistente em geral.
+
 > [!Warning]
 > Os detalhes deste post foram derivados dos artigos/vídeos compartilhados online pela equipe de engenharia da Netflix. Todo o crédito pelos detalhes técnicos vai para a equipe de engenharia da Netflix. Os links para os artigos e vídeos originais estão presentes na seção de referências ao final do post. Tentamos analisar os detalhes e dar nossa opinião sobre eles. Se você encontrar alguma imprecisão ou omissão, por favor, deixe um comentário e faremos o possível para corrigi-las.
 
@@ -5667,11 +5681,167 @@ Cada equipe backend possui um Domain Graph Service (DGS), que implementa uma fat
 
 O próprio framework DGS é construído como uma extensão do Spring Boot. Isso significa que suporta os seguintes recursos:
 
-A injeção de dependências, configuração e gerenciamento do ciclo de vida são gerenciados pelo Spring Boot.
+- A injeção de dependências, configuração e gerenciamento do ciclo de vida são gerenciados pelo Spring Boot.
 
-Resolvers GraphQL são apenas componentes Spring anotados.
+- Resolvers GraphQL são apenas componentes Spring anotados.
 
-Observabilidade, segurança, lógica de retentativa e integração com malha de serviço são implementadas usando os mecanismos do Spring.
+- Observabilidade, segurança, lógica de retentativa e integração com malha de serviço são implementadas usando os mecanismos do Spring.
+
+![ed4f8f83-0122-4892-9709-9b000a9281fb_1600x1147](https://github.com/user-attachments/assets/112b6179-86e8-4625-882e-76b86538283a)
+
+A Netflix escolheu Spring Boot porque já está comprovada em escala e é uma tecnologia de longa duração na Netflix. Também é extensível à medida que a Netflix adiciona seus módulos para segurança, métricas, descoberta de serviços e mais.
+
+As DGSs registram seus fragmentos de esquema em um registro compartilhado. O gateway então sabe qual serviço é responsável por qual campo. Isso transforma um esquema "monolítico" em um grafo totalmente federado e implantável de forma independente.
+
+Essa separação da propriedade do esquema possibilita:
+
+- Implantabilidade independente dos serviços
+- Colaboração baseada em esquema entre frontend e backend
+- Limites mais limpos entre domínios (por exemplo, recomendações vs. perfis de usuário)
+
+A ideia principal é que os serviços backend possuem sua parte do grafo, não apenas seus dados internos.
+
+Microservice Fan-out: What a Query Hits: Nos bastidores, até mesmo uma consulta simples, como buscar títulos e imagens de cinco programas, faz fãs espalhados por vários serviços:
+
+- O API Gateway recebe a solicitação.
+- Ele contatou 2–3 DGSs para resolver áreas como metadados, arte e disponibilidade.
+- Cada DGS pode então se espalhar novamente para buscar em depósitos de dados ou ligar para outros serviços.
+
+Esse padrão de expansão é essencial para flexibilidade, mas introduz uma complexidade real. O sistema precisa de timeouts agressivos, lógica de retentativa e estratégias de reposição para evitar que um serviço lento se transforme em latência visível para o usuário.
+
+![4e5ae488-425c-443b-a702-bfc2f6857df9_1600x1062](https://github.com/user-attachments/assets/6e7b184d-6794-454c-8ac7-51fbc1e55218)
+
+Protocol Choices: Entre o cliente e o gateway, a Netflix mantém HTTP e GraphQL em protocolos web padrão. Isso garante compatibilidade entre navegadores, aplicativos móveis e smart TVs.
+
+Dentro do backend, os serviços se comunicam via gRPC: um protocolo binário de alto desempenho que suporta chamadas eficientes entre serviços. O gRPC habilita:
+
+- Comunicação de baixa latência
+- Tipagem forte via Protocol Buffers
+- Evolução fácil da interface
+
+Essa separação faz sentido: o GraphQL é ótimo para busca de dados flexível e orientada pelo cliente, enquanto o gRPC se destaca em interações internas no estilo RPC.
+
+![dd72b09d-b352-420c-9b1e-d08428842768_1600x1062](https://github.com/user-attachments/assets/d19b4d52-7e46-4955-97e1-625345673e34)
+
+Evolução da JVM: Até recentemente, grande parte do código Java da Netflix ficava preso no JDK 8. O problema não era a inércia, mas o bloqueio. Um framework de aplicação personalizado e interno, construído anos antes, acumulou camadas de bibliotecas não mantidas e APIs desatualizadas. Essas dependências tinham acoplamentos apertados e problemas de compatibilidade que tornavam arriscado atualizar qualquer coisa além do JDK 8.
+
+Nesse contexto, os proprietários de serviços não podiam avançar de forma independente. Mesmo quando versões mais novas em Java estavam tecnicamente disponíveis, a plataforma não estava pronta. As equipes tinham pouco incentivo para evoluir porque isso exigia esforço sem benefício imediato. O resultado foi um progresso estagnado em todos os aspectos.
+
+Quebrar esse ciclo exigiu uma abordagem direta. A Netflix corrigiu as bibliotecas incompatíveis em si, não reescrevendo tudo, mas fazendo forks e atualizações mínimas do que era necessário para torná-lo compatível com o JDK-17. Na prática, isso não foi tão assustador quanto parece. No fim das contas, apenas um pequeno número de bibliotecas críticas exigiu intervenção.
+
+Paralelamente, a empresa começou a migrar todos os serviços Java (cerca de 3000) para o Spring Boot. Não foi um simples levantar e mudar. Eles construíram ferramentas automatizadas para transformar código, configurar serviços e padronizar a implantação. Embora o esforço tenha sido significativo, o resultado é uma plataforma unificada que pode evoluir em sintonia com o ecossistema Java mais amplo.
+
+Agora, a linha de base na maioria dos times é Spring Boot no JDK 17 ou mais recente. Alguns serviços legados permanecem para compatibilidade retroativa, mas foram exceção.
+
+Uma vez que os serviços foram transferidos para o JDK 17, os benefícios ficaram evidentes:
+
+- O coletor de lixo G1, já em uso, apresentou uma melhora significativa: cerca de 20% menos tempo de CPU gasto no GC sem alterar o código da aplicação.
+- Pausas menos e mais curtas para parar o mundo levaram a menos tempos de espera em cascata em sistemas distribuídos.
+- Maior throughput geral e melhor utilização da CPU tornaram-se possíveis, especialmente para serviços de alto RPS.
+
+ZGC Geracional: O coletor de lixo G1 serviu bem à Netflix por anos. Ele encontrava um equilíbrio entre throughput e tempo de pausa, e a maioria dos serviços baseados em JVM o utilizava por padrão. Mas à medida que o tráfego aumentava e os tempos se fechavam, as rachaduras apareciam.
+
+Sob alta concorrência, alguns serviços tiveram pausas de parar o mundo que duravam mais de um segundo, tempo suficiente para causar timeouts de IPC e acionar lógica de retentativa entre serviços dependentes. Essas tentativas inflaram o tráfego, introduziram jitter e obscureceram a causa raiz das falhas. Em clusters rodando com altas cargas de CPU, os picos ocasionais de latência do G1 se tornavam um fardo operacional.
+
+No entanto, a introdução do ZGC geracional mudou o jogo.
+
+O ZGC já estava disponível em versões anteriores em Java, mas não possuía um modelo de memória geracional. Isso limitou sua eficácia para cargas de trabalho onde a maioria das alocações era de curta duração, como nos serviços de streaming da Netflix.
+
+No JDK 21, finalmente chegou a geração ZGC. Ele trouxe um coletor de lixo moderno, com poucas pausas, que também entendia a vida útil do objeto. O efeito foi imediato:
+
+- O tempo de pausa caía quase zero, mesmo sob carga pesada.
+
+- Os serviços não tinham mais tempo de encerramento durante as pausas do GC, o que levou a uma redução visível nas taxas de erro.
+
+- Com menos estojos de coleta de lixo, menos requisições upstream falharam, reduzindo a pressão em todo o cluster.
+
+- Os clusters rodavam mais próximos da saturação da CPU sem cair. A margem de segurança antes reservada para a segurança do GC agora estava disponível para cargas reais de trabalho.
+
+Do ponto de vista do operador, essas melhorias foram significativas. Uma mudança de configuração de uma linha (trocando de G1 para ZGC) se traduziu em comportamento mais suave, menos alertas e escalonamento mais previsível.
+
+Uso de Threads Virtuais Java: No modelo tradicional de concorrência, cada manipulador de requisições roda em um thread separado.
+
+Para sistemas de alta produtividade, isso leva a um alto número de threads, uso inflacionado de memória e sobrecarga de escalonamento. A Netflix enfrentou exatamente essa situação, especialmente em sua pilha GraphQL, onde resolvers de campo individuais podem realizar I/O bloqueadores.
+
+Paralelizar essas chamadas de resolver manualmente era possível, mas doloroso. Os desenvolvedores precisavam raciocinar sobre pools de threads, gerenciar "CompletableFutures" e lidar com a complexidade de misturar modelos bloqueantes e não bloqueantes. A maioria não se preocupava a menos que o desempenho tornasse inevitável.
+
+Com o Java 21+, a Netflix começou a lançar threads virtuais. Essas threads leves, agendadas pela JVM em vez do sistema operacional, permitiam que o código bloqueador escalasse sem monopolizar recursos. Para serviços construídos sobre a estrutura DGS e Spring Boot, a integração era automática. Resolvers agora podiam rodar em paralelo por padrão.
+
+Veja o diagrama abaixo que mostra o conceito de threads virtuais em Java.
+
+Uso de Threads Virtuais Java: No modelo tradicional de concorrência, cada manipulador de requisições roda em um thread separado.
+
+Para sistemas de alta produtividade, isso leva a um alto número de threads, uso inflacionado de memória e sobrecarga de escalonamento. A Netflix enfrentou exatamente essa situação, especialmente em sua pilha GraphQL, onde resolvers de campo individuais podem realizar I/O bloqueadores.
+
+Paralelizar essas chamadas de resolver manualmente era possível, mas doloroso. Os desenvolvedores precisavam raciocinar sobre pools de threads, gerenciar "CompletableFutures" e lidar com a complexidade de misturar modelos bloqueantes e não bloqueantes. A maioria não se preocupava a menos que o desempenho tornasse inevitável.
+
+Com o Java 21+, a Netflix começou a lançar threads virtuais. Essas threads leves, agendadas pela JVM em vez do sistema operacional, permitiam que o código bloqueador escalasse sem monopolizar recursos. Para serviços construídos sobre a estrutura DGS e Spring Boot, a integração era automática. Resolvers agora podiam rodar em paralelo por padrão.
+
+Veja o diagrama abaixo que mostra o conceito de threads virtuais em Java:
+
+![17ec33d3-6394-485b-acca-f9381bd29533_1600x1061](https://github.com/user-attachments/assets/b1d1b1fb-6d26-47d9-bb22-4403b75e9573)
+
+Pegue o exemplo comum de uma consulta GraphQL que retorna cinco programas, cada um exigindo dados de arte. Anteriormente, o resolver que buscava URLs de arte rodava em série, adicionando latência entre múltiplas chamadas. Com threads virtuais, essas chamadas agora são executadas em paralelo, reduzindo significativamente o tempo total de resposta, sem alterar o código da aplicação.
+
+A Netflix conectou suporte a threads virtuais diretamente em seus frameworks:
+
+- Serviços baseados em Spring Boot se beneficiam automaticamente da execução paralela em resolvers de campo.
+
+- Desenvolvedores não precisam usar novas APIs ou alterar anotações.
+
+- O modelo de escalonamento de threads permanece abstrato, preservando fluxos de trabalho de desenvolvimento familiares.
+
+Esse modelo de opt-in por padrão funciona porque threads virtuais impõem quase nenhuma sobrecarga. A JVM os gerencia de forma eficiente, tornando-os adequados mesmo em caminhos de alto volume onde modelos tradicionais de thread-per-request falham.
+
+Trade-Offs: Threads virtuais não são mágica. Experimentos iniciais revelaram um modo de falha específico: bloqueios causados pelo fixação de thread.
+
+Veja o que aconteceu:
+
+- Algumas bibliotecas usavam blocos ou métodos sincronizados.
+- Quando uma thread virtual entra em um bloco sincronizado, ela passa a ser fixada a uma thread física da plataforma.
+- Se muitas threads virtuais fixadas bloquearem enquanto seguram locks, e o pool de threads da plataforma for esgotado, o sistema pode travar. Nenhuma thread pode avançar, porque a thread que segura o lock não pode ser agendada.
+
+A Netflix enfrentou exatamente esse cenário na produção.
+
+O problema era sério o suficiente para que a Netflix recuasse temporariamente na adoção agressiva de threads virtuais. Mas com o JDK 24, esse problema foi resolvido diretamente: a JVM reescreveu o interno do sincronizado para evitar fixação desnecessária de threads.
+
+Com essa mudança, a equipe de engenharia pôde avançar novamente. Os ganhos de desempenho e simplicidade são bons demais para serem ignorados, e agora o risco foi significativamente reduzido.
+
+Why Netflix Moved Away from RxJava?
+
+A Netflix ajudou a pioneirar a programação reativa no ecossistema Java. A RX Java, uma das primeiras e mais influentes bibliotecas reativas, nasceu internamente. Por anos, abstrações reativas moldaram a forma como os serviços lidavam com cargas de trabalho de alta concorrência.
+
+A programação reativa se destaca quando aplicada de ponta a ponta: E/S de rede, computação e armazenamento de dados todos envolvidos em fluxos não bloqueantes e orientados por eventos. Mas esse modelo exige total adesão. Na prática, a maioria dos sistemas fica em algum lugar intermediário: algumas bibliotecas assíncronas, outras bloqueando IOs e muito código legado. O resultado é uma mistura frágil de modelos de concorrência que é difícil de raciocinar, difícil de depurar e fácil de errar.
+
+Um ponto problemático frequente era combinar um modelo thread-per-request com um cliente HTTP reativo como o WebClient. Mesmo quando funcionava, introduzia duas camadas de concorrência (uma bloqueadora e outra não bloqueadora), criando modos de falha complexos e contenção de recursos. Era eficaz para certos casos de expansão por dispersão, mas operacionalmente cara.
+
+A introdução de threads virtuais mudou a equação. Como mencionado, eles permitiram milhares de operações de bloqueio simultâneas sem a sobrecarga dos threads tradicionais. Combinado com concorrência estruturada, os desenvolvedores podem expressar fluxos de trabalho assíncronos complexos usando código simples, sem o inferno de retorno de chamadas da programação reativa.
+
+Dito isso, a programação reativa ainda tem seu lugar. Em serviços com cadeias longas de IO, preocupações com backpressure ou cargas de trabalho em streaming, APIs reativas continuam sendo úteis. No entanto, para a maior parte do backend da Netflix, que envolve chamadas RPC, joins em memória e tempos de resposta apertados, threads virtuais e concorrência estruturada oferecem os mesmos benefícios, mas com menor complexidade.
+
+The Spring Boot Netflix Stack
+
+A Netflix padroniza seus serviços de backend no Spring Boot, não como um framework pronto, mas como base para uma plataforma profundamente integrada e extensível. Todo serviço roda no que a equipe chama de "Spring Boot Netflix": uma pilha curada de módulos que sobrepõem infraestrutura específica da empresa ao ecossistema familiar da Spring.
+
+Esse design mantém o modelo de programação limpo. Desenvolvedores usam anotações e expressões expressivas padrão do Spring. Por trás do capô, a Netflix insere lógica personalizada para tudo, desde autenticação até descoberta de serviços.
+
+A Spring Boot Stack da Netflix inclui:
+
+- Integração de segurança com os sistemas de autenticação e autorização da Netflix, exposta por meio de anotações padrão da Spring Security como @Secured e @PreAuthorize.
+
+- Suporte à observabilidade usando as APIs Micrometer da Spring, conectadas a pipelines internos de rastreamento, métricas e logs construídos para lidar com telemetria em escala da Netflix.
+
+- Integração com malha de serviço para todo o tráfego via um sistema baseado em proxy (construído sobre ProxyD), lidando com TLS, descoberta de serviços e políticas de retentativa de forma transparente.
+
+- framework gRPC baseado em modelos de programação orientados por anotação, permitindo que engenheiros escrevam serviços gRPC com a mesma abordagem dos controladores REST.
+
+- Configuração dinâmica com "propriedades rápidas": configurações alteráveis em tempo de execução que evitam reinicializações de serviço e permitem ajustes ao vivo durante incidentes.
+
+- Clientes retryables envolveram gRPC e WebClient para impor timeouts, tentativas e estratégias de reposição logo de cara.
+
+A Netflix permanece alinhada com o Spring Boot no montante. Versões menores chegam à frota em poucos dias. Para lançamentos principais, a equipe constrói ferramentas e camadas de compatibilidade para suavizar o caminho de atualização.
+
+A mudança para o Spring Boot 3 exigiu migrar de javax.* para jakarta.* namespaces. Foi uma mudança que afetou muitas bibliotecas. Em vez de esperar por atualizações externas, a Netflix desenvolveu um plugin Gradle que realiza transformações de bytecode em tempo de resolução de artefatos. Esse plugin reescreve classes compiladas para usar as novas APIs de Jacarta, permitindo que bibliotecas da era Spring Boot 2 funcionem no Spring Boot 3 sem alterações na fonte.
 
 # 🥛 [Java] Kotlin
 <a href="https://www.youtube.com/watch?v=14K_a2kKTxU"><img src="https://img.shields.io/badge/Kotlin-API_Pagination-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://github.com/IsaacAlves7/devsecops/blob/master/pages/cn.md"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href=""><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href=""><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://youtu.be/qXJ3S3T3xJY"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://notebooklm.google/"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a>
