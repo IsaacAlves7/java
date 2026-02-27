@@ -5648,7 +5648,7 @@ Todas as mudanças foram feitas para resolver problemas da abordagem anterior. P
 
 Junto com essas mudanças, houve também uma evolução paralela em termos de versões da linguagem Java do Java 8 para o 17 e agora para o 21+. Muito disso também foi motivado pelo Spring Boot versão 3 finalmente ultrapassando o Java 8 e forçando todo o ecossistema a atualizar.
 
-Essas mudanças permitiram que eles construíssem aplicações mais performantes que podem economizar custos de CPU e
+Essas mudanças permitiram que eles construíssem aplicações mais performantes que podem economizar custos de CPU.
 
 No geral, o tema tem sido a padronização da abordagem na construção de microserviços em toda a organização. No entanto, considerando os desafios constantes enfrentados para operar em sua escala mantendo-se à frente da concorrência, a evolução continuará.
 
