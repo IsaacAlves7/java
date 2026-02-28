@@ -6032,7 +6032,8 @@ A Netflix permanece alinhada com o Spring Boot no montante. Versões menores che
 
 A mudança para o Spring Boot 3 exigiu migrar de javax.* para jakarta.* namespaces. Foi uma mudança que afetou muitas bibliotecas. Em vez de esperar por atualizações externas, a Netflix desenvolveu um plugin Gradle que realiza transformações de bytecode em tempo de resolução de artefatos. Esse plugin reescreve classes compiladas para usar as novas APIs de Jacarta, permitindo que bibliotecas da era Spring Boot 2 funcionem no Spring Boot 3 sem alterações na fonte.
 
-https://www.infoq.com/presentations/netflix-java/?utm_source=substack&utm_medium=email
+- https://www.infoq.com/presentations/netflix-java/?utm_source=substack&utm_medium=email
+- https://youtu.be/5dpLVvRpPPs
 
 # 🥛 [Java] Kotlin
 <a href="https://www.youtube.com/watch?v=14K_a2kKTxU"><img src="https://img.shields.io/badge/Kotlin-API_Pagination-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://github.com/IsaacAlves7/devsecops/blob/master/pages/cn.md"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href=""><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href=""><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://youtu.be/qXJ3S3T3xJY"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://notebooklm.google/"><img src="https://img.shields.io/badge/Kotlin-LIVE-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a>
