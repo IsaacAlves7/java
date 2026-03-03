@@ -5642,8 +5642,6 @@ Além disso, ele oferece integração facilitada com queries personalizadas via 
 No fim das contas, o Spring Data JPA (com Hibernate como base) é uma solução madura, robusta e produtiva para persistência de dados em aplicações Java, que reduz drasticamente o tempo de desenvolvimento ao abstrair tarefas repetitivas e promover boas práticas de acesso a dados com foco em legibilidade, desacoplamento e manutenção do código.
 
 ## [Java] How Netflix Runs on Java?
-![unnamed](https://github.com/user-attachments/assets/1ed5e463-aa6a-4c46-ae33-c707f67b9241)
-
 Não existe uma única Stack de Netflix. A Stack Java da Netflix tem evoluído nos últimos anos, começando desde frameworks internos até microserviços da era Groovy e, mais recentemente, migrando para a GraphQL Federation.
 
 Todas as mudanças foram feitas para resolver problemas da abordagem anterior. Por exemplo, a mudança para o RxJava foi para lidar melhor com os fanouts e a mudança para a Federação GraphQL foi para resolver os problemas de complexidade causados pelo RxJava.
@@ -5659,6 +5657,8 @@ A arquitetura Java da Netflix em 2025 não é um resquício do passado, mas um s
 O sistema não é estático. A Netflix ultrapassou os limites do Java 8 ao atualizar agressivamente sua pilha, não reescrevendo-a. Abraçou o Spring Boot como base, mas o expandiu para atender às demandas únicas de uma plataforma global de streaming. Adotou o GraphQL para flexibilidade, threads virtuais para concorrência e ZGC para desempenho.
 
 Alguns pontos-chave são os seguintes:
+
+![unnamed](https://github.com/user-attachments/assets/1ed5e463-aa6a-4c46-ae33-c707f67b9241)
 
 - Java ainda é competitivo quando tratado como um ecossistema. A Netflix extrai ganhos significativos de desempenho dos recursos modernos da JVM. Não se contenta com configurações padrão ou frameworks antigos. A evolução é deliberada.
 
