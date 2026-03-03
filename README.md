@@ -5642,6 +5642,8 @@ Além disso, ele oferece integração facilitada com queries personalizadas via 
 No fim das contas, o Spring Data JPA (com Hibernate como base) é uma solução madura, robusta e produtiva para persistência de dados em aplicações Java, que reduz drasticamente o tempo de desenvolvimento ao abstrair tarefas repetitivas e promover boas práticas de acesso a dados com foco em legibilidade, desacoplamento e manutenção do código.
 
 ## [Java] How Netflix Runs on Java?
+![unnamed](https://github.com/user-attachments/assets/1ed5e463-aa6a-4c46-ae33-c707f67b9241)
+
 Não existe uma única Stack de Netflix. A Stack Java da Netflix tem evoluído nos últimos anos, começando desde frameworks internos até microserviços da era Groovy e, mais recentemente, migrando para a GraphQL Federation.
 
 Todas as mudanças foram feitas para resolver problemas da abordagem anterior. Por exemplo, a mudança para o RxJava foi para lidar melhor com os fanouts e a mudança para a Federação GraphQL foi para resolver os problemas de complexidade causados pelo RxJava.
@@ -5675,6 +5677,20 @@ A Netflix é predominantemente uma loja de Java. Todo aplicativo backend na Netf
 No entanto, isso não significa que a pilha Java da Netflix seja estática. Ao longo dos anos, evoluiu significativamente.
 
 Vamos analisar a evolução do uso do Java na Netflix à luz das mudanças arquitetônicas gerais que ocorreram para apoiar as necessidades em transformação.
+
+A Netflix é predominantemente uma loja de Java.
+
+Todo aplicativo backend (incluindo apps internos, streaming e de produção de filmes) na Netflix é um aplicativo Java.
+
+No entanto, a pilha Java não é estática e passou por várias iterações ao longo dos anos.
+
+Aqui estão os detalhes dessas iterações:
+
+1. API Gateway: A Netflix segue uma arquitetura de microserviços. Cada funcionalidade e cada dado pertence a um microserviço construído usando Java (inicialmente versão 8)
+
+2. BFFs com Groovy & RxJava: Usar um único gateway para múltiplos clientes era um problema para a Netflix porque cada cliente (como TV, aplicativos móveis ou navegador) tinha diferenças sutis. Para lidar com isso, a Netflix usou o padrão Backend-for-Frontend (BFF). Zuul foi transferido para o papel de procurador
+
+2. GraphQL Federation: GraphQLA abordagem Groovy e RxJava exigiu mais trabalho dos desenvolvedores de interface na criação dos scripts Groovy. Além disso, programação reativa geralmente é difícil.
 
 > [!Warning]
 > Os detalhes deste post foram derivados dos artigos/vídeos compartilhados online pela equipe de engenharia da Netflix. Todo o crédito pelos detalhes técnicos vai para a equipe de engenharia da Netflix. Os links para os artigos e vídeos originais estão presentes na seção de referências ao final do post. Tentamos analisar os detalhes e dar nossa opinião sobre eles. Se você encontrar alguma imprecisão ou omissão, por favor, deixe um comentário e faremos o possível para corrigi-las.
