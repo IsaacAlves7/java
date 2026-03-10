@@ -5658,7 +5658,38 @@ O sistema não é estático. A Netflix ultrapassou os limites do Java 8 ao atual
 
 Alguns pontos-chave são os seguintes:
 
+![unnamed](https://github.com/user-attachments/assets/45375a09-7c36-487b-8c11-6b9f2c19cc2f)
+
 ![unnamed](https://github.com/user-attachments/assets/1ed5e463-aa6a-4c46-ae33-c707f67b9241)
+
+Aqui estão os detalhes dessas iterações:
+
+API Gateway
+A Netflix segue uma arquitetura de microserviços. Cada funcionalidade e cada dado pertence a um microserviço construído usando Java (inicialmente versão 8).
+
+Isso significa que renderizar uma tela (como a Lista de Listas de Filmes ou LOLOMO) envolvia buscar dados de dezenas de microserviços. Mas fazer todas essas ligações do cliente criou um problema de desempenho.
+
+A Netflix inicialmente usou o padrão API Gateway usando Zuul para lidar com a orquestração.
+
+BFFs com Groovy & RxJava
+Usar um único gateway para múltiplos clientes era um problema para a Netflix porque cada cliente (como TV, aplicativos móveis ou navegador) tinha diferenças sutis.
+
+Para lidar com isso, a Netflix usou o padrão Backend-for-Frontend (BFF). O Zuul foi movido para o papel de proxy
+
+. Nesse padrão, cada frontend ou interface de usuário recebe seu próprio mini-backend que executa o fanout e orquestração de requisições para múltiplos serviços.
+
+Os BFFs foram construídos usando scripts Groovy e o fato de serviços foi feito usando RxJava para gerenciamento de threads.
+
+Federação
+GraphQLA abordagem Groovy e RxJava exigiu mais trabalho dos desenvolvedores de interface na criação dos scripts Groovy. Além disso, programação reativa geralmente é difícil.
+
+Recentemente, a Netflix migrou para a GraphQL Federation. Com o GraphQL, um cliente pode especificar exatamente qual conjunto de campos precisa, resolvendo assim o problema de overfetching e underfetching com APIs REST.
+
+A Federação GraphQL cuida de chamar os microserviços necessários para buscar os dados.
+
+Esses microsserviços são chamados de Domain Graph Service (DGS) e são construídos usando os pacotes Java 17, Spring Boot 3 e Spring Boot Netflix OSS. A transição do Java 8 para o Java 17 resultou em ganhos de 20% no CPU.
+
+Mais recentemente, a Netflix começou a migrar para Java 21 para aproveitar recursos como threads virtuais.
 
 - Java ainda é competitivo quando tratado como um ecossistema. A Netflix extrai ganhos significativos de desempenho dos recursos modernos da JVM. Não se contenta com configurações padrão ou frameworks antigos. A evolução é deliberada.
 
