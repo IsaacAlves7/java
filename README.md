@@ -5677,8 +5677,8 @@ Alguns pontos-chave são os seguintes:
 
 <table>
 	<tr>
-		<td><img src="https://github.com/user-attachments/assets/45375a09-7c36-487b-8c11-6b9f2c19cc2f" height="377"></td>
-		<td><img src="https://github.com/user-attachments/assets/1ed5e463-aa6a-4c46-ae33-c707f67b9241" height="377"></td>
+		<td><img src="https://github.com/user-attachments/assets/45375a09-7c36-487b-8c11-6b9f2c19cc2f" height="777"></td>
+		<td><img src="https://github.com/user-attachments/assets/1ed5e463-aa6a-4c46-ae33-c707f67b9241" height="777"></td>
 	</tr>
 </table>
 
