@@ -157,6 +157,30 @@ Portanto, a sigla JSE pode se referir tanto ao Java Standard Edition, relacionad
 
 ![1752755951665](https://github.com/user-attachments/assets/677e64be-31d6-4a07-a535-a3e412f39aae)
 
+Como funciona o Garbage Collection? Coleta de lixo é um recurso automático de gerenciamento de memória usado em linguagens de programação para recuperar memória que não é mais utilizada pelo programa.
+
+<img width="1100" height="1100" alt="unnamed" src="https://github.com/user-attachments/assets/d14e57a2-b8ff-4592-9d11-88dc8a14a43d" />
+
+Java oferece vários coletores de lixo, cada um adequado para diferentes casos de uso:
+
+1. Coletor de Lixo Serial: Ideal para ambientes single-threaded ou aplicações pequenas.
+
+2. Coletor de Lixo Paralelo: Também conhecido como "Coletor de Throughput".
+
+3. CMS (Simultan Mark-Sweep) Garbage Collector: Coletor de baixa latência que visa minimizar os tempos de pausa.
+
+4. G1 (Primeiro de Lixo): Busca equilibrar throughput e latência.
+
+5. Z Garbage Collector (ZGC): Um coletor de lixo de baixa latência projetado para aplicações que exigem grandes tamanhos de heap e tempos mínimos de pausa.
+
+A coleta de lixo do Python é baseada na contagem de referências e em um coletor de lixo cíclico:
+
+1. Contagem de Referência: Cada objeto possui uma contagem de referência; quando chega a zero, a memória é liberada.
+
+2. Coletor de Lixo Cíclico: Gerencia referências circulares que não podem ser resolvidas por contagem de referências.
+
+GoLang Concurrent Marbag-and-Sweep Garbage Collector: O coletor de lixo do Go opera simultaneamente com a aplicação, minimizando pausas de parada no mundo.
+
 ## [Java] Ambiente de desenvolvimento
 <img src="https://user-images.githubusercontent.com/61624336/171005805-d123b7c1-89e6-492c-9d03-3dcafb40142e.png" align="right" height="77">
 
