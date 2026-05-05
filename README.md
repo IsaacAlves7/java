@@ -340,6 +340,8 @@ System.out.println(“Nota inválida”);
 
 Como usar a endentação? Quando desenvolvemos um programa em qualquer linguagem, é comum que utilizemos um conjunto de espaços na frente das instruções de forma a facilitar a visualização de blocos. Sempre que iniciamos um bloco, devemos começar na próxima linha com um deslocamento de pelo menos quatro espaços em brando ou uma tabulação (normalmente quatro espaços). Isso permite que identifiquemos rapidamente que certo conjunto de instruções faz parte de um conjunto que será executado em bloco. 
 
+<img width="720" height="819" alt="FB_IMG_1730036397046" src="https://github.com/user-attachments/assets/4680bdf5-6ef1-4a37-b89f-e575f820354e" />
+
 Exemplo:
 
 ```java
