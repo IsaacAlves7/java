@@ -5554,6 +5554,8 @@ Principais componentes do ambiente de execução do Spring:
 - **Configuração distribuída** via Spring Config Server.
 - **Service Discovery** com Eureka, Consul ou Zookeeper.
 
+<img width="720" height="563" alt="FB_IMG_1721968598806" src="https://github.com/user-attachments/assets/2ac9e329-a33f-4222-9d83-9ad9bb8ca161" />
+
 O Spring é ideal para aplicações modulares, microserviços e arquiteturas robustas, como Hexagonal Architecture (Ports & Adapters) e Domain-Driven Design (DDD). O motivo é que ele oferece um ecossistema completo, que facilita a implementação de princípios arquiteturais modernos, incluindo modularização, injeção de dependências e comunicação entre serviços.
 
 A **Inversão de Controle** (Inversion of Control ou IoC) é um princípio de design de software e trata-se do redirecionamento do fluxo de execução de um código retirando parcialmente o controle sobre ele e delegando-o para um container. O principal propósito é minimizar o acoplamento do código.
