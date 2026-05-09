@@ -1046,6 +1046,8 @@ instruções;
 } while (condição);
 ```
 
+<img width="720" height="502" alt="FB_IMG_1720272759314" src="https://github.com/user-attachments/assets/d45c7b42-05c0-42ae-a0ec-0e1558e82d3e" />
+
 # ☕ [Java] Entrada e Saída de dados
 Em Java temos muitas formas de **entrada de dados** (input), inclusive de forma gráfica. Inicialmente trabalharemos com a *classe* <code>Scanner</code>, responsável pela entrada de dados em formato texto, com perguntas diretas ao usuário e a inclusão da resposta em variáveis do programa. 
 
@@ -5460,7 +5462,7 @@ Um ponto interessante é que o Akka Streams se encaixa muito bem em cenários co
 
 Resumindo de forma mais direta: o Akka é a base para construir sistemas concorrentes e distribuídos usando atores, enquanto o Akka Streams é uma abstração mais alta para construir pipelines de processamento de dados em fluxo, com controle de backpressure e execução eficiente. Juntos, eles formam um ecossistema muito poderoso para sistemas reativos, especialmente quando você precisa lidar com alta concorrência, dados em tempo real e tolerância a falhas em escala.
 
-# 🍃 [Java] Spring e Spring Boot
+# 🍃 [Java] <img width="720" height="535" alt="FB_IMG_1720321900496" src="https://github.com/user-attachments/assets/ee9394a2-41cb-4924-bc15-6677d0c45f1f" />
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring-2.1.2-6DB33F?style=flat&logo=Spring&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
 
 <img src="https://www.svgrepo.com/show/354380/spring-icon.svg" align="right" height="77">
@@ -5673,6 +5675,9 @@ Ferramentas de Processamento de Strings:
 
 <img width="1080" height="1350" alt="672679782_1525667489564034_460982158280213726_n" src="https://github.com/user-attachments/assets/c57aca8d-9a6b-4432-8410-97125982ef94" />
 
+<img width="720" height="535" alt="FB_IMG_1720321900496" src="https://github.com/user-attachments/assets/1b402fa5-6a2d-4bbb-a357-bf74ddbdef57" /><img width="720" height="477" alt="FB_IMG_1720111594581" src="https://github.com/user-attachments/assets/6e078604-6728-4729-928d-9be8e907d602" />
+
+
 ## [Java] Spring Data JPA (Hibernate)
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring-2.1.2-6DB33F?style=flat&logo=Spring&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
 
@@ -5687,6 +5692,8 @@ O grande diferencial do Spring Data JPA é que ele permite a criação de reposi
 Além disso, ele oferece integração facilitada com queries personalizadas via JPQL (Java Persistence Query Language), SQL nativo, e também com a API Criteria, quando consultas mais dinâmicas são necessárias. A integração com o Spring Boot, por sua vez, torna a configuração e o uso ainda mais automáticos, permitindo que você conecte sua aplicação a um banco de dados e comece a salvar ou recuperar dados com mínima configuração.
 
 No fim das contas, o Spring Data JPA (com Hibernate como base) é uma solução madura, robusta e produtiva para persistência de dados em aplicações Java, que reduz drasticamente o tempo de desenvolvimento ao abstrair tarefas repetitivas e promover boas práticas de acesso a dados com foco em legibilidade, desacoplamento e manutenção do código.
+
+<img width="720" height="477" alt="FB_IMG_1720111594581" src="https://github.com/user-attachments/assets/24b8d841-4450-4bc6-9ffa-802a2d79db03" />
 
 ## [Java] How Netflix Runs on Java?
 Não existe uma única Stack de Netflix. A Stack Java da Netflix tem evoluído nos últimos anos, começando desde frameworks internos até microserviços da era Groovy e, mais recentemente, migrando para a GraphQL Federation.
