@@ -6375,6 +6375,140 @@ O Spring Boot, por sua vez, continua fornecendo suas principais qualidades: auto
 
 Na prática, você pode escrever controladores REST com classes Kotlin, criar repositórios com interfaces do Spring Data, e usar corrotinas em chamadas assíncronas com WebFlux, por exemplo. O Spring Boot reconhece arquivos `.kt`, e o build geralmente é feito com Gradle (especialmente usando Kotlin DSL no `build.gradle.kts`).
 
+## [Kotlin] Ktor
+O **Ktor** é um framework assíncrono da JetBrains usando Kotlin para criar:
+
+* APIs REST;
+* microsserviços;
+* aplicações backend;
+* WebSockets;
+* servidores HTTP;
+* clientes HTTP;
+* aplicações distribuídas;
+
+Ele é meio que o equivalente moderno/minimalista do:
+
+* ASP.NET Core no .NET;
+* Express no Node.js;
+* FastAPI no Python;
+* Spring Boot no ecossistema Java.
+
+Mas com uma proposta MUITO mais leve e idiomática para Kotlin.
+
+O grande diferencial do Ktor é que ele foi pensado desde o início para:
+
+* coroutines;
+* programação assíncrona;
+* alta concorrência;
+* baixo overhead;
+* arquitetura modular.
+
+Então ele combina muito com:
+
+* microsserviços;
+* APIs modernas;
+* cloud native;
+* aplicações reativas;
+* gateways;
+* sistemas distribuídos.
+
+A arquitetura dele é baseada em plugins/pipelines.
+
+Você monta praticamente só o que precisa.
+
+Exemplo simples de API:
+
+```kotlin
+fun Application.module() {
+    routing {
+        get("/") {
+            call.respondText("Hello World")
+        }
+    }
+}
+```
+
+Bem minimalista. Enquanto no Spring Boot você normalmente sobe uma estrutura mais pesada:
+
+* IoC container gigante;
+* reflection;
+* auto-config;
+* abstrações enterprise.
+
+O Ktor tenta ser:
+
+* mais enxuto;
+* mais performático;
+* mais Kotlin-first.
+
+Ele também possui:
+
+* servidor embutido;
+* cliente HTTP próprio;
+* serialização;
+* autenticação;
+* JWT;
+* WebSockets;
+* DI via integração;
+* suporte a JSON;
+* integração com Kotlinx Serialization.
+
+Um exemplo MUITO forte do Ktor é o client HTTP.
+
+Muita gente usa só o client dele porque é excelente:
+
+```kotlin
+val client = HttpClient(CIO)
+
+val response = client.get("https://api.example.com")
+```
+
+Ele é extremamente popular em:
+
+* Android;
+* Kotlin Multiplatform;
+* microsserviços modernos;
+* startups;
+* APIs performáticas.
+
+Sobre performance:
+o Ktor costuma performar MUITO bem porque:
+
+* usa coroutines;
+* reduz blocking;
+* trabalha bem com IO assíncrono.
+
+Então ele escala muito melhor que arquiteturas blocking tradicionais.
+
+Na prática, ele fica muito alinhado com conceitos que você provavelmente já conhece:
+
+* ASP.NET Core minimal APIs;
+* Node.js async;
+* Go HTTP servers;
+* microsserviços;
+* mensageria;
+* arquiteturas distribuídas.
+
+Inclusive, pelo teu perfil técnico, você provavelmente se adaptaria rápido ao Ktor porque ele conversa bastante com:
+
+* backend moderno;
+* observabilidade;
+* Docker;
+* APIs;
+* cloud;
+* arquitetura limpa.
+
+E como você já trabalha com múltiplas linguagens, vai perceber algo interessante:
+o Kotlin + Ktor tenta unir:
+
+* produtividade de linguagens modernas;
+* segurança de tipos;
+* performance JVM;
+* sintaxe concisa;
+* concorrência elegante.
+
+Muita gente considera o Ktor uma alternativa mais “engenheiro backend moderno” em comparação ao Spring Boot tradicional, que às vezes é visto como mais corporativo e pesado.
+
 # 🧊 [Java] Quarkus
 **Quarkus** é um framework Java projetado para implantação no Kubernetes. Os principais componentes de tecnologia relacionados a ele são o OpenJDK HotSpot e o GraalVM. O Quarkus tem como objetivo tornar o Java uma plataforma de destaque em ambientes Kubernetes e serverless, além de oferecer aos desenvolvedores um modelo de programação reativo e imperativo unificado para atender de forma otimizada a uma ampla gama de arquiteturas de aplicações distribuídas.
 
