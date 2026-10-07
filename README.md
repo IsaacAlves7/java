@@ -5465,8 +5465,6 @@ Resumindo de forma mais direta: o Akka é a base para construir sistemas concorr
 # 🍃 [Java] Spring Framework e Spring Boot
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring-2.1.2-6DB33F?style=flat&logo=Spring&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
 
-<img width="720" height="535" alt="FB_IMG_1720321900496" src="https://github.com/user-attachments/assets/ee9394a2-41cb-4924-bc15-6677d0c45f1f" />
-
 <img src="https://www.svgrepo.com/show/354380/spring-icon.svg" align="right" height="77">
 
 O **Spring** é um framework open source desenvolvido para a plataforma Java baseado nos padrões de projetos (design patterns) <a href="">inversão de controle (IoC)</a> e <a href="">injeção de dependência (DI)</a> criado em 2002 por Rod Johnson. Sua estrutura é composta por módulos afins de reduzir a complexidade no desenvolvimento aplicações simples ou corporativa. O Spring Framework fornece infraestrutura abrangente para desenvolver aplicações Java robustas e escaláveis. Ele facilita a inversão de controle (IoC) e a injeção de dependências (DI), além de oferecer suporte para desenvolvimento de aplicativos web, segurança, transações, persistência de dados, entre outros. 
@@ -5491,6 +5489,8 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 
 - **Spring Security**
 
+<img width="720" height="535" alt="FB_IMG_1720321900496" src="https://github.com/user-attachments/assets/ee9394a2-41cb-4924-bc15-6677d0c45f1f" />
+
 - **Spring Cloud**: https://cloud.spring.io/spring-cloud-gateway/reference/html/?utm_source=substack&utm_medium=email
 
 - **Java Bean** é uma classe Java que segue um conjunto de convenções específicas, usadas para encapsular dados e facilitar a reutilização e o gerenciamento de componentes em aplicações Java. Ele é amplamente utilizado em frameworks e bibliotecas Java, especialmente em ambientes que lidam com interfaces gráficas (Swing, JavaFX) ou frameworks web (como Spring e JavaServer Faces). Java bean consiste somente em getters e setters.
@@ -5508,6 +5508,11 @@ O Spring Framework é um framework para aplicações Java que fornece infraestru
 - Gerenciamento de transações ideal para padrões como SAGA.
 
 - Integração com serviços na nuvem e muito mais.
+
+<img width="720" height="1025" alt="Screenshot_20240620-100551_Instagram" src="https://github.com/user-attachments/assets/fa886cfc-e6b7-4d83-9200-fe3807217055" />
+<img width="720" height="715" alt="Screenshot_20240622-013027_Instagram" src="https://github.com/user-attachments/assets/017c4167-36e4-4905-bca1-7a8c1cec8fd7" />
+<img width="720" height="888" alt="Screenshot_20240622-013024_Instagram" src="https://github.com/user-attachments/assets/df16c591-1330-4f5a-b7a6-887485bac1fa" />
+<img width="720" height="717" alt="Screenshot_20240622-013022_Instagram" src="https://github.com/user-attachments/assets/d18805fe-7751-43de-a834-dd97dfab22f7" />
 
 ![FB_IMG_1729854396734](https://github.com/user-attachments/assets/090f7c1d-91c7-4999-8e6c-1c89384146ef)
 
