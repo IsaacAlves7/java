@@ -5462,8 +5462,10 @@ Um ponto interessante é que o Akka Streams se encaixa muito bem em cenários co
 
 Resumindo de forma mais direta: o Akka é a base para construir sistemas concorrentes e distribuídos usando atores, enquanto o Akka Streams é uma abstração mais alta para construir pipelines de processamento de dados em fluxo, com controle de backpressure e execução eficiente. Juntos, eles formam um ecossistema muito poderoso para sistemas reativos, especialmente quando você precisa lidar com alta concorrência, dados em tempo real e tolerância a falhas em escala.
 
-# 🍃 [Java] <img width="720" height="535" alt="FB_IMG_1720321900496" src="https://github.com/user-attachments/assets/ee9394a2-41cb-4924-bc15-6677d0c45f1f" />
+# 🍃 [Java] Spring Framework e Spring Boot
 <a href="https://javascript.info"><img src="https://img.shields.io/badge/Kotlin-2.1.2-7F52FF?style=flat&logo=Kotlin&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring-2.1.2-6DB33F?style=flat&logo=Spring&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Boot-2.1.2-6DB33F?style=flat&logo=Spring-Boot&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Spring_Security-2.1.2-6DB33F?style=flat&logo=Spring-Security&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/RabbitMQ-2.1.2-6DB33F?style=flat&logo=RabbitMQ&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/React-2.1.2-6DB33F?style=flat&logo=React&logoColor=white"></a> <a href="https://javascript.info"><img src="https://img.shields.io/badge/Docker-2.1.2-6DB33F?style=flat&logo=Docker&logoColor=white"></a>
+
+<img width="720" height="535" alt="FB_IMG_1720321900496" src="https://github.com/user-attachments/assets/ee9394a2-41cb-4924-bc15-6677d0c45f1f" />
 
 <img src="https://www.svgrepo.com/show/354380/spring-icon.svg" align="right" height="77">
 
